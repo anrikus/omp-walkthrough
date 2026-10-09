@@ -1,0 +1,6237 @@
+[
+  {
+    "id": "C01-T1",
+    "dossier": "01",
+    "kind": "takeaway",
+    "text": "A coding model is not the same thing as a coding agent. Academic surveys describe agents that add planning, memory, perception, and actions around a language model; practitioners call much of that surrounding machinery the harness.[1][2][4]",
+    "citations": [
+      "wang2025agents",
+      "liu2026large",
+      "trivedy2026anatomy"
+    ],
+    "grades": [
+      "A",
+      "C"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C01-T2",
+    "dossier": "01",
+    "kind": "takeaway",
+    "text": "The harness decides what context reaches the model, which tools it can use, where those tools run, how work survives a context reset, and how humans can supervise it.[4][6][7]",
+    "citations": [
+      "trivedy2026anatomy",
+      "young2025effective",
+      "chen2026unlocking"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C01-T3",
+    "dossier": "01",
+    "kind": "takeaway",
+    "text": "“Harness” is useful terminology, not a settled scientific taxonomy. In October 2025, LangChain’s Harrison Chase explicitly described it as a term he was starting to see more often, with blurry boundaries between frameworks, runtimes, and harnesses.[3]",
+    "citations": [
+      "chase2025agent"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C01-T4",
+    "dossier": "01",
+    "kind": "takeaway",
+    "text": "The terminal-versus-IDE distinction is increasingly a choice of interface, not necessarily a choice of agent. OpenAI documents one Codex harness behind multiple surfaces, while ACP lets compatible editors communicate with independently developed agents.[7][17]",
+    "citations": [
+      "chen2026unlocking",
+      "agentclientprotocolmaintainers2026introduction"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C01-T5",
+    "dossier": "01",
+    "kind": "takeaway",
+    "text": "Open source and model choice are separate axes. Codex CLI is Apache-2.0 and supports custom and local providers; Amp is proprietary but supports multiple models and bring-your-own provider connections.[30][40]",
+    "citations": [
+      "corporationndamp",
+      "openaindcodex"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C01-T6",
+    "dossier": "01",
+    "kind": "takeaway",
+    "text": "The 2026 Stack Overflow survey is already available: it was released on October 6. In its coding-agent-and-assistant question, 65.5% of the 12,255 respondents in the “Used” group selected Claude Code, 58.7% selected GitHub Copilot, and 29.5% selected OpenAI Codex; these are overlapping survey selections, not exclusive market shares.[9][10]",
+    "citations": [
+      "stackoverflow2026ai",
+      "stackoverflow2026results"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C01-T7",
+    "dossier": "01",
+    "kind": "takeaway",
+    "text": "Adoption is real, but it does not imply unattended autonomy. In the same survey, 48.0% of respondents to the trust question said they trust AI when they can easily verify its output, while 6.6% trust it with important work decisions.[9]",
+    "citations": [
+      "stackoverflow2026ai"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C01-T8",
+    "dossier": "01",
+    "kind": "takeaway",
+    "text": "AIDev gives researchers evidence beyond product marketing: its published dataset paper reports 932,791 agent-authored pull requests through August 1, 2025. The current dataset card describes a different, later v4 snapshot with 2,743,854 pull requests through November 2025, so the two totals must not be mixed.[13][14]",
+    "citations": [
+      "li2026aidev",
+      "li2025aidev"
+    ],
+    "grades": [
+      "A",
+      "C"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C01-T9",
+    "dossier": "01",
+    "kind": "takeaway",
+    "text": "The ecosystem is converging on reusable instructions, skills, and protocols—but those solve different problems. AGENTS.md carries project guidance, Agent Skills package reusable procedures, MCP connects external systems, ACP connects editors to agents, and A2A connects independently implemented agents.[16][17][18][19][20]",
+    "citations": [
+      "modelcontextprotocolmaintainers2026is",
+      "agentclientprotocolmaintainers2026introduction",
+      "protocol2026agent2agent",
+      "agentsmdmaintainers2026agents",
+      "agentskillsmaintainers2026agent"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C01-T10",
+    "dossier": "01",
+    "kind": "takeaway",
+    "text": "A current landscape cannot simply repeat a 2025 product list. Windsurf became Devin Desktop, the legacy Kimi CLI was replaced by Kimi Code CLI, and Roo Code’s official documentation now announces its shutdown.[43][46][48]",
+    "citations": [
+      "moonshotaindlegacy",
+      "codeiumwindsurfteam2024windsurf",
+      "codendrepository"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C01-T11",
+    "dossier": "01",
+    "kind": "takeaway",
+    "text": "omp belongs to the open, multi-provider side of this landscape, with an intentionally integrated tool surface. Its repository describes it as a Pi fork built by Stencil Labs, with LSP, debugger access, structured subagents, and memory—but those feature categories are not all exclusive to omp.[21][23][28][42][50][51]",
+    "citations": [
+      "anthropic2026orchestrate",
+      "stencillabsndohmypi",
+      "anomalyndopencode",
+      "qwenteamndqwen",
+      "industriesndcurrent",
+      "jetbrainsndjunie"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C01-N1",
+    "dossier": "01",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "SO 2026 total response count",
+      "Value": "**30,903**",
+      "Conditions (model, harness, benchmark/version, date)": "Developer Survey 2026; 169 countries; released 2026-10-06; not every respondent answered every question",
+      "Source [n] (location)": "[10], overview “At a glance” / release article",
+      "Grade": "C"
+    },
+    "citations": [
+      "stackoverflow2026results"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C01-N2",
+    "dossier": "01",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Coding assistant/agent use",
+      "Value": "**65.9%; 11,509 / 17,464**",
+      "Conditions (model, harness, benchmark/version, date)": "`AISelect`, multi-select, optional, v2026.1; “in your role at work”; no model/harness versions",
+      "Source [n] (location)": "[9], §2.1 “AI tool usage”",
+      "Grade": "C"
+    },
+    "citations": [
+      "stackoverflow2026ai"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C01-N3",
+    "dossier": "01",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Agent/automated-workflow use",
+      "Value": "**26.2%; 4,582 / 17,464**",
+      "Conditions (model, harness, benchmark/version, date)": "Same question; separate category from coding assistant/agent; overlap allowed",
+      "Source [n] (location)": "[9], §2.1 “AI tool usage”",
+      "Grade": "C"
+    },
+    "citations": [
+      "stackoverflow2026ai"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C01-N4",
+    "dossier": "01",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Daily coding assistant/agent use",
+      "Value": "**73.0%**",
+      "Conditions (model, harness, benchmark/version, date)": "Among users of that category; `AIFreq`, optional scale, v2026.1; overall question n = 14,478, not a row-specific denominator",
+      "Source [n] (location)": "[9], §2.1 “AI tool usage frequency”",
+      "Grade": "C"
+    },
+    "citations": [
+      "stackoverflow2026ai"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C01-N5",
+    "dossier": "01",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Claude Code past-year use",
+      "Value": "**65.5%; 8,030 / 12,255**",
+      "Conditions (model, harness, benchmark/version, date)": "`AICodeAgent`, Used group, v2026.1, accessed 2026-10-08; not exclusive share",
+      "Source [n] (location)": "[9], §2.3 “AI coding agents”",
+      "Grade": "C"
+    },
+    "citations": [
+      "stackoverflow2026ai"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C01-N6",
+    "dossier": "01",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "GitHub Copilot past-year use",
+      "Value": "**58.7%; 7,196 / 12,255**",
+      "Conditions (model, harness, benchmark/version, date)": "Same survey question; includes broad Copilot label, not agent-mode-only",
+      "Source [n] (location)": "[9], §2.3",
+      "Grade": "C"
+    },
+    "citations": [
+      "stackoverflow2026ai"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C01-N7",
+    "dossier": "01",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "OpenAI Codex past-year use",
+      "Value": "**29.5%; 3,620 / 12,255**",
+      "Conditions (model, harness, benchmark/version, date)": "Same survey question; no surface/version breakdown",
+      "Source [n] (location)": "[9], §2.3",
+      "Grade": "C"
+    },
+    "citations": [
+      "stackoverflow2026ai"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C01-N8",
+    "dossier": "01",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Trust only when easily verifiable",
+      "Value": "**48.0%; 6,872 / 14,304**",
+      "Conditions (model, harness, benchmark/version, date)": "`AITrust`, single-select, optional, v2026.1",
+      "Source [n] (location)": "[9], §2.2 “Trust in AI tools”",
+      "Grade": "C"
+    },
+    "citations": [
+      "stackoverflow2026ai"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C01-N9",
+    "dossier": "01",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Trust including important decisions",
+      "Value": "**6.6%; 949 / 14,304**",
+      "Conditions (model, harness, benchmark/version, date)": "Same question, different category; not a measured error rate",
+      "Source [n] (location)": "[9], §2.2",
+      "Grade": "C"
+    },
+    "citations": [
+      "stackoverflow2026ai"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C01-N10",
+    "dossier": "01",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "2025 AI use or planned use",
+      "Value": "**84%**",
+      "Conditions (model, harness, benchmark/version, date)": "SO 2025; broad AI tools, not agents; usage question n = 33,662",
+      "Source [n] (location)": "[8], §3.1 “AI tools in the development process”",
+      "Grade": "C"
+    },
+    "citations": [
+      "stackoverflow2025ai"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C01-N11",
+    "dossier": "01",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "JetBrains regular AI coding/development use",
+      "Value": "**85%**",
+      "Conditions (model, harness, benchmark/version, date)": "April–June 2025 survey; 24,534 cleaned responses across 194 countries; balanced response sample",
+      "Source [n] (location)": "[11], “AI proficiency” / “Methodology”",
+      "Grade": "C"
+    },
+    "citations": [
+      "bedrina2025state"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C01-N12",
+    "dossier": "01",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "JetBrains coding assistant/agent/editor use",
+      "Value": "**62%**",
+      "Conditions (model, harness, benchmark/version, date)": "Same report, combined product categories",
+      "Source [n] (location)": "[11], “AI proficiency”",
+      "Grade": "C"
+    },
+    "citations": [
+      "bedrina2025state"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C01-N13",
+    "dossier": "01",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "New GitHub developers using Copilot in first week",
+      "Value": "**“nearly 80%”**",
+      "Conditions (model, harness, benchmark/version, date)": "GitHub vendor/platform-reported; Octoverse 2025, updated 2026-02-28; not all developers or agent mode",
+      "Source [n] (location)": "[12], “The state of GitHub in 2025”",
+      "Grade": "C"
+    },
+    "citations": [
+      "githubstaff2025octoverse"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C01-N14",
+    "dossier": "01",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Published AIDev Agentic-PRs",
+      "Value": "**932,791**",
+      "Conditions (model, harness, benchmark/version, date)": "Five agents; cutoff **2025-08-01**; arXiv **2602.09185v1, 2026-02-09**, MSR 2026; not a benchmark run",
+      "Source [n] (location)": "[13], §1 / Table 1",
+      "Grade": "A"
+    },
+    "citations": [
+      "li2026aidev"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C01-N15",
+    "dossier": "01",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Published AIDev enriched subset",
+      "Value": "**33,596 PRs / 2,807 repositories**",
+      "Conditions (model, harness, benchmark/version, date)": "Repositories **>100 stars**, same paper/snapshot",
+      "Source [n] (location)": "[13], Table 1",
+      "Grade": "A"
+    },
+    "citations": [
+      "li2026aidev"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C01-N16",
+    "dossier": "01",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Current AIDev artifact snapshot",
+      "Value": "**2,743,854 PRs / 327,477 repositories / 159,056 human developers**",
+      "Conditions (model, harness, benchmark/version, date)": "**v4**, six agents, cutoff **November 2025**, accessed 2026-10-08; not the paper’s original sample",
+      "Source [n] (location)": "[14], “Overview” / “Quick Look”",
+      "Grade": "C"
+    },
+    "citations": [
+      "li2025aidev"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C01-N17",
+    "dossier": "01",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "OpenCode claimed monthly developers",
+      "Value": "**“16M”**",
+      "Conditions (model, harness, benchmark/version, date)": "Vendor-reported homepage figure as of 2026-10-08; definition/CI not supplied in opened page",
+      "Source [n] (location)": "[28], “Monthly Devs”",
+      "Grade": "C"
+    },
+    "citations": [
+      "anomalyndopencode"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C01-N18",
+    "dossier": "01",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Cline claimed installations",
+      "Value": "**“five million”**",
+      "Conditions (model, harness, benchmark/version, date)": "Vendor-reported multi-editor installs; Jan 29/30, 2026 announcement; not unique users",
+      "Source [n] (location)": "[47], opening / “From garage project”",
+      "Grade": "C"
+    },
+    "citations": [
+      "clinemaintainersndcurrent"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C02-T1",
+    "dossier": "02",
+    "kind": "takeaway",
+    "text": "A coding-agent score belongs to a model, a harness, a task set, and an evaluation protocol—not to the model alone. SWE-bench explicitly separates its all-agent leaderboard from its bash-only, mini-SWE-agent comparison of models. [2]",
+    "citations": [
+      "swebenchteam2026swebench-2"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C02-T2",
+    "dossier": "02",
+    "kind": "takeaway",
+    "text": "Terminal-Bench is particularly useful for comparing harnesses because its leaderboard names both the model and the agent. On the same Terminal-Bench 2.0 board, GPT-5.2 scores 62.9% with Codex CLI and 54.0% with Terminus 2; those are system comparisons, not proof that one harness is universally better. [20][21]",
+    "citations": [
+      "merrill2026terminalbench",
+      "terminalbenchteam2026terminalbench2"
+    ],
+    "grades": [
+      "A",
+      "C"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C02-T3",
+    "dossier": "02",
+    "kind": "takeaway",
+    "text": "By October 2026, Terminal-Bench 2.0 is no longer the newest flagship: Terminal-Bench 4.0 is live, with revised resources, repaired tasks, and saturated tasks removed. Its official board currently puts Opus 5.5 in Claude Code first, at 64.8%, with a reported 95% confidence interval of ±3.1 percentage points. [18][22][23]",
+    "citations": [
+      "terminalbenchteam2026benchmarks",
+      "terminalbenchteam2026terminalbench4",
+      "marten2026terminalbench4"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C02-T4",
+    "dossier": "02",
+    "kind": "takeaway",
+    "text": "“Verified” does not mean infallible. The peer-reviewed UTBoost study found 345 erroneous patches that the original SWE-bench tests had marked as passing, changing rankings on both Lite and Verified. [35]",
+    "citations": [
+      "yu2025utboost"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C02-T5",
+    "dossier": "02",
+    "kind": "takeaway",
+    "text": "Benchmark validity cuts both ways: weak tests can accept bad fixes, while overly specific tests or broken environments can reject good ones. OpenAI's own motivation for SWE-bench Verified included all three problems. [35][49]",
+    "citations": [
+      "yu2025utboost",
+      "openai2024introducing"
+    ],
+    "grades": [
+      "A",
+      "C"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C02-T6",
+    "dossier": "02",
+    "kind": "takeaway",
+    "text": "Stronger evaluation is not just a bigger test set. The Agentic Benchmark Checklist separates task validity, outcome validity, and reporting, while AI Agents That Matter argues for measuring accuracy together with cost and protecting held-out evaluation. [37][38]",
+    "citations": [
+      "zhu2025establishing",
+      "kapoor2025ai"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C02-T7",
+    "dossier": "02",
+    "kind": "takeaway",
+    "text": "METR's time horizon is human-equivalent task difficulty at a specified success probability—not how long an agent can keep running, and not the number of hours of a familiar employee's job that it can automate. [27][29]",
+    "citations": [
+      "kwa2025measuring",
+      "metr2026taskcompletion"
+    ],
+    "grades": [
+      "A",
+      "C"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C02-T8",
+    "dossier": "02",
+    "kind": "takeaway",
+    "text": "There is public comparative evidence for omp, but the example found here is a small SaaS-workflow evaluation, not a SWE-bench coding championship: Composio reports 17 successes in 30 tasks for OMP with DeepSeek V4 Flash. Its Pi comparison used different reasoning settings and two providers, so that result is not a clean harness-only comparison. [44]",
+    "citations": [
+      "dash2026finding"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C02-T9",
+    "dossier": "02",
+    "kind": "takeaway",
+    "text": "Hermes and DeepSeek Harness do appear in a 2026 harness-comparison preprint, while Pi and DeepSeek Harness appear in DeepSeek's own multi-scaffold evaluation. These evidence sources are different from an independently reproduced entry on a flagship public leaderboard. [39][40]",
+    "citations": [
+      "zheng2026clawswebench",
+      "deepseekai2026deepseekv4"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C02-T10",
+    "dossier": "02",
+    "kind": "takeaway",
+    "text": "Nous Research now has a Hermes Index, but it compares models inside Hermes, not Hermes against other harnesses; its Terminal-Bench 4 component excludes GPU tasks, and some scores are provisional. [47][48]",
+    "citations": [
+      "nousresearch2026hermes",
+      "nousresearch2026announcements"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C02-N1",
+    "dossier": "02",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Original SWE-bench size",
+      "Value": "2,294",
+      "Conditions (model, harness, benchmark/version, date)": "Full test split,12 Python repositories; ICLR2024",
+      "Source [n] (location)": "[3], abstract",
+      "Grade": "A"
+    },
+    "citations": [
+      "jimenez2024swebench"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C02-N2",
+    "dossier": "02",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Verified / Lite sizes",
+      "Value": "500 /300",
+      "Conditions (model, harness, benchmark/version, date)": "Separate subsets, not versions of the same denominator",
+      "Source [n] (location)": "[2][4], overview",
+      "Grade": "C"
+    },
+    "citations": [
+      "swebenchteam2026swebench-2",
+      "jimenez2024swebench-2"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C02-N3",
+    "dossier": "02",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Multimodal current size",
+      "Value": "480",
+      "Conditions (model, harness, benchmark/version, date)": "v2,2026-09-01; published collection617 and earlier evaluation517 are distinct labels",
+      "Source [n] (location)": "[5][6], v2/abstract",
+      "Grade": "C/A"
+    },
+    "citations": [
+      "yang2024swebench",
+      "yang2025swebench"
+    ],
+    "grades": [
+      "A",
+      "C"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C02-N4",
+    "dossier": "02",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "ProV2 full /hard size",
+      "Value": "642 /51",
+      "Conditions (model, harness, benchmark/version, date)": "2026-09-22 release;11 repositories",
+      "Source [n] (location)": "[11], overview/HARD-51",
+      "Grade": "C"
+    },
+    "citations": [
+      "scale2026swebench"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C02-N5",
+    "dossier": "02",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Current ProV2 Full leader",
+      "Value": "99.40 ±0.40",
+      "Conditions (model, harness, benchmark/version, date)": "Opus5/xhigh,Claude Code; full tab,accessed2026-10-08; displayed interval confidence level not stated",
+      "Source [n] (location)": "[10], Full table",
+      "Grade": "C"
+    },
+    "citations": [
+      "scalelabs2026swebench-2"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C02-N6",
+    "dossier": "02",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Current TB2 leader",
+      "Value": "84.7% ±2.1",
+      "Conditions (model, harness, benchmark/version, date)": "GPT-5.5,NexAU-AHE;89 tasks;95%CI;accessed2026-10-08",
+      "Source [n] (location)": "[21], rank1",
+      "Grade": "C"
+    },
+    "citations": [
+      "terminalbenchteam2026terminalbench2"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C02-N7",
+    "dossier": "02",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Current TB4 leader",
+      "Value": "64.8% ±3.1%",
+      "Conditions (model, harness, benchmark/version, date)": "Opus5.5/max,Claude Code;66 tasks;95%CI;accessed2026-10-08",
+      "Source [n] (location)": "[22][23], rank1/registry",
+      "Grade": "C"
+    },
+    "citations": [
+      "terminalbenchteam2026terminalbench4",
+      "marten2026terminalbench4"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C02-N8",
+    "dossier": "02",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "TB4 task-time limit",
+      "Value": "8 hours",
+      "Conditions (model, harness, benchmark/version, date)": "Flat per-task agent timeout;2026-08-28 release",
+      "Source [n] (location)": "[23], resource calibration",
+      "Grade": "C"
+    },
+    "citations": [
+      "marten2026terminalbench4"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C02-N9",
+    "dossier": "02",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "UTBoost false-positive patches",
+      "Value": "345",
+      "Conditions (model, harness, benchmark/version, date)": "Aggregated submitted patches across studied SWE-bench systems;36 affected task instances;not one model",
+      "Source [n] (location)": "[35], abstract",
+      "Grade": "A"
+    },
+    "citations": [
+      "yu2025utboost"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C02-N10",
+    "dossier": "02",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "UTBoost ranking changes",
+      "Value": "Lite18;Verified11",
+      "Conditions (model, harness, benchmark/version, date)": "Study's historical leaderboard entries,not October2026 ranks",
+      "Source [n] (location)": "[35], abstract",
+      "Grade": "A"
+    },
+    "citations": [
+      "yu2025utboost"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C02-N11",
+    "dossier": "02",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "ABC empty-response result",
+      "Value": "38%",
+      "Conditions (model, harness, benchmark/version, date)": "Trivial empty-response agent;examined τ-bench-Airline;historical flaw",
+      "Source [n] (location)": "[37], §1/§5",
+      "Grade": "A"
+    },
+    "citations": [
+      "zhu2025establishing"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C02-N12",
+    "dossier": "02",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "HAL evaluation scale",
+      "Value": "21,730 rollouts;about$40,000",
+      "Conditions (model, harness, benchmark/version, date)": "9 models,9 benchmarks;historical reported experiment,not a current price quote",
+      "Source [n] (location)": "[30], abstract/§3",
+      "Grade": "A"
+    },
+    "citations": [
+      "kapoor2026holistic"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C02-N13",
+    "dossier": "02",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "METR TH1→TH1.1 tasks",
+      "Value": "170→228",
+      "Conditions (model, harness, benchmark/version, date)": "Jan29,2026;task revisions plus evaluation-infrastructure migration",
+      "Source [n] (location)": "[28], changes",
+      "Grade": "C"
+    },
+    "citations": [
+      "metr2026time"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C02-N14",
+    "dossier": "02",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "METR long-task baseline caveat",
+      "Value": "5 of31",
+      "Conditions (model, harness, benchmark/version, date)": "TH1.1 ≥8h tasks with measured human baselines",
+      "Source [n] (location)": "[28], task-suite discussion",
+      "Grade": "C"
+    },
+    "citations": [
+      "metr2026time"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C02-N15",
+    "dossier": "02",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "OMP public workflow result",
+      "Value": "17/30;56.7%",
+      "Conditions (model, harness, benchmark/version, date)": "DeepSeekV4Flash,Composio Golden Eval,900s/task,2026-08-11;no CI/package versions",
+      "Source [n] (location)": "[44], Outcome",
+      "Grade": "C"
+    },
+    "citations": [
+      "dash2026finding"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C02-N16",
+    "dossier": "02",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Claw same-model result",
+      "Value": "Hermes81.7%;DSH76.5%",
+      "Conditions (model, harness, benchmark/version, date)": "DeepSeek-V4.1-Flash,full350,mean3 runs,v2Sep28;no CI",
+      "Source [n] (location)": "[39], Table2",
+      "Grade": "B"
+    },
+    "citations": [
+      "zheng2026clawswebench"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C02-N17",
+    "dossier": "02",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "ProgramBench full vs Almost",
+      "Value": "4.5% vs37.0%",
+      "Conditions (model, harness, benchmark/version, date)": "Opus5/xhigh,mini-SWE-agent,200 tasks,pageSep28;not equivalent metrics",
+      "Source [n] (location)": "[42], leaderboard",
+      "Grade": "C"
+    },
+    "citations": [
+      "yang2026programbench"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C02-N18",
+    "dossier": "02",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Hermes Index leader",
+      "Value": "63.31;$4.99*",
+      "Conditions (model, harness, benchmark/version, date)": "Opus5.5,Hermes,mean4 suites;provisional;accessedOct8",
+      "Source [n] (location)": "[47], leaderboard",
+      "Grade": "C"
+    },
+    "citations": [
+      "nousresearch2026hermes"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C03-T1",
+    "dossier": "03",
+    "kind": "takeaway",
+    "text": "A coding agent’s score is not just a model score. In the peer-reviewed SWE-agent study, the same GPT-4 Turbo solved 11.00% of SWE-bench Lite with a shell-only agent and 18.00% with its purpose-built agent–computer interface. [1]",
+    "citations": [
+      "yang2024sweagent"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C03-T2",
+    "dossier": "03",
+    "kind": "takeaway",
+    "text": "Small interface choices can have measurable consequences: SWE-agent’s edit tool scored 15.0% without linting and 18.0% with it; retaining only the last five full observations scored 18.0%, versus 15.0% with full history. These are separate ablations, not gains we can add together. [1]",
+    "citations": [
+      "yang2024sweagent"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C03-T3",
+    "dossier": "03",
+    "kind": "takeaway",
+    "text": "CodeAct showed that giving the same model executable Python actions could outperform individual text or JSON tool calls. GPT-4 Turbo scored 74.4% on its 82-task tool benchmark with code actions, versus 52.4% with JSON actions—but code could do more work in each turn. [2]",
+    "citations": [
+      "wang2024executable"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C03-T4",
+    "dossier": "03",
+    "kind": "takeaway",
+    "text": "Better harnesses do not necessarily mean more elaborate harnesses. Agentless demonstrated a competitive fixed workflow, and Terminal-Bench found that its minimal terminal agent could outperform some larger systems while OpenAI’s Codex CLI remained stronger for the GPT models tested. [3][6]",
+    "citations": [
+      "xia2025demystifying",
+      "merrill2026terminalbench"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C03-T5",
+    "dossier": "03",
+    "kind": "takeaway",
+    "text": "Memory can help without retraining: in the peer-reviewed Dynamic Cheatsheet study, GPT-4o’s Game of 24 accuracy went from 19% with the same instructions but empty memory to 99% with curated, retrieved memory. That is a highly repetitive arithmetic task, not evidence of a universal coding improvement. [15]",
+    "citations": [
+      "suzgun2026dynamic"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C03-T6",
+    "dossier": "03",
+    "kind": "takeaway",
+    "text": "Harness optimization can itself be automated. ADAS, AFlow, and the Darwin Gödel Machine all demonstrated improvements with frozen execution models; their search and extra inference still consume compute. [17][18][19]",
+    "citations": [
+      "hu2025automated",
+      "zhang2025aflow",
+      "zhang2026darwin"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C03-T7",
+    "dossier": "03",
+    "kind": "takeaway",
+    "text": "GEPA showed that prompt optimization can sometimes outperform weight-training under the study’s rollout budgets. It did not show that prompting always beats reinforcement learning: GRPO performed better on the study’s AIME-2025 evaluation. [22]",
+    "citations": [
+      "agrawal2026gepa"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C03-T8",
+    "dossier": "03",
+    "kind": "takeaway",
+    "text": "In a first-party experiment, LangChain reported moving GPT-5.2-Codex from 52.8% to 66.5% on Terminal-Bench 2.0 by changing the surrounding system rather than the model. The published post does not provide a confidence interval or a held-out generalization test for that improvement. [24]",
+    "citations": [
+      "trivedy2026improving"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C03-T9",
+    "dossier": "03",
+    "kind": "takeaway",
+    "text": "In Can Bölük’s first-party editing experiment, Grok Code Fast 1 went from 6.7% with patch editing to 68.3% with hashline editing. Those are results on synthetic React mutations, checked against original files—not a tenfold improvement on real-world software engineering generally. [9]",
+    "citations": [
+      "boluk2026improved"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C03-T10",
+    "dossier": "03",
+    "kind": "takeaway",
+    "text": "There is no universally best edit format or context policy. Published studies contain reversals across models, tasks, and feedback conditions, including cases where more instructions, memory, or reasoning made results worse. [1][2][11][13][15][16][24]",
+    "citations": [
+      "yang2024sweagent",
+      "wang2024executable",
+      "glukhov2025diffxyz",
+      "liu2024lost",
+      "suzgun2026dynamic",
+      "zhang2026agentic",
+      "trivedy2026improving"
+    ],
+    "grades": [
+      "A",
+      "B",
+      "C"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C03-T11",
+    "dossier": "03",
+    "kind": "takeaway",
+    "text": "The next step is not simply “replace the vendor’s harness.” OpenAI documents training its models for its patch format, while DeepSeek’s September 2026 report describes training across several different harnesses, including Claude Code, OpenCode, Pi, and DeepSeek Harness. [29][31]",
+    "citations": [
+      "openai2026codex",
+      "deepseekai2026deepseekv4"
+    ],
+    "grades": [
+      "B",
+      "C"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C03-N1",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "SWE-agent issue resolution",
+      "Grade": "A",
+      "Fixed model(s)": "GPT-4 Turbo `gpt-4-1106-preview`",
+      "Harness change": "Shell-only → custom ACI; both with demo",
+      "Before → after": "11.00% → 18.00%",
+      "Conditions (benchmark/version, runs, budget, date)": "SWE-bench Lite, 300; $4/issue cap; 2024; single reported ablation evaluation",
+      "Source [n] (location)": "[1] Table 1; §§4–5"
+    },
+    "citations": [
+      "yang2024sweagent"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C03-N2",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "SWE-agent linting",
+      "Grade": "A",
+      "Fixed model(s)": "Same",
+      "Harness change": "Editor without → with linting",
+      "Before → after": "15.0% → 18.0%",
+      "Conditions (benchmark/version, runs, budget, date)": "Same Lite setup; not additive with other ablations",
+      "Source [n] (location)": "[1] Table 3"
+    },
+    "citations": [
+      "yang2024sweagent"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": [],
+    "resolved": {
+      "Fixed model(s)": "Same (GPT-4 Turbo `gpt-4-1106-preview`)"
+    }
+  },
+  {
+    "id": "C03-N3",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "SWE-agent history",
+      "Grade": "A",
+      "Fixed model(s)": "Same",
+      "Harness change": "Full history → last five full observations",
+      "Before → after": "15.0% → 18.0%",
+      "Conditions (benchmark/version, runs, budget, date)": "Same Lite setup",
+      "Source [n] (location)": "[1] Table 3"
+    },
+    "citations": [
+      "yang2024sweagent"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": [],
+    "resolved": {
+      "Fixed model(s)": "Same (GPT-4 Turbo `gpt-4-1106-preview`)"
+    }
+  },
+  {
+    "id": "C03-N4",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "SWE-agent viewing",
+      "Grade": "A",
+      "Fixed model(s)": "Same",
+      "Harness change": "Entire file → 100-line window",
+      "Before → after": "12.7% → 18.0%",
+      "Conditions (benchmark/version, runs, budget, date)": "Same Lite setup; 30-line alternative 14.3%",
+      "Source [n] (location)": "[1] Table 3"
+    },
+    "citations": [
+      "yang2024sweagent"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": [],
+    "resolved": {
+      "Fixed model(s)": "Same (GPT-4 Turbo `gpt-4-1106-preview`)"
+    }
+  },
+  {
+    "id": "C03-N5",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "SWE-agent search",
+      "Grade": "A",
+      "Fixed model(s)": "Same",
+      "Harness change": "Iterative → summarized search",
+      "Before → after": "12.0% → 18.0%",
+      "Conditions (benchmark/version, runs, budget, date)": "Same Lite setup; no specialized search 15.7%",
+      "Source [n] (location)": "[1] Table 3"
+    },
+    "citations": [
+      "yang2024sweagent"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": [],
+    "resolved": {
+      "Fixed model(s)": "Same (GPT-4 Turbo `gpt-4-1106-preview`)"
+    }
+  },
+  {
+    "id": "C03-N6",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "CodeAct complex tool success",
+      "Grade": "A",
+      "Fixed model(s)": "`gpt-4-1106-preview`",
+      "Harness change": "JSON actions → executable Python",
+      "Before → after": "52.4% → 74.4%",
+      "Conditions (benchmark/version, runs, budget, date)": "M³ToolEval, 82; zero-shot; max 10 turns; code can compose tools; 2024",
+      "Source [n] (location)": "[2] Table 3; §2.3"
+    },
+    "citations": [
+      "wang2024executable"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C03-N7",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "CodeAct interaction turns",
+      "Grade": "A",
+      "Fixed model(s)": "Same",
+      "Harness change": "JSON → Python",
+      "Before → after": "7.6 → 5.5 mean turns",
+      "Conditions (benchmark/version, runs, budget, date)": "Same 82 tasks; averages include all evaluated instances",
+      "Source [n] (location)": "[2] Table 3"
+    },
+    "citations": [
+      "wang2024executable"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": [],
+    "resolved": {
+      "Fixed model(s)": "Same (`gpt-4-1106-preview`)"
+    }
+  },
+  {
+    "id": "C03-N8",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "CodeAct atomic calls, negative result",
+      "Grade": "A",
+      "Fixed model(s)": "Same",
+      "Harness change": "JSON → code",
+      "Before → after": "82.7% → 76.7% correctness",
+      "Conditions (benchmark/version, runs, budget, date)": "API-Bank level 1; atomic tool use, no composition advantage",
+      "Source [n] (location)": "[2] Table 2; §2.2"
+    },
+    "citations": [
+      "wang2024executable"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": [],
+    "resolved": {
+      "Fixed model(s)": "Same (`gpt-4-1106-preview`)"
+    }
+  },
+  {
+    "id": "C03-N9",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "Agentless localization",
+      "Grade": "A",
+      "Fixed model(s)": "`gpt-4o-2024-05-13`",
+      "Harness change": "Complete-file → skeleton representation",
+      "Before → after": "56.67% → 62.00% contains-GT",
+      "Conditions (benchmark/version, runs, budget, date)": "SWE-bench Lite, 300; related-element localization, not final resolution; stage cost $0.15 → $0.02",
+      "Source [n] (location)": "[3] Table 2; §5.2.1"
+    },
+    "citations": [
+      "xia2025demystifying"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C03-N10",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "Agentless issue resolution",
+      "Grade": "A",
+      "Fixed model(s)": "Same",
+      "Harness change": "Greedy localization → four separately sampled localizations",
+      "Before → after": "29.33% → 32.00%",
+      "Conditions (benchmark/version, runs, budget, date)": "40 candidate patches in each condition; 300 Lite issues; 2025 final paper",
+      "Source [n] (location)": "[3] Table 3; §5.2.2"
+    },
+    "citations": [
+      "xia2025demystifying"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": [],
+    "resolved": {
+      "Fixed model(s)": "Same (`gpt-4o-2024-05-13`)"
+    }
+  },
+  {
+    "id": "C03-N11",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "OpenHands system comparison",
+      "Grade": "A",
+      "Fixed model(s)": "`gpt-4-1106-preview`",
+      "Harness change": "SWE-agent → OH CodeActAgent v1.5",
+      "Before → after": "42.6% → 58.8%",
+      "Conditions (benchmark/version, runs, budget, date)": "ML-Bench, 68 instances; reported costs $1.91 → $1.22; cross-system, not component ablation",
+      "Source [n] (location)": "[4] Table 4; §4.2"
+    },
+    "citations": [
+      "wang2025openhands"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C03-N12",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "HAL fixed-model scaffold comparison",
+      "Grade": "A",
+      "Fixed model(s)": "GPT-4.1, April 2025 model row",
+      "Harness change": "HAL Generalist → SWE-Agent",
+      "Before → after": "2.0% → 44.0%",
+      "Conditions (benchmark/version, runs, budget, date)": "Verified Mini, 50; whole-evaluation cost $51.80 → $393.65; row CIs/repeat count NR",
+      "Source [n] (location)": "[5] Table A23; §A11.8"
+    },
+    "citations": [
+      "kapoor2026holistic"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C03-N13",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "HAL fixed-model scaffold comparison",
+      "Grade": "A",
+      "Fixed model(s)": "GPT-5 Medium, August 2025 model row",
+      "Harness change": "HAL Generalist → SWE-Agent",
+      "Before → after": "12.0% → 46.0%",
+      "Conditions (benchmark/version, runs, budget, date)": "Same 50-task Mini; cost $57.58 → $162.93",
+      "Source [n] (location)": "[5] Table A23"
+    },
+    "citations": [
+      "kapoor2026holistic"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C03-N14",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "Terminal-Bench scaffold comparison",
+      "Grade": "A",
+      "Fixed model(s)": "Gemini 2.5 Pro",
+      "Harness change": "OpenHands → Terminus 2",
+      "Before → after": "15.7% ± 2.6% → 32.6% ± 3.0%",
+      "Conditions (benchmark/version, runs, budget, date)": "TB2.0, 89 tasks; at least five trials/task; reported 95% CIs; 2026 paper",
+      "Source [n] (location)": "[6] Table 2; §3"
+    },
+    "citations": [
+      "merrill2026terminalbench"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C03-N15",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "Terminal-Bench scaffold comparison",
+      "Grade": "A",
+      "Fixed model(s)": "Claude Opus 4.5",
+      "Harness change": "Claude Code → Terminus 2",
+      "Before → after": "52.1% ± 2.5% → 57.8% ± 2.5%",
+      "Conditions (benchmark/version, runs, budget, date)": "Same TB2.0 study; versions not named in result row",
+      "Source [n] (location)": "[6] Table 2"
+    },
+    "citations": [
+      "merrill2026terminalbench"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C03-N16",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "Terminal-Bench vendor-matched win",
+      "Grade": "A",
+      "Fixed model(s)": "GPT-5",
+      "Harness change": "Terminus 2 → Codex CLI",
+      "Before → after": "35.2% ± 3.1% → 49.6% ± 2.9%",
+      "Conditions (benchmark/version, runs, budget, date)": "Same TB2.0 study, default reasoning settings",
+      "Source [n] (location)": "[6] Table 2; §3.3"
+    },
+    "citations": [
+      "merrill2026terminalbench"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C03-N17",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "Aider refactoring completion",
+      "Grade": "C",
+      "Fixed model(s)": "`gpt-4-1106-preview`",
+      "Harness change": "SEARCH/REPLACE → Aider unified diffs",
+      "Before → after": "20% → 61%",
+      "Conditions (benchmark/version, runs, budget, date)": "Historical laziness benchmark, 89 Python refactoring tasks; all-combination repeat count/CI NR",
+      "Source [n] (location)": "[7] opening results"
+    },
+    "citations": [
+      "gauthierndunified"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C03-N18",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "Aider older-model completion",
+      "Grade": "C",
+      "Fixed model(s)": "`gpt-4-0613`",
+      "Harness change": "SEARCH/REPLACE → Aider unified diffs",
+      "Before → after": "26% → 59%",
+      "Conditions (benchmark/version, runs, budget, date)": "Same 89 tasks; 28% cannot fit the older model’s 8k window",
+      "Source [n] (location)": "[7] opening results"
+    },
+    "citations": [
+      "gauthierndunified"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C03-N19",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "Hashline mutation repair",
+      "Grade": "C",
+      "Fixed model(s)": "Grok Code Fast 1",
+      "Harness change": "Patch → hashline",
+      "Before → after": "6.7% → 68.3%",
+      "Conditions (benchmark/version, runs, budget, date)": "180 synthetic React tasks × three runs; fresh sessions; original-file matching; article dated 2026-02-12, accessed 2026-10-08",
+      "Source [n] (location)": "[9] “The Benchmark”"
+    },
+    "citations": [
+      "boluk2026improved"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C03-N20",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "Can It Edit? instruction sensitivity",
+      "Grade": "A",
+      "Fixed model(s)": "GPT-4, exact API snapshot NR in cited table",
+      "Harness change": "Lazy → descriptive instruction",
+      "Before → after": "51.95 → 63.33 pass@1",
+      "Conditions (benchmark/version, runs, budget, date)": "105 tasks × two instructions; 20 completions/problem; temperature 0.2; 2,048 max new tokens; 2024",
+      "Source [n] (location)": "[10] Table 3; §5"
+    },
+    "citations": [
+      "cassano2024can"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C03-N21",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "Diff-XYZ prompt definition",
+      "Grade": "B",
+      "Fixed model(s)": "GPT-4.1",
+      "Harness change": "Generic system prompt → explicit unified-diff definition",
+      "Before → after": "0.34 → 0.76 EM",
+      "Conditions (benchmark/version, runs, budget, date)": "1,000 edits; diff-generation exact match after application; v2, 2025-11-17; repeated-run CI NR",
+      "Source [n] (location)": "[11] Table 2"
+    },
+    "citations": [
+      "glukhov2025diffxyz"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C03-N22",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "Diff-XYZ format comparison",
+      "Grade": "B",
+      "Fixed model(s)": "GPT-4.1",
+      "Harness change": "Unified diff → search/replace",
+      "Before → after": "0.81 → 0.95 EM",
+      "Conditions (benchmark/version, runs, budget, date)": "Separate experiment with definition + example for each format; same 1,000 edits",
+      "Source [n] (location)": "[11] Table 5"
+    },
+    "citations": [
+      "glukhov2025diffxyz"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C03-N23",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "Diff-XYZ negative format effect",
+      "Grade": "B",
+      "Fixed model(s)": "GPT-4.1-nano",
+      "Harness change": "Unified diff → search/replace",
+      "Before → after": "0.50 → 0.07 EM",
+      "Conditions (benchmark/version, runs, budget, date)": "Diff generation; same format-plus-example experiment",
+      "Source [n] (location)": "[11] Table 5"
+    },
+    "citations": [
+      "glukhov2025diffxyz"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C03-N24",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "Lost in the Middle query placement",
+      "Grade": "A",
+      "Fixed model(s)": "`gpt-3.5-turbo-16k-0613`",
+      "Harness change": "Query only after → before and after data",
+      "Before → after": "Worst-position 45.6% → 100%",
+      "Conditions (benchmark/version, runs, budget, date)": "Synthetic 300-pair retrieval, 500 examples; greedy decoding; not a multi-document-QA improvement",
+      "Source [n] (location)": "[13] §4.2; Figure 7"
+    },
+    "citations": [
+      "liu2024lost"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C03-N25",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "Context Rot focused-context comparison",
+      "Grade": "C",
+      "Fixed model(s)": "Claude Sonnet 4, non-thinking",
+      "Harness change": "Full history → answer-relevant excerpts",
+      "Before → after": "0.38 → 0.89 average score",
+      "Conditions (benchmark/version, runs, budget, date)": "306 cleaned LongMemEval_s prompts; full ≈113k tokens; retrieval burden also changes; July 2025",
+      "Source [n] (location)": "[14] LongMemEval methods; Claude-family chart"
+    },
+    "citations": [
+      "hong2025context"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C03-N26",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "Dynamic Cheatsheet memory increment",
+      "Grade": "A",
+      "Fixed model(s)": "GPT-4o, API snapshot NR in result table",
+      "Harness change": "DC-empty → DC-RS",
+      "Before → after": "19.0% → 99.0%",
+      "Conditions (benchmark/version, runs, budget, date)": "Game of 24, 100 sequential tasks; same instruction scaffold; retrieval + curation; EACL 2026",
+      "Source [n] (location)": "[15] Table 1; §4.1"
+    },
+    "citations": [
+      "suzgun2026dynamic"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C03-N27",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "Dynamic Cheatsheet arithmetic reasoning",
+      "Grade": "A",
+      "Fixed model(s)": "Claude 3.5 Sonnet",
+      "Harness change": "DC-empty → DC-Cu",
+      "Before → after": "36.7% → 50.0%",
+      "Conditions (benchmark/version, runs, budget, date)": "AIME 2024, only 30 tasks; sequential adaptation; no CI in table",
+      "Source [n] (location)": "[15] Table 1"
+    },
+    "citations": [
+      "suzgun2026dynamic"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C03-N28",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "ACE offline context adaptation",
+      "Grade": "A",
+      "Fixed model(s)": "DeepSeek-V3.1-671B, non-thinking",
+      "Harness change": "ReAct → offline ACE with labels",
+      "Before → after": "42.4 → 59.4 average",
+      "Conditions (benchmark/version, runs, budget, date)": "AppWorld average of four TGC/SGC normal/challenge metrics; same LLM in all roles; v3 2026-03-29",
+      "Source [n] (location)": "[16] Table 1; §§4.1–4.3"
+    },
+    "citations": [
+      "zhang2026agentic"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C03-N29",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "ACE negative-feedback case",
+      "Grade": "A",
+      "Fixed model(s)": "Same",
+      "Harness change": "Base → online ACE, no labels",
+      "Before → after": "70.7 → 67.3 accuracy",
+      "Conditions (benchmark/version, runs, budget, date)": "FiNER; sequential evaluation; absence of reliable external feedback",
+      "Source [n] (location)": "[16] Table 2"
+    },
+    "citations": [
+      "zhang2026agentic"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": [],
+    "resolved": {
+      "Fixed model(s)": "Same (DeepSeek-V3.1-671B, non-thinking)"
+    }
+  },
+  {
+    "id": "C03-N30",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "ADAS learned architecture",
+      "Grade": "A",
+      "Fixed model(s)": "`gpt-3.5-turbo-0125` executor",
+      "Harness change": "Role Assignment → Meta Agent Search",
+      "Before → after": "65.8 ± 0.9 → 79.4 ± 0.8 F1",
+      "Conditions (benchmark/version, runs, budget, date)": "DROP, 800 held-out test items; 128 validation; 30 search iterations; 95% bootstrap intervals",
+      "Source [n] (location)": "[17] Table 1; §4.2; Appendix E"
+    },
+    "citations": [
+      "hu2025automated"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C03-N31",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "AFlow generated workflow",
+      "Grade": "A",
+      "Fixed model(s)": "GPT-4o-mini-0718",
+      "Harness change": "Direct IO → AFlow",
+      "Before → after": "87.0 → 94.7 pass@1",
+      "Conditions (benchmark/version, runs, budget, date)": "HumanEval divided 1:4 validation:test; three runs; 20 search rounds; best manual comparator 91.6",
+      "Source [n] (location)": "[18] Table 1; §5.1"
+    },
+    "citations": [
+      "zhang2025aflow"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C03-N32",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "DGM cross-benchmark transfer",
+      "Grade": "A",
+      "Fixed model(s)": "o3-mini execution",
+      "Harness change": "Initial agent → agent evolved on SWE-bench",
+      "Before → after": "14.2% → 28.9%",
+      "Conditions (benchmark/version, runs, budget, date)": "Entirely held-out Polyglot; no ground-truth test feedback; 80-iteration source search; v3 2026-03-12",
+      "Source [n] (location)": "[19] §4.4; Figure 4"
+    },
+    "citations": [
+      "zhang2026darwin"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C03-N33",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "Live-SWE-agent tool creation",
+      "Grade": "B",
+      "Fixed model(s)": "`claude-sonnet-4-5-20250929`",
+      "Harness change": "mini-SWE-agent → runtime tool synthesis/reflection",
+      "Before → after": "70.6% → 75.4%",
+      "Conditions (benchmark/version, runs, budget, date)": "Verified, 500; one patch/issue; default 250 steps/$3; reused baseline; v3 2025-11-24",
+      "Source [n] (location)": "[21] Table 1; §3"
+    },
+    "citations": [
+      "xia2025livesweagent"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C03-N34",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "GEPA fixed-weight prompt optimization",
+      "Grade": "A",
+      "Fixed model(s)": "Qwen3-8B",
+      "Harness change": "Baseline → GEPA",
+      "Before → after": "42.33 → 62.33",
+      "Conditions (benchmark/version, runs, budget, date)": "HotpotQA; 150 train/300 validation/300 test; GEPA budget 6,871 rollouts; v2 2026-02-14",
+      "Source [n] (location)": "[22] Table 1; Appendix E"
+    },
+    "citations": [
+      "agrawal2026gepa"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C03-N35",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "Meta-Harness context optimization",
+      "Grade": "B",
+      "Fixed model(s)": "GPT-OSS-120B",
+      "Harness change": "ACE → searched harness",
+      "Before → after": "40.9 → 48.6 accuracy",
+      "Conditions (benchmark/version, runs, budget, date)": "Mean of USPTO/S2D/Law classification; held-out tests; context 50.8k → 11.4k; v1 2026-03-30",
+      "Source [n] (location)": "[23] Table 2; §4.1"
+    },
+    "citations": [
+      "lee2026metaharness"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C03-N36",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "Meta-Harness coding discovery",
+      "Grade": "B",
+      "Fixed model(s)": "Claude Haiku 4.5",
+      "Harness change": "Leaderboard Goose comparator → searched harness",
+      "Before → after": "35.5% → 37.6%",
+      "Conditions (benchmark/version, runs, budget, date)": "TB2, same 89 tasks used for search and final evaluation; not controlled held-out comparison",
+      "Source [n] (location)": "[23] Table 7; §4.3"
+    },
+    "citations": [
+      "lee2026metaharness"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C03-N37",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "LangChain harness iteration",
+      "Grade": "C",
+      "Fixed model(s)": "`gpt-5.2-codex`",
+      "Harness change": "Default → tuned deepagents-cli",
+      "Before → after": "52.8% → 66.5%",
+      "Conditions (benchmark/version, runs, budget, date)": "TB2.0, 89 tasks; prompts/tools/middleware/reasoning allocation; n-runs/CI NR; 2026-02-17 report",
+      "Source [n] (location)": "[24] “Goal”; “Experiment Setup”"
+    },
+    "citations": [
+      "trivedy2026improving"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C03-N38",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "LangChain compute trade-off",
+      "Grade": "C",
+      "Fixed model(s)": "Same",
+      "Harness change": "xhigh-only → high-only",
+      "Before → after": "53.9% → 63.6%",
+      "Conditions (benchmark/version, runs, budget, date)": "TB2.0 timeout-constrained trials; not equal compute; final sandwich 66.5%",
+      "Source [n] (location)": "[24] “Choosing How Much Compute…”"
+    },
+    "citations": [
+      "trivedy2026improving"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": [],
+    "resolved": {
+      "Fixed model(s)": "Same (`gpt-5.2-codex`)"
+    }
+  },
+  {
+    "id": "C03-N39",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "Claw-SWE-Bench harness comparison",
+      "Grade": "B",
+      "Fixed model(s)": "Qwen 3.6-flash",
+      "Harness change": "GenericAgent → Hermes Agent",
+      "Before → after": "38.5% → 62.8%",
+      "Conditions (benchmark/version, runs, budget, date)": "350 issues; three runs; 3,600s; concurrency three; whole-system contrast; v2 2026-09-28",
+      "Source [n] (location)": "[30] Table 2; §§5–6"
+    },
+    "citations": [
+      "zheng2026clawswebench"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C03-N40",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "Claw adapter diagnostic",
+      "Grade": "B",
+      "Fixed model(s)": "GLM 5.1, OpenClaw",
+      "Harness change": "Bare → full adapter",
+      "Before → after": "19.3% → 71.2% resolved; 69.1% → <1.5% apply failures",
+      "Conditions (benchmark/version, runs, budget, date)": "350 issues, three runs; changes edit/submission contract, not isolated cognitive ability",
+      "Source [n] (location)": "[30] Table 1; §6.1"
+    },
+    "citations": [
+      "zheng2026clawswebench"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C03-N41",
+    "dossier": "03",
+    "kind": "number",
+    "text": {
+      "Study / Claim or metric": "MCP code-execution example",
+      "Grade": "C",
+      "Fixed model(s)": "Model NR",
+      "Harness change": "Eager direct tool context → on-demand code APIs",
+      "Before → after": "150,000 → 2,000 tokens",
+      "Conditions (benchmark/version, runs, budget, date)": "Architectural example; source reports 98.7% reduction; n/runs/CI and benchmark NR",
+      "Source [n] (location)": "[27] “Code execution… improves context efficiency”"
+    },
+    "citations": [
+      "anthropic2025code"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C04-T1",
+    "dossier": "04",
+    "kind": "takeaway",
+    "text": "A coding agent is more than its model: Claude Code itself describes the harness as the layer that supplies tools and manages the context the model sees. Problems in that layer should not be confused with problems in model serving. [11][13][40]",
+    "citations": [
+      "anthropicndclaude",
+      "bolin2026unrolling",
+      "mcallister2025postmortem"
+    ],
+    "grades": [
+      "B",
+      "C"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C04-T2",
+    "dossier": "04",
+    "kind": "takeaway",
+    "text": "Codex CLI is open-source under Apache 2.0, and its official configuration supports custom model providers and local Ollama or LM Studio. It would be inaccurate to describe every mainstream harness as closed or single-provider. [1][6]",
+    "citations": [
+      "openaindcodex",
+      "openaindadvanced"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C04-T3",
+    "dossier": "04",
+    "kind": "takeaway",
+    "text": "Claude Code is governed by Anthropic’s commercial or consumer terms, rather than an open-source license. Its current rules distinguish permitted use of the unmodified client from third-party developers collecting or routing Claude account credentials. [2][3]",
+    "citations": [
+      "anthropicpbcndclaude",
+      "anthropicndlegal"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C04-T4",
+    "dossier": "04",
+    "kind": "takeaway",
+    "text": "Subscription portability is not a simple banned-or-allowed story: Anthropic’s October 7 update explicitly says Agent SDK, noninteractive CLI, and third-party app usage can still draw from subscription limits, while separate legal documentation restricts credential intermediation. [3][4]",
+    "citations": [
+      "anthropicndlegal",
+      "anthropic2026use"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C04-T5",
+    "dossier": "04",
+    "kind": "takeaway",
+    "text": "Tool metadata can consume a substantial context budget: Anthropic documented a five-server example with 58 tools using approximately 55K tokens before conversation. But current Claude Code defers MCP tool definitions by default, so that old example is not its present-day default overhead. [11][15]",
+    "citations": [
+      "anthropicndclaude",
+      "anthropic2025introducing"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C04-T6",
+    "dossier": "04",
+    "kind": "takeaway",
+    "text": "Compaction is useful but not lossless: Anthropic warns that early conversational instructions may be lost. Claude Code provides context inspection and persistent project instructions, while Codex’s documented server-side compaction can retain an opaque encrypted representation. [11][13]",
+    "citations": [
+      "anthropicndclaude",
+      "bolin2026unrolling"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C04-T7",
+    "dossier": "04",
+    "kind": "takeaway",
+    "text": "Anthropic’s September 2025 quality postmortem identified three infrastructure bugs, not a deliberate reduction in model quality or a demonstrated Claude Code prompt regression. Changing the harness alone would not establish a fix for those serving failures. [40]",
+    "citations": [
+      "mcallister2025postmortem"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C04-T8",
+    "dossier": "04",
+    "kind": "takeaway",
+    "text": "Sandboxing is not a blanket protection around every integration: both vendors document boundaries around command execution, with separate controls or responsibilities for MCP and other connections. Claude Code’s local Bash sandbox is off by default in the documentation inspected. [24][25]",
+    "citations": [
+      "anthropicndconfigure",
+      "openaindagent"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C04-T9",
+    "dossier": "04",
+    "kind": "takeaway",
+    "text": "Security research also records improvement: a revised ToolLeak study reports successful attacks against older Claude Code configurations but zero successes in its ten-attempt cells for the tested newer Claude Code release. Neither result is a universal compromise rate or a guarantee of safety. [30]",
+    "citations": [
+      "xie2026redteaming"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C04-T10",
+    "dossier": "04",
+    "kind": "takeaway",
+    "text": "Early Claude Code pull requests were often useful: a peer-reviewed study found 475 of 567 were merged. However, 214 of those merged requests needed revisions, and the matched human baseline also commonly needed revision. [33]",
+    "citations": [
+      "watanabe2026use"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C04-T11",
+    "dossier": "04",
+    "kind": "takeaway",
+    "text": "“No subagents” and “no LSP” are obsolete blanket criticisms of Claude Code: it documents subagents and language-server plugins today. The real questions concern provider freedom, integration depth, deployment scope, and what works without additional setup. [11][21][22]",
+    "citations": [
+      "anthropicndclaude",
+      "anthropicndcode",
+      "anthropicndcreate"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C04-T12",
+    "dossier": "04",
+    "kind": "takeaway",
+    "text": "Benchmark success is not the same as an accepted, maintainable contribution: research on agent-authored pull requests finds CI failures, duplicated work, unwanted features, and absent reviewer engagement among rejection patterns. [34][35]",
+    "citations": [
+      "ehsani2026where",
+      "huang2026more"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C04-N1",
+    "dossier": "04",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "MCP definitions example",
+      "Value": "58 tools; approximately 55K tokens",
+      "Conditions (model, harness, benchmark/version, date)": "Five named MCP servers; Anthropic illustration, Nov 24, 2025; not current Claude Code default",
+      "Source [n] (location)": "[15], “Tool Search Tool — The challenge”",
+      "Grade": "C"
+    },
+    "citations": [
+      "anthropic2025introducing"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C04-N2",
+    "dossier": "04",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Tool-search context example",
+      "Value": "Approximately 77K → 8.7K tokens",
+      "Conditions (model, harness, benchmark/version, date)": "Separate 50+ tool illustration; no trial count/CI given",
+      "Source [n] (location)": "[15], “Our solution”",
+      "Grade": "C"
+    },
+    "citations": [
+      "anthropic2025introducing"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C04-N3",
+    "dossier": "04",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "MCP task accuracy",
+      "Value": "Opus 4: 49% → 74%; Opus 4.5: 79.5% → 88.1%",
+      "Conditions (model, harness, benchmark/version, date)": "Anthropic internal MCP evaluations; tool search enabled; no n/CI in section",
+      "Source [n] (location)": "[15], “Our solution”",
+      "Grade": "C"
+    },
+    "citations": [
+      "anthropic2025introducing"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C04-N4",
+    "dossier": "04",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Code-execution illustration",
+      "Value": "150,000 → 2,000 tokens; source states 98.7%",
+      "Conditions (model, harness, benchmark/version, date)": "Illustrative MCP discovery/orchestration pattern, Nov 4, 2025",
+      "Source [n] (location)": "[14], “Code execution with MCP improves context efficiency”",
+      "Grade": "C"
+    },
+    "citations": [
+      "anthropic2025code"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C04-N5",
+    "dossier": "04",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Worst-hour routing impact",
+      "Value": "16% of Sonnet 4 requests",
+      "Conditions (model, harness, benchmark/version, date)": "Aug 31, 2025; not average over incident and not all users",
+      "Source [n] (location)": "[40], issue 1",
+      "Grade": "B"
+    },
+    "citations": [
+      "mcallister2025postmortem"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C04-N6",
+    "dossier": "04",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Users with ≥1 misrouted message",
+      "Value": "Approximately 30%",
+      "Conditions (model, harness, benchmark/version, date)": "Claude Code users making requests during the stated incident period",
+      "Source [n] (location)": "[40], issue 1",
+      "Grade": "B"
+    },
+    "citations": [
+      "mcallister2025postmortem"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C04-N7",
+    "dossier": "04",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Claude limit expansion",
+      "Value": "Five-hour limits doubled",
+      "Conditions (model, harness, benchmark/version, date)": "Pro/Max/Team/seat-based Enterprise, effective May 6, 2026",
+      "Source [n] (location)": "[19], “Higher usage limits”",
+      "Grade": "C"
+    },
+    "citations": [
+      "anthropic2026higher"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C04-N8",
+    "dossier": "04",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "New monthly API credit",
+      "Value": "Max 5x $100; Max 20x $200",
+      "Conditions (model, harness, benchmark/version, date)": "Oct 7 update; claimed eligible accounts, non-rolling platform credit; separate from interactive plan limits, as of Oct 8",
+      "Source [n] (location)": "[4][5], plan table and exclusions",
+      "Grade": "C"
+    },
+    "citations": [
+      "anthropic2026use",
+      "anthropic2026monthly"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C04-N9",
+    "dossier": "04",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Codex Plus local-message estimate",
+      "Value": "Astra 5–45; Sol 6.1 15–160; Luna 350–3,000 / five hours",
+      "Conditions (model, harness, benchmark/version, date)": "GPT-6 Astra, GPT-6.1 Sol, GPT-6 Luna respectively; estimated not fixed; as of Oct 8, 2026",
+      "Source [n] (location)": "[20], usage FAQ table",
+      "Grade": "C"
+    },
+    "citations": [
+      "openaindpricing"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C04-N10",
+    "dossier": "04",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "ToolLeak command-invocation success",
+      "Value": "Old: 0.6/0.7; new: 0.0 in four displayed Claude-model cells",
+      "Conditions (model, harness, benchmark/version, date)": "Claude Code 2.0.37 versus 2.1.138; old Sonnet 4/4.5, new Sonnet 4/4.5/4.6 and Opus 4.7; ten attempts per cell, manuscript v6 Jun 28, 2026",
+      "Source [n] (location)": "[30], Tables 2 and 5, §6.4",
+      "Grade": "A venue; author-manuscript detail"
+    },
+    "citations": [
+      "xie2026redteaming"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C04-N11",
+    "dossier": "04",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Claude PR merge",
+      "Value": "475/567; publisher reports 83.8%",
+      "Conditions (model, harness, benchmark/version, date)": "Claude-marked Feb 24–Apr 30, 2025 PRs; matched observational cohort; exact model/client not controlled",
+      "Source [n] (location)": "[33], §3–4; ACM abstract",
+      "Grade": "A"
+    },
+    "citations": [
+      "watanabe2026use"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C04-N12",
+    "dossier": "04",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Revisions among merged Claude PRs",
+      "Value": "214/475; publisher reports 45.1%",
+      "Conditions (model, harness, benchmark/version, date)": "Denominator is merged PRs, not all submitted PRs",
+      "Source [n] (location)": "[33], §4.3",
+      "Grade": "A"
+    },
+    "citations": [
+      "watanabe2026use"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C04-N13",
+    "dossier": "04",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Human merge comparator",
+      "Value": "516/567",
+      "Conditions (model, harness, benchmark/version, date)": "Same-author/repository sample with backward-extended date window",
+      "Source [n] (location)": "[33], §3–4",
+      "Grade": "A"
+    },
+    "citations": [
+      "watanabe2026use"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C04-N14",
+    "dossier": "04",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Multi-agent-product PR merge",
+      "Value": "24,014/33,596; 71.48%",
+      "Conditions (model, harness, benchmark/version, date)": "AIDev-pop observational dataset; not randomized product comparison",
+      "Source [n] (location)": "[34], §3",
+      "Grade": "A"
+    },
+    "citations": [
+      "ehsani2026where"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C04-N15",
+    "dossier": "04",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Codex observed PR merge",
+      "Value": "18,004/21,799; 82.59%",
+      "Conditions (model, harness, benchmark/version, date)": "Same AIDev-pop study; product attribution, exact model/build uncontrolled",
+      "Source [n] (location)": "[34], §3",
+      "Grade": "A"
+    },
+    "citations": [
+      "ehsani2026where"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C04-N16",
+    "dossier": "04",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Selected rejected-PR patterns",
+      "Value": "228 abandoned; 142 duplicates; 99 CI/test failures",
+      "Conditions (model, harness, benchmark/version, date)": "562 accessible/categorized out of 600 sampled rejected PRs",
+      "Source [n] (location)": "[34], Table 2",
+      "Grade": "A"
+    },
+    "citations": [
+      "ehsani2026where"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C04-N17",
+    "dossier": "04",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Embedding-redundancy score",
+      "Value": "0.2867 agent vs 0.1532 human",
+      "Conditions (model, harness, benchmark/version, date)": "617 crewAI PRs; CodeSage-based Average Max Redundancy; p<0.001; not debt/defect count",
+      "Source [n] (location)": "[35], §2.1–2.2 and §3.1",
+      "Grade": "A"
+    },
+    "citations": [
+      "huang2026more"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C04-N18",
+    "dossier": "04",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Classified harness bug reports",
+      "Value": "3,864; 67.0% functional",
+      "Conditions (model, harness, benchmark/version, date)": "Closed reports by Dec 12, 2025; Claude Code/Codex/Gemini; accessible v1 tables",
+      "Source [n] (location)": "[36], Tables 1–2",
+      "Grade": "A venue; manuscript figures"
+    },
+    "citations": [
+      "zhang2026engineering"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C04-N19",
+    "dossier": "04",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Current benchmark leaders",
+      "Value": "Claude/Opus 5.5 64.8% ±3.1%; Codex/Astra 58.2% ±2.8%",
+      "Conditions (model, harness, benchmark/version, date)": "TB4.0; max effort; as of Oct 8, 2026; client builds/n not in inspected table; uncertainty reproduced as displayed",
+      "Source [n] (location)": "[38], rendered table rows 1 and 3",
+      "Grade": "D"
+    },
+    "citations": [
+      "terminalbenchteam2026terminalbench4"
+    ],
+    "grades": [
+      "D"
+    ],
+    "min_grade": "D",
+    "flags": [
+      "anecdotal"
+    ]
+  },
+  {
+    "id": "C04-N20",
+    "dossier": "04",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Current benchmark resource limit",
+      "Value": "Eight hours",
+      "Conditions (model, harness, benchmark/version, date)": "TB4.0 flat agent timeout; not each run’s duration",
+      "Source [n] (location)": "[39], “Calibrating resources”",
+      "Grade": "D"
+    },
+    "citations": [
+      "marten2026terminalbench4"
+    ],
+    "grades": [
+      "D"
+    ],
+    "min_grade": "D",
+    "flags": [
+      "anecdotal"
+    ]
+  },
+  {
+    "id": "C05-T1",
+    "dossier": "05",
+    "kind": "takeaway",
+    "text": "Mario Zechner built Pi because he wanted direct control over the model’s context, inspectable interactions, and a predictable tool—not because he wanted the longest feature list. His November 2025 explanation was: “if I don't need it, it won't be built.” [1]",
+    "citations": [
+      "zechner2025learned"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C05-T2",
+    "dossier": "05",
+    "kind": "takeaway",
+    "text": "Pi’s original recipe was four default tools—read, write, edit, and bash—with the system prompt and tool definitions together below 1,000 tokens. Those are the creator’s November 2025 figures, not a measurement of today’s configurable Pi installation. [1]",
+    "citations": [
+      "zechner2025learned"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C05-T3",
+    "dossier": "05",
+    "kind": "takeaway",
+    "text": "Pi’s philosophy evolved: despite its original rejection of built-in MCP, its September 29, 2026 release added MCP, tool search, and JavaScript codemode as built-in extensions. Historical descriptions of Pi as having “no MCP” are now out of date. [1][7][8]",
+    "citations": [
+      "zechner2025learned",
+      "picontributors2026codingagent",
+      "picontributors2026mcp"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C05-T4",
+    "dossier": "05",
+    "kind": "takeaway",
+    "text": "Oh-my-pi is explicitly a fork of Pi, led by Can Bölük and built by Stencil Labs. Where Pi emphasizes an extensible minimal harness, omp advertises an integrated coding environment with language servers, a debugger, hash-anchored editing, memory, and first-class subagents. [12][14][15][16][21]",
+    "citations": [
+      "stencillabsndohmypi",
+      "boluk2026can1357",
+      "stencillabsndabout",
+      "zechner2025mit-2",
+      "stencillabsndomp"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C05-T5",
+    "dossier": "05",
+    "kind": "takeaway",
+    "text": "Bölük’s central argument is that a model’s ability to solve a task can be obscured by the interface it must use to express a change. His hashline experiment changed the edit format rather than training new model weights—but its results are a creator-run editing benchmark, not proof of universal coding superiority. [18]",
+    "citations": [
+      "boluk2026improved"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C05-T6",
+    "dossier": "05",
+    "kind": "takeaway",
+    "text": "The “omp², soon!” banner has a documented meaning: a replacement architecture described in September 2026’s *The Harness Playbook*. The author explicitly distinguishes work already built from work still being designed. [21][22]",
+    "citations": [
+      "stencillabsndomp",
+      "boluk2026harness"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C05-T7",
+    "dossier": "05",
+    "kind": "takeaway",
+    "text": "Nous Research’s official release index dates Hermes Agent to February 25, 2026. Its ambition is “the agent that grows with you”: retaining useful facts, creating reusable skills, and carrying that knowledge across terminal and messaging interactions. [23][24][25][26][27]",
+    "citations": [
+      "nousresearch2026hermes-2",
+      "nousresearch2026hermes-3",
+      "nousresearch2025releases",
+      "nousresearch2026persistent",
+      "nousresearch2026skills"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C05-T8",
+    "dossier": "05",
+    "kind": "takeaway",
+    "text": "Hermes Agent is not another name for the Hermes language models. The agent is model-agnostic application software; Hermes 4 is a separately trained family of model weights from the same research organization. [24][25][31]",
+    "citations": [
+      "nousresearch2026hermes-3",
+      "nousresearch2025releases",
+      "teknium2025hermes"
+    ],
+    "grades": [
+      "B",
+      "C"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C05-T9",
+    "dossier": "05",
+    "kind": "takeaway",
+    "text": "OpenClaw connects this story to personal assistants: Peter Steinberger built an assistant that lives on the user’s devices and in their chats, and Pi’s own README presents OpenClaw as an integration example. Today’s OpenClaw documentation says its agent runtime is now OpenClaw-owned, while Pi’s terminal UI library remains a dependency. [4][32][35]",
+    "citations": [
+      "picontributors2026pi-2",
+      "steinberger2026openclaw",
+      "openclawcontributors2026agent-2"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C05-T10",
+    "dossier": "05",
+    "kind": "takeaway",
+    "text": "These are not four rungs on a single ladder. They emphasize different things—customization, integrated developer tooling, persistent learning, and personal-assistant connectivity—and all four publish their core repositories under the MIT license. [4][5][12][15][23][24][30][32][36]",
+    "citations": [
+      "picontributors2026pi-2",
+      "zechner2025mit",
+      "stencillabsndohmypi",
+      "stencillabsndabout",
+      "nousresearch2026hermes-2",
+      "nousresearch2026hermes-3",
+      "nousresearch2025mit",
+      "steinberger2026openclaw",
+      "openclawfoundation2026mit"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C05-N1",
+    "dossier": "05",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Pi original default tools",
+      "Value": "**4**",
+      "Conditions (model, harness, benchmark/version, date)": "`read`, `write`, `edit`, `bash`; creator’s November 2025 configuration, not all optional tools",
+      "Source [n] (location)": "[1], “Minimal toolset”",
+      "Grade": "C"
+    },
+    "citations": [
+      "zechner2025learned"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C05-N2",
+    "dossier": "05",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Pi original system+tool prompt",
+      "Value": "**Below 1,000 tokens**",
+      "Conditions (model, harness, benchmark/version, date)": "Creator-reported; November 2025; tokenizer and measurement harness not specified",
+      "Source [n] (location)": "[1], “Minimal toolset”",
+      "Grade": "C"
+    },
+    "citations": [
+      "zechner2025learned"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C05-N3",
+    "dossier": "05",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Earliest surviving Pi CLI npm publication",
+      "Value": "**0.6.2; 2025-11-12T22:44:35.139Z**",
+      "Conditions (model, harness, benchmark/version, date)": "Derived by UTC conversion of `1762987475139`, the earliest timestamp in the old-scope npm version list",
+      "Source [n] (location)": "[2], raw HTML `window.__context__.context.packument.versions`",
+      "Grade": "C"
+    },
+    "citations": [
+      "zechner2025mariozechner"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C05-N4",
+    "dossier": "05",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Pi Terminal-Bench mean",
+      "Value": "**0.4786516853932584**; screenshot **0.479**",
+      "Conditions (model, harness, benchmark/version, date)": "Pi + `claude-opus-4-5`, Terminal-Bench 2.0 per article, 2025-11-30–12-01; five trials/task; Pi version/CI not established",
+      "Source [n] (location)": "[1], “Benchmarks”; [10], `stats.evals...metrics[0].mean`; [11], “Mean”",
+      "Grade": "C"
+    },
+    "citations": [
+      "zechner2025learned",
+      "zechner2025terminalbench",
+      "zechner2025terminalbench-2"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C05-N5",
+    "dossier": "05",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Pi benchmark trial/error fields",
+      "Value": "**445 total; 428 named-eval trials; 71 errors**",
+      "Conditions (model, harness, benchmark/version, date)": "Same run; differing fields retained exactly, not silently reconciled",
+      "Source [n] (location)": "[10], `n_total_trials`, `stats.n_trials`, named eval `n_trials`, `n_errors`",
+      "Grade": "C"
+    },
+    "citations": [
+      "zechner2025terminalbench"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C05-N6",
+    "dossier": "05",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "omp repository creation",
+      "Value": "**2025-12-31T14:01:28Z**",
+      "Conditions (model, harness, benchmark/version, date)": "GitHub repository metadata, not an independent first-public-release record",
+      "Source [n] (location)": "[13], `created_at`",
+      "Grade": "C"
+    },
+    "citations": [
+      "github2026repository"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C05-N7",
+    "dossier": "05",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Hashline reported pass-rate change",
+      "Value": "**6.7% → 68.3%**",
+      "Conditions (model, harness, benchmark/version, date)": "Grok Code Fast 1, patch→hashline; React mutation/recovery editing benchmark, three runs×180 tasks; article dated 2026-02-12; no CI quoted",
+      "Source [n] (location)": "[18], “The Benchmark”",
+      "Grade": "C"
+    },
+    "citations": [
+      "boluk2026improved"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C05-N8",
+    "dossier": "05",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Hashline comparison scope",
+      "Value": "**16 models; 14/16 beat patch; v2 further improves 12/16**",
+      "Conditions (model, harness, benchmark/version, date)": "Current article caption; distinguish tested model count from “15 LLMs” headline",
+      "Source [n] (location)": "[18], opening chart caption",
+      "Grade": "C"
+    },
+    "citations": [
+      "boluk2026improved"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C05-N9",
+    "dossier": "05",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Current omp release",
+      "Value": "**18.8.6; 2026-10-08**",
+      "Conditions (model, harness, benchmark/version, date)": "GitHub release marked latest as of access date; local version supplied by user, not executed here",
+      "Source [n] (location)": "[19], release header; [20], version section",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompcontributors2026release",
+      "ompcontributors2026codingagent"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C05-N10",
+    "dossier": "05",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Hermes Agent official launch",
+      "Value": "**2026-02-25**",
+      "Conditions (model, harness, benchmark/version, date)": "Nous release catalogue’s AGENT entry",
+      "Source [n] (location)": "[25], “Hermes Agent”",
+      "Grade": "C"
+    },
+    "citations": [
+      "nousresearch2025releases"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C05-N11",
+    "dossier": "05",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Hermes bounded memory capacities",
+      "Value": "**2,200 characters; 1,375 characters**",
+      "Conditions (model, harness, benchmark/version, date)": "MEMORY.md and USER.md respectively, defaults in current guide as of 2026-10-08; not claims about total searchable history",
+      "Source [n] (location)": "[26], “How It Works”",
+      "Grade": "C"
+    },
+    "citations": [
+      "nousresearch2026persistent"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C05-N12",
+    "dossier": "05",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Hermes GitHub attention signals",
+      "Value": "**252,054 stars; 54,392 forks**",
+      "Conditions (model, harness, benchmark/version, date)": "Snapshot as of 2026-10-08; not users or benchmark performance",
+      "Source [n] (location)": "[24], repository metadata",
+      "Grade": "C"
+    },
+    "citations": [
+      "nousresearch2026hermes-3"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C05-N13",
+    "dossier": "05",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Hermes release-window activity",
+      "Value": "**2,106 merged PRs**",
+      "Conditions (model, harness, benchmark/version, date)": "v0.21.6 notes, window since v0.21.5, measured at `818c13be1dc4fd28987e1e881a9408224afd4535`; as of 2026-10-08",
+      "Source [n] (location)": "[38], “About this release”",
+      "Grade": "C"
+    },
+    "citations": [
+      "nousresearch2026hermes-4"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C05-N14",
+    "dossier": "05",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Pi releases marking philosophy changes",
+      "Value": "**0.99.0: 2026-09-29; 1.0.0: 2026-10-01; 1.1.0: 2026-10-07**",
+      "Conditions (model, harness, benchmark/version, date)": "MCP/codemode introduction; fullscreen default; latest listed release respectively, as of 2026-10-08",
+      "Source [n] (location)": "[7], corresponding version headings",
+      "Grade": "C"
+    },
+    "citations": [
+      "picontributors2026codingagent"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C06-T1",
+    "dossier": "06",
+    "kind": "takeaway",
+    "text": "DeepSeek Harness is not another language model. It is DeepSeek’s MIT-licensed agent runtime, built on Cordis so that even the agent loop, model adapter, tools, and session storage are replaceable plugins. [1][2][3]",
+    "citations": [
+      "deepseekai2026deepseek",
+      "deepseek2026mit",
+      "deepseekai2026deepseek-2"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C06-T2",
+    "dossier": "06",
+    "kind": "takeaway",
+    "text": "The research story has advanced beyond “train a model for one harness.” DeepSeek’s V4.1 report describes reinforcement learning across multiple Claude Code versions and across OpenCode, Pi, and DeepSeek Harness configurations. [13]",
+    "citations": [
+      "deepseekai2026deepseekv4"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C06-T3",
+    "dossier": "06",
+    "kind": "takeaway",
+    "text": "The same model does not get the same score in every harness. In DeepSeek’s controlled V4.1 comparison, the simplest DeepSeek Harness configuration scored above its Standard and programmatic-tool configurations on both reported coding benchmarks. [13]",
+    "citations": [
+      "deepseekai2026deepseekv4"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C06-T4",
+    "dossier": "06",
+    "kind": "takeaway",
+    "text": "That does not make DeepSeek Harness the universal winner: mini-SWE scored higher on DeepSWE, and an independent preprint found Hermes ahead of DeepSeek Harness with each of its three tested models. These are benchmark-specific results, not a ranking of every developer workflow. [13][24]",
+    "citations": [
+      "deepseekai2026deepseekv4",
+      "zheng2026clawswebench"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C06-T5",
+    "dossier": "06",
+    "kind": "takeaway",
+    "text": "Tool protocols and retained reasoning matter. DeepSeek-V3.2’s report warns that representing tool results as user messages can interfere with reasoning retention; MiniMax reports measurable losses when prior thinking is discarded. [11][21]",
+    "citations": [
+      "deepseekai2025deepseekv3",
+      "minimax2025interleaved"
+    ],
+    "grades": [
+      "B",
+      "C"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C06-T6",
+    "dossier": "06",
+    "kind": "takeaway",
+    "text": "“Everything is a plugin” has a real software-design paper behind it, but that paper is a preprint about composability—not a peer-reviewed demonstration that dsh writes better code. [3][5]",
+    "citations": [
+      "deepseekai2026deepseek-2",
+      "shi2026programming"
+    ],
+    "grades": [
+      "B",
+      "C"
+    ],
+    "min_grade": "B",
+    "flags": [
+      "scope-dependent-grade"
+    ]
+  },
+  {
+    "id": "C06-T7",
+    "dossier": "06",
+    "kind": "takeaway",
+    "text": "Peer-reviewed work already shows how closely training and the inference interface can interact: SWE-smith converts expert function calls into a different student format and uses a specific tool-output retention policy. [17]",
+    "citations": [
+      "yang2025swesmith"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C06-T8",
+    "dossier": "06",
+    "kind": "takeaway",
+    "text": "“Self-improving” can mean editing memories, skills, and instructions without changing model weights. Prime Agent explicitly uses that meaning—and reports a case where refinement preserved an exploit as a reusable skill. [25]",
+    "citations": [
+      "karten2026prime"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C06-T9",
+    "dossier": "06",
+    "kind": "takeaway",
+    "text": "Running in the background and surviving a crash are different capabilities. Prime Agent separates sessions from the UI, while Anthropic and Temporal describe durable execution boundaries and external event histories. [25][26][27]",
+    "citations": [
+      "karten2026prime",
+      "martin2026scaling",
+      "davis2026temporal"
+    ],
+    "grades": [
+      "B",
+      "C"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C06-T10",
+    "dossier": "06",
+    "kind": "takeaway",
+    "text": "ACP connects a user-facing client to an agent; A2A connects independent agentic applications. Neither protocol is a research result establishing the best internal multi-agent architecture. [28][30]",
+    "citations": [
+      "agentclientprotocolprojectndoverview",
+      "protocol2026agent2agent"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C06-T11",
+    "dossier": "06",
+    "kind": "takeaway",
+    "text": "omp² is more than an unexplained teaser: Stencil’s official architecture essay describes journal-derived session state, a trusted control plane, bounded execution, explicit compatibility, and multiple views of the same state—but labels the architecture partly built and partly still in progress. [32][33]",
+    "citations": [
+      "boluk2026harness",
+      "stencillabsndomp"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C06-N1",
+    "dossier": "06",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Same-model DSH Minimal versus Standard versus PTC",
+      "Value": "**72.6 / 70.5 / 67.6**",
+      "Conditions (model, harness, benchmark/version, date)": "DeepSeek-V4.1-Flash, effort 100, DeepSWE v1.1, N=8/task, Linux, 1M context, 500 rounds, T=1.0/top-p=.95; September 17, 2026 report. Standard/PTC custom build `0.1.1+custom.202609011522`; Minimal build unspecified.",
+      "Source [n] (location)": "[13] Table 4; Appendix B.1",
+      "Grade": "B"
+    },
+    "citations": [
+      "deepseekai2026deepseekv4"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C06-N2",
+    "dossier": "06",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Same three DSH configurations",
+      "Value": "**90.6 / 85.8 / 85.8**",
+      "Conditions (model, harness, benchmark/version, date)": "Same V4.1 checkpoint/settings; Terminal-Bench v2.1, N=3/task, no network. Not confidence-adjusted.",
+      "Source [n] (location)": "[13] Table 4",
+      "Grade": "B"
+    },
+    "citations": [
+      "deepseekai2026deepseekv4"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C06-N3",
+    "dossier": "06",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "mini-SWE comparison",
+      "Value": "**74.2 / 90.3**",
+      "Conditions (model, harness, benchmark/version, date)": "DeepSWE v1.1 / Terminal-Bench v2.1 respectively; same V4.1 settings; `mini_swe_v2` port of commit `04d809ceab9df28f9adaed044884180159172930`.",
+      "Source [n] (location)": "[13] Table 4; Appendix B.1",
+      "Grade": "B"
+    },
+    "citations": [
+      "deepseekai2026deepseekv4"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C06-N4",
+    "dossier": "06",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Independent DSH / Hermes point estimates",
+      "Value": "**76.5% / 81.7%**",
+      "Conditions (model, harness, benchmark/version, date)": "DeepSeek-V4.1-Flash via OpenRouter, Claw-SWE-Bench full-350, three runs, 3,600s/task, concurrency3; v2 September28, 2026; exact harness builds/CIs not given in opened paper.",
+      "Source [n] (location)": "[24] Table 2; §5; Appendix B",
+      "Grade": "B"
+    },
+    "citations": [
+      "zheng2026clawswebench"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C06-N5",
+    "dossier": "06",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Independent DSH / Hermes, another model",
+      "Value": "**69.1% / 73.1%**",
+      "Conditions (model, harness, benchmark/version, date)": "GLM5.1; same Claw full-350 protocol.",
+      "Source [n] (location)": "[24] Table 2",
+      "Grade": "B"
+    },
+    "citations": [
+      "zheng2026clawswebench"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C06-N6",
+    "dossier": "06",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Independent DSH / Hermes, another model",
+      "Value": "**56.8% / 62.8%**",
+      "Conditions (model, harness, benchmark/version, date)": "Qwen3.6-flash; same Claw full-350 protocol.",
+      "Source [n] (location)": "[24] Table 2",
+      "Grade": "B"
+    },
+    "citations": [
+      "zheng2026clawswebench"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C06-N7",
+    "dossier": "06",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "DSH Team versus single-agent at eight hours",
+      "Value": "**30.04% / 20.39% Almost@1**",
+      "Conditions (model, harness, benchmark/version, date)": "V4.1-Flash; ProgramBench172 golden tasks; up to3 rollouts/task,516 planned/configuration; score threshold≥.95; strongest observed configurations, preliminary and not equal-token/cost.",
+      "Source [n] (location)": "[13] §5.3.5/Figure10",
+      "Grade": "B"
+    },
+    "citations": [
+      "deepseekai2026deepseekv4"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C06-N8",
+    "dossier": "06",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Reasoning retention ablation",
+      "Value": "**69.4 versus 67.2**",
+      "Conditions (model, harness, benchmark/version, date)": "MiniMax-M2, SWE-bench Verified; retain versus discard prior thinking, November3,2025. Full harness versions/runs/CIs not supplied.",
+      "Source [n] (location)": "[21] “Why is Interleaved Thinking Important for M2?”",
+      "Grade": "C"
+    },
+    "citations": [
+      "minimax2025interleaved"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C06-N9",
+    "dossier": "06",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Retention on a tool benchmark",
+      "Value": "**87 versus 64**",
+      "Conditions (model, harness, benchmark/version, date)": "MiniMax-M2, Tau²; same vendor ablation; benchmark split not specified in post.",
+      "Source [n] (location)": "[21] Same section",
+      "Grade": "C"
+    },
+    "citations": [
+      "minimax2025interleaved"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C06-N10",
+    "dossier": "06",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "SWE-RL result with selection budget",
+      "Value": "**41.0%**",
+      "Conditions (model, harness, benchmark/version, date)": "Llama3-SWE-RL-70B, Agentless Mini, SWE-bench Verified;500 candidates/issue,30 reproduction tests,T=1.0,one selected final patch.",
+      "Source [n] (location)": "[16] §3.1/Table1",
+      "Grade": "A"
+    },
+    "citations": [
+      "wei2025swerl"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C06-N11",
+    "dossier": "06",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "SWE-smith-trained single attempt",
+      "Value": "**40.2%**",
+      "Conditions (model, harness, benchmark/version, date)": "SWE-agent-LM-32B/Qwen2.5-Coder-Instruct, SWE-agent, SWE-bench Verified,5,016 training trajectories,75-step cap,T=0.0.",
+      "Source [n] (location)": "[17] §§3–4/Table3",
+      "Grade": "A"
+    },
+    "citations": [
+      "yang2025swesmith"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C06-N12",
+    "dossier": "06",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "DeepSWE-Preview single / selected result",
+      "Value": "**42.2% / 59.0%**",
+      "Conditions (model, harness, benchmark/version, date)": "Qwen3-32B post-trained with RL; R2E-Gym; SWE-bench Verified. First is pass@1 averaged over16 runs,64K/100steps; second is hybrid best-of16.",
+      "Source [n] (location)": "[18] §§3–4/Figures10–11",
+      "Grade": "C"
+    },
+    "citations": [
+      "luo2025deepswe"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C06-N13",
+    "dossier": "06",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "V3.2 synthesized general environments",
+      "Value": "**1,827**",
+      "Conditions (model, harness, benchmark/version, date)": "Environment-synthesis pipeline, not number of prompts or tools; December2,2025 report.",
+      "Source [n] (location)": "[11] §3.2.3 “General Agent”",
+      "Grade": "B"
+    },
+    "citations": [
+      "deepseekai2025deepseekv3"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C06-N14",
+    "dossier": "06",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Long-running refinement case",
+      "Value": "**7 days;23.4M output tokens;24/196 technologies**",
+      "Conditions (model, harness, benchmark/version, date)": "Sonnet5, Prime Agent, Factorio; single reported trajectory, not average success.",
+      "Source [n] (location)": "[25] §3.5/Figure9",
+      "Grade": "B"
+    },
+    "citations": [
+      "karten2026prime"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C07-T1",
+    "dossier": "07",
+    "kind": "takeaway",
+    "text": "“Mixture-of-Agents” originally names a specific layered proposal-and-synthesis method, not every system with subagents. Wang and colleagues’ paper was published at ICLR 2025; its agents exchange generated answers through prompts rather than requiring autonomous tool-use loops. [1]",
+    "citations": [
+      "wang2025mixtureofagents"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C07-T2",
+    "dossier": "07",
+    "kind": "takeaway",
+    "text": "More inference can improve an answer without improving the underlying model: the original MoA study reported 65.1% on AlpacaEval 2.0 against GPT-4 Omni’s 57.5%. Those are historical, judge-based instruction-following results—not repository-repair success rates. [1]",
+    "citations": [
+      "wang2025mixtureofagents"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C07-T3",
+    "dossier": "07",
+    "kind": "takeaway",
+    "text": "Mixing model brands is not automatically better. Self-MoA found that repeatedly sampling the strongest proposer could outperform mixing six different proposers, while X-MAS found benefits from selecting models for specific roles and domains. [2][6]",
+    "citations": [
+      "li2026rethinking",
+      "ye2025xmas"
+    ],
+    "grades": [
+      "A",
+      "B"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C07-T4",
+    "dossier": "07",
+    "kind": "takeaway",
+    "text": "“More Agents Is All You Need” studies sampling and voting, not a swarm of programmers editing a shared repository. Its results support an ensemble baseline; they do not establish that adding autonomous collaborators always helps. [3]",
+    "citations": [
+      "li2024more"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C07-T5",
+    "dossier": "07",
+    "kind": "takeaway",
+    "text": "Debate can improve reasoning, but the baseline matters. An ICML study found gains from debate, while an ACL study found that a strongly prompted single model could nearly match the best discussion systems. [4][5]",
+    "citations": [
+      "du2024improving",
+      "wang2024rethinking"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C07-T6",
+    "dossier": "07",
+    "kind": "takeaway",
+    "text": "Anthropic reported a 90.2% improvement for an Opus 4 lead with Sonnet 4 research workers over a single Opus 4 on its internal research evaluation. It also reported that multi-agent systems used about 15 times the tokens of chat—not 15 times the tokens of a single agent. [9]",
+    "citations": [
+      "hadfield2025built"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C07-T7",
+    "dossier": "07",
+    "kind": "takeaway",
+    "text": "A useful coding division of labor can be a strong planner, cheaper repository scouts, a capable editor, and an evidence-seeking reviewer. HyperAgent provides an early measured example, but neither its model choices nor its agent count should be treated as a universal recipe. [19]",
+    "citations": [
+      "phan2025hyperagent"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C07-T8",
+    "dossier": "07",
+    "kind": "takeaway",
+    "text": "Cognition’s position changed: its June 2025 warning about multi-agents was followed in April 2026 by support for clean-context review and advisory agents around a single writer. Quoting only “Don’t Build Multi-Agents” would misrepresent its current position. [10][11]",
+    "citations": [
+      "yan2025don",
+      "yan2026multiagents"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C07-T9",
+    "dossier": "07",
+    "kind": "takeaway",
+    "text": "An LLM’s approval is not proof that code works. Peer-reviewed studies identify self-preference and superficial code-evaluation biases, while Agent-as-a-Judge shows the value of letting evaluators inspect actual artifacts and requirements. [12][17][18]",
+    "citations": [
+      "panickssery2024llm",
+      "zhuge2025agentasajudge",
+      "moon2026don"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C07-T10",
+    "dossier": "07",
+    "kind": "takeaway",
+    "text": "The most defensible recommendation is conditional: parallelize separable work, keep ownership and handoffs explicit, verify the integrated result, and measure whether the extra coordination pays for itself. That is a synthesis of the evidence, not a claim that one architecture has won. [7][8][9][11][19]",
+    "citations": [
+      "cemri2025do",
+      "kim2026towards",
+      "hadfield2025built",
+      "yan2026multiagents",
+      "phan2025hyperagent"
+    ],
+    "grades": [
+      "A",
+      "B",
+      "C"
+    ],
+    "min_grade": "A",
+    "flags": [
+      "scope-dependent-grade"
+    ]
+  },
+  {
+    "id": "C07-N1",
+    "dossier": "07",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Original MoA LC win rate",
+      "Value": "**65.1% ± 0.6** versus GPT-4 Omni **57.5%**",
+      "Conditions (model, harness, benchmark/version, date)": "Six historical open-model proposers; three layers; Qwen1.5-110B aggregator; AlpacaEval 2.0, 805 prompts; three runs, SD; GPT-4 Omni 05/13 comparator; ICLR 2025 report, not current rank",
+      "Source [n] (location)": "[1] Table 2, §§3.1–3.2",
+      "Grade": "A"
+    },
+    "citations": [
+      "wang2025mixtureofagents"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C07-N2",
+    "dossier": "07",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Self-MoA improvement",
+      "Value": "**65.7 vs 59.1**, **6.6 points**",
+      "Conditions (model, harness, benchmark/version, date)": "Two layers; six WizardLM-2-8x22B samples vs mixed proposers; Qwen1.5-110B aggregator in both; AlpacaEval 2.0; arXiv v1 2025-02-02 / TMLR accepted 2026; CI not shown",
+      "Source [n] (location)": "[2] Table 1",
+      "Grade": "A"
+    },
+    "citations": [
+      "li2026rethinking"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C07-N3",
+    "dossier": "07",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Agent Forest GSM8K",
+      "Value": "**0.73 ± 2e-2 → 0.85 ± 3e-3**",
+      "Conditions (model, harness, benchmark/version, date)": "GPT-3.5-Turbo; one sample vs 40; 10 independent runs; standard error; TMLR 2024",
+      "Source [n] (location)": "[3] Table 2, §4",
+      "Grade": "A"
+    },
+    "citations": [
+      "li2024more"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C07-N4",
+    "dossier": "07",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Anthropic research improvement",
+      "Value": "**90.2%**",
+      "Conditions (model, harness, benchmark/version, date)": "Opus 4 lead + Sonnet 4 subagents vs Opus 4; internal research eval, 2025-06-13; exact metric/sample/CI undisclosed",
+      "Source [n] (location)": "[9] “Benefits of a multi-agent system”",
+      "Grade": "C"
+    },
+    "citations": [
+      "hadfield2025built"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C07-N5",
+    "dossier": "07",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Anthropic token multipliers",
+      "Value": "Agents **about 4×**; MAS **about 15×**",
+      "Conditions (model, harness, benchmark/version, date)": "Both relative to **chat interactions**, first-party operational data; not benchmark-normalized same-task costs",
+      "Source [n] (location)": "[9] “Benefits”",
+      "Grade": "C"
+    },
+    "citations": [
+      "hadfield2025built"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C07-N6",
+    "dossier": "07",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Scaling-study range",
+      "Value": "**+80.8% to −70.0% relative**",
+      "Conditions (model, harness, benchmark/version, date)": "Finance-Agent centralized vs PlanCraft independent relative to single-agent baselines; v3 2026-04-08; reported study-wide 260 configurations",
+      "Source [n] (location)": "[8] Abstract, §4.2",
+      "Grade": "B"
+    },
+    "citations": [
+      "kim2026towards"
+    ],
+    "grades": [
+      "B",
+      "C"
+    ],
+    "min_grade": "B",
+    "flags": [
+      "scope-dependent-grade"
+    ]
+  },
+  {
+    "id": "C07-N7",
+    "dossier": "07",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Scaling-study coding uncertainty",
+      "Value": "**20 tasks** per coding benchmark; typical CI **±20 pp**",
+      "Conditions (model, harness, benchmark/version, date)": "SWE-bench Verified deterministic seed-42 subset; first 20 of the 86-instance Terminal-Bench; 10,000 bootstrap resamples; not full leaderboard evaluation",
+      "Source [n] (location)": "[8] §5, Appendix D, Table 16",
+      "Grade": "B"
+    },
+    "citations": [
+      "kim2026towards"
+    ],
+    "grades": [
+      "B",
+      "C"
+    ],
+    "min_grade": "B",
+    "flags": [
+      "scope-dependent-grade"
+    ]
+  },
+  {
+    "id": "C07-N8",
+    "dossier": "07",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "HyperAgent model-role trade-off",
+      "Value": "Full **33.00% / $1.82 / 320 s**; Lite **30.20% / $0.45 / 106 s**",
+      "Conditions (model, harness, benchmark/version, date)": "SWE-bench Verified 500 tasks; Claude-3-Sonnet all roles vs Sonnet planner/editor + Haiku navigator/executor; report v3 2025-09-05; average time/cost not split-specific in table",
+      "Source [n] (location)": "[19] Tables 1 and 7",
+      "Grade": "B"
+    },
+    "citations": [
+      "phan2025hyperagent"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C07-N9",
+    "dossier": "07",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Advisor quality and cost",
+      "Value": "**+2.7 pp**, **−11.9%**",
+      "Conditions (model, harness, benchmark/version, date)": "Sonnet 4.6 + Opus 4.6 vs Sonnet 4.6; SWE-bench Multilingual; five trials × 300 tasks; prompt/thinking differ; 2026-04-09",
+      "Source [n] (location)": "[21] Main text, footnote 1",
+      "Grade": "C"
+    },
+    "citations": [
+      "anthropic2026advisor"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C07-N10",
+    "dossier": "07",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "RouteLLM estimated saving ratio",
+      "Value": "**3.66** at **95% GPT-4 quality**",
+      "Conditions (model, harness, benchmark/version, date)": "MT-Bench; gpt-4-1106-preview / Mixtral-8x7B; estimated historical token prices $24.7/M vs $0.24/M; CPT(50%) point, which is half the weak-to-strong performance gap, not half of GPT-4’s absolute score",
+      "Source [n] (location)": "[15] Tables 1 and 6, §5.4",
+      "Grade": "A"
+    },
+    "citations": [
+      "ong2025routellm"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C07-N11",
+    "dossier": "07",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "FrugalGPT historical HEADLINES saving",
+      "Value": "**98.3%**, **$33.1 → $0.6**",
+      "Conditions (model, harness, benchmark/version, date)": "Four-way classification; matched GPT-4 accuracy; three-model maximum cascade; 50/50 train/test; 2023 API evaluation in later TMLR-labelled PDF; not coding/API prices as of 2026-10-08",
+      "Source [n] (location)": "[16] §5, Table 2",
+      "Grade": "B*"
+    },
+    "citations": [
+      "chen2024frugalgpt"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C07-N12",
+    "dossier": "07",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Agent judge alignment",
+      "Value": "**90.44% vs 60.38%**",
+      "Conditions (model, harness, benchmark/version, date)": "OpenHands artifacts; black-box DevAI evaluation; 365 requirements; comparison with human consensus; ICML 2025",
+      "Source [n] (location)": "[17] Table 3, §4.2",
+      "Grade": "A"
+    },
+    "citations": [
+      "zhuge2025agentasajudge"
+    ],
+    "grades": [
+      "A"
+    ],
+    "min_grade": "A",
+    "flags": []
+  },
+  {
+    "id": "C07-N13",
+    "dossier": "07",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "DeepSeek team coding result",
+      "Value": "**30.04% vs 20.39%**",
+      "Conditions (model, harness, benchmark/version, date)": "V4.1-Flash + DeepSeek Harness; ProgramBench golden subset, 172 tasks, up to three rollouts/task (516 planned/configuration); Almost@1 threshold ≥0.95; 8 h deadline; 2026-09-17 report",
+      "Source [n] (location)": "[23] §5.3.5, Figure 10",
+      "Grade": "B"
+    },
+    "citations": [
+      "deepseekai2026deepseekv4"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C08-T1",
+    "dossier": "08",
+    "kind": "takeaway",
+    "text": "OMP puts language-server navigation, diagnostics and refactoring, plus a real Debug Adapter Protocol debugger, inside the agent's tool surface. Those integrations are enabled by default, but they still need suitable language servers and debugger adapters installed. [11][12][13]",
+    "citations": [
+      "ompdocs-tools-lsp",
+      "ompdocs-lsp-config",
+      "ompdocs-tools-debug"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C08-T2",
+    "dossier": "08",
+    "kind": "takeaway",
+    "text": "Hashline gives an edit an address: a file snapshot tag plus original line numbers or syntax-block anchors. In the current format, the model copies a four-hex-digit file tag instead of repeating the old code verbatim. [4]",
+    "citations": [
+      "ompdocs-tools-edit"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C08-T3",
+    "dossier": "08",
+    "kind": "takeaway",
+    "text": "OMP's creator reported Grok Code Fast 1 improving from 6.7% to 68.3% in a synthetic React mutation-repair experiment when the edit format changed. That is a first-party benchmark of a particular task and historical format—not proof that current OMP makes every coding model ten times better. [5]",
+    "citations": [
+      "boluk2026improved"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C08-T4",
+    "dossier": "08",
+    "kind": "takeaway",
+    "text": "Search has several distinct jobs here: glob finds filenames, grep finds text, AST grep finds syntax, and find uses model judgments to locate an implementation from a description. Semantic find can make network requests and is not the same tool as the Unix find command. [7][8][9][14]",
+    "citations": [
+      "ompdocs-tools-grep",
+      "ompdocs-tools-glob",
+      "ompdocs-tools-find",
+      "ompdocs-tools-ast-grep"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C08-T5",
+    "dossier": "08",
+    "kind": "takeaway",
+    "text": "Python and JavaScript evaluation keep state between cells; Python uses a retained subprocess, not a Jupyter server. Notebook files can be edited as marked-up cells, but that editing path does not execute the notebook or refresh its saved outputs. [18][19][20]",
+    "citations": [
+      "ompdocs-tools-eval",
+      "ompdocs-python-repl",
+      "ompdocs-notebook-tool-runtime"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C08-T6",
+    "dossier": "08",
+    "kind": "takeaway",
+    "text": "Browser automation and computer use are different interfaces: the browser exposes web-page and tab APIs, while computer use exposes native windows, screenshots, input and accessibility. Both are Eval preludes, not standalone agent tools. [21][22]",
+    "citations": [
+      "ompdocs-tools-browser",
+      "ompdocs-tools-computer"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C08-T7",
+    "dossier": "08",
+    "kind": "takeaway",
+    "text": "Checkpoint and rewind compress an investigation into a retained report. They rewind conversation context, not files, Git commits, processes or the desktop. [30][31]",
+    "citations": [
+      "ompdocs-tools-checkpoint",
+      "ompdocs-tools-rewind"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C08-T8",
+    "dossier": "08",
+    "kind": "takeaway",
+    "text": "OMP has a real Rust native layer for search, structural editing, shell and platform services, but the whole application is not written in Rust. Its documented native targets include both Windows x64 and Windows ARM64. [38][39]",
+    "citations": [
+      "ompdocs-natives-architecture",
+      "ompdocs-natives-shell-pty-process"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C08-T9",
+    "dossier": "08",
+    "kind": "takeaway",
+    "text": "Approval is not a sandbox: OMP defaults to yolo approval, and approved shell or Eval code retains broad host access. For comparison, Codex documents an OS-enforced local sandbox and separate approval policy; fewer prompts should not be presented as inherently safer. [35][17][44]",
+    "citations": [
+      "ompdocs-approval-mode",
+      "ompdocs-bash-tool-runtime",
+      "openaindagent"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C08-T10",
+    "dossier": "08",
+    "kind": "takeaway",
+    "text": "Several impressive integrations are opt-in: computer use, GitHub, security scans, image generation, speech-file generation and checkpoint/rewind are disabled by default. A feature inventory is not a promise that all of them run immediately after installation. [22][24][26][27][28][30]",
+    "citations": [
+      "ompdocs-tools-computer",
+      "ompdocs-tools-github",
+      "ompdocs-tools-security-scan",
+      "ompdocs-tools-generate-image",
+      "ompdocs-tools-tts",
+      "ompdocs-tools-checkpoint"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C08-N1",
+    "dossier": "08",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Historical mutation-repair pass rate",
+      "Value": "6.7% → 68.3%",
+      "Conditions (model, harness, benchmark/version, date)": "Grok Code Fast 1; patch vs historical hashline; synthetic React repairs, 180 tasks × 3 runs, fresh sessions; article dated 2026-02-12, accessed 2026-10-08; exact model revision/harness commit/CI not provided",
+      "Source [n] (location)": "[5], “The Benchmark”",
+      "Grade": "C"
+    },
+    "citations": [
+      "boluk2026improved"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C08-N2",
+    "dossier": "08",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Historical output-token reduction",
+      "Value": "61%",
+      "Conditions (model, harness, benchmark/version, date)": "Grok 4 Fast, historical edit-format experiment; same reported benchmark design; exact denominator/raw run reports not recovered",
+      "Source [n] (location)": "[5], “The Benchmark”",
+      "Grade": "C"
+    },
+    "citations": [
+      "boluk2026improved"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C08-N3",
+    "dossier": "08",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Article's cross-model comparison",
+      "Value": "Hashline beats patch in 14/16; v2 improves further in 12/16",
+      "Conditions (model, harness, benchmark/version, date)": "Article's top chart caption, accessed 2026-10-08; no inference that every model improves or that this is 18.8.6",
+      "Source [n] (location)": "[5], opening caption",
+      "Grade": "C"
+    },
+    "citations": [
+      "boluk2026improved"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C08-N4",
+    "dossier": "08",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Current snapshot tag",
+      "Value": "Four uppercase hexadecimal characters",
+      "Conditions (model, harness, benchmark/version, date)": "Installed bundled edit docs; file snapshot, not per-line two-character hash",
+      "Source [n] (location)": "[4], “Input,” “Limits and validation”",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-tools-edit"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C08-N5",
+    "dossier": "08",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Glob visible cap / timeout",
+      "Value": "200 paths / 5000 ms",
+      "Conditions (model, harness, benchmark/version, date)": "Built-in local tool defaults/maximum; partial scans flagged",
+      "Source [n] (location)": "[8], “Limits & Caps”",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-tools-glob"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C08-N6",
+    "dossier": "08",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Native oversized-file grep window",
+      "Value": "Leading 4 MiB",
+      "Conditions (model, harness, benchmark/version, date)": "Native grep single-file/deferred prefix search, not guaranteed whole-file coverage",
+      "Source [n] (location)": "[10], “Execution branches,” “Search/collection semantics”",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-natives-text-search-pipeline"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C08-N7",
+    "dossier": "08",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Semantic find scope/caps",
+      "Value": "128 filename candidates; 20 files read; 40 passages verified",
+      "Conditions (model, harness, benchmark/version, date)": "Documented cascade, not a measured retrieval benchmark; model-judged",
+      "Source [n] (location)": "[9], “Limits & Caps”",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-tools-find"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C08-N8",
+    "dossier": "08",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Finite Bash timeout",
+      "Value": "300 s default; 0 disables",
+      "Conditions (model, harness, benchmark/version, date)": "Async preserves deadline; named services use readiness timeout instead",
+      "Source [n] (location)": "[16], “Inputs”",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-tools-bash"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C08-N9",
+    "dossier": "08",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Eval timeout",
+      "Value": "30 s default; 0 disables",
+      "Conditions (model, harness, benchmark/version, date)": "Active-runtime window; specified host waits pause/reset window, not simple whole-call wall time",
+      "Source [n] (location)": "[18], “Inputs,” “Execution flow”",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-tools-eval"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C08-N10",
+    "dossier": "08",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "DAP session shape",
+      "Value": "One root session tree",
+      "Conditions (model, harness, benchmark/version, date)": "Adapter-created children allowed; not one arbitrary independent root per tool call",
+      "Source [n] (location)": "[13], “Flow,” “Limits & Caps”",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-tools-debug"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C08-N11",
+    "dossier": "08",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "TTS input cap",
+      "Value": "1–15,000 JavaScript string characters",
+      "Conditions (model, harness, benchmark/version, date)": "All tool backends; local Kokoro output WAV/PCM16",
+      "Source [n] (location)": "[28], “Inputs,” “Limits & Caps”",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-tools-tts"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C08-N12",
+    "dossier": "08",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Supported native platform tags",
+      "Value": "linux-x64, linux-arm64, darwin-x64, darwin-arm64, win32-x64, win32-arm64",
+      "Conditions (model, harness, benchmark/version, date)": "Loader target list as of 2026-10-08; not six executed platform tests",
+      "Source [n] (location)": "[38], “Loader and distribution”",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-natives-architecture"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C09-T1",
+    "dossier": "09",
+    "kind": "takeaway",
+    "text": "“omp separates project instructions, always-carried rules, on-demand skills, and cross-session memory. They are different mechanisms, not four names for the same context.” [2][5][12]",
+    "citations": [
+      "ompdocs-context-files",
+      "ompdocs-memory",
+      "ompdocs-skills"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C09-T2",
+    "dossier": "09",
+    "kind": "takeaway",
+    "text": "“Time Traveling Stream Rules can detect a pattern in streamed output, interrupt the attempt, inject a corrective rule, and retry. That is a specific runtime mechanism—not a promise that every mistake is prevented.” [4]",
+    "citations": [
+      "ompdocs-ttsr-injection-lifecycle"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C09-T3",
+    "dossier": "09",
+    "kind": "takeaway",
+    "text": "“Snapcompact can render older conversation text into images locally, instead of asking a language model to summarize it. The next model must support vision, and the archive still has truncation and size limits.” [6]",
+    "citations": [
+      "ompdocs-compaction"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C09-T4",
+    "dossier": "09",
+    "kind": "takeaway",
+    "text": "“Long-term memory is opt-in. You can choose file-backed local summaries, remote Hindsight, local Mnemopi databases, or the documented Sharpshooter decision-file mode.” [5]",
+    "citations": [
+      "ompdocs-memory"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C09-T5",
+    "dossier": "09",
+    "kind": "takeaway",
+    "text": "“Mnemopi's database is local, but its default memory-processing route can use an online model. Local storage and fully offline inference are different promises.” [8][10]",
+    "citations": [
+      "ompdocs-mnemosyne-memory-backend",
+      "ompdocs-providers"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C09-T6",
+    "dossier": "09",
+    "kind": "takeaway",
+    "text": "“The session is a tree: you can revisit a point without deleting the other branch. Forking is a separate operation that creates a new session identity.” [9][11][30]",
+    "citations": [
+      "ompdocs-session-operations-export-share-fork-resume",
+      "ompdocs-tree",
+      "ompdocs-session"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C09-T7",
+    "dossier": "09",
+    "kind": "takeaway",
+    "text": "“Prewalk is a one-shot model handoff: one model starts the work, then another continues after an eligible edit or write. It is off by default.” [7]",
+    "citations": [
+      "ompdocs-prewalk"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C09-T8",
+    "dossier": "09",
+    "kind": "takeaway",
+    "text": "“Skills supply instructions; tools execute functions; extensions register tools and intercept lifecycle events. Today's hook files normally run through that same extension runtime.” [12][13][14][18]",
+    "citations": [
+      "ompdocs-skills",
+      "ompdocs-hooks",
+      "ompdocs-extensions",
+      "ompdocs-mcp-config"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C09-T9",
+    "dossier": "09",
+    "kind": "takeaway",
+    "text": "“omp is not tied to one model company: its registry combines bundled providers, custom endpoints, local-engine discovery, and extension-registered providers. But provider flexibility is not unique to omp—Codex also documents custom and local providers.” [10][35]",
+    "citations": [
+      "ompdocs-providers",
+      "openaindconfiguration"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C09-T10",
+    "dossier": "09",
+    "kind": "takeaway",
+    "text": "“Secret obfuscation is disabled by default, and enabling it does not redact every surface. HTML exports can contain raw context, so never record or share a real working session casually.” [23][9]",
+    "citations": [
+      "ompdocs-secrets",
+      "ompdocs-session-operations-export-share-fork-resume"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C09-N1",
+    "dossier": "09",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Provider table count",
+      "Value": "79 distinct IDs, manually counted",
+      "Conditions (model, harness, benchmark/version, date)": "Opened provider credential tables, as of 2026-10-08; 14 + 65, grouped rows split; not exhaustive support total",
+      "Source [n] (location)": "[10] Core / Additional hosted tables",
+      "Grade": "C, researcher count"
+    },
+    "citations": [
+      "ompdocs-providers"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C09-N2",
+    "dossier": "09",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "README provider headline",
+      "Value": "“60+”",
+      "Conditions (model, harness, benchmark/version, date)": "`main` README as of 2026-10-08; lower-bound marketing count",
+      "Source [n] (location)": "[33] introduction",
+      "Grade": "C"
+    },
+    "citations": [
+      "stencillabsndohmypi-2"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C09-N3",
+    "dossier": "09",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Memory backend modes",
+      "Value": "5 including off",
+      "Conditions (model, harness, benchmark/version, date)": "off/local/hindsight/mnemopi/sharpshooter, documentation as of 2026-10-08",
+      "Source [n] (location)": "[5] opening table",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-memory"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C09-N4",
+    "dossier": "09",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Hindsight / Mnemopi default retention cadence",
+      "Value": "3 / 4 user turns",
+      "Conditions (model, harness, benchmark/version, date)": "Only after selecting corresponding backend; not durability guarantees",
+      "Source [n] (location)": "[5] Hindsight; [8] settings",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-memory",
+      "ompdocs-mnemosyne-memory-backend"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C09-N5",
+    "dossier": "09",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Local memory injection cap",
+      "Value": "5000 approximate tokens",
+      "Conditions (model, harness, benchmark/version, date)": "Summary and learned lessons share budget",
+      "Source [n] (location)": "[5] configuration",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-memory"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C09-N6",
+    "dossier": "09",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Mnemopi recall preview cap",
+      "Value": "500 characters",
+      "Conditions (model, harness, benchmark/version, date)": "Explicit recall uses default preview; full row separate",
+      "Source [n] (location)": "[28] outputs",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-tools-recall"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C09-N7",
+    "dossier": "09",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Managed skill limit",
+      "Value": "64,000 UTF-8 bytes",
+      "Conditions (model, harness, benchmark/version, date)": "Includes generated frontmatter",
+      "Source [n] (location)": "[21] limits",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-tools-manage-skill"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C09-N8",
+    "dossier": "09",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Snapcompact frame bound",
+      "Value": "80 frames",
+      "Conditions (model, harness, benchmark/version, date)": "Upper bound; context/provider/3,000,000-byte budgets can reduce it",
+      "Source [n] (location)": "[6] Snapcompact method",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-compaction"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C09-N9",
+    "dossier": "09",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Snapcompact tool-result cap",
+      "Value": "2,000 characters",
+      "Conditions (model, harness, benchmark/version, date)": "Default per serialized result; head ratio 0.6",
+      "Source [n] (location)": "[6] Snapcompact method",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-compaction"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C09-N10",
+    "dossier": "09",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Recent history retained",
+      "Value": "20,000 tokens",
+      "Conditions (model, harness, benchmark/version, date)": "`compaction.keepRecentTokens` default",
+      "Source [n] (location)": "[6] Settings and defaults",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-compaction"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C09-N11",
+    "dossier": "09",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "TTSR repeat gap",
+      "Value": "10 completed turns",
+      "Conditions (model, harness, benchmark/version, date)": "Only relevant to after-gap; default repeat mode is once",
+      "Source [n] (location)": "[4] settings/repeat policy",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-ttsr-injection-lifecycle"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C09-N12",
+    "dossier": "09",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "MCP initial gate",
+      "Value": "250 ms",
+      "Conditions (model, harness, benchmark/version, date)": "Deferred/later tool discovery; not a connection-speed benchmark",
+      "Source [n] (location)": "[36] Fast startup gate",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-mcp-runtime-lifecycle"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C09-N13",
+    "dossier": "09",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Default MCP request deadline",
+      "Value": "30,000 ms",
+      "Conditions (model, harness, benchmark/version, date)": "Env/per-server override; zero disables",
+      "Source [n] (location)": "[37] server fields",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-mcp-server-tool-authoring"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C09-N14",
+    "dossier": "09",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Local title benchmark",
+      "Value": "LFM2.5-230M warm mean / p95: 93 / 194 ms; 3–7 words: 21/28",
+      "Conditions (model, harness, benchmark/version, date)": "Doc calls test 30 recent first-session prompts, q4 CPU, no examples; row denominator differs; hardware/date/CI not specified for this table",
+      "Source [n] (location)": "[43] Task 1 replacement benchmark",
+      "Grade": "C, first-party experiment"
+    },
+    "citations": [
+      "ompdocs-local-models"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C09-N15",
+    "dossier": "09",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Local title alternatives",
+      "Value": "Falcon-H1-Tiny-90M 117 / 174 ms, 17/29; LFM2.5-350M 166 / 266 ms, 4/30",
+      "Conditions (model, harness, benchmark/version, date)": "Same table conditions; do not hide denominator discrepancies",
+      "Source [n] (location)": "[43] Task 1 replacement benchmark",
+      "Grade": "C, first-party experiment"
+    },
+    "citations": [
+      "ompdocs-local-models"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C09-N16",
+    "dossier": "09",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Local memory prompt experiment",
+      "Value": "Qwen2.5-1.5B extraction F1 0.52 → 0.83, 1 → 3 shots",
+      "Conditions (model, harness, benchmark/version, date)": "q4 CPU memory-task experiments; evaluation definition/date/CI not fully given",
+      "Source [n] (location)": "[43] Technique polarity flips",
+      "Grade": "C, first-party experiment"
+    },
+    "citations": [
+      "ompdocs-local-models"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C10-T1",
+    "dossier": "10",
+    "kind": "takeaway",
+    "text": "“omp can delegate work to named specialist agents, run a batch in the background, and bring each result back into the main conversation. The child starts without the parent's conversation history, so a clear assignment and shared context matter.” [5]",
+    "citations": [
+      "ompdocs-tools-task"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C10-T2",
+    "dossier": "10",
+    "kind": "takeaway",
+    "text": "“The stock agent roster contains five types: scout, reviewer, security-reviewer, task, and sonic. Extra specialists can come from project files, user definitions, extensions, or supported plugin packages.” [6][23]",
+    "citations": [
+      "ompdocs-task-agent-discovery",
+      "ohmypimaintainers2026bundled-3"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C10-T3",
+    "dossier": "10",
+    "kind": "takeaway",
+    "text": "“Model roles separate the job from the model: you can change the model behind a reviewer or worker without rewriting the agent's instructions. omp has fifteen built-in roles, and you can define additional chat roles.” [6][7]",
+    "citations": [
+      "ompdocs-task-agent-discovery",
+      "ompdocs-models"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C10-T4",
+    "dossier": "10",
+    "kind": "takeaway",
+    "text": "“A second model can review the first as it works. An advisor can inspect source and send concerns or blockers, but it is not an approval authority—and its default investigative tools are read-only.” [12]",
+    "citations": [
+      "ompdocs-advisor-watchdog"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C10-T5",
+    "dossier": "10",
+    "kind": "takeaway",
+    "text": "“Agent Hub makes the team visible: you can inspect a worker's transcript, see its model and usage, steer it, and revive it after it has been parked.” [13]",
+    "citations": [
+      "ompdocs-agent-hub"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C10-T6",
+    "dossier": "10",
+    "kind": "takeaway",
+    "text": "“omp's eval tool exposes both real subagents and lightweight model calls. A completion has no tools or history; a workpool reuses workers; a judge returns typed assessments.” [9][10][11]",
+    "citations": [
+      "ompdocs-tools-eval",
+      "ohmypimaintainers2026eval",
+      "ohmypimaintainers2026eval-2"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C10-T7",
+    "dossier": "10",
+    "kind": "takeaway",
+    "text": "“Workspace isolation is an integration feature, not a promise that all agent actions are harmless. omp's default approval mode is yolo, and headless task agents are explicitly put in that mode; explicit tool restrictions still matter.” [5][21]",
+    "citations": [
+      "ompdocs-tools-task",
+      "ompdocs-approval-mode"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C10-T8",
+    "dossier": "10",
+    "kind": "takeaway",
+    "text": "“There is no single concurrency knob for everything. Task spawns, eval agent handles, workpools, judgments, and provider requests have different limits.” [5][9][8]",
+    "citations": [
+      "ompdocs-tools-task",
+      "ompdocs-tools-eval",
+      "ompdocs-settings"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C10-T9",
+    "dossier": "10",
+    "kind": "takeaway",
+    "text": "“A role's list of candidate models is not the same thing as a request-failure fallback chain. omp keeps those mechanisms separate, and exact-model fallback rules outrank role rules.” [7][8]",
+    "citations": [
+      "ompdocs-models",
+      "ompdocs-settings"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C10-T10",
+    "dossier": "10",
+    "kind": "takeaway",
+    "text": "“Collab is shared control of one running session, not another mixture-of-agents algorithm. Guests can observe or steer the host's existing agents according to the link they receive.” [14]",
+    "citations": [
+      "ompdocs-collab"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C10-T11",
+    "dossier": "10",
+    "kind": "takeaway",
+    "text": "“Settings should be explained as trade-offs rather than magic performance switches: LSP-aware workers, extra advisors, larger context windows, and automatic memory capture all change the work the system performs.” [8][12][20][30]",
+    "citations": [
+      "ompdocs-settings",
+      "ompdocs-advisor-watchdog",
+      "ompdocs-memory",
+      "ohmypimaintainers2026task-2"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C10-N1",
+    "dossier": "10",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Release publication",
+      "Value": "`2026-10-08T19:05:03Z`",
+      "Conditions (model, harness, benchmark/version, date)": "omp `v18.8.6`, GitHub release API, as of access 2026-10-08; not a benchmark",
+      "Source [n] (location)": "[4] `published_at`",
+      "Grade": "C"
+    },
+    "citations": [
+      "ohmypimaintainers2026v18"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C10-N2",
+    "dossier": "10",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Built-in model roles",
+      "Value": "**15**, counted here from 10 chat + 5 model-kind roles",
+      "Conditions (model, harness, benchmark/version, date)": "Documented role list for accessed installed docs, 2026-10-08",
+      "Source [n] (location)": "[7] “Role aliases and settings”",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-models"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C10-N3",
+    "dossier": "10",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Bundled agent types",
+      "Value": "**5**, counted here",
+      "Conditions (model, harness, benchmark/version, date)": "Pinned `v18.8.6`; plugins/custom definitions excluded",
+      "Source [n] (location)": "[23] `EMBEDDED_AGENT_DEFS`",
+      "Grade": "C"
+    },
+    "citations": [
+      "ohmypimaintainers2026bundled-3"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C10-N4",
+    "dossier": "10",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Task concurrency default",
+      "Value": "`32`; `0` unlimited",
+      "Conditions (model, harness, benchmark/version, date)": "Task SpawnRun semaphore, not all eval agents; as of 2026-10-08",
+      "Source [n] (location)": "[5] “Limits & Caps”",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-tools-task"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C10-N5",
+    "dossier": "10",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Recursion default",
+      "Value": "`2`; negative disables cap",
+      "Conditions (model, harness, benchmark/version, date)": "Task/eval spawn policy, as of 2026-10-08",
+      "Source [n] (location)": "[5] “Limits & Caps”",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-tools-task"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C10-N6",
+    "dossier": "10",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Background jobs",
+      "Value": "Default and documented eval maximum `100`",
+      "Conditions (model, harness, benchmark/version, date)": "Session-wide jobs shared with nested/background activity; not 100 model requests",
+      "Source [n] (location)": "[9] “Limits and errors”",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-tools-eval"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C10-N7",
+    "dossier": "10",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Completion/judgment request cap",
+      "Value": "`32`",
+      "Conditions (model, harness, benchmark/version, date)": "Shared process-wide semaphore; separate from task count",
+      "Source [n] (location)": "[9] “judge() and judgment batches”",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-tools-eval"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C10-N8",
+    "dossier": "10",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Soft request budget",
+      "Value": "`200`; forced wrap-up at `1.5×`",
+      "Conditions (model, harness, benchmark/version, date)": "Per subagent; `0` disables; bundled scouts/sonic may cap lower",
+      "Source [n] (location)": "[5] “Limits & Caps”",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-tools-task"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C10-N9",
+    "dossier": "10",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Agent idle parking",
+      "Value": "`420000` ms, documented as 7 min",
+      "Conditions (model, harness, benchmark/version, date)": "Default task idle TTL; `<=0` keeps live",
+      "Source [n] (location)": "[5] “Limits & Caps”",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-tools-task"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C10-N10",
+    "dossier": "10",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Advisor review defaults",
+      "Value": "Every `1` eligible update; `4` non-blocker notes",
+      "Conditions (model, harness, benchmark/version, date)": "Default advisor `turn` cadence; note range `1–32`; blockers exempt",
+      "Source [n] (location)": "[12] “Default advisor settings”",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-advisor-watchdog"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C10-N11",
+    "dossier": "10",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Bounded advisor catch-up",
+      "Value": "Up to `30` seconds",
+      "Conditions (model, harness, benchmark/version, date)": "`syncBacklog` values `1`, `3`, `5`; strict has no wall-clock cap",
+      "Source [n] (location)": "[12] “Catch-up”",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-advisor-watchdog"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C10-N12",
+    "dossier": "10",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Tool wait safety cap",
+      "Value": "`30` minutes",
+      "Conditions (model, harness, benchmark/version, date)": "Caller-owned job/service wait, no user-selectable timeout",
+      "Source [n] (location)": "[15] “Behavior”",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-tools-wait"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C10-N13",
+    "dossier": "10",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Default compaction reserve",
+      "Value": "Larger of `16384` tokens and `15%`, with small-window exception",
+      "Conditions (model, harness, benchmark/version, date)": "Accessed defaults; not an optimized benchmark threshold",
+      "Source [n] (location)": "[8] “Context, compaction, and memory”",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-settings"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C10-N14",
+    "dossier": "10",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Isolated baseline cap",
+      "Value": "`1 GiB`",
+      "Conditions (model, harness, benchmark/version, date)": "Each repository's uncommitted snapshot; overflow fails before spawn",
+      "Source [n] (location)": "[5] “Limits & Caps”",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompdocs-tools-task"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C11-T1",
+    "dossier": "11",
+    "kind": "takeaway",
+    "text": "**omp² is real public pre-release work, not just a teaser and not the installed 18.8.6 release.** The official `omp2` branch calls itself a Rust rewrite and warns of breaking changes; the product homepage still says “omp², soon!”, while GitHub labels v18.8.6 the latest release. [2][3][8]",
+    "citations": [
+      "stencillabsndomp",
+      "ohmypicontributors2026omp2",
+      "ompcontributors2026release"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C11-T2",
+    "dossier": "11",
+    "kind": "takeaway",
+    "text": "**The motivating criticism includes omp itself.** Bölük says message history, extension state, background jobs, configuration, and UI/controller state accumulated separate owners; the replacement tries to make the engine own that complexity instead of every extension reimplementing recovery. [1][4]",
+    "citations": [
+      "boluk2026harness",
+      "ohmypicontributors2026philosophy"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C11-T3",
+    "dossier": "11",
+    "kind": "takeaway",
+    "text": "The playbook's exact five consequences are **“One authoritative session,” “A trusted control plane,” “Bounded work,” “Explicit compatibility,” and “Views are projections.”** They are design commitments, not five independently shipped product announcements. [1]",
+    "citations": [
+      "boluk2026harness"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C11-T4",
+    "dossier": "11",
+    "kind": "takeaway",
+    "text": "**The journal is meant to reconstruct the session, not merely record the conversation.** The essay's materialized tree includes messages, tools, jobs, todo state and queues, so rewind, fork, resume, prompts and views derive from the same authority. [1]",
+    "citations": [
+      "boluk2026harness"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C11-T5",
+    "dossier": "11",
+    "kind": "takeaway",
+    "text": "**Keep policy outside the execution boundary.** The trusted host owns session state, routing, approvals and limits; the intended sandbox contains an obedient execution stub. The implementation record explicitly calls the minimized remote/container/VM stub incomplete. [1][32]",
+    "citations": [
+      "boluk2026harness",
+      "ohmypicontributors2026policy"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C11-T6",
+    "dossier": "11",
+    "kind": "takeaway",
+    "text": "**Settings and loop ownership become engine concepts.** Convars declare scope and persistence; the essay calls the composable across-turn behavior primitive a Director. Its documented example nests Plan and ForceTool rather than making modes coordinate through private flags. [1]",
+    "citations": [
+      "boluk2026harness"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C11-T7",
+    "dossier": "11",
+    "kind": "takeaway",
+    "text": "**“Compatibility” first means model/provider semantics, not a promise that old plugins work unchanged.** A compiled rulebook owns quirks and precedence; the concrete KDL refactor cited by the essay is already present in shipped omp v1 history. [1][9][10]",
+    "citations": [
+      "boluk2026harness",
+      "boluk2026feat",
+      "github2026branches"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C11-T8",
+    "dossier": "11",
+    "kind": "takeaway",
+    "text": "**The UI is a view, not another state owner.** Typed components and a single rendering pipeline are intended to support terminal, remote and inspector views; the formal appendix concerns a particular transcript protocol, not a proof that the whole application is bug-free. [1][15]",
+    "citations": [
+      "boluk2026harness",
+      "stencilhostedreport2026elastic"
+    ],
+    "grades": [
+      "B",
+      "C"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C11-T9",
+    "dossier": "11",
+    "kind": "takeaway",
+    "text": "**The strongest evidence is architectural, not an omp² coding leaderboard.** The creator reports renderer and tool-roster measurements, and the technical report reports bounded TLA+ model checks; their scopes and caveats must stay attached. [1][15]",
+    "citations": [
+      "boluk2026harness",
+      "stencilhostedreport2026elastic"
+    ],
+    "grades": [
+      "B",
+      "C"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C11-T10",
+    "dossier": "11",
+    "kind": "takeaway",
+    "text": "**Migration machinery exists, but a full upgrade guarantee does not follow.** The official branch has legacy configuration conversion and storage relocation; its opened transcript importer names Claude Code and Codex, not old omp sessions. [65][66][67]",
+    "citations": [
+      "ohmypicontributors2026configcommand",
+      "ohmypicontributors2026configuration",
+      "ohmypicontributors2026claude"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C11-T11",
+    "dossier": "11",
+    "kind": "takeaway",
+    "text": "**There is no dated public release commitment in the opened roadmap evidence.** The August 26 “no public release date or ETA” answer is from the project's automation account, not a quotation from Can Bölük; the September essay still describes work ranging from shipped to being thought through. [1][11]",
+    "citations": [
+      "boluk2026harness",
+      "roboomp2026reply"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C11-N1",
+    "dossier": "11",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Primary playbook publication",
+      "Value": "2026-09-02",
+      "Conditions (model, harness, benchmark/version, date)": "Publication date, not omp² launch date.",
+      "Source [n] (location)": "[1] metadata/header",
+      "Grade": "C"
+    },
+    "citations": [
+      "boluk2026harness"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C11-N2",
+    "dossier": "11",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Public rewrite workspace version",
+      "Value": "0.1.0",
+      "Conditions (model, harness, benchmark/version, date)": "`omp2` Cargo workspace metadata; not a release tag.",
+      "Source [n] (location)": "[7] `workspace.package`",
+      "Grade": "C"
+    },
+    "citations": [
+      "stencillabs2026cargo"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C11-N3",
+    "dossier": "11",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Observed public branch tip",
+      "Value": "2026-09-04T10:23:01Z",
+      "Conditions (model, harness, benchmark/version, date)": "Commit `2f92f3b5aa2035d21c9f016f9ff6350795e5685a`; no inference that private development stopped.",
+      "Source [n] (location)": "[6] commit author/committer timestamps",
+      "Grade": "C"
+    },
+    "citations": [
+      "github2026omp2"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C11-N4",
+    "dossier": "11",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Current released omp",
+      "Value": "v18.8.6, 2026-10-08",
+      "Conditions (model, harness, benchmark/version, date)": "GitHub's latest-release badge at access; distinct from the rewrite branch.",
+      "Source [n] (location)": "[8] release header",
+      "Grade": "C"
+    },
+    "citations": [
+      "ompcontributors2026release"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C11-N5",
+    "dossier": "11",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "State-example audit reported by author",
+      "Value": "78 examples; 60 stateless; 17 stateful; 2 of those correct",
+      "Conditions (model, harness, benchmark/version, date)": "Counts do not partition cleanly: 60 + 17 = 77, not 78. Nine examples detailed; no independent audit here.",
+      "Source [n] (location)": "[1] “The evidence: correctness is optional in the API,” Appendix A",
+      "Grade": "C"
+    },
+    "citations": [
+      "boluk2026harness"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C11-N6",
+    "dossier": "11",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Reported renderer cost",
+      "Value": "267 s → 90 ms",
+      "Conditions (model, harness, benchmark/version, date)": "“render time, one session”; not end-to-end task wall time, no comparable hardware/run protocol supplied beside the claim.",
+      "Source [n] (location)": "[1] “The interface” metric strip and “A one-pass primitive”; [4] “The TUI”",
+      "Grade": "C"
+    },
+    "citations": [
+      "boluk2026harness",
+      "ohmypicontributors2026philosophy"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C11-N7",
+    "dossier": "11",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Renderer profile discrepancy",
+      "Value": "13% vs 20% for image-line `.includes`",
+      "Conditions (model, harness, benchmark/version, date)": "HTML metric strip says 13% of profiled CPU; prose says 20% of total session CPU cycles; denominators/scope not reconciled. Both say no images in that session.",
+      "Source [n] (location)": "[1] HTML metric strip and “Strings compound”",
+      "Grade": "C"
+    },
+    "citations": [
+      "boluk2026harness"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C11-N8",
+    "dossier": "11",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Reported `wrapAnsi` time",
+      "Value": "98.7 s",
+      "Conditions (model, harness, benchmark/version, date)": "Same HTML-only profile strip; not a separate task benchmark.",
+      "Source [n] (location)": "[1] “The interface” HTML metric strip",
+      "Grade": "C"
+    },
+    "citations": [
+      "boluk2026harness"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C11-N9",
+    "dossier": "11",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Tool-roster sweep protocol",
+      "Value": "median of 6 runs per variant",
+      "Conditions (model, harness, benchmark/version, date)": "Task identified only as `sol`; fresh session each; figure axis `sol:med`. Exact provider/model/reasoning setup and correctness scoring are not specified beside the figure.",
+      "Source [n] (location)": "[1] “Every schema has a tax” figure caption",
+      "Grade": "C"
+    },
+    "citations": [
+      "boluk2026harness"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C11-N10",
+    "dossier": "11",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Stock omp variant",
+      "Value": "86.2 s; 25.1k prefix tokens",
+      "Conditions (model, harness, benchmark/version, date)": "23 definitions, 12–16 turns; experimental stock row, **not** a measurement of today's 18.8.6 defaults.",
+      "Source [n] (location)": "[1] embedded tool-roster SVG, row 1",
+      "Grade": "C"
+    },
+    "citations": [
+      "boluk2026harness"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C11-N11",
+    "dossier": "11",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Todo-batched omp variant",
+      "Value": "59.5 s; 25.1k prefix tokens",
+      "Conditions (model, harness, benchmark/version, date)": "23 definitions, `r9`, 6–8 turns. Batching changed too, so the whole sweep is not tool-count-only.",
+      "Source [n] (location)": "[1] embedded tool-roster SVG, row 2",
+      "Grade": "C"
+    },
+    "citations": [
+      "boluk2026harness"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C11-N12",
+    "dossier": "11",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "`/xdev` default variant",
+      "Value": "45.4 s; 20.6k prefix tokens",
+      "Conditions (model, harness, benchmark/version, date)": "15 definitions, `r11`, 6–8 turns.",
+      "Source [n] (location)": "[1] embedded tool-roster SVG, row 3",
+      "Grade": "C"
+    },
+    "citations": [
+      "boluk2026harness"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C11-N13",
+    "dossier": "11",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Lean-floor omp variant",
+      "Value": "36.6 s; 15.1k prefix tokens",
+      "Conditions (model, harness, benchmark/version, date)": "5 tools, `r11`, 4–6 turns. A lean ablation, not the full current release or an omp² leaderboard result.",
+      "Source [n] (location)": "[1] embedded tool-roster SVG, row 4",
+      "Grade": "C"
+    },
+    "citations": [
+      "boluk2026harness"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C11-N14",
+    "dossier": "11",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "External reference rows",
+      "Value": "Codex CLI 0.144: 42.2 s; Pi: 37.0 s",
+      "Conditions (model, harness, benchmark/version, date)": "Codex: 3 tools, 4 turns, 9.6–12.3k prefix. Pi: ~5 tiny-schema tools, 6 turns, 5.6k prefix; Pi version not stated in figure.",
+      "Source [n] (location)": "[1] embedded tool-roster SVG, rows 5–6",
+      "Grade": "C"
+    },
+    "citations": [
+      "boluk2026harness"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C11-N15",
+    "dossier": "11",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Proposed speculative-compaction start",
+      "Value": "~10% before limit",
+      "Conditions (model, harness, benchmark/version, date)": "Recommendation in essay, not a measured optimal threshold or verified current default.",
+      "Source [n] (location)": "[1] “Compaction is scheduled, not triggered”",
+      "Grade": "C"
+    },
+    "citations": [
+      "boluk2026harness"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C11-N16",
+    "dossier": "11",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Elastic Slots report / check date",
+      "Value": "2026-08-24",
+      "Conditions (model, harness, benchmark/version, date)": "Technical report hosted by Stencil; no peer-reviewed venue established.",
+      "Source [n] (location)": "[15] title page; Table 5",
+      "Grade": "B"
+    },
+    "citations": [
+      "stencilhostedreport2026elastic"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C11-N17",
+    "dossier": "11",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Distinct model-checker states",
+      "Value": "272,860 total = 219,721 + 501 + 52,638",
+      "Conditions (model, harness, benchmark/version, date)": "Three finite boundary configurations, **not all possible implementations or runtime inputs**.",
+      "Source [n] (location)": "[15] abstract; §5.3, Table 5",
+      "Grade": "B"
+    },
+    "citations": [
+      "stencilhostedreport2026elastic"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C11-N18",
+    "dossier": "11",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Checked properties by configuration",
+      "Value": "invariants: 10 / 7 / 9; temporal: 10 / 6 / 8",
+      "Conditions (model, harness, benchmark/version, date)": "`ElasticSlots`, `ElasticSlotsBridges`, `ElasticSlotsResize`; do not say all 20 checks ran in all three.",
+      "Source [n] (location)": "[15] Table 5",
+      "Grade": "B"
+    },
+    "citations": [
+      "stencilhostedreport2026elastic"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C11-N19",
+    "dossier": "11",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Model-check bounds",
+      "Value": "`(N,H,Rmax,Λ)` = `(2,1,1,2)` / `(1,3,0,1)` / `(1,1,2,1)`",
+      "Conditions (model, harness, benchmark/version, date)": "Two row symbols; snapshots empty, one row, or two rows; width abstracted to wide/narrow. Deadlock checking disabled because stopped hosts are intended terminal states.",
+      "Source [n] (location)": "[15] §2.2, §5.3, Table 5",
+      "Grade": "B"
+    },
+    "citations": [
+      "stencilhostedreport2026elastic"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C11-N20",
+    "dossier": "11",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Reported checking environment/time",
+      "Value": "TLC 2026.03.31; OpenJDK 17; Apple M4 Max; 16 workers; 22 s / <1 s / 3 s",
+      "Conditions (model, harness, benchmark/version, date)": "Author-reported model-checking runs with no invariant/property/liveness violation in those configurations; not rerun here.",
+      "Source [n] (location)": "[15] §5.3, Table 5",
+      "Grade": "B"
+    },
+    "citations": [
+      "stencilhostedreport2026elastic"
+    ],
+    "grades": [
+      "B"
+    ],
+    "min_grade": "B",
+    "flags": []
+  },
+  {
+    "id": "C12-T1",
+    "dossier": "12",
+    "kind": "takeaway",
+    "text": "“A model has three names here: the vendor's API ID, omp's provider-qualified selector, and the human-readable label. They are not interchangeable.” For example, `claude-opus-5-5`, `anthropic/claude-opus-5-5`, and the status-line label `Opus 5.5` identify different representations of the same selected catalog row. [1][4][7]",
+    "citations": [
+      "stencillabs2026bundled",
+      "stencillabs2026model",
+      "stencillabs2026statusline"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C12-T2",
+    "dossier": "12",
+    "kind": "takeaway",
+    "text": "“omp's bundled model knowledge is a snapshot, not a promise of access.” Version 18.8.6 ships a static catalog; credentials, disabled providers, discovery, caches, and custom entries determine the usable runtime roster. [1][2][6]",
+    "citations": [
+      "stencillabs2026bundled",
+      "stencillabs2026static",
+      "ompdocs-models"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C12-T3",
+    "dossier": "12",
+    "kind": "takeaway",
+    "text": "“There is no universal shipped main model.” Startup looks for available provider defaults; Anthropic's default is `claude-opus-5-5`, whereas the OpenAI and Codex provider descriptors still name `gpt-5.5`. A descriptor is not proof that its named model is available. [4][14]",
+    "citations": [
+      "stencillabs2026model",
+      "stencillabs2026provider"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C12-T4",
+    "dossier": "12",
+    "kind": "takeaway",
+    "text": "“Fifteen roles do not mean fifteen hard-coded model assignments.” Seven roles have their own priority arrays; others inherit, alias another list, or have no list. [3][4][5]",
+    "citations": [
+      "stencillabs2026role",
+      "stencillabs2026model",
+      "stencillabs2026model-2"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C12-T5",
+    "dossier": "12",
+    "kind": "takeaway",
+    "text": "“The shipped strong-role list starts with GPT-5.6 Sol, not the newest GPT-6.1 Sol.” The small-role list starts with `google-antigravity/gemini-3.8-flash`. Updating a presentation to the newest model must not silently rewrite shipped defaults. [3][18]",
+    "citations": [
+      "stencillabs2026role",
+      "openai2026gpt6"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C12-T6",
+    "dossier": "12",
+    "kind": "takeaway",
+    "text": "“The same model looks different across the interface.” The ordinary ANSI terminal status line uses a friendly name, selectors use provider plus ID, and Agent Hub normally drops the provider. Its task-result model badge is **off by default**; the separate native host rendering path has a different contract. [7][8][9][10][11][13]",
+    "citations": [
+      "stencillabs2026statusline",
+      "stencillabs2026model-5",
+      "stencillabs2026model-3",
+      "stencillabs2026agent",
+      "stencillabs2026task",
+      "stencillabs2026task-3"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C12-T7",
+    "dossier": "12",
+    "kind": "takeaway",
+    "text": "“Benchmark labels are not API identifiers.” Terminal-Bench 4.0 says `GPT-6 Astra` and `Opus 5.5`; the corresponding vendor IDs are `gpt-6-astra` and `claude-opus-5-5`. The board is evidence about those benchmark entries, not a vendor API schema. [16][17][18]",
+    "citations": [
+      "terminalbenchteam2026terminalbench4",
+      "anthropic2026claude-3",
+      "openai2026gpt6"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C12-T8",
+    "dossier": "12",
+    "kind": "takeaway",
+    "text": "“A newer model can be present without being the role's first choice.” The 18.8.6 catalog includes `claude-haiku-5-5` and `gpt-6.1-sol`, but its priority arrays retain older Haiku and Sol choices. [1][3][17][18]",
+    "citations": [
+      "stencillabs2026bundled",
+      "stencillabs2026role",
+      "anthropic2026claude-3",
+      "openai2026gpt6"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C12-T9",
+    "dossier": "12",
+    "kind": "takeaway",
+    "text": "“Date and endpoint details matter.” Z.ai's GLM-5.3 release-note date differs from Terminal-Bench's date; Qwen's regional availability dates differ; Mistral's Medium 3.5 documentation and announcement disagree. Preserve those differences rather than inventing a single definitive timeline. [16][23][24][26]",
+    "citations": [
+      "terminalbenchteam2026terminalbench4",
+      "zai2026new",
+      "cloud2026alibaba",
+      "mistralai2025changelog"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C12-N1",
+    "dossier": "12",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Built-in roles",
+      "Value": "15",
+      "Conditions": "omp 18.8.6, not custom roles",
+      "Source [n] (location)": "[5], role metadata; model-browser `MODEL_ROLE_IDS` lines 64–80",
+      "Grade": "C"
+    },
+    "citations": [
+      "stencillabs2026model-2"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C12-N2",
+    "dossier": "12",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Roles with their own JSON priority arrays",
+      "Value": "7",
+      "Conditions": "smol, slow, image, web, speech, dictation, judge; inheritance counted separately",
+      "Source [n] (location)": "[3], complete file",
+      "Grade": "C"
+    },
+    "citations": [
+      "stencillabs2026role"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C12-N3",
+    "dossier": "12",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Baked provider keys / provider-scoped model rows",
+      "Value": "75 / 5,671",
+      "Conditions": "Fixed-tag `models.json`; Python JSON read/count, one distinct `(provider, id)` tuple per row; all kinds; not distinct bare IDs or credentialed models",
+      "Source [n] (location)": "[1], JSON root/count",
+      "Grade": "C"
+    },
+    "citations": [
+      "stencillabs2026bundled"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C12-N4",
+    "dossier": "12",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Default global thinking setting",
+      "Value": "`high`",
+      "Conditions": "Role/agent/session choices can override",
+      "Source [n] (location)": "[15], lines 197–209, default at 201",
+      "Grade": "C"
+    },
+    "citations": [
+      "stencillabs2026default"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C12-N5",
+    "dossier": "12",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Task model-badge width cap",
+      "Value": "30 terminal cells",
+      "Conditions": "Only when `task.showResolvedModelBadge` is enabled; default false",
+      "Source [n] (location)": "[11], 494–505; [12], 128–182",
+      "Grade": "C"
+    },
+    "citations": [
+      "stencillabs2026task",
+      "stencillabs2026task-2"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C12-N6",
+    "dossier": "12",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Anthropic current releases used in table",
+      "Value": "Sep 1 / Sep 22 / Sep 28 / Oct 7, 2026",
+      "Conditions": "Fable 5.1 / Opus 5.5 / Sonnet 5.5 / Haiku 5.5 respectively",
+      "Source [n] (location)": "[17], per-model overview “Released” line",
+      "Grade": "C"
+    },
+    "citations": [
+      "anthropic2026claude-3"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C12-N7",
+    "dossier": "12",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "OpenAI Astra / Sol releases",
+      "Value": "Sep 3 / Sep 29, 2026",
+      "Conditions": "`gpt-6-astra` / `gpt-6.1-sol`; not older Sol in shipped L",
+      "Source [n] (location)": "[18], dated API changelog entries",
+      "Grade": "C"
+    },
+    "citations": [
+      "openai2026gpt6"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  },
+  {
+    "id": "C12-N8",
+    "dossier": "12",
+    "kind": "number",
+    "text": {
+      "Claim/metric": "Catalog membership test scope",
+      "Value": "Exact ID and concrete provider/ID",
+      "Conditions": "Not fuzzy matching, auth, runtime discovery, or endpoint execution",
+      "Source [n] (location)": "[1], jq-selected catalog rows",
+      "Grade": "C"
+    },
+    "citations": [
+      "stencillabs2026bundled"
+    ],
+    "grades": [
+      "C"
+    ],
+    "min_grade": "C",
+    "flags": []
+  }
+]

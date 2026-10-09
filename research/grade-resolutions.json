@@ -1,0 +1,34 @@
+{
+  "shi2026programming": {
+    "grade": "B",
+    "note": "Preprint (not peer-reviewed); the linked repository's status statement is first-party (C)"
+  },
+  "kim2026towards": {
+    "grade": "B",
+    "note": "arXiv preprint (v3, 2026-04-08); not peer-reviewed"
+  },
+  "marten2026terminalbench4": {
+    "grade": "C",
+    "note": "Benchmark maintainers' own release notes: first-party for the benchmark, independent of the products it ranks"
+  },
+  "terminalbenchteam2026terminalbench4": {
+    "grade": "C",
+    "note": "Maintainer-run leaderboard: first-party for the benchmark, independent of the evaluated products"
+  },
+  "pimaintainersndpi": {
+    "grade": "C",
+    "note": "Creator-maintained Pi repository: first-party for the project's own implementation and documentation"
+  },
+  "zechner2025learned": {
+    "grade": "C",
+    "note": "Creator's own Pi design and benchmark post: first-party for his work; anecdotal interpretations remain attributed, not independently verified"
+  },
+  "picontributors2026pi-2": {
+    "grade": "C",
+    "note": "Creator-maintained legacy Pi repository: first-party for the project's own implementation and documentation"
+  },
+  "picontributors2026codingagent": {
+    "grade": "C",
+    "note": "Creator-maintained Pi coding-agent changelog: first-party for the project's own releases"
+  }
+}
