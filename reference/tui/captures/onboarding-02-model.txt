@@ -1,0 +1,36 @@
+                                                                                                                        
+                                                      ████████████                                                      
+                                                         ██  ██                                                         
+                                                         ██  ██                                                         
+                                                         ▒▒  ██                                                         
+                                                             ██                                                         
+                                                          omp                                                           
+                                                   Setup step 2 of 5                                                    
+                                                                                                                        
+    Choose your default model                                                                                           
+    Search configured models and save the model used for new sessions.                                                  
+                                                                                                                        
+    Type to search. ⏎ saves the highlighted model as your default.                                                      
+                                                                                                                        
+     🔍 >                                                                                                                
+                                                                                                                        
+    ❯ apple/on-device                                                                                  8.2k ◫  free     
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+      Apple AFM 3 Core Advanced · 8.2k ctx · 8.2k out · free per M · vision                                             
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                    ↑/↓ select · ⏎ confirm · ⎋ skip · ⌃C exit setup                                     

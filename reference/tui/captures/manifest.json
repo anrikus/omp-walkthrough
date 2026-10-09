@@ -1,0 +1,405 @@
+{
+  "researchDate": "2026-10-08",
+  "binary": "/opt/homebrew/Cellar/omp/18.8.6/bin/omp",
+  "versionOutput": "omp/18.8.6",
+  "sourceRepository": "https://github.com/can1357/oh-my-pi",
+  "sourceTag": "v18.8.6",
+  "sourceCommit": "f068751e2f1dbdbc195977776d47a26db8697495",
+  "sourceAcquisition": "git clone --depth 1 --branch v18.8.6 https://github.com/can1357/oh-my-pi.git /tmp/omp-tui-reference-n8bbs6dg/source",
+  "disposableRoot": "/tmp/omp-tui-reference-n8bbs6dg",
+  "environmentAllowlist": {
+    "HOME": "/tmp/omp-tui-reference-n8bbs6dg/home",
+    "PATH": "/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+    "TERM": "xterm-256color",
+    "COLORTERM": "truecolor",
+    "LANG": "en_US.UTF-8",
+    "LC_ALL": "en_US.UTF-8",
+    "PI_CONFIG_DIR": "/tmp/omp-tui-reference-n8bbs6dg/config",
+    "PI_CODING_AGENT_DIR": "/tmp/omp-tui-reference-n8bbs6dg/config/agent",
+    "XDG_CONFIG_HOME": "/tmp/omp-tui-reference-n8bbs6dg/config",
+    "XDG_CACHE_HOME": "/tmp/omp-tui-reference-n8bbs6dg/cache",
+    "XDG_STATE_HOME": "/tmp/omp-tui-reference-n8bbs6dg/state",
+    "XDG_DATA_HOME": "/tmp/omp-tui-reference-n8bbs6dg/data",
+    "TMPDIR": "/tmp/omp-tui-reference-n8bbs6dg",
+    "PI_NO_TITLE": "1",
+    "AWS_EC2_METADATA_DISABLED": "true"
+  },
+  "captureCommandPrefix": [
+    "/usr/bin/sandbox-exec",
+    "-p",
+    "(version 1) (allow default) (deny network*) (deny file-write* (subpath \"/Users/anrikus\")) (deny file-read* (subpath \"/Users/anrikus/.omp\"))",
+    "/opt/homebrew/bin/omp"
+  ],
+  "sessionOptions": [
+    "--session-dir",
+    "/tmp/omp-tui-reference-n8bbs6dg/sessions",
+    "--no-title"
+  ],
+  "renderer": {
+    "library": "@xterm/xterm",
+    "addon": "@xterm/addon-webgl",
+    "fontFile": "UbuntuSansMonoNerdFontMono-Regular.ttf",
+    "fontSha256": "7934e268068b085be274cb695fa508d62ffab26cc5b05cdca629142199d617b8",
+    "fontSizeCssPx": 20,
+    "lineHeight": 1,
+    "letterSpacing": 0,
+    "deviceScaleFactor": 1,
+    "observedCellCssPx": [
+      11,
+      24
+    ],
+    "paddingRightBottomCssPx": [
+      16,
+      8
+    ],
+    "darkTerminalBackground": "#101010",
+    "darkTerminalForeground": "#e5e5e5",
+    "lightTerminalBackground": "#ffffff",
+    "lightTerminalForeground": "#202020",
+    "note": "Font embedded for rendering; final PNG/text/ANSI need no local font. Temporary pyte/manual raster outputs discarded.",
+    "packageVersions": {
+      "@xterm/addon-webgl": "0.19.0",
+      "@xterm/xterm": "6.0.0"
+    }
+  },
+  "captures": [
+    {
+      "state": "onboarding-01-provider",
+      "cols": 120,
+      "rows": 36,
+      "note": "Untouched disposable profile opens first-run setup; Escape skips provider sign-in.",
+      "pngWidth": 1336,
+      "pngHeight": 872
+    },
+    {
+      "state": "onboarding-02-model",
+      "cols": 120,
+      "rows": 36,
+      "note": "No credentials: only Apple on-device appears as configured.",
+      "pngWidth": 1336,
+      "pngHeight": 872
+    },
+    {
+      "state": "onboarding-03-glyphs",
+      "cols": 120,
+      "rows": 36,
+      "note": "First-run setup step 3; Unicode highlighted by default; Escape only.",
+      "pngWidth": 1336,
+      "pngHeight": 872
+    },
+    {
+      "state": "onboarding-04-composer",
+      "cols": 120,
+      "rows": 36,
+      "note": "First-run setup step 4; Status Band (Default) highlighted; Escape only.",
+      "pngWidth": 1336,
+      "pngHeight": 872
+    },
+    {
+      "state": "onboarding-05-theme",
+      "cols": 120,
+      "rows": 36,
+      "note": "First-run setup step 5; Titanium highlighted; Escape only.",
+      "pngWidth": 1336,
+      "pngHeight": 872
+    },
+    {
+      "state": "startup-120x36",
+      "cols": 120,
+      "rows": 36,
+      "note": "Setup skipped with Escape on all five steps; shipped Titanium + Unicode + status-band defaults; no model selected.",
+      "pngWidth": 1336,
+      "pngHeight": 872
+    },
+    {
+      "state": "slash-palette-120x36",
+      "cols": 120,
+      "rows": 36,
+      "note": "Typed a lone slash; no Enter, no prompt.",
+      "pngWidth": 1336,
+      "pngHeight": 872
+    },
+    {
+      "state": "model-selector-unconfigured-120x36",
+      "cols": 120,
+      "rows": 36,
+      "note": "/model, no auth; only the local Apple model is available.",
+      "pngWidth": 1336,
+      "pngHeight": 872
+    },
+    {
+      "state": "model-selector-anthropic-unconfigured-120x36",
+      "cols": 120,
+      "rows": 36,
+      "note": "Highlighted anthropic category only; Enter would log in and was never pressed. Catalog is bundled version data, not availability proof.",
+      "pngWidth": 1336,
+      "pngHeight": 872
+    },
+    {
+      "state": "settings-120x36",
+      "cols": 120,
+      "rows": 36,
+      "note": "/settings from idle editor; no setting modified.",
+      "pngWidth": 1336,
+      "pngHeight": 872
+    },
+    {
+      "state": "hotkeys-120x36",
+      "cols": 120,
+      "rows": 36,
+      "note": "/hotkeys; first scroll page.",
+      "pngWidth": 1336,
+      "pngHeight": 872
+    },
+    {
+      "state": "agents-120x36",
+      "cols": 120,
+      "rows": 36,
+      "note": "/agents: definitions/configuration view, five bundled agents, not the live Agent Hub.",
+      "pngWidth": 1336,
+      "pngHeight": 872
+    },
+    {
+      "state": "plan-mode-120x36",
+      "cols": 120,
+      "rows": 36,
+      "note": "Sent Kitty CSI-u Alt+Shift+P: ESC [112;4u; no model call.",
+      "pngWidth": 1336,
+      "pngHeight": 872
+    },
+    {
+      "state": "tree-empty-120x36",
+      "cols": 120,
+      "rows": 36,
+      "note": "/tree after enabling plan mode; default filter hides mode entries, so no conversation nodes.",
+      "pngWidth": 1336,
+      "pngHeight": 872
+    },
+    {
+      "state": "tool-history-read-160x45",
+      "cols": 160,
+      "rows": 45,
+      "note": "--resume crafted documented JSONL, no live calls. Synthetic read text and usage; authentic production transcript rendering.",
+      "pngWidth": 1776,
+      "pngHeight": 1088
+    },
+    {
+      "state": "tool-history-read-expanded-160x45",
+      "cols": 160,
+      "rows": 45,
+      "note": "Ctrl+O expanded tool result in resumed synthetic transcript.",
+      "pngWidth": 1776,
+      "pngHeight": 1088
+    },
+    {
+      "state": "tree-history-160x45",
+      "cols": 160,
+      "rows": 45,
+      "note": "/tree in resumed fixture.",
+      "pngWidth": 1776,
+      "pngHeight": 1088
+    },
+    {
+      "state": "session-list-160x45",
+      "cols": 160,
+      "rows": 45,
+      "note": "/resume in disposable session directory.",
+      "pngWidth": 1776,
+      "pngHeight": 1088
+    },
+    {
+      "state": "gallery-read-done-120x36",
+      "cols": 120,
+      "rows": 36,
+      "note": "Real omp gallery --tool read --state done --width 120; shipped deterministic fixture, not execution.",
+      "pngWidth": 1336,
+      "pngHeight": 872
+    },
+    {
+      "state": "startup-local-model-160x45",
+      "cols": 160,
+      "rows": 45,
+      "note": "Explicit --model apple/on-device, no inference. This is a real local model ID, not a universal shipped default.",
+      "pngWidth": 1776,
+      "pngHeight": 1088
+    },
+    {
+      "state": "plan-local-model-160x45",
+      "cols": 160,
+      "rows": 45,
+      "note": "Alt+Shift+P CSI-u at fresh editor; no inference.",
+      "pngWidth": 1776,
+      "pngHeight": 1088
+    },
+    {
+      "state": "startup-light-120x36",
+      "cols": 120,
+      "rows": 36,
+      "note": "COLORFGBG=0;15 chooses shipped light theme; otherwise same disposable profile.",
+      "pngWidth": 1336,
+      "pngHeight": 872
+    },
+    {
+      "state": "gallery-edit-done-160x45",
+      "cols": 160,
+      "rows": 45,
+      "note": "Real omp gallery shipped edit done fixture, not execution.",
+      "pngWidth": 1776,
+      "pngHeight": 1088
+    },
+    {
+      "state": "gallery-grep-done-160x45",
+      "cols": 160,
+      "rows": 45,
+      "note": "Real omp gallery shipped grep done fixture, not execution.",
+      "pngWidth": 1776,
+      "pngHeight": 1088
+    },
+    {
+      "state": "gallery-lsp-done-160x45",
+      "cols": 160,
+      "rows": 45,
+      "note": "Real omp gallery shipped lsp done fixture, not execution.",
+      "pngWidth": 1776,
+      "pngHeight": 1088
+    },
+    {
+      "state": "gallery-debug-done-160x45",
+      "cols": 160,
+      "rows": 45,
+      "note": "Real omp gallery shipped debug done fixture, not execution.",
+      "pngWidth": 1776,
+      "pngHeight": 1088
+    },
+    {
+      "state": "gallery-task-done-160x45",
+      "cols": 160,
+      "rows": 45,
+      "note": "Real omp gallery shipped task done fixture, not execution.",
+      "pngWidth": 1776,
+      "pngHeight": 1088
+    },
+    {
+      "state": "gallery-todo-done-160x45",
+      "cols": 160,
+      "rows": 45,
+      "note": "Real omp gallery shipped todo done fixture, not execution.",
+      "pngWidth": 1776,
+      "pngHeight": 1088
+    },
+    {
+      "state": "gallery-task-lifecycle-160x45",
+      "cols": 160,
+      "rows": 45,
+      "note": "Real gallery task with every shipped lifecycle fixture; terminal viewport shows final portion, raw ANSI includes all.",
+      "pngWidth": 1776,
+      "pngHeight": 1088
+    },
+    {
+      "state": "tool-history-edit-160x45",
+      "cols": 160,
+      "rows": 45,
+      "note": "Resumed synthetic JSONL with real edit result schema; actual production transcript diff, no execution.",
+      "pngWidth": 1776,
+      "pngHeight": 1088
+    },
+    {
+      "state": "history-compaction-160x45",
+      "cols": 160,
+      "rows": 45,
+      "note": "Resumed synthetic compaction + ttsr_injection entries. Compaction is visible; persisted TTSR marker did not recreate a live interruption notification. Counts are fabricated fixture data.",
+      "pngWidth": 1776,
+      "pngHeight": 1088
+    },
+    {
+      "state": "agent-hub-empty-120x36",
+      "cols": 120,
+      "rows": 36,
+      "note": "/hub opens the live Agent Hub without spawning or calling a model; distinct from /agents definitions.",
+      "pngWidth": 1336,
+      "pngHeight": 872
+    },
+    {
+      "state": "history-advisor-160x45",
+      "cols": 160,
+      "rows": 45,
+      "note": "Resumed custom_message customType advisor with synthetic note/details; genuine advisor card renderer, no advisor model execution.",
+      "pngWidth": 1776,
+      "pngHeight": 1088
+    }
+  ],
+  "isolationAudit": {
+    "beforeEntries": 20887,
+    "afterEntries": 21367,
+    "changedEntries": 619,
+    "globalHomeUnchanged": false,
+    "reason": "Concurrent live host activity. Capture children were sandbox-denied writes to real home. Metadata does not prove global auth database unchanged."
+  },
+  "cleanup": {
+    "observedPtyLeaders": [
+      {
+        "variable": "cap",
+        "pid": 25185,
+        "exitCode": -9
+      },
+      {
+        "variable": "cap2",
+        "pid": 29095,
+        "exitCode": -9
+      },
+      {
+        "variable": "gallery",
+        "pid": 29299,
+        "exitCode": 0
+      },
+      {
+        "variable": "cap3",
+        "pid": 29547,
+        "exitCode": -9
+      },
+      {
+        "variable": "light",
+        "pid": 29614,
+        "exitCode": -9
+      },
+      {
+        "variable": "g",
+        "pid": 30629,
+        "exitCode": 0
+      },
+      {
+        "variable": "ga",
+        "pid": 30691,
+        "exitCode": 0
+      },
+      {
+        "variable": "ce",
+        "pid": 31890,
+        "exitCode": -9
+      },
+      {
+        "variable": "cn",
+        "pid": 33698,
+        "exitCode": -9
+      },
+      {
+        "variable": "hub",
+        "pid": 34127,
+        "exitCode": -9
+      },
+      {
+        "variable": "ca",
+        "pid": 34197,
+        "exitCode": -9
+      }
+    ],
+    "disposableRootProcessCommandLinesAtCheck": [],
+    "captureBrowserTabClosed": true,
+    "temporaryRasterHtmlRemoved": true,
+    "temporaryPythonPackagesUninstalled": [
+      "pyte==0.8.2",
+      "wcwidth==0.9.1"
+    ],
+    "disposableRootRemoved": true
+  }
+}

@@ -1,0 +1,36 @@
+╭─ Models ───────────────────┬─────────────────────────────────────────────────────────────────────────────────────────╮
+│   ✦ Roles             0/15 │  anthropic · not configured                                                             │
+│   ⬢ All models          35 │                                                                                         │
+│ ────────────────────────── │   anthropic has no credentials configured                                               │
+│   ● apple                1 │                                                                                         │
+│   ● local               13 │   Set ANTHROPIC_API_KEY in your environment, or add a key in config.                    │
+│   ● web                 21 │   ❯ Log in with OAuth (⏎)                                                               │
+│ ────────────────────────── │                                                                                         │
+│   ○ abliteration           │   28 models in catalog:                                                                 │
+│   ○ aiand                  │     claude-3-5-sonnet-20240620                                                          │
+│   ○ aimlapi                │     claude-3-5-sonnet-20241022                                                          │
+│   ○ alibaba-coding-plan    │     claude-3-haiku-20240307                                                             │
+│   ○ alibaba-token-plan     │     claude-fable-5                                                                      │
+│   ○ amazon-bedrock         │     claude-fable-5-1                                                                    │
+│ ❯ ○ anthropic              │     claude-haiku-4-5                                                                    │
+│   ○ azure                  │     claude-haiku-4-5-20251001                                                           │
+│   ○ baseten                │     claude-haiku-5-5                                                                    │
+│   ○ bedrock-mantle         │     claude-mythos-5                                                                     │
+│   ○ cerebras               │     claude-mythos-5-1                                                                   │
+│   ○ cline-pass             │     claude-opus-4-0                                                                     │
+│   ○ cloudflare-ai-gateway  │     claude-opus-4-1                                                                     │
+│   ○ commandcode            │     claude-opus-4-1-20250805                                                            │
+│   ○ coreweave              │     claude-opus-4-20250514                                                              │
+│   ○ cursor                 │     claude-opus-4-5                                                                     │
+│   ○ deepinfra              │     claude-opus-4-5-20251101                                                            │
+│   ○ deepseek               │     claude-opus-4-6                                                                     │
+│   ○ devin                  │     claude-opus-4-7                                                                     │
+│   ○ factory-droid          │     claude-opus-4-8                                                                     │
+│   ○ firepass               │     claude-opus-5                                                                       │
+│   ○ fireworks              │     claude-opus-5-5                                                                     │
+│   ○ github-copilot         │     claude-sonnet-4-0                                                                   │
+│   ○ gitlab-duo             │     claude-sonnet-4-20250514                                                            │
+│   ○ gitlab-duo-agent       │     claude-sonnet-4-5                                                                   │
+├────────────────────────────┴─────────────────────────────────────────────────────────────────────────────────────────┤
+│ ⏎ log in · ↑/↓ providers · ⎋ close                                                                                   │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯

@@ -1,0 +1,36 @@
+                                                                                                                        
+                                                      ████████████                                                      
+                                                         ██  ██                                                         
+                                                         ██  ██                                                         
+                                                         ▒▒  ██                                                         
+                                                             ██                                                         
+                                                          omp                                                           
+                                                   Setup step 4 of 5                                                    
+                                                                                                                        
+    Choose composer shape                                                                                               
+    Pick the prompt and status line layout for your workflow.                                                           
+                                                                                                                        
+    Select a layout; live preview updates below. Press ⏎ to confirm.                                                    
+                                                                                                                        
+    Preview:                                                                                                            
+     π > ⬢ no-model > 🗑 project > ◫ 7K/? ⟲ ▶────────────────────────────────────────────────────────────────────────    
+    ╰─ Ask anything, edit files, run tools                                                                              
+                                                                                                                        
+    ❯ 1 Status Band (Default)         Flush soft-capped status band above a curved prompt, no frame                     
+      2 Rounded Box                   Status line embedded in top border, compact 2-line prompt                         
+      3 Claude Code                   Full-width horizontal rules above and below, status line at bottom                
+      4 Pi                            Framed horizontal rules with status line at bottom                                
+      5 Borderless                    Clean prompt glyph with status line at bottom, no box borders                     
+      6 Top Rule Dock                 Single top rule with status docked onto it and below                              
+      7 Compact Field                 Filled one-row field with accent end caps                                         
+      8 Accent Rail                   Filled one-row field anchored by a single accent rail                             
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                    ↑/↓ select · ⏎ confirm · ⎋ skip · ⌃C exit setup                                     

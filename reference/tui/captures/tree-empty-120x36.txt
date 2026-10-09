@@ -1,0 +1,36 @@
+                                                                                                                        
+                                            ████████████                                                                
+                                               ██  ██       ▄▀▀▄ █▀▄▀▄ █▀▀▄                                             
+                                               ██  ██       ▀▄▄▀ █ █ █ █▄▄▀                                             
+                                               ▒▒  ██                  █                                                
+                                                   ██       v18.8.6                                                     
+                                                                                                                        
+                                              Tip: Please use nerdfont 😭.                                               
+                                                                                                                        
+ Warning: No default model selected. Use /login, set an API key environment variable, or select a local model with      
+ /model or --model.                                                                                                     
+                                                                                                                        
+ Plan mode enabled. Plan file: local://PLAN.md                                                                          
+                                                                                                                        
+╭─ Session Tree ───────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│                                                                                                                      │
+│ ⏎: switch. ⌥↑/⌥↓: previous/next turn. PgUp/PgDn (←/→): page. Home/End: first/last item. ⇧⏎: summarize & switch. ⇧L:… │
+│ Search:                                                                                                              │
+├──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                                                      │
+│ 2 entries hidden by the current filter [default]                                                                     │
+│ Press ⌥A to show all, ⌥D for default                                                                                 │
+│ (0/2)                                                                                                                │
+│                                                                                                                      │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        

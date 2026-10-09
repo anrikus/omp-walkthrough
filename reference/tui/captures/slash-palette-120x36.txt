@@ -1,0 +1,36 @@
+                                                                                                                        
+                                            ████████████                                                                
+                                               ██  ██       ▄▀▀▄ █▀▄▀▄ █▀▀▄                                             
+                                               ██  ██       ▀▄▄▀ █ █ █ █▄▄▀                                             
+                                               ▒▒  ██                  █                                                
+                                                   ██       v18.8.6                                                     
+                                                                                                                        
+                                              Tip: Please use nerdfont 😭.                                               
+                                                                                                                        
+ Warning: No default model selected. Use /login, set an API key environment variable, or select a local model with      
+ /model or --model.                                                                                                     
+                                                                                                                        
+ π > ⬢ no-model > 🗑 project > ◫ 7K/? ⟲ ▶────────────────────────────────────────────────────────────────────────────────
+╰─ /                                                                                                                    
+❯ 🛡  security          Plan, run, inspect, import, and compare OMP-native security scans                               █
+  🎛  settings          Open settings menu                                                                              │
+  ⚙  setup             Open provider setup                                                                             │
+  🗺  plan              Plan: off                                                                                       │
+  🗺  plan-review       Plan review: plan mode inactive                                                                 │
+  ∿  vibe              Vibe: off                                                                                       │
+  🎯 goal              Goal: off                                                                                       │ 
+  🧭 guided-goal       Have the agent interview you in chat, then set up goal mode                                     │ 
+  ↻  loop              Loop: off                                                                                       │
+  📥 queue             Queue a message for after the agent yields                                                      │ 
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        

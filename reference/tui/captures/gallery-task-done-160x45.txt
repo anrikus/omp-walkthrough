@@ -1,0 +1,45 @@
+                                                                                                                                                                
+── task — Task ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                                                                                
+  · done                                                                                                                                                        
+                                                                                                                                                                
+╭─── • Task 1 agent ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Read packages/server/src/auth/session.ts and middleware.ts, then document the session-cookie validation flow and any TODOs.                                  │
+├──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ • AuthLoader: Load auth middleware ⟦done⟧ · 6 req · 11.6%/200K · $0.12 · 41.9s                                                                               │
+│   Output                                                                                                                                                     │
+│     Session validation runs in middleware.ts:42 via verifySessionCookie().                                                                                   │
+│     Cookies are HMAC-signed (SHA-256) and checked against the session sto…                                                                                   │
+│     TODO at session.ts:88 — sliding-expiration refresh is stubbed.                                                                                           │
+│ ⟦1 succeeded · 6 req · 48.2s⟧                                                                                                                                │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                

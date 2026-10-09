@@ -1,0 +1,36 @@
+╭─ Settings ───────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│  🎨 Appearance    🤖 Model    ⌨ Interaction    📋 Context    🧠 Memory    📁 Files    💻    🔧    📦    🌐    📦     │          
+├──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│   Theme              │   Theme                                                                                     █ │
+│   Composer           │ ❯ Dark Theme                  titanium                                                      █ │
+│   Status Line        │   Light Theme                 light                                                         █ │
+│   Display            │   Symbol Preset               unicode                                                       █ │
+│   Images             │   Color-Blind Mode            false                                                         █ │
+│                      │   Composer                                                                                  █ │
+│                      │   Composer Shape              band                                                          █ │
+│                      │   Generation Rate             false                                                         █ │
+│                      │   Status Line                                                                               █ │
+│                      │   Status Line Preset          default                                                       █ │
+│                      │   Status Line Separator       powerline-thin                                                █ │
+│                      │   Context-Reactive Line       embedded                                                      │ │
+│                      │   Session Accent              true                                                          │ │
+│                      │   Transparent Status Line     false                                                         │ │
+│                      │   Compact Thinking Level      true                                                          │ │
+│                      │   Show Hook Status            true                                                          │ │
+│                      │   Display                                                                                   │ │
+│                      │   Resize Scrollback           rebuild                                                       │ │
+│                      │   Native Terminal Progress    false                                                         │ │
+│                      │   Large Headings (Kitty)      false                                                         │ │
+│                      │   Render Mermaid Diagrams     true                                                          │ │
+│                      │   Render SVG Figures          true                                                          │ │
+│                      │   Auto-Graph Tables           always                                                        │ │
+│                                                                                                                      │
+│   Theme used when the terminal has a dark background                                                                 │
+│                                                                                                                      │
+│                                                                                                                      │
+│                                                                                                                      │
+│ Preview:                                                                                                             │
+│  π > ⬢ no-model > 🗑 project > ◫ 7K/? ⟲ ▶───────────────────────────────────────────────────────────────────────────… │
+├──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ ⏎/␣ to change · ⇥ to jump sections · ←/→ to switch tabs · Type to search · ⎋ to close                                │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯

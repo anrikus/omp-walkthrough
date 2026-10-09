@@ -1,0 +1,36 @@
+╭─ Agents ─────────┬───────────────────────────────────────────────────────────────────────────────────────────────────╮
+│   ⬢ All agents 5 │  All agents · 5                                                                                   │
+│ ──────────────── │  search: type to filter                                                                           │
+│   ● Bundled    5 │                                                                                                   │
+│ ──────────────── │  ❯ ● reviewer           bundled                                                                   │
+│   + New agent    │    ● scout              bundled                                                                   │
+│                  │    ● security-reviewer  bundled                                                                   │
+│                  │    ● sonic              bundled                                                                   │
+│                  │    ● task               bundled                                                                   │
+│                  │    + New agent…                                                                                   │
+│                  │                                                                                                   │
+│                  │                                                                                                   │
+│                  │                                                                                                   │
+│                  │                                                                                                   │
+│                  │                                                                                                   │
+│                  │                                                                                                   │
+│                  │                                                                                                   │
+│                  │                                                                                                   │
+│                  │                                                                                                   │
+│                  │                                                                                                   │
+│                  │                                                                                                   │
+│                  │                                                                                                   │
+│                  │                                                                                                   │
+│                  │                                                                                                   │
+│                  │                                                                                                   │
+│                  │                                                                                                   │
+│                  │                                                                                                   │
+│                  │                                                                                                   │
+│                  │                                                                                                   │
+│                  │ ───────────────────────────────────────────────────────────────────────────────────────────────── │
+│                  │  Code review specialist for quality/security analysis                                             │
+│                  │  model: openai-codex/gpt-5.6-sol,gpt-5.6-sol,anthropic/claude-fable-5-1,claude-fable-5-1,claude-… │
+│                  │  prewalk: off   advisor: off   embedded:reviewer.md                                               │
+├──────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ ⏎ configure · ␣ enable/disable · ↑/↓ rows · type to search · ⌃R reload · ⎋ close                                     │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯

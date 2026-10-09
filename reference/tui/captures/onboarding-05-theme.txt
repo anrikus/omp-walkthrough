@@ -1,0 +1,36 @@
+                                                                                                                        
+                                                      ████████████                                                      
+                                                         ██  ██                                                         
+                                                         ██  ██                                                         
+                                                         ▒▒  ██                                                         
+                                                             ██                                                         
+                                                          omp                                                           
+                                                   Setup step 5 of 5                                                    
+                                                                                                                        
+    Pick a theme                                                                                                        
+    Move through the list to preview; ⏎ saves the highlighted choice.                                                   
+                                                                                                                        
+    Theme changes preview live. Nothing is saved until you press ⏎.                                                     
+    ⎋ skips this step                                                                                                   
+                                                                                                                        
+    Preview                                                                                                             
+    ✔ success  ⚠ warning  ✘ error  accent                                                                               
+    Status line                                                                                                         
+     ⬢ sonnet  │  ~/project  │  ⎇ main +2                               ◫ 42%  │  💲 0.18                                
+    Editor                                                                                                              
+    ╭──────────────────────────────────────────────────────────────────────────────────────╮                            
+    │> Ask anything, edit files, run tools                                                 │                            
+    │⏎ send · ⇧⏎ newline · / commands                                                      │                            
+    ╰──────────────────────────────────────────────────────────────────────────────────────╯                            
+                                                                                                                        
+      Match terminal                  Titanium in dark terminals, Light in light terminals                              
+    ❯ Titanium                        Default dark theme                                                                
+      Light                           Default light theme                                                               
+      Colorblind colors               Adjust red/green contrast                                                         
+      ANSI-safe                       ASCII glyphs with the dark terminal theme                                         
+      Browse all…                     Show every built-in and custom theme                                              
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                    ↑/↓ select · ⏎ confirm · ⎋ skip · ⌃C exit setup                                     

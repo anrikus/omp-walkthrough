@@ -1,0 +1,36 @@
+╭─ Models ───────────────────┬─────────────────────────────────────────────────────────────────────────────────────────╮
+│   ✦ Roles             0/15 │  All available models                                                                   │
+│ ❯ ⬢ All models          35 │  Kind: ◀ all ▶  chat ┆ tiny ┆ image ┆ tts ┆ stt ┆ search ┆ judge ┆ embedding ┆ rerank … │
+│ ────────────────────────── │  🔍 >                                                                                   │ 
+│   ● apple                1 │                                                                                         │
+│   ● local               13 │   web/parallel                                                                    free█ │
+│   ● web                 21 │   local/kokoro                                                                    free█ │
+│ ────────────────────────── │   local/parakeet-tdt-0.6b-v3                                                      free█ │
+│   ○ abliteration           │   ──────────────────────────────────────────────────────────────────────────────────  █ │
+│   ○ aiand                  │   apple/on-device                                                         8.2k ◫  free█ │
+│   ○ aimlapi                │   local/lfm2.5-350m                                                               free█ │
+│   ○ alibaba-coding-plan    │   local/lfm2.5-230m                                                               free█ │
+│   ○ alibaba-token-plan     │   local/falcon-h1-90m                                                             free█ │
+│   ○ amazon-bedrock         │   local/gemma-3-1b                                                                free█ │
+│   ○ anthropic              │   local/qwen3-1.7b                                                                free█ │
+│   ○ azure                  │   local/qwen2.5-1.5b                                                              free█ │
+│   ○ baseten                │   local/lfm2-1.2b                                                                 free█ │
+│   ○ bedrock-mantle         │   local/llama3.2:3b                                                               free█ │
+│   ○ cerebras               │   local/whisper-base                                                              free█ │
+│   ○ cline-pass             │   local/whisper-large-v3-turbo                                                    free█ │
+│   ○ cloudflare-ai-gateway  │   local/whisper-small                                                             free█ │
+│   ○ commandcode            │   web/brave                                                                       free█ │
+│   ○ coreweave              │   web/duckduckgo                                                                  free│ │
+│   ○ cursor                 │   web/ecosia                                                                      free│ │
+│   ○ deepinfra              │   web/exa                                                                         free│ │
+│   ○ deepseek               │   web/firecrawl                                                                   free│ │
+│   ○ devin                  │   web/google                                                                      free│ │
+│   ○ factory-droid          │   web/hosted                                                                      free│ │
+│   ○ firepass               │   web/jina                                                                        free│ │
+│   ○ fireworks              │   web/kagi                                                                        free│ │
+│   ○ github-copilot         │                                                                                         │
+│   ○ gitlab-duo             │   Parallel · free per M                                                                 │
+│   ○ gitlab-duo-agent       │   ○ web                                                                                 │
+├────────────────────────────┴─────────────────────────────────────────────────────────────────────────────────────────┤
+│ ⏎/→ models · ↑/↓ providers · type to search · ⌥←/⌥→ kind · ⎋ close                                                   │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯

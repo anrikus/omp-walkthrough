@@ -1,0 +1,45 @@
+                                                                                                                                                                
+                                                                ████████████                                                                                    
+                                                                   ██  ██       ▄▀▀▄ █▀▄▀▄ █▀▀▄                                                                 
+                                                                   ██  ██       ▀▄▄▀ █ █ █ █▄▄▀                                                                 
+                                                                   ▒▒  ██                  █                                                                    
+                                                                       ██       v18.8.6                                                                         
+                                                                                                                                                                
+                                            Tip: Turn on `/advisor` to attach a second model that reviews every turn                                            
+                                                                   and quietly injects advice                                                                   
+                                                                                                                                                                
+                                                                                                                                                                
+ Synthetic reference fixture: read a tiny TypeScript file. Saved history only; no model or tool was executed.                                                   
+                                                                                                                                                                
+                                                                                                                                                                
+ ● Read src/greet.ts                                                                                                                                            
+                                                                                                                                                                
+ The fixture exports greet(name). This is fabricated transcript content rendered by the real omp binary, not an executed task.                                  
+                                                                                                                                                                
+ Warning: No default model selected. Use /login, set an API key environment variable, or select a local model with /model or --model.                           
+                                                                                                                                                                
+ Tool output expansion: enabled                                                                                                                                 
+                                                                                                                                                                
+                                                                                                                            Reference fixture — read-only replay
+╭─ Session Tree ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                              │
+│ ⏎: switch. ⌥↑/⌥↓: previous/next turn. PgUp/PgDn (←/→): page. Home/End: first/last item. ⇧⏎: summarize & switch. ⇧L: label. ⌃O: filter. ⌥D/⌥T/⌥U/⌥L/⌥A: filt… │
+│ Search:                                                                                                                                                      │
+├──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                                                                                              │
+│   • user: Synthetic reference fixture: read a tiny TypeScript file. Saved history only; no model or tool was executed.                                       │
+│   • [read: src/greet.ts]                                                                                                                                     │
+│ › • assistant: The fixture exports `greet(name)`. This is fabricated transcript content rendered by the real omp binary, not an executed task.               │
+│                                                                                                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                

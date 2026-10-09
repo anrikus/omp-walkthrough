@@ -1,0 +1,45 @@
+                                                                                                                                                                
+                                                                ████████████                                                                                    
+                                                                   ██  ██       ▄▀▀▄ █▀▄▀▄ █▀▀▄                                                                 
+                                                                   ██  ██       ▀▄▄▀ █ █ █ █▄▄▀                                                                 
+                                                                   ▒▒  ██                  █                                                                    
+                                                                       ██       v18.8.6                                                                         
+                                                                                                                                                                
+                                            Tip: Type `#` anywhere in your prompt for quick actions — copy the line                                             
+                                                           or the whole prompt, undo, jump the cursor                                                           
+                                                                                                                                                                
+ Fixture complete. The read and edit above are saved synthetic history; no tools or models ran.                                                                 
+                                                                                                                                                                
+───────────────────────────────────────────────────────────────── 📷 compacted · 42K→1.2K · ⌃O ───────────────────────────────────────────────────────────────── 
+                                                                                                                                                                
+ ⓘ Advisor 1 note                                                                                                                                               
+   ▎ ⟦concern⟧ T-0 [reference-advisor] Synthetic concern: verify the greeting preserves empty-input behavior.                                                   
+   ▎ No advisor model ran.                                                                                                                                      
+                                                                                                                                                                
+ Session compacted 1 time                                                                                                                                       
+                                                                                                                                                                
+ Warning: No default model selected. Use /login, set an API key environment variable, or select a local model with /model or --model.                           
+                                                                                                                                                                
+                                                                                                                            Reference fixture — read-only replay
+ π > ⬢ no-model > 🗑 project > ◫ 7.1K/? ⟲ ▶──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+╰─                                                                                                                                                              
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                

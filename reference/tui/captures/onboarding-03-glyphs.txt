@@ -1,0 +1,36 @@
+                                                                                                                        
+                                                      ████████████                                                      
+                                                         ██  ██                                                         
+                                                         ██  ██                                                         
+                                                         ▒▒  ██                                                         
+                                                             ██                                                         
+                                                          omp                                                           
+                                                   Setup step 3 of 5                                                    
+                                                                                                                        
+    Choose glyph mode                                                                                                   
+    Pick the row that renders cleanly in your terminal.                                                                 
+                                                                                                                        
+    If a row shows boxes, tofu, or misaligned icons, pick another.                                                      
+                                                                                                                        
+      1 Nerd Font                        󰉋  ╭─╮ ├─ ◆ ✔ ✖                                                            
+    ❯ 2 Unicode                       ✔ ✖ 📁 ⬢ ╭─╮ ├─ • ⠋ →                                                              
+      3 ASCII                         [ok] [x] > + [D] +-+ |-- * ->                                                     
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                    ↑/↓ select · ⏎ confirm · ⎋ skip · ⌃C exit setup                                     
