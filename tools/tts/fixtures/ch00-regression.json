@@ -1,0 +1,30 @@
+{
+  "id": "ch00",
+  "slug": "tts-regression",
+  "title": "TTS regression fixture",
+  "act": "Regression fixture",
+  "targetSeconds": 15,
+  "takeaway": "Exercise narration generation; this is not production narration.",
+  "scenes": [
+    {
+      "id": "0.1",
+      "title": "Default and explicit pauses",
+      "visual": "Regression fixture only.",
+      "sentences": [
+        { "id": "0.1.1", "text": "omp.", "claims": [] },
+        { "id": "0.1.2", "text": "omp² reads AGENTS.md.", "claims": [], "pauseAfter": 0.125 }
+      ],
+      "onScreen": [],
+      "holdAfter": 0.25
+    },
+    {
+      "id": "0.2",
+      "title": "Display text and default hold",
+      "visual": "Regression fixture only.",
+      "sentences": [
+        { "id": "0.2.1", "text": "τ²-bench & arXiv.", "spoken": "τ²-bench and arXiv.", "claims": [] }
+      ],
+      "onScreen": []
+    }
+  ]
+}

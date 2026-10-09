@@ -1,0 +1,121 @@
+WEBVTT
+
+10.1.1
+00:00:00.000 --> 00:00:10.725
+In omp, a long-running checkout task crosses several information boundaries: what the model sees now, what persists later, and what integrations execute.
+
+10.1.2
+00:00:11.025 --> 00:00:21.500
+Project instructions, always-carried rules, on-demand skills, and cross-session memory serve different lifetimes; choose the mechanism to match the information.
+
+10.1.3
+00:00:21.800 --> 00:00:30.425
+Native project discovery stops at the nearest nonempty configuration directory, which can block instructions farther up the tree.
+
+10.1.4
+00:00:30.725 --> 00:00:38.675
+Keep always-carried requirements short, and inspect the discovered sources before assuming the project instructions loaded.
+
+10.2.1
+00:00:39.775 --> 00:00:49.450
+Time Traveling Stream Rules can interrupt a matching streamed attempt, inject corrective guidance, and retry; the facility is enabled by default.
+
+10.2.2
+00:00:49.750 --> 00:00:58.425
+Regex rules can match during streaming, while AST rules inspect finalized source-bearing tool arguments before execution.
+
+10.2.3
+00:00:58.725 --> 00:01:06.625
+Judged question rules wait for completed output, so they cannot interrupt the stream; their judge must also be available.
+
+10.2.4
+00:01:06.925 --> 00:01:12.725
+Use this for corrective guidance, not as the security boundary around tool execution.
+
+10.3.1
+00:01:13.825 --> 00:01:23.600
+As the checkout investigation grows, compaction reduces model-visible history to a summary and recent tail while preserving visible scrollback.
+
+10.3.2
+00:01:23.900 --> 00:01:32.600
+Snapcompact instead renders older text into images locally, without a summarization model; the next model must support vision.
+
+10.3.3
+00:01:32.900 --> 00:01:40.175
+That image archive is bounded and can be truncated, and reading it later still incurs the provider’s image costs.
+
+10.3.4
+00:01:40.475 --> 00:01:48.300
+For a focused continuation, handoff generates a document within the same session rather than creating another agent.
+
+10.4.1
+00:01:49.400 --> 00:01:58.450
+Cross-session memory is opt-in, with five documented modes including off: local summaries, Hindsight, Mnemopi, and Sharpshooter.
+
+10.4.2
+00:01:58.750 --> 00:02:07.750
+Hindsight needs a reachable server; Mnemopi keeps local databases, but its default processing route can use an online model.
+
+10.4.3
+00:02:08.050 --> 00:02:17.950
+Separate storage from processing: the local summary backend has no structured memory tools, and a local database does not imply offline inference.
+
+10.4.4
+00:02:18.250 --> 00:02:25.275
+Treat a remembered coupon policy as a lead to verify against current source, not a permanent authority.
+
+10.5.1
+00:02:26.375 --> 00:02:34.800
+Session history is a tree: return to an earlier checkout decision while ordinary branching preserves the alternative path.
+
+10.5.2
+00:02:35.100 --> 00:02:43.375
+Tree navigation stays in the same session file; forking creates a new identity and, in persistent mode, a new file.
+
+10.5.3
+00:02:43.675 --> 00:02:52.325
+Active context follows the selected ancestry; separate pruning and destructive rewrite operations can remove history.
+
+10.6.1
+00:02:53.425 --> 00:02:59.950
+Plan mode gives the checkout change a review boundary, but fresh sessions do not enter it automatically.
+
+10.6.2
+00:03:00.250 --> 00:03:09.150
+Prewalk is separate and off by default: it switches models after an eligible edit or write result, at the completed-turn boundary.
+
+10.6.3
+00:03:09.450 --> 00:03:14.475
+The starting model may already have edited code before handing over the task.
+
+10.7.1
+00:03:15.575 --> 00:03:27.575
+Skills supply instructions, tools execute functions, and extensions register capabilities or intercept lifecycle events; modern hook files use that extension runtime.
+
+10.7.2
+00:03:27.875 --> 00:03:36.150
+MCP connects external tools, resources, and prompts, adding server-controlled instructions as another trust surface.
+
+10.7.3
+00:03:36.450 --> 00:03:43.350
+Loading an executable extension means trusting its code, not simply adding a page of guidance.
+
+10.8.1
+00:03:44.450 --> 00:03:53.600
+The documentation’s credential tables contain 79 distinct provider IDs, by our count, including local-engine rows.
+
+10.8.2
+00:03:53.900 --> 00:04:03.875
+That describes table breadth, not independent model makers or usable accounts; Codex CLI also documents custom and local providers.
+
+10.9.1
+00:04:04.975 --> 00:04:15.025
+Secret obfuscation is off by default and partial when enabled; static prompts, static tool definitions, and binaries fall outside its boundary.
+
+10.9.2
+00:04:15.325 --> 00:04:22.700
+HTML exports can contain raw context, so review what a working session contains before sharing it.
+
+10.9.3
+00:04:23.000 --> 00:04:27.950
+Choose deliberately what persists, what executes, and what can leave the machine.

@@ -1,0 +1,109 @@
+WEBVTT
+
+8.1.1
+00:00:00.000 --> 00:00:09.900
+omp provides building blocks for these patterns, but its documentation is not evidence that an omp ensemble outperforms a single loop.
+
+8.1.2
+00:00:10.200 --> 00:00:15.500
+The task tool delegates to named specialists and can launch a batch in the background.
+
+8.1.3
+00:00:15.800 --> 00:00:24.075
+Children start without the parent’s conversation history, so shared context and self-contained assignments must carry what matters.
+
+8.1.4
+00:00:24.375 --> 00:00:35.325
+Give each specialist a concrete contract: scope, expected artifacts, evidence, dependencies, and completion criteria that another agent can actually use.
+
+8.2.1
+00:00:36.425 --> 00:00:46.550
+The bundled roster has five types: scout, reviewer, security-reviewer, task, and sonic; additional specialists can come from other definitions.
+
+8.2.2
+00:00:46.850 --> 00:00:52.350
+Fifteen built-in model roles separate the job from its concrete model assignment.
+
+8.2.3
+00:00:52.650 --> 00:01:01.850
+Here, explicit assignments connect roles to models across providers; treat this as a worked example rather than a recommended shopping list.
+
+8.2.4
+00:01:02.150 --> 00:01:07.475
+The terminal status uses friendly names; Agent Hub uses model IDs.
+
+8.2.5
+00:01:07.775 --> 00:01:14.375
+A scout’s small-model role is a routing choice, not proof that the chosen model is best for scouting.
+
+8.3.1
+00:01:15.475 --> 00:01:25.825
+Parallel scouts map naturally to separable investigations, returning focused evidence rather than repeatedly copying their entire exploration history.
+
+8.3.2
+00:01:26.125 --> 00:01:33.900
+Optional task isolation separates edits in Git workspaces for controlled integration; it is off by default.
+
+8.3.3
+00:01:34.200 --> 00:01:41.350
+Structured results can preserve artifact references and consequential decisions for the integration owner.
+
+8.3.4
+00:01:41.650 --> 00:01:51.375
+Keep one owner responsible for reconciling shared interfaces and assumptions before treating the separate contributions as an integrated result.
+
+8.4.1
+00:01:52.475 --> 00:02:03.350
+An optional advisor reviews transcript updates and can investigate with read-only tools by default, sending concerns without becoming an approval authority.
+
+8.4.2
+00:02:03.650 --> 00:02:10.250
+Its advice still needs adjudication; additional mutating tool grants change the trust boundary.
+
+8.4.3
+00:02:10.550 --> 00:02:18.025
+Eval also offers tool-free completions, real agent handles, reusable workpools, and typed judgments.
+
+8.4.4
+00:02:18.325 --> 00:02:25.225
+A valid schema constrains shape, while a judge’s probability is not a calibrated guarantee of correctness.
+
+8.5.1
+00:02:26.325 --> 00:02:36.200
+Agent Hub exposes workers’ transcripts, models, and usage, making orchestration inspectable rather than just a collection of status messages.
+
+8.5.2
+00:02:36.500 --> 00:02:44.550
+You can steer workers and revive parked ones; the separate agents command manages definitions rather than the live team.
+
+8.6.1
+00:02:45.650 --> 00:02:51.500
+The default approval mode is yolo, and headless task children explicitly run in yolo.
+
+8.6.2
+00:02:51.800 --> 00:03:00.900
+Explicit deny or prompt policies still matter; a required prompt without an interactive interface fails rather than granting permission.
+
+8.6.3
+00:03:01.200 --> 00:03:07.600
+Workspace isolation is not network, credential, or arbitrary filesystem confinement.
+
+8.6.4
+00:03:07.900 --> 00:03:13.175
+Task concurrency does not cap every eval agent or provider request.
+
+8.6.5
+00:03:13.475 --> 00:03:19.275
+Role candidate selection and request-failure fallback chains are separate mechanisms.
+
+8.7.1
+00:03:20.375 --> 00:03:27.675
+Collab lets humans observe or steer a shared live session; it is not another autonomous-agent algorithm.
+
+8.7.2
+00:03:27.975 --> 00:03:34.275
+Prewalk hands a session from one model to another once, rather than creating parallel debaters.
+
+8.7.3
+00:03:34.575 --> 00:03:43.400
+Choose the primitive that fits your dependency graph, then measure the integrated outcome instead of assuming orchestration creates quality.

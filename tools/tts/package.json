@@ -1,0 +1,19 @@
+{
+  "name": "omp-walkthrough-narration",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Offline, sample-counted Kokoro narration; see synthesize.mjs --help for generation and provenance rules.",
+  "scripts": {
+    "synth": "node synthesize.mjs",
+    "test": "node --test test.mjs"
+  },
+  "engines": { "node": ">=22" },
+  "dependencies": {
+    "@huggingface/transformers": "3.8.1",
+    "kokoro-js": "1.2.1",
+    "onnxruntime-node": "1.21.0",
+    "phonemizer": "1.2.1"
+  },
+  "devDependencies": { "node-webvtt": "1.9.4" }
+}

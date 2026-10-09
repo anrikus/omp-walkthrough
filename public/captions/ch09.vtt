@@ -1,0 +1,109 @@
+WEBVTT
+
+9.1.1
+00:00:00.000 --> 00:00:08.500
+In omp, follow a small TypeScript checkout project from a coupon expiry bug to the tools that inspect and change it.
+
+9.1.2
+00:00:08.800 --> 00:00:18.575
+Hashline gives each edit an address: a file snapshot tag and original line or block anchors, instead of a verbatim copy of the old code.
+
+9.1.3
+00:00:18.875 --> 00:00:30.675
+The creator reports Grok Code Fast 1 rising from 6.7% to 68.3% on synthetic React repairs using a historical edit format.
+
+9.1.4
+00:00:30.975 --> 00:00:37.650
+That result belongs to the historical experiment, not this release or a general coding benchmark.
+
+9.1.5
+00:00:37.950 --> 00:00:44.250
+For the current workflow, copy the address from the latest source view, then inspect the resulting diff.
+
+9.2.1
+00:00:45.350 --> 00:00:51.825
+First ask what you need to find: a filename, a known expression, or the code behind a behavior.
+
+9.2.2
+00:00:52.125 --> 00:01:02.500
+Glob discovers filenames, grep searches text, and AST grep matches syntax; semantic find asks models to judge likely implementations.
+
+9.2.3
+00:01:02.800 --> 00:01:10.575
+Ask find where expired coupons are rejected, remembering that its judge can receive source passages over the network.
+
+9.2.4
+00:01:10.875 --> 00:01:18.450
+Once you have a symbol, use language-server definitions and references to follow its relationships through the project.
+
+9.3.1
+00:01:19.550 --> 00:01:31.475
+Language-server integration exposes definitions, references, diagnostics, and rename; debugger integration exposes breakpoints, stack frames, and runtime variables.
+
+9.3.2
+00:01:31.775 --> 00:01:38.800
+Both are enabled by default, but you still need suitable language servers and debugger adapters installed.
+
+9.3.3
+00:01:39.100 --> 00:01:46.475
+Preview a rename explicitly: the documented rename operation otherwise applies changes by default.
+
+9.3.4
+00:01:46.775 --> 00:01:56.150
+Check that the server answered successfully before treating diagnostics as evidence; a missing server cannot give the project a clean bill of health.
+
+9.4.1
+00:01:57.250 --> 00:02:05.500
+Structural search matches a call expression across formatting differences, rather than confusing it with the same words in a comment.
+
+9.4.2
+00:02:05.800 --> 00:02:13.275
+AST grep is off by default; AST edit is on and produces a preview before applying changes.
+
+9.4.3
+00:02:13.575 --> 00:02:23.075
+Apply that preview through the resolution device, or discard it; applying across files can still leave partial changes after a write failure.
+
+9.5.1
+00:02:24.175 --> 00:02:33.350
+Eval keeps Python and JavaScript state in separate persistent runtimes, so loaded coupon data remains available to later cells.
+
+9.5.2
+00:02:33.650 --> 00:02:43.825
+Python runs in a retained subprocess, not Jupyter; editing a notebook changes its source without executing cells or refreshing saved outputs.
+
+9.5.3
+00:02:44.125 --> 00:02:55.400
+Browser automation and native computer use are Eval preludes: browser APIs operate on tabs, while opt-in computer use reaches native windows and input.
+
+9.6.1
+00:02:56.500 --> 00:03:05.950
+Checkpoint and rewind let an investigation collapse into a retained report, replacing exploratory conversation with its conclusion.
+
+9.6.2
+00:03:06.250 --> 00:03:13.875
+They are off by default, and their rewind affects context, not files, Git commits, running processes, or the desktop.
+
+9.6.3
+00:03:14.175 --> 00:03:21.325
+If the investigation changed the expiry check, rewinding the conversation leaves that source edit in place.
+
+9.7.1
+00:03:22.425 --> 00:03:30.625
+Under these tools, Rust handles search, structural editing, shell operations, and platform services through a native addon.
+
+9.7.2
+00:03:30.925 --> 00:03:40.800
+TypeScript owns higher-level policy and rendering, while the documented native targets include Windows x64 and ARM64.
+
+9.8.1
+00:03:41.900 --> 00:03:48.525
+Before using an integration, separate what is enabled from what is installed, credentialed, and approved.
+
+9.8.2
+00:03:48.825 --> 00:03:57.200
+Approval defaults to yolo, and approved shell or Eval code retains broad host access: approval is not a sandbox.
+
+9.8.3
+00:03:57.500 --> 00:04:03.150
+Understand the address, the tool, and the execution boundary before trusting the result.

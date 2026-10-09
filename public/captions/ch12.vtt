@@ -1,0 +1,81 @@
+WEBVTT
+
+12.1.1
+00:00:00.000 --> 00:00:09.625
+There is another omp taking shape: omp², a public Rust rewrite whose branch explicitly warns about pre-release breaking changes.
+
+12.1.2
+00:00:09.925 --> 00:00:17.600
+This is not the released omp used in this walkthrough; the public branch and its target architecture are different things.
+
+12.2.1
+00:00:18.900 --> 00:00:32.150
+The creator’s diagnosis includes omp itself, not just competitors: message history, extension state, background jobs, configuration, and interface state accumulated separate owners.
+
+12.2.2
+00:00:32.450 --> 00:00:41.725
+Saving messages was not enough: rewind could restore the conversation while leaving jobs, settings, and interface state at a different moment.
+
+12.3.1
+00:00:43.025 --> 00:00:53.175
+The playbook names five commitments: one authoritative session, a trusted control plane, bounded work, explicit compatibility, and views are projections.
+
+12.3.2
+00:00:53.475 --> 00:01:02.575
+Their common thread is ownership: shared responsibilities belong in the engine, rather than being rebuilt independently by every extension.
+
+12.4.1
+00:01:03.875 --> 00:01:12.750
+At the center of that design, a journal reconstructs the session tree, holding messages, tools, jobs, todos, and queues together.
+
+12.4.2
+00:01:13.050 --> 00:01:21.025
+Rewind, fork, resume, prompts, and views all draw from that tree, instead of maintaining competing versions of the truth.
+
+12.4.3
+00:01:21.325 --> 00:01:26.725
+This is session reconstruction, not a promise to reverse external side effects.
+
+12.5.1
+00:01:28.025 --> 00:01:37.175
+In the design, the trusted host retains state, routing, approvals, and limits; execution crosses a boundary into an obedient stub.
+
+12.5.2
+00:01:37.475 --> 00:01:44.400
+Work becomes bounded, cancellable streams, with long-running calls and subagents sharing a job model.
+
+12.5.3
+00:01:44.700 --> 00:01:52.300
+The minimized remote stub is still partial, so cancellation must not be confused with proven security confinement.
+
+12.6.1
+00:01:53.600 --> 00:02:04.250
+Settings gain declared scope and persistence through convars; Directors compose behavior across turns, with Plan nesting ForceTool in the playbook’s example.
+
+12.6.2
+00:02:04.550 --> 00:02:13.750
+A compiled compatibility rulebook owns model and provider quirks; an analogous refactor already shipped in the existing omp line.
+
+12.6.3
+00:02:14.050 --> 00:02:20.425
+Here, compatibility means model and provider behavior, not running old plugins unchanged.
+
+12.7.1
+00:02:21.725 --> 00:02:31.200
+In this architecture, terminal, remote, and inspector views consume shared state instead of owning it; full web equivalence remains incomplete.
+
+12.7.2
+00:02:31.500 --> 00:02:40.350
+A technical report describes bounded model checks for a transcript protocol, not a proof that the entire application is bug-free.
+
+12.8.1
+00:02:41.650 --> 00:02:52.675
+The public architecture records report 25 decisions implemented and 11 partial, including supporting work for a tiny local model that is not present.
+
+12.8.2
+00:02:52.975 --> 00:03:02.875
+The branch includes configuration migration, but the opened sources establish neither a complete upgrade guarantee nor a dated release commitment.
+
+12.8.3
+00:03:03.175 --> 00:03:11.575
+Treat this as pre-release work to inspect, not a promised upgrade; the central idea is that shared complexity needs one owner.

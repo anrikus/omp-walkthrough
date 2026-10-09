@@ -1,0 +1,93 @@
+WEBVTT
+
+1.1.1
+00:00:00.000 --> 00:00:08.225
+A coding model is not the whole agent: a peer-reviewed survey describes planning, memory, perception, and action around it.
+
+1.1.2
+00:00:08.525 --> 00:00:16.850
+Practitioners use harness for surrounding machinery: context, tools, execution, state, policy, and orchestration.
+
+1.1.3
+00:00:17.150 --> 00:00:21.500
+That is different from the interface where you watch and supervise the work.
+
+1.2.1
+00:00:22.600 --> 00:00:29.700
+In October 2025, LangChain's Harrison Chase described harness as a term gaining currency.
+
+1.2.2
+00:00:30.000 --> 00:00:36.900
+He acknowledged blurry boundaries with frameworks and runtimes, and explicitly disclaimed inventing the term.
+
+1.3.1
+00:00:38.000 --> 00:00:44.550
+Read this landscape along independent axes: source rights, provider freedom, and the work surface.
+
+1.3.2
+00:00:44.850 --> 00:00:54.775
+Codex CLI is open source with custom and local providers; Amp is proprietary but supports multiple models and provider connections.
+
+1.3.3
+00:00:55.075 --> 00:01:05.875
+OpenAI documents a shared Codex harness across surfaces, while Agent Client Protocol lets compatible editors host independently developed agents.
+
+1.3.4
+00:01:06.175 --> 00:01:14.100
+Provider choice does not guarantee equal performance; repository licenses and service terms have different scopes.
+
+1.4.1
+00:01:15.200 --> 00:01:29.075
+Stack Overflow's 2026 survey reports past-year use: Claude Code, 65.5%; Copilot, 58.7%; and Codex, 29.5%.
+
+1.4.2
+00:01:29.375 --> 00:01:35.900
+These are overlapping survey selections among respondents, not mutually exclusive market shares.
+
+1.4.3
+00:01:36.200 --> 00:01:48.025
+Trust is conditional: 48.0% trust easily verified output; only 6.6% trust AI with important work decisions, in a separate survey question.
+
+1.5.1
+00:01:49.125 --> 00:01:59.975
+The peer-reviewed AIDev paper records 932,791 agent-authored pull requests, through August 1, 2025.
+
+1.5.2
+00:02:00.275 --> 00:02:07.000
+Its later dataset snapshot covers a different population, not a census of all AI coding.
+
+1.6.1
+00:02:08.100 --> 00:02:17.300
+Shared primitives address different jobs: AGENTS.md carries project guidance, while Agent Skills package reusable procedures.
+
+1.6.2
+00:02:17.600 --> 00:02:27.900
+MCP connects external systems; Agent Client Protocol connects editors and agents; A2A connects independent agent applications.
+
+1.6.3
+00:02:28.200 --> 00:02:33.525
+That last boundary is not a prescription for an agent's internal subagents.
+
+1.6.4
+00:02:33.825 --> 00:02:41.050
+Shared formats do not establish identical discovery rules, execution policies, or safety guarantees.
+
+1.7.1
+00:02:42.150 --> 00:02:54.100
+The map changes: Windsurf became Devin Desktop, Kimi CLI gave way to Kimi Code CLI, and Roo Code's documentation now reports its extension shut down.
+
+1.7.2
+00:02:54.400 --> 00:03:00.450
+Historical names therefore need historical labels, rather than an active recommendation.
+
+1.8.1
+00:03:01.550 --> 00:03:09.200
+omp's repository describes an open-source, multi-provider Pi fork built by Stencil Labs.
+
+1.8.2
+00:03:09.500 --> 00:03:17.175
+Its integrated tool surface includes language-server tooling, debugger access, structured subagents, and memory.
+
+1.8.3
+00:03:17.475 --> 00:03:24.400
+Those categories are not exclusive; compare dated capabilities and boundaries, not just product names.

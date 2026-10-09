@@ -1,0 +1,129 @@
+WEBVTT
+
+3.1.1
+00:00:00.000 --> 00:00:05.500
+Changing the harness can change a model’s results; controlled comparisons show why.
+
+3.1.2
+00:00:05.800 --> 00:00:18.425
+In the peer-reviewed SWE-agent study, GPT-4 Turbo rose from 11% to 18% on SWE-bench Lite, with demonstrations supplied to both systems.
+
+3.1.3
+00:00:18.725 --> 00:00:25.400
+Separate ablations tested linting, shorter observation history, windowed viewing, and summarized search.
+
+3.1.4
+00:00:25.700 --> 00:00:32.400
+These are configuration-specific comparisons, not independent gains that can be added together.
+
+3.1.5
+00:00:32.700 --> 00:00:37.650
+Holding the model and tasks fixed makes the interface easier to study.
+
+3.2.1
+00:00:38.750 --> 00:00:50.175
+Peer-reviewed CodeAct found executable Python beating JSON actions, 74.4% against 52.4%, on composed tool tasks.
+
+3.2.2
+00:00:50.475 --> 00:00:53.775
+But code could compose more work inside each turn.
+
+3.2.3
+00:00:54.075 --> 00:01:00.600
+On atomic calls, JSON won instead: the action space mattered, not just serialization.
+
+3.3.1
+00:01:01.700 --> 00:01:09.075
+Peer-reviewed Agentless demonstrated a competitive prescribed workflow, rather than unrestricted agent control.
+
+3.3.2
+00:01:09.375 --> 00:01:19.700
+In peer-reviewed HAL, GPT-4.1 rose from 2% to 44% after a scaffold swap, at substantially higher cost.
+
+3.3.3
+00:01:20.000 --> 00:01:25.325
+These are best-run whole-system results, not average gains from a single tool.
+
+3.3.4
+00:01:25.625 --> 00:01:34.325
+Terminal-Bench likewise found minimal scaffolds competitive, while Codex CLI remained stronger for the GPT models tested.
+
+3.3.5
+00:01:34.625 --> 00:01:39.450
+HAL’s second comparison also traded higher cost for higher success.
+
+3.4.1
+00:01:40.550 --> 00:01:49.100
+Context is another harness decision: the peer-reviewed Lost in the Middle study found retrieval sensitive to information position.
+
+3.4.2
+00:01:49.400 --> 00:02:00.675
+Dynamic Cheatsheet took GPT-4o from 19% to 99% with curated memory, but on a repetitive arithmetic task, Game of 24.
+
+3.4.3
+00:02:00.975 --> 00:02:07.375
+ACE improved AppWorld by adapting context offline, using labeled training examples.
+
+3.4.4
+00:02:07.675 --> 00:02:14.225
+The lesson is to select useful evidence, rather than always shrink or always retain context.
+
+3.5.1
+00:02:15.325 --> 00:02:23.250
+Peer-reviewed ADAS, AFlow, and Darwin Gödel Machine automate harness design while keeping execution models frozen.
+
+3.5.2
+00:02:23.550 --> 00:02:34.175
+Darwin Gödel Machine transferred an evolved agent to unseen Polyglot tasks, improving from 14.2% to 28.9%.
+
+3.5.3
+00:02:34.475 --> 00:02:43.825
+Peer-reviewed GEPA made prompt optimization competitive with reinforcement learning, though reinforcement learning won its AIME evaluation.
+
+3.5.4
+00:02:44.125 --> 00:02:51.150
+The Meta-Harness preprint also searched coding harnesses, but reused the evaluation tasks during search.
+
+3.5.5
+00:02:51.450 --> 00:02:56.175
+Those searches still consume compute, and may use stronger helper models.
+
+3.6.1
+00:02:57.275 --> 00:03:04.925
+Now, first-party reports: Chroma found focused excerpts better than full history, with different retrieval burdens.
+
+3.6.2
+00:03:05.225 --> 00:03:14.650
+LangChain reports 52.8% to 66.5% on Terminal-Bench, without a held-out generalization test.
+
+3.6.3
+00:03:14.950 --> 00:03:27.900
+Can Bölük reports Grok Code Fast 1 rising from 6.7% to 68.3% with hashline, on synthetic React mutations checked against original files.
+
+3.6.4
+00:03:28.200 --> 00:03:34.200
+These are engineering leads, but their gains need testing on ordinary repository work.
+
+3.7.1
+00:03:35.300 --> 00:03:45.700
+Diff-XYZ’s revised preprint found search-and-replace helping GPT-4.1 but hurting its nano counterpart in diff generation.
+
+3.7.2
+00:03:46.000 --> 00:03:52.050
+More instructions, memory, and reasoning can also hurt, depending on the task and feedback.
+
+3.7.3
+00:03:52.350 --> 00:03:57.550
+A larger model’s preferred interface may be a poor default for a smaller one.
+
+3.8.1
+00:03:58.650 --> 00:04:04.625
+OpenAI documents training for its patch format; compatibility is part of the story.
+
+3.8.2
+00:04:04.925 --> 00:04:10.600
+DeepSeek’s technical report goes further, describing training across several harnesses.
+
+3.8.3
+00:04:10.900 --> 00:04:16.325
+The evidence supports measuring harness design, not crowning a universal winner.

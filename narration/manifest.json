@@ -1,0 +1,2884 @@
+{
+  "schemaVersion": 1,
+  "provenance": {
+    "pipeline": 1,
+    "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+    "revision": "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
+    "dtype": "q8",
+    "device": "cpu",
+    "voice": "af_heart",
+    "speed": 1,
+    "sampleRate": 24000,
+    "session": {
+      "intraOpNumThreads": 4,
+      "interOpNumThreads": 1
+    },
+    "packages": {
+      "kokoro-js": "1.2.1",
+      "@huggingface/transformers": "3.8.1",
+      "phonemizer": "1.2.1",
+      "onnxruntime-node": "1.21.0"
+    },
+    "runtime": {
+      "node": "v26.10.0",
+      "platform": "darwin",
+      "arch": "arm64",
+      "cpu": "Apple M5 Pro"
+    },
+    "lockfileHash": "4e3a96ca616120702c57daa3f51a953670545e8b04a6ad16f8cd1c509f73317e",
+    "pipelineHash": "6427785486e85a59bf4cb6232d212f759d2a2e1912a7ebaeba015179be2acfb2",
+    "lexiconHash": "14d060438df2de43227a0c1aad4cc96889b7665f2ee0bf34c986ac9b461ee400",
+    "encoding": {
+      "codec": "libmp3lame",
+      "bitrate": "96k",
+      "channels": 1,
+      "sampleRate": 24000,
+      "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers"
+    },
+    "timing": "Exact float32 PCM sample counts; sentence spans contain generated speech, scene spans additionally contain sentence pauses and scene holds. WebVTT rounds to milliseconds. MP3 gapless decoding removes encoder padding; container duration can include that padding."
+  },
+  "chapters": [
+    {
+      "id": "ch00",
+      "samples": 1518000,
+      "duration": 63.25,
+      "narrationHash": "90cbf8acabfd955652fd5362b57fda1368831183135e3a47a03e734aca4319b9",
+      "provenance": {
+        "pipeline": 1,
+        "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+        "revision": "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
+        "dtype": "q8",
+        "device": "cpu",
+        "voice": "af_heart",
+        "speed": 1,
+        "sampleRate": 24000,
+        "session": {
+          "intraOpNumThreads": 4,
+          "interOpNumThreads": 1
+        },
+        "packages": {
+          "kokoro-js": "1.2.1",
+          "@huggingface/transformers": "3.8.1",
+          "phonemizer": "1.2.1",
+          "onnxruntime-node": "1.21.0"
+        },
+        "runtime": {
+          "node": "v26.10.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "cpu": "Apple M5 Pro"
+        },
+        "lockfileHash": "4e3a96ca616120702c57daa3f51a953670545e8b04a6ad16f8cd1c509f73317e",
+        "pipelineHash": "6427785486e85a59bf4cb6232d212f759d2a2e1912a7ebaeba015179be2acfb2",
+        "lexiconHash": "14d060438df2de43227a0c1aad4cc96889b7665f2ee0bf34c986ac9b461ee400",
+        "encoding": {
+          "codec": "libmp3lame",
+          "bitrate": "96k",
+          "channels": 1,
+          "sampleRate": 24000,
+          "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        "timing": "Exact float32 PCM sample counts; sentence spans contain generated speech, scene spans additionally contain sentence pauses and scene holds. WebVTT rounds to milliseconds. MP3 gapless decoding removes encoder padding; container duration can include that padding."
+      },
+      "sha256": {
+        "audio": "3d573f61d54bb0e73d8dd6aee0b1d7426696a7ec354bb31668f52bad292cc573",
+        "captions": "243da89a71c49018aa8bddd3bce353e44c673ce92f7d1129d46af90e8643c953",
+        "cues": "da7ae68d0aff211390b587522a8224f414a03511e51117be5fa4fe5b1ed649dd"
+      },
+      "sentences": [
+        {
+          "id": "0.1.1",
+          "samples": 195000,
+          "pauseSamples": 7200,
+          "cacheKey": "ae5c7174e7db7ff7218d9b2cb62aa8b26a67c38ed3ba047c416a887aebb3e5c6",
+          "pcmSha256": "587da61e8982f58aabbe5df1fdae959d69eabc15291c9df5488f7e3dacc12e03"
+        },
+        {
+          "id": "0.1.2",
+          "samples": 174000,
+          "pauseSamples": 7200,
+          "cacheKey": "9784e7ffdc7b68ed4d961b9a706e63f027da15dc2958ff56a082cb2b9b6d8e29",
+          "pcmSha256": "2d4cc9ddbd975d16d213d04a03499fa270bbc139a22f2a10a6878db6e4700aeb"
+        },
+        {
+          "id": "0.1.3",
+          "samples": 101400,
+          "pauseSamples": 12000,
+          "cacheKey": "9c484790ef9c1850a86f975be7cfeb09b94a91aae9cf6792541b0dd9e6856845",
+          "pcmSha256": "a2f5450e809dc7545657b936de2db9bcd3b95c809f2ec09322396e7808652eaa"
+        },
+        {
+          "id": "0.2.1",
+          "samples": 232200,
+          "pauseSamples": 12000,
+          "cacheKey": "8e1cac5fe6ac1df7c895fe97041a04130c11a79144a4748f04bf306c289241b8",
+          "pcmSha256": "a1c1aada2de5e1cd8a725fed93eee48fafdb1f5f11f4e9ea3116c3122759385c"
+        },
+        {
+          "id": "0.2.2",
+          "samples": 82800,
+          "pauseSamples": 7200,
+          "cacheKey": "cb10b4e608c85b8aeff0824d3b7c07de2189e4441e93d5460dfd56aa372e1536",
+          "pcmSha256": "0d52c0caf0709cac8a218e0d78055b75fde7da8b7a338846362bd89fc3ad1abb"
+        },
+        {
+          "id": "0.3.1",
+          "samples": 156000,
+          "pauseSamples": 7200,
+          "cacheKey": "fa161fbac0db3321ed29501f594efd4e060beab42653a0fb49daa59b5a2f4551",
+          "pcmSha256": "b11d54f3c8bd8603874c53deaffb88747deaedb1657cf272f3129a54628c83ab"
+        },
+        {
+          "id": "0.3.2",
+          "samples": 136800,
+          "pauseSamples": 7200,
+          "cacheKey": "c4dd2c48bd1b537c0164b69cad060f544010c06b43c8cb232c2c866b7bfec819",
+          "pcmSha256": "09de1b609039e768f1c01c3506bd80a627dcd579ffe61f74265595e655ba2c82"
+        },
+        {
+          "id": "0.3.3",
+          "samples": 201000,
+          "pauseSamples": 12000,
+          "cacheKey": "a2d28693cd14bcc893e2f352d337155e0ed82e098cdeb57131d47a6c0c81b6d2",
+          "pcmSha256": "2cb62390794c6e346790afc1204b131e7dacdbacb71d08ad0e7b4f23b61cc082"
+        },
+        {
+          "id": "0.3.4",
+          "samples": 85200,
+          "pauseSamples": 7200,
+          "cacheKey": "130ab7d620e336c7f33549e67a4e6c6f1633f258e3f96d9a639ad86003828c4e",
+          "pcmSha256": "6cc038ac912e15ece7e051ae3c4768f56e22d0e377eb1812bab127502e8b96ca"
+        }
+      ]
+    },
+    {
+      "id": "ch01",
+      "samples": 4941600,
+      "duration": 205.9,
+      "narrationHash": "15c0912e7478c39ddd6fce0a330410a3df13a08ca1229b62cbecf522bce83223",
+      "provenance": {
+        "pipeline": 1,
+        "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+        "revision": "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
+        "dtype": "q8",
+        "device": "cpu",
+        "voice": "af_heart",
+        "speed": 1,
+        "sampleRate": 24000,
+        "session": {
+          "intraOpNumThreads": 4,
+          "interOpNumThreads": 1
+        },
+        "packages": {
+          "kokoro-js": "1.2.1",
+          "@huggingface/transformers": "3.8.1",
+          "phonemizer": "1.2.1",
+          "onnxruntime-node": "1.21.0"
+        },
+        "runtime": {
+          "node": "v26.10.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "cpu": "Apple M5 Pro"
+        },
+        "lockfileHash": "4e3a96ca616120702c57daa3f51a953670545e8b04a6ad16f8cd1c509f73317e",
+        "pipelineHash": "6427785486e85a59bf4cb6232d212f759d2a2e1912a7ebaeba015179be2acfb2",
+        "lexiconHash": "14d060438df2de43227a0c1aad4cc96889b7665f2ee0bf34c986ac9b461ee400",
+        "encoding": {
+          "codec": "libmp3lame",
+          "bitrate": "96k",
+          "channels": 1,
+          "sampleRate": 24000,
+          "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        "timing": "Exact float32 PCM sample counts; sentence spans contain generated speech, scene spans additionally contain sentence pauses and scene holds. WebVTT rounds to milliseconds. MP3 gapless decoding removes encoder padding; container duration can include that padding."
+      },
+      "sha256": {
+        "audio": "c6623be859c9edd3b08f43a37929ebf8da5dedb77ad3d363b685937f392fbae3",
+        "captions": "289cffb1a8f425cd56801a60a2ec6e5fe4c64607e2e68eb010ddf3e50afe3b1c",
+        "cues": "fdf95669e33384fba5404c40909b4817e560d36d913235add323da41953a9335"
+      },
+      "sentences": [
+        {
+          "id": "1.1.1",
+          "samples": 197400,
+          "pauseSamples": 7200,
+          "cacheKey": "4d4402da32d9ba3e436a2332a148bfbd8564d98ac7e40ed7c19cf20be6c27174",
+          "pcmSha256": "4e8e8398979462be77b588e578fb2568f8a672c69a1a7d77cca11372008a6579"
+        },
+        {
+          "id": "1.1.2",
+          "samples": 199800,
+          "pauseSamples": 7200,
+          "cacheKey": "49b00e1053b9a9d472b54c17a39c00f8871f7979813ddbc374bd95f3d15368d9",
+          "pcmSha256": "246a6434b675b684cea56caf6393572bda37cb63fea3d5f5b17b6a6f33801f6d"
+        },
+        {
+          "id": "1.1.3",
+          "samples": 104400,
+          "pauseSamples": 7200,
+          "cacheKey": "377e711a5de0e12fcb3f713960aa44eba43d9a04c0807ffa72bb96bdb9d2dc04",
+          "pcmSha256": "1ccc70ec9827b8901ddb0c480e2b829d022c45d4c9a759339975fa02ee416e91"
+        },
+        {
+          "id": "1.2.1",
+          "samples": 170400,
+          "pauseSamples": 7200,
+          "cacheKey": "9426c3f9ded4327b635f75dae8d15364e893edea1b90e2f3124fa85153262a6c",
+          "pcmSha256": "e55d2bdeea4486ea1161b4b9c899640ecf837c2d57ac6bcaaa381468c4c3c6b8"
+        },
+        {
+          "id": "1.2.2",
+          "samples": 165600,
+          "pauseSamples": 7200,
+          "cacheKey": "0a7bf4545cfd25310fb5f393ab79d5641017a6ae62b2fe8fcd1dfc4f4f02349d",
+          "pcmSha256": "e9ad8bc313b3c0f125d856128c933ce4cc489e6cc0d65d505f848fc70b313a4c"
+        },
+        {
+          "id": "1.3.1",
+          "samples": 157200,
+          "pauseSamples": 7200,
+          "cacheKey": "30dedf2d5eac36d4da88d08639afb06cdf626bb568c6aa8d93dc301024daf6f7",
+          "pcmSha256": "9711873d5f6bc9f407932b9a362932dc4837488681463b4ee6da8cbb6c592a75"
+        },
+        {
+          "id": "1.3.2",
+          "samples": 238200,
+          "pauseSamples": 7200,
+          "cacheKey": "53b48057bde02588533ef35512b6fb5b25235845f7821d40beb033c9c28457d8",
+          "pcmSha256": "3b0f76b5f53967fc8b081ba40e40fff63e9b1ef981d77ecfa5eba29ebbd3577d"
+        },
+        {
+          "id": "1.3.3",
+          "samples": 259200,
+          "pauseSamples": 7200,
+          "cacheKey": "ec8cdcae565add15f8529324d0249f9d87d4573c823039d1dbf8552c0cadd652",
+          "pcmSha256": "28a74cb4a3d45c48920c99123f662f5d147c97e4854a486af1b53d5603b6f5ba"
+        },
+        {
+          "id": "1.3.4",
+          "samples": 190200,
+          "pauseSamples": 7200,
+          "cacheKey": "a74f553c805ee1869878e5ac88e090d18448914f37de7a5fd4a2a49a176dd08c",
+          "pcmSha256": "a48782e3634dc728dafd76fd551a27d4cac62547b610836803cd6058fbe8a00f"
+        },
+        {
+          "id": "1.4.1",
+          "samples": 333000,
+          "pauseSamples": 7200,
+          "cacheKey": "c5473288e1d159c960054cf6d52395fb44b6f718c8a77ffd621fa866bce0b185",
+          "pcmSha256": "dbc113c597bd8ab6cde60f44fc763bcc4435b17995daae4aca928457ea7b0319"
+        },
+        {
+          "id": "1.4.2",
+          "samples": 156600,
+          "pauseSamples": 7200,
+          "cacheKey": "f00ae79ef26b61b0900d39f083b3a3004f21660535c60f7aeb03d54468775dbe",
+          "pcmSha256": "40b566be317a76281c342f5bc3953b2377f62088268507def09a95e74bafd8f1"
+        },
+        {
+          "id": "1.4.3",
+          "samples": 283800,
+          "pauseSamples": 7200,
+          "cacheKey": "cb1e013b21557f4c3eb9fe8eee4f287fe4d8fbd5104b70eff862750236dc0ed5",
+          "pcmSha256": "056afe17d8ddb6f99c01422379f6e6cb3e314dd2e8b538b32e64495eade47ca6"
+        },
+        {
+          "id": "1.5.1",
+          "samples": 260400,
+          "pauseSamples": 7200,
+          "cacheKey": "e9c9a33773ac6bf84d37bfbb29528ae24e3660c7986c72915dad5e5735779f85",
+          "pcmSha256": "0bbfdb99b0fc5b44f03c4afba1fa3761248afca716292ef6fabfcb6aa211e2ac"
+        },
+        {
+          "id": "1.5.2",
+          "samples": 161400,
+          "pauseSamples": 7200,
+          "cacheKey": "e8f307573bea4ad4c5539e16e82a00b16d0735779b1eb82be9f237866698f776",
+          "pcmSha256": "c2f9bd304679299269614516b5385cff678d8fec52673e1c9bc9cfc7473ff18b"
+        },
+        {
+          "id": "1.6.1",
+          "samples": 220800,
+          "pauseSamples": 7200,
+          "cacheKey": "6c52e2eb70b91291eb37365757cd7705ef63cfb415ed4436a6ccfe59fb94a6da",
+          "pcmSha256": "ebf78255adacfce74fb50a090d99e1fe33276cb9fa63d3637b6d079570f20121"
+        },
+        {
+          "id": "1.6.2",
+          "samples": 247200,
+          "pauseSamples": 7200,
+          "cacheKey": "3bd458f6dffbeb02d40387767358a388c694a009823118bf55aee252c0090214",
+          "pcmSha256": "5e73993b6b4da03cdb20619e61210a1fc66ff024d44ce31d3afcb1e5041faf58"
+        },
+        {
+          "id": "1.6.3",
+          "samples": 127800,
+          "pauseSamples": 7200,
+          "cacheKey": "31643d08f9531f6dd0e9878d0b92f132d4bf996018b93d766084d42465466e3c",
+          "pcmSha256": "e21434a455ec1f9de5a33b9982118607d5d237a7ad137fbeb46384413fb6c663"
+        },
+        {
+          "id": "1.6.4",
+          "samples": 173400,
+          "pauseSamples": 7200,
+          "cacheKey": "4282e2c80e60439cadd074c86d6fbe4a80759a63b0d09f50f536933bb8832069",
+          "pcmSha256": "fccf418fcdb54e543a41235d942d461082abfac4653dc6d2da2b79759065db62"
+        },
+        {
+          "id": "1.7.1",
+          "samples": 286800,
+          "pauseSamples": 7200,
+          "cacheKey": "254f81409aff2eaae7bba9f4b0dd5aaf3279cafaca637fdf9e06dc33135e09cf",
+          "pcmSha256": "652d707275e842a7b6448937670dc13b4a854153fb3131abdaefe57b066f6a0b"
+        },
+        {
+          "id": "1.7.2",
+          "samples": 145200,
+          "pauseSamples": 7200,
+          "cacheKey": "96ab783bc782cd503e293a9f18005ed7391da312d8be97d8a8c487af30d1292b",
+          "pcmSha256": "95122b2cd11e20052c0fb4b1f36b67c9af17077105156763a79f6816b939d8b9"
+        },
+        {
+          "id": "1.8.1",
+          "samples": 183600,
+          "pauseSamples": 7200,
+          "cacheKey": "ec228aaccfb9ed91f54c68dc216a8edd028219ab283b4e25b17bfbbffd5bd2a1",
+          "pcmSha256": "c9ec56e017d23a3a971f9b166344502d817b59be2654dd52de4fffaef1366b33"
+        },
+        {
+          "id": "1.8.2",
+          "samples": 184200,
+          "pauseSamples": 7200,
+          "cacheKey": "4a1bd153439094bc078af58fb9689f7f1948446db2469deb0656e0d2da3f785e",
+          "pcmSha256": "72c25d6faa56d6de5deba83bbeaf85109a7b1c6319481a1d3eca665e88d08fa8"
+        },
+        {
+          "id": "1.8.3",
+          "samples": 166200,
+          "pauseSamples": 7200,
+          "cacheKey": "8fcdcc86694269f2b3504f7bf810a94b056d97c10f222ca07b3bd97b416829d0",
+          "pcmSha256": "1c04828007911ae5663639e4a4a265ba7da9e20aa3e025bb2507052bff2d0472"
+        }
+      ]
+    },
+    {
+      "id": "ch02",
+      "samples": 4233600,
+      "duration": 176.4,
+      "narrationHash": "98b1173aac18a99ddaeb18e4be66f21fa155af95c50a4130f1b48a942a2f0796",
+      "provenance": {
+        "pipeline": 1,
+        "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+        "revision": "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
+        "dtype": "q8",
+        "device": "cpu",
+        "voice": "af_heart",
+        "speed": 1,
+        "sampleRate": 24000,
+        "session": {
+          "intraOpNumThreads": 4,
+          "interOpNumThreads": 1
+        },
+        "packages": {
+          "kokoro-js": "1.2.1",
+          "@huggingface/transformers": "3.8.1",
+          "phonemizer": "1.2.1",
+          "onnxruntime-node": "1.21.0"
+        },
+        "runtime": {
+          "node": "v26.10.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "cpu": "Apple M5 Pro"
+        },
+        "lockfileHash": "4e3a96ca616120702c57daa3f51a953670545e8b04a6ad16f8cd1c509f73317e",
+        "pipelineHash": "6427785486e85a59bf4cb6232d212f759d2a2e1912a7ebaeba015179be2acfb2",
+        "lexiconHash": "14d060438df2de43227a0c1aad4cc96889b7665f2ee0bf34c986ac9b461ee400",
+        "encoding": {
+          "codec": "libmp3lame",
+          "bitrate": "96k",
+          "channels": 1,
+          "sampleRate": 24000,
+          "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        "timing": "Exact float32 PCM sample counts; sentence spans contain generated speech, scene spans additionally contain sentence pauses and scene holds. WebVTT rounds to milliseconds. MP3 gapless decoding removes encoder padding; container duration can include that padding."
+      },
+      "sha256": {
+        "audio": "a4056857b6b5d18aa27b62bb3b1ffd90a4497720de842f83b9044f45036cb9d7",
+        "captions": "932c9ce1bf3d2767c3883e86c73a97320a59b24253f1b96a8ae71b505c61a768",
+        "cues": "3e9cdc0317b9723d7a7720d88f673c3ba32b29509ec1737c7e57f40031f5d3d5"
+      },
+      "sentences": [
+        {
+          "id": "2.1.1",
+          "samples": 163800,
+          "pauseSamples": 7200,
+          "cacheKey": "b884792dd0c708c752d520d770201416bae6116f5e4b9445093076860316c1a4",
+          "pcmSha256": "f4fe1f4d1497355517d5292f686a5ceececd4c2920ff8937e3212059edce0abd"
+        },
+        {
+          "id": "2.1.2",
+          "samples": 204000,
+          "pauseSamples": 7200,
+          "cacheKey": "0c8a1695a6190dd1761298c0e92e0b8ee14e6595237b95aade95b18f995c841f",
+          "pcmSha256": "a3ef8be7c43c19e0e5b53e783e2c75c5ae27c88f995c8f1652319eae49d2e790"
+        },
+        {
+          "id": "2.1.3",
+          "samples": 147600,
+          "pauseSamples": 7200,
+          "cacheKey": "0e72655bc2d3fad5051866b94f0aa974619ce74ac7d0908885e3d844f2d0c0ac",
+          "pcmSha256": "c6b17b417dd8b28e73afbcc8532f6af34d732b4a967b4694c400997253c61c6a"
+        },
+        {
+          "id": "2.2.1",
+          "samples": 291600,
+          "pauseSamples": 7200,
+          "cacheKey": "a65dab970f012d9a1a2f8800e33bde4256fd76afebb4d8ddf0fc6295914f37a0",
+          "pcmSha256": "f67369c3fd87d2a0cb39c3263eb744dca71d2f67ddd15af02994b957e839bb0f"
+        },
+        {
+          "id": "2.2.2",
+          "samples": 124200,
+          "pauseSamples": 7200,
+          "cacheKey": "80c945b51d6715e72b98089d42dd582022a93db6f0b1fc7b2c2ada1bde2cc379",
+          "pcmSha256": "9391087848dce586d55ef79ee06e2a27055b11effe8e79b4dbde31723cc2834a"
+        },
+        {
+          "id": "2.3.1",
+          "samples": 277800,
+          "pauseSamples": 7200,
+          "cacheKey": "8f0b63cc41beae96b1404bfca28b76664c4a3c70b1c1de7b90dd1d7cc9cac4fe",
+          "pcmSha256": "94638a328b92379331fca595337418ec8777dfe8eb1edb903e0d50cabf5c8914"
+        },
+        {
+          "id": "2.3.2",
+          "samples": 189000,
+          "pauseSamples": 7200,
+          "cacheKey": "ae78ae8257c217bfa9098ddb01b1a91bbced02a333bf080c7786749654bb88f9",
+          "pcmSha256": "5103184915fd042f5cee61522b80e60d664023ab77f0f558d84a88ff817fb9b6"
+        },
+        {
+          "id": "2.3.3",
+          "samples": 115800,
+          "pauseSamples": 7200,
+          "cacheKey": "b58fcdd5bb1413aebafb5f2336e880bdde6364fa8d5229dbdb6794285709785b",
+          "pcmSha256": "37fc978a2f564086a0c4a535cb04b8754d07180ef3fa8ef5e897e481c3f9798d"
+        },
+        {
+          "id": "2.3.4",
+          "samples": 163200,
+          "pauseSamples": 7200,
+          "cacheKey": "55a0d1964bf0d1c1538d95b360a023e84460cb2a289d7dedd47761a5ce75c7a8",
+          "pcmSha256": "0c7495cc36646ca28be4ba7ebacdd9068dda1bc9afad3325d1c525f5dffae449"
+        },
+        {
+          "id": "2.4.1",
+          "samples": 225600,
+          "pauseSamples": 7200,
+          "cacheKey": "b6965ee3c6cb4fd6e6fe62d22349cac55252ac40e0e092c407366008ad32d829",
+          "pcmSha256": "ce1d9f8cb8f66215919b3561dbfb948ba18d1f2ad78fb0ac9452a6713c44070e"
+        },
+        {
+          "id": "2.4.2",
+          "samples": 161400,
+          "pauseSamples": 7200,
+          "cacheKey": "e50c43a8a045406b0e34de4d8c2ceb55cbdea280c0497b4e19f43c110a5899c1",
+          "pcmSha256": "2a0b275e07597280bb140897fa5e3dc03debddb116d99184a00ad948b90364d5"
+        },
+        {
+          "id": "2.5.1",
+          "samples": 219000,
+          "pauseSamples": 7200,
+          "cacheKey": "70fbc53b16370fd69478a3373ef8f9a9062b32f9b569cc11e906f58d7f2f7127",
+          "pcmSha256": "3ad0155161672c886a126fe176c91c23f8b0691ccfa02324bf8066224f62ff4f"
+        },
+        {
+          "id": "2.5.2",
+          "samples": 171600,
+          "pauseSamples": 7200,
+          "cacheKey": "09a97cef5ab252788218e6f7b09f421f3243d0950fdea5a7bda61a7f2c30bece",
+          "pcmSha256": "ca15db71bb912ecf4e144b0eb949665c88f32ad8d1a838ff8bdcaf07085c861f"
+        },
+        {
+          "id": "2.5.3",
+          "samples": 184800,
+          "pauseSamples": 7200,
+          "cacheKey": "4270bfe433532069374bc322e57c799ae3c8619e11520114be96dcac6cdfbea1",
+          "pcmSha256": "d12773ad2f283358f3e091a89c6649b5bda7a8f34cf9b76d29f63098097d7312"
+        },
+        {
+          "id": "2.6.1",
+          "samples": 204600,
+          "pauseSamples": 7200,
+          "cacheKey": "7d0ca461c92305703664bedf52ac8276440e36385c7b7fa2e9e8707e57008699",
+          "pcmSha256": "9251cdf2a7a5b4213cc73b4cd2793d9c773ed137961e62600d3316f933b0830b"
+        },
+        {
+          "id": "2.6.2",
+          "samples": 131400,
+          "pauseSamples": 7200,
+          "cacheKey": "c5ee1106f6ec3a31a42df99ff72bd78ca902f70b9b79f80aeba2f243399fce6c",
+          "pcmSha256": "114114ba90e3affadd43f17d1b1d4e021014a9e8f45658f84cd076c3e78dc92f"
+        },
+        {
+          "id": "2.7.1",
+          "samples": 253800,
+          "pauseSamples": 7200,
+          "cacheKey": "8c541343bec37b1c2c0dbae07d0b38c0063033fdc82b050f604f4f09cee26d2e",
+          "pcmSha256": "b07e62e17eace85b0801251c6d04fb786882f8381af7f80c60e08e6fa0124052"
+        },
+        {
+          "id": "2.7.2",
+          "samples": 158400,
+          "pauseSamples": 7200,
+          "cacheKey": "2f98da5fbe112f365e35c91bd416a2e66cbed31cb3acaef53538638cc485a2b5",
+          "pcmSha256": "ae5facf1e0d22b4ab4fe776eb8b23c77fb0f92e044925449d00dfb846ae916b4"
+        },
+        {
+          "id": "2.7.3",
+          "samples": 214800,
+          "pauseSamples": 7200,
+          "cacheKey": "f9f321ebb1468916cbfa0dc9795af94c92593721ead1dd6c0647d95cd455b3b6",
+          "pcmSha256": "64b72fa69fd4eaf3eb289d497900868dcc52bfadf0ffc851240c56026ec210d9"
+        },
+        {
+          "id": "2.7.4",
+          "samples": 208800,
+          "pauseSamples": 7200,
+          "cacheKey": "67c603b9b95388d0f922c653310a9c002aae0906792877eab02738b62556ce6f",
+          "pcmSha256": "1640458b963fcdcda186b10921b5ced9d5cbe1bc9f8490250488802e12fca13f"
+        },
+        {
+          "id": "2.7.5",
+          "samples": 127200,
+          "pauseSamples": 7200,
+          "cacheKey": "0b5bdcda68717b8f2ec2a8a4ae55116ae86b7dc49ed9afee2e404710a54e6dcd",
+          "pcmSha256": "024ba5d32650e180ab04e3810a9dd6062ada8f4e8d04f9357d89b9ff18a7662e"
+        }
+      ]
+    },
+    {
+      "id": "ch03",
+      "samples": 6178200,
+      "duration": 257.425,
+      "narrationHash": "50bec5685ebd558ed681e9ebb4df539d56064ac5a913d203dc8dfd043b380f96",
+      "provenance": {
+        "pipeline": 1,
+        "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+        "revision": "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
+        "dtype": "q8",
+        "device": "cpu",
+        "voice": "af_heart",
+        "speed": 1,
+        "sampleRate": 24000,
+        "session": {
+          "intraOpNumThreads": 4,
+          "interOpNumThreads": 1
+        },
+        "packages": {
+          "kokoro-js": "1.2.1",
+          "@huggingface/transformers": "3.8.1",
+          "phonemizer": "1.2.1",
+          "onnxruntime-node": "1.21.0"
+        },
+        "runtime": {
+          "node": "v26.10.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "cpu": "Apple M5 Pro"
+        },
+        "lockfileHash": "4e3a96ca616120702c57daa3f51a953670545e8b04a6ad16f8cd1c509f73317e",
+        "pipelineHash": "6427785486e85a59bf4cb6232d212f759d2a2e1912a7ebaeba015179be2acfb2",
+        "lexiconHash": "14d060438df2de43227a0c1aad4cc96889b7665f2ee0bf34c986ac9b461ee400",
+        "encoding": {
+          "codec": "libmp3lame",
+          "bitrate": "96k",
+          "channels": 1,
+          "sampleRate": 24000,
+          "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        "timing": "Exact float32 PCM sample counts; sentence spans contain generated speech, scene spans additionally contain sentence pauses and scene holds. WebVTT rounds to milliseconds. MP3 gapless decoding removes encoder padding; container duration can include that padding."
+      },
+      "sha256": {
+        "audio": "c134fb17634cc020cc5a03039bf657e4e5dc006173fad7e99baf3549bcd399bd",
+        "captions": "e615feb6b664985573d4b718b7b8d8fc5d453b888025cecaaeeda71ec32bb999",
+        "cues": "c9cbe5fa2cc49721f2bdc36bd59302f1ed16686b54a9c83ecff640d83f9b06e4"
+      },
+      "sentences": [
+        {
+          "id": "3.1.1",
+          "samples": 132000,
+          "pauseSamples": 7200,
+          "cacheKey": "7e9486ce4ac3564f3cd7c744c7f4c0673ca5b848aaa3440559cab58cea2ff870",
+          "pcmSha256": "0997197c6ba06121c419b108669ff87ad4facca605a41ae43f1b6dcfaedfc9d7"
+        },
+        {
+          "id": "3.1.2",
+          "samples": 303000,
+          "pauseSamples": 7200,
+          "cacheKey": "a38eab51b9f0ea7ed586c702a3e2d3cfc9f79633d61e4c6352cdcd0776512d86",
+          "pcmSha256": "67932968ce34e57945467effa50e53d499ddbe8829cad12e27a4f850841ab498"
+        },
+        {
+          "id": "3.1.3",
+          "samples": 160200,
+          "pauseSamples": 7200,
+          "cacheKey": "f3f5219362e2fdb8700ea007009375c91945383662a6fcf4725604ea1d51ecfb",
+          "pcmSha256": "a94f2904acd2ba3da061d2d989f5c88dc413a9e4a8e456ca29acfb207b0c819a"
+        },
+        {
+          "id": "3.1.4",
+          "samples": 160800,
+          "pauseSamples": 7200,
+          "cacheKey": "c2eb42ca0ce1122f9f932cf0195e63221eee9aed1d0490d12f2d17eb17c1d30f",
+          "pcmSha256": "0f30dad2d0715c77e11166c9999f6fa8a29ea161925b10c547a4f7edc547be31"
+        },
+        {
+          "id": "3.1.5",
+          "samples": 118800,
+          "pauseSamples": 7200,
+          "cacheKey": "d28f90e6bd524f850097b472a4a95563d12823748a042eec8d35acdc3ec5195d",
+          "pcmSha256": "32fcc6d6a0207259cce57b7a6576699e08774c41e1efc4dca0e656a096d1c2a0"
+        },
+        {
+          "id": "3.2.1",
+          "samples": 274200,
+          "pauseSamples": 7200,
+          "cacheKey": "201d2b0ca4c9685467658bd3266cf9e0ed709ee53a29e41fd4eb59857f9c4153",
+          "pcmSha256": "216016003e458b908eb5cb5da77aa26d05e9cc8b0d83c555e70522543ea509b9"
+        },
+        {
+          "id": "3.2.2",
+          "samples": 79200,
+          "pauseSamples": 7200,
+          "cacheKey": "a5b9cea5f0a6a16042518d327b2702b075e6d6ceb0ca9d4e0200ff9b8db4596c",
+          "pcmSha256": "b26c5caed3e0d35c676d315e5dc2e7549e1bb80e35670758aa24dae281ba9277"
+        },
+        {
+          "id": "3.2.3",
+          "samples": 156600,
+          "pauseSamples": 7200,
+          "cacheKey": "ff10b3653d1ca5e913e19f06a70c86b7317b3e3a2cec00d8155d537d18930936",
+          "pcmSha256": "69d84233adfb9d425607e263799e43a74556dc6d4a8c147423c743446908d319"
+        },
+        {
+          "id": "3.3.1",
+          "samples": 177000,
+          "pauseSamples": 7200,
+          "cacheKey": "28fddf81e81b2fe01eb0620bfba2fb0a1171c0408fedba6c32c55384f514df65",
+          "pcmSha256": "bffdd78c4606ab726c12eeb7ef12213a6ec97872ff01800cf97ef1ff4a7dc6e0"
+        },
+        {
+          "id": "3.3.2",
+          "samples": 247800,
+          "pauseSamples": 7200,
+          "cacheKey": "a680845676a3e13d531caa99ff46d72749e929a49d867d84fc4a8831d984f27f",
+          "pcmSha256": "a70ec252782a450acce4ca609f89716c700403f83e56c6f00763890a4279ec50"
+        },
+        {
+          "id": "3.3.3",
+          "samples": 127800,
+          "pauseSamples": 7200,
+          "cacheKey": "67d1e512bb30962f5c3a3235046f90af4c46204d8d6a428622d5e22335ce227c",
+          "pcmSha256": "95e17f1e73b7a3dcac790ce474d223e406254b71e2ade7b9dca63c1613c4d353"
+        },
+        {
+          "id": "3.3.4",
+          "samples": 208800,
+          "pauseSamples": 7200,
+          "cacheKey": "298a66546d59628ef9b486f103dd8c45b2b66556c31ddc4a108ffb3c56437db0",
+          "pcmSha256": "31d51a8f82b89418eaa7580824187a8e7a2d49bdffdb47248f5e9144c3d2d858"
+        },
+        {
+          "id": "3.3.5",
+          "samples": 115800,
+          "pauseSamples": 7200,
+          "cacheKey": "6c97c895c85e92fddb5de66eb2dcca5d15a5a4f714ff2307930d245c3218f9a8",
+          "pcmSha256": "470f9384189bda6ecc4c6b16fa487472e95269e3a95810d3b8869955a3ef588b"
+        },
+        {
+          "id": "3.4.1",
+          "samples": 205200,
+          "pauseSamples": 7200,
+          "cacheKey": "f63b14a58d2aea248d046f1f4abab7eea4dd4faeb51db6eec86683b0c740285e",
+          "pcmSha256": "3484c8d019672046d25c05c935f387ee44319602bf1fc8ee494b427fb9f51ab4"
+        },
+        {
+          "id": "3.4.2",
+          "samples": 270600,
+          "pauseSamples": 7200,
+          "cacheKey": "407eb353da0058943c5f9e84ce00b42ef623edf2832eb54135f084999a1c72d0",
+          "pcmSha256": "b0b36224b810b65a24059fb1e7b882ff1e5a7ea3836652ef9f18cf12e453b141"
+        },
+        {
+          "id": "3.4.3",
+          "samples": 153600,
+          "pauseSamples": 7200,
+          "cacheKey": "f88e3f0fa80b2d49e07a4cd16b5dbdaac302ec573e052cda9b571ae50a30f6af",
+          "pcmSha256": "f67c60e56f176d7865c2ad65762e4f7c18648ed86c52f84b90f88c7a367cde90"
+        },
+        {
+          "id": "3.4.4",
+          "samples": 157200,
+          "pauseSamples": 7200,
+          "cacheKey": "a49ab2cee47b80e4b8cf661e4a877ec11a775a4fe4fc0f0d30b2e814aaa6d290",
+          "pcmSha256": "4698dc7def74e242311484ee1f94c47b0cb03b59d277c1b0b4286c0e14c8a1b0"
+        },
+        {
+          "id": "3.5.1",
+          "samples": 190200,
+          "pauseSamples": 7200,
+          "cacheKey": "6167bf23bcd760dcdf2510668ed6a4faf9a26d734cbd9050e8fa0a6be5dccd3a",
+          "pcmSha256": "0b8c8f07dc9af27a7ea2b8338313a35fd5df1b91ce0228c4b6d84e7e4bb0d1f5"
+        },
+        {
+          "id": "3.5.2",
+          "samples": 255000,
+          "pauseSamples": 7200,
+          "cacheKey": "a472d5f66afd6856d7a8eba89d6df8afa2fb5e745003b96e0cf47ffd88772262",
+          "pcmSha256": "52a16c4c773b7ca72df2c7d9020586664105307e37edc6cbe7f0ae6004d8db2b"
+        },
+        {
+          "id": "3.5.3",
+          "samples": 224400,
+          "pauseSamples": 7200,
+          "cacheKey": "48e37c0289dc5b54ffc81d5819484d2cd82f676b206764e16d27d30837c3526d",
+          "pcmSha256": "51494765321c6a3deb58d492f708129671ee652dce6d688eaa999336c6ac8c81"
+        },
+        {
+          "id": "3.5.4",
+          "samples": 168600,
+          "pauseSamples": 7200,
+          "cacheKey": "196e488936596eb752093dccdd3862f3f9006a2f1b0d46402df81933f99786d6",
+          "pcmSha256": "8fcb7da89caafd9dfe1e971b293c26d5be1774ec2a3d9c01b61ce957fd180295"
+        },
+        {
+          "id": "3.5.5",
+          "samples": 113400,
+          "pauseSamples": 7200,
+          "cacheKey": "48808c73a6d73f7537005cb542ef8058d458368f180e37dd49e8a3b1f10fd991",
+          "pcmSha256": "fb7956d20e229f920442bff711571606394ad904595156091201c969ac9ff138"
+        },
+        {
+          "id": "3.6.1",
+          "samples": 183600,
+          "pauseSamples": 7200,
+          "cacheKey": "e3cba2eb63c80594c3afd9da8ce37622edbb2042b8f45e470d8c6ea87e4c02c8",
+          "pcmSha256": "7f3f106df9ec87b2534212ea86e2c0adf6b3c0cb4cd80fb3b27067837c7cbc32"
+        },
+        {
+          "id": "3.6.2",
+          "samples": 226200,
+          "pauseSamples": 7200,
+          "cacheKey": "378b98507fa880baf768f8abf8afc6ed49dfd9a6fc7949b2a85d3aac48c9b794",
+          "pcmSha256": "ca69a797896d3b94f9b4b503d77d0172fdc84ca28049492d3d829118aff5835a"
+        },
+        {
+          "id": "3.6.3",
+          "samples": 310800,
+          "pauseSamples": 7200,
+          "cacheKey": "ae66f94adbdb228822b52c19a241d93251ed3e47b77c56d25d13266c69644cb5",
+          "pcmSha256": "3a6a461bfc420a6dae2e4e37dacf81e77ef50afe561c38ce39a558cbbb69a342"
+        },
+        {
+          "id": "3.6.4",
+          "samples": 144000,
+          "pauseSamples": 7200,
+          "cacheKey": "57e7ba1f2cee97b13c58549659eccabfa160c44f87a765db36f8655b8beb0d92",
+          "pcmSha256": "009d9e9cfde29b51e3f0a99332431cabfb6a2b9951563eb497c4000c2c2a1ea8"
+        },
+        {
+          "id": "3.7.1",
+          "samples": 249600,
+          "pauseSamples": 7200,
+          "cacheKey": "de106b97efcdee38ab5172daeb9d415f82e2b8d7d09f44de81e81df9f6523e5a",
+          "pcmSha256": "0f1497138253c1ac23e4e64973aa40c335e4fdc276d51fafd3313a4bc620d185"
+        },
+        {
+          "id": "3.7.2",
+          "samples": 145200,
+          "pauseSamples": 7200,
+          "cacheKey": "4da7565cc0c800b2fd364cf88df00e5c107a13603ed9dfe7005ae11bf641403d",
+          "pcmSha256": "76652bada1b8f44a70153b6bec1847d46cd60b07bd1a842749997fc941213480"
+        },
+        {
+          "id": "3.7.3",
+          "samples": 124800,
+          "pauseSamples": 7200,
+          "cacheKey": "a47ffe2f6d838c930dd926da2b60b6f69a40825ed266727c8b032f5fcb154af5",
+          "pcmSha256": "2dd98e233247489c0e9747870c0962042f91746bf6731bc6ea9f8e233157eec3"
+        },
+        {
+          "id": "3.8.1",
+          "samples": 143400,
+          "pauseSamples": 7200,
+          "cacheKey": "193f2e4a81d10963874d22692fc6e28f812f50c1c18c329dbe8d5ac5a172c90b",
+          "pcmSha256": "fa5a8df44aa70448027d8745697695c4878ab5878a65534899ba5f2e25b3c046"
+        },
+        {
+          "id": "3.8.2",
+          "samples": 136200,
+          "pauseSamples": 7200,
+          "cacheKey": "5d81f004c062d02a8b8079faa1cc5df2f195536220d62e55f3629e87ef826de0",
+          "pcmSha256": "66a95378da7c3bb93a94403f97b6caf3a077ff8295e5568b9ac1403c45bea912"
+        },
+        {
+          "id": "3.8.3",
+          "samples": 130200,
+          "pauseSamples": 7200,
+          "cacheKey": "10ad4cc3b750bd91326d3913222a5830355dd4849cc6103de8bf9867f875f071",
+          "pcmSha256": "f7c1fef46fa3e933da4243d40b4423b488f1eb711f58e841333f28167442c60e"
+        }
+      ]
+    },
+    {
+      "id": "ch04",
+      "samples": 5152800,
+      "duration": 214.7,
+      "narrationHash": "710d4c5ed6144f683b5471b238fbd87bf92f4b97930334a624f17f2e639e285d",
+      "provenance": {
+        "pipeline": 1,
+        "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+        "revision": "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
+        "dtype": "q8",
+        "device": "cpu",
+        "voice": "af_heart",
+        "speed": 1,
+        "sampleRate": 24000,
+        "session": {
+          "intraOpNumThreads": 4,
+          "interOpNumThreads": 1
+        },
+        "packages": {
+          "kokoro-js": "1.2.1",
+          "@huggingface/transformers": "3.8.1",
+          "phonemizer": "1.2.1",
+          "onnxruntime-node": "1.21.0"
+        },
+        "runtime": {
+          "node": "v26.10.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "cpu": "Apple M5 Pro"
+        },
+        "lockfileHash": "4e3a96ca616120702c57daa3f51a953670545e8b04a6ad16f8cd1c509f73317e",
+        "pipelineHash": "6427785486e85a59bf4cb6232d212f759d2a2e1912a7ebaeba015179be2acfb2",
+        "lexiconHash": "14d060438df2de43227a0c1aad4cc96889b7665f2ee0bf34c986ac9b461ee400",
+        "encoding": {
+          "codec": "libmp3lame",
+          "bitrate": "96k",
+          "channels": 1,
+          "sampleRate": 24000,
+          "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        "timing": "Exact float32 PCM sample counts; sentence spans contain generated speech, scene spans additionally contain sentence pauses and scene holds. WebVTT rounds to milliseconds. MP3 gapless decoding removes encoder padding; container duration can include that padding."
+      },
+      "sha256": {
+        "audio": "064114046ab6ff20882810ffc270f5ba4428ef0611c29e8057925f5d13ff8d40",
+        "captions": "e09ab6cd3d282625ea7fa432345bd5897b5edd59f327323d2991651ad8ff1816",
+        "cues": "66c8cf3372af1728f9ee8e159b33da44a2d7413eb27dd6d55e464cbea8db91c2"
+      },
+      "sentences": [
+        {
+          "id": "4.1.1",
+          "samples": 212400,
+          "pauseSamples": 7200,
+          "cacheKey": "25ed4faadc1c9feaeeaddc6c7cc9136c8cf3abe222a51805617866d438449779",
+          "pcmSha256": "b1b724a0ac4876403a6a1d974c0f6c27a13b4f99d3b93b58ff9893d2fd88ce0f"
+        },
+        {
+          "id": "4.1.2",
+          "samples": 232800,
+          "pauseSamples": 7200,
+          "cacheKey": "1d006673a58b80f8b3c21f547235878a9e22e24b51b3e77c0d93ab177efbaede",
+          "pcmSha256": "908eee81e35d767bcd0934014b61164a4e4e37fdee5ca40e588156e3ca540d23"
+        },
+        {
+          "id": "4.1.3",
+          "samples": 251400,
+          "pauseSamples": 7200,
+          "cacheKey": "c2136039fbc5240b90601921baa24da32d9b58287a098c5b69dc1d7ec5d182c5",
+          "pcmSha256": "c816e2f46d150d1d2bc09545425e02109ce49e3459ae7ea3258090b3abed2a6c"
+        },
+        {
+          "id": "4.1.4",
+          "samples": 192000,
+          "pauseSamples": 7200,
+          "cacheKey": "e7fbc6f2fdd633c129f189260a4c67f373ba6e91b8372ed444b21d93c208febb",
+          "pcmSha256": "cef3c9710074a037824a032ecdc111b675543e4a3166b8ec6af338a9183eac84"
+        },
+        {
+          "id": "4.2.1",
+          "samples": 216600,
+          "pauseSamples": 7200,
+          "cacheKey": "f1137e018d19563e9a1e07d2253a8ccf0adf787f18b1d49c0d8784c46e428a2e",
+          "pcmSha256": "1cf752bd57f59336dbae4f13e5f720d838252c7f3de9c1857b8ad6f8e26a259f"
+        },
+        {
+          "id": "4.2.2",
+          "samples": 112800,
+          "pauseSamples": 7200,
+          "cacheKey": "13b7d5091471f03b60fc843a499379916e27b7dde42840042fae03a30db0f105",
+          "pcmSha256": "b25deb72ff18b914113d13a760e4feb40400698222238a09ea74652fc5623a92"
+        },
+        {
+          "id": "4.3.1",
+          "samples": 241200,
+          "pauseSamples": 7200,
+          "cacheKey": "434cf14d91f687901d48f0d72fdf97b5d8e7ffd3382de342ae615894c476f6fe",
+          "pcmSha256": "d1959c0bce23ddbe7838b98878658f538dec30834f1552ab5e2c90e0f92ea0cb"
+        },
+        {
+          "id": "4.3.2",
+          "samples": 185400,
+          "pauseSamples": 7200,
+          "cacheKey": "22001c43f3468e664c79193bd776dd0a5ebc33da96589463c499b7628b99b452",
+          "pcmSha256": "16862ccb53750f20ba5a912d0d8f571b3e4852ddc22aa60bb6c3a9a4636ab748"
+        },
+        {
+          "id": "4.3.3",
+          "samples": 233400,
+          "pauseSamples": 7200,
+          "cacheKey": "5658377c0eabee36db12a8d91a4b50385eb5f1e17db569fb27212837707e4467",
+          "pcmSha256": "13ad25bae8504ae50c9eacffd38a8267ebd13b095e931542e3498adc728a62fd"
+        },
+        {
+          "id": "4.3.4",
+          "samples": 164400,
+          "pauseSamples": 7200,
+          "cacheKey": "95506c8edd108740466d404a42078654e519bd53c40bbf3513745db8df8b98f7",
+          "pcmSha256": "0608fa8d9fc572a4f1a60a7da345d20df49d369346d289e2d3e71f067bd104d4"
+        },
+        {
+          "id": "4.4.1",
+          "samples": 263400,
+          "pauseSamples": 7200,
+          "cacheKey": "5238f40ead2b71db1df71ce0802222c8df47bbd341355f017f6dbf80197a063f",
+          "pcmSha256": "e34d6ffc57fd9bba5b5dff0bc3edb7e91fa1fe5628d0eb569c326f05ac1ade40"
+        },
+        {
+          "id": "4.4.2",
+          "samples": 232200,
+          "pauseSamples": 7200,
+          "cacheKey": "b40ea4738256bd71614d6c85f19756244e4d76cbfc7437f0a63b26f30766cc49",
+          "pcmSha256": "2fd8acd37b2b99a9d95351bb65b829f1a063c9e4800b4c41319a933e71e68e22"
+        },
+        {
+          "id": "4.4.3",
+          "samples": 223800,
+          "pauseSamples": 7200,
+          "cacheKey": "ff918c5eeecfb4b1982b4262bacf2f126620c8a264eeff384364624f706c0891",
+          "pcmSha256": "28071c892618ce8e435f4b856ddef3e8d151c8fc2843cb98866eeb8335597c40"
+        },
+        {
+          "id": "4.5.1",
+          "samples": 206400,
+          "pauseSamples": 7200,
+          "cacheKey": "f4d3f7e1e95f8fa0a7b134c9ceb54eb765439ec0d1862870bd0e45a0e9035979",
+          "pcmSha256": "475c3fde3ea5fb7154952ef892b135c9dd09bb2a1f90c843c4ec6670ff4a6d06"
+        },
+        {
+          "id": "4.5.2",
+          "samples": 219600,
+          "pauseSamples": 7200,
+          "cacheKey": "fd5ccde3599abe8ea7c044b05066565b68ae1d6ddce75a9fffa3bfe806f624cc",
+          "pcmSha256": "251a49115809bd02889714fa8b83ef347d8dd7ea1311feb541635750d9ed344b"
+        },
+        {
+          "id": "4.5.3",
+          "samples": 178200,
+          "pauseSamples": 7200,
+          "cacheKey": "05d32647cd19775ae9fd6e67d2560c97b4b95013af351601cd899013916faf27",
+          "pcmSha256": "715b722cc25935c9e041322277192d66764e001b07de30a9908c96e236c998b1"
+        },
+        {
+          "id": "4.5.4",
+          "samples": 280200,
+          "pauseSamples": 7200,
+          "cacheKey": "03af32f8f41778fda412d63d7332da3bc7972d2b11d2fe94aba76a33703eb61e",
+          "pcmSha256": "9853b6505f4b68c39d6a17172a72b18911944b8aa04c27bac48f9f58be5267eb"
+        },
+        {
+          "id": "4.5.5",
+          "samples": 221400,
+          "pauseSamples": 7200,
+          "cacheKey": "0166b881281e70c6f3a580466a9d52c318ac9e315bb4f1b49d2ea11563a1837c",
+          "pcmSha256": "3afd1f8b0c556abeb1482ad8276b76e8478dc2afe4b64a50a7e20c2c89ec16c8"
+        },
+        {
+          "id": "4.6.1",
+          "samples": 227400,
+          "pauseSamples": 7200,
+          "cacheKey": "3df9f1d003a6f5dfec43cdd6a7230cea0acb02a1daa0a433372e7510b05ddf97",
+          "pcmSha256": "b5fcd6a9a6d63a7d9ada6faee7325c53c22b5dced3b1b62ce46b771756a1ff9c"
+        },
+        {
+          "id": "4.6.2",
+          "samples": 208800,
+          "pauseSamples": 7200,
+          "cacheKey": "53b74ea33d8aa2c85c180ad046fe1d2417dc36af5d49d3b34403d9136a1c417d",
+          "pcmSha256": "b6290ba15a6cfca271382e826bb679e5aebf6b6d30e141713b32c43b35499bac"
+        },
+        {
+          "id": "4.6.3",
+          "samples": 203400,
+          "pauseSamples": 7200,
+          "cacheKey": "5f066dc03e0aeb014f3abc84148e83ed59490b27085f3757cdc9cb7b45e2bb0b",
+          "pcmSha256": "c05341af01a05fe762d5b66c6423d19c28aa144a30e59b5f6dc381a9e3e78b57"
+        },
+        {
+          "id": "4.7.1",
+          "samples": 155400,
+          "pauseSamples": 7200,
+          "cacheKey": "2e48d171a31dba5b8e0cd341bbf0490b348ca4a729b280062c9332743dab8a01",
+          "pcmSha256": "9fb89e13c6b13ec04e93fe64839b777cfdaa36b1dd640f73582806b7ce0fab2a"
+        },
+        {
+          "id": "4.7.2",
+          "samples": 190200,
+          "pauseSamples": 7200,
+          "cacheKey": "579278c3e9595818d1b8485dc0145c216e89dbdb85575c1be6b31847f4e42c11",
+          "pcmSha256": "07ab4010d0f9a1a4692b748d686bd58e6d4c03d0a0a45efbbe17232854b50116"
+        }
+      ]
+    },
+    {
+      "id": "ch05",
+      "samples": 4569000,
+      "duration": 190.375,
+      "narrationHash": "c812d478befaf204104182c5a82bd6bbb9bc7f6621009d81cbd90f2fb1626383",
+      "provenance": {
+        "pipeline": 1,
+        "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+        "revision": "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
+        "dtype": "q8",
+        "device": "cpu",
+        "voice": "af_heart",
+        "speed": 1,
+        "sampleRate": 24000,
+        "session": {
+          "intraOpNumThreads": 4,
+          "interOpNumThreads": 1
+        },
+        "packages": {
+          "kokoro-js": "1.2.1",
+          "@huggingface/transformers": "3.8.1",
+          "phonemizer": "1.2.1",
+          "onnxruntime-node": "1.21.0"
+        },
+        "runtime": {
+          "node": "v26.10.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "cpu": "Apple M5 Pro"
+        },
+        "lockfileHash": "4e3a96ca616120702c57daa3f51a953670545e8b04a6ad16f8cd1c509f73317e",
+        "pipelineHash": "6427785486e85a59bf4cb6232d212f759d2a2e1912a7ebaeba015179be2acfb2",
+        "lexiconHash": "14d060438df2de43227a0c1aad4cc96889b7665f2ee0bf34c986ac9b461ee400",
+        "encoding": {
+          "codec": "libmp3lame",
+          "bitrate": "96k",
+          "channels": 1,
+          "sampleRate": 24000,
+          "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        "timing": "Exact float32 PCM sample counts; sentence spans contain generated speech, scene spans additionally contain sentence pauses and scene holds. WebVTT rounds to milliseconds. MP3 gapless decoding removes encoder padding; container duration can include that padding."
+      },
+      "sha256": {
+        "audio": "6a8477e35663336f7e6d42d1cccf1199bf7ec69b005a1d0a27ee6ffed308705c",
+        "captions": "9c391f4162da1ff4d74504d559a92681896dc9a61992294e0988371a99b9e499",
+        "cues": "412b5c3d518b4fa588628f29e59cbb3fb3edb1773dd83fe63f6f264ed7d74c03"
+      },
+      "sentences": [
+        {
+          "id": "5.1.1",
+          "samples": 208200,
+          "pauseSamples": 7200,
+          "cacheKey": "780882b33b4b31bad816ebe332b89efed967ddaf34d1c1286cb6b006e250c73c",
+          "pcmSha256": "3cc7ec88c9c8cf9f86a788e91e7e16e6d82478c0b4ad2aa8b03f0b3ff53007f7"
+        },
+        {
+          "id": "5.1.2",
+          "samples": 283200,
+          "pauseSamples": 7200,
+          "cacheKey": "2e7904123c73939746c3a9a4135d59c126315175e1da3531ad213469731215bc",
+          "pcmSha256": "68c115e5c6f9a52ce1dec7db3046d79612e320d0d2081ea0033ef62f04fbcc94"
+        },
+        {
+          "id": "5.1.3",
+          "samples": 223200,
+          "pauseSamples": 7200,
+          "cacheKey": "3f3d5b1339b2990f8bba654fb26aeda1acea67cec48294fb76267713d152f351",
+          "pcmSha256": "1e5489949f29822f748ae54a966a3bf3bc3dde12c136b8d913c8a746f60923a8"
+        },
+        {
+          "id": "5.2.1",
+          "samples": 243600,
+          "pauseSamples": 7200,
+          "cacheKey": "a0635d69d67615eaa9c29fce3444beae581d7f73802392a342c73d3f92da8b0d",
+          "pcmSha256": "d60e4de8d71f49b06bef8b5c483a802b5a0d86d3ef5565e2a0f37b3195726915"
+        },
+        {
+          "id": "5.2.2",
+          "samples": 135600,
+          "pauseSamples": 7200,
+          "cacheKey": "0a0a0ae01d81e55ae1e289cde8f20455e13a2fb7a610eaef0599a13925a1a15a",
+          "pcmSha256": "d7691c8ea3bfc3dfaf631c66e4e87ad5276b1e472c2bbe86f342ad2727b7cbd4"
+        },
+        {
+          "id": "5.2.3",
+          "samples": 162000,
+          "pauseSamples": 7200,
+          "cacheKey": "0a70d83f80f4ac9df7b0097e7f28067006626e143df3a5cf3e4929a435a59720",
+          "pcmSha256": "36d5b5b2ac43cd5135170e585454a2162580de9433ac0433ba75776b97c0caf8"
+        },
+        {
+          "id": "5.2.4",
+          "samples": 214200,
+          "pauseSamples": 7200,
+          "cacheKey": "2182c25d38e67c460aaf021805428052ce24214845f344597b9b2f58f64c3cb7",
+          "pcmSha256": "ee6a61419d0ffa703a73e6e79d518cb9072c7346e4f2ad68037a862bccfc6379"
+        },
+        {
+          "id": "5.2.5",
+          "samples": 208800,
+          "pauseSamples": 7200,
+          "cacheKey": "4daa1b74c2a1cbe439472ada1ad913d8d8c7018b8b79b392d9cba98615a38be6",
+          "pcmSha256": "0f18e742fd8ce0b82e81035de814bfeb904717bdf8516e055acf76bd2c6c9656"
+        },
+        {
+          "id": "5.3.1",
+          "samples": 180600,
+          "pauseSamples": 7200,
+          "cacheKey": "4a68f56bd3a64f759039bfe0bece4902ee624a22ff58c3887bc92293e83434f3",
+          "pcmSha256": "964d1e00f6b8118affd8b8f68448d47f013d2bb5404f2e7b1c32adf07787b280"
+        },
+        {
+          "id": "5.3.2",
+          "samples": 242400,
+          "pauseSamples": 7200,
+          "cacheKey": "95e0bbf36447d2f95a596dfedcb67685777f198cf648cf85a553a6b5f5c3b296",
+          "pcmSha256": "eaf717615240fbfc1c7e769b752a615e305952376a9a26afdf37c53e58e56ee5"
+        },
+        {
+          "id": "5.3.3",
+          "samples": 203400,
+          "pauseSamples": 7200,
+          "cacheKey": "5d6e75bec8701e204d1dd317d860d09c034041423d1a839a5f97b39a8ce7a23c",
+          "pcmSha256": "4c4f68cb44c9c10baa120d2c737cb299f44f2471a6a9e72795d2a8ed529cc4c7"
+        },
+        {
+          "id": "5.3.4",
+          "samples": 187200,
+          "pauseSamples": 7200,
+          "cacheKey": "4048a90706289d5e23519cc1f323f545231665d9af3d7eb3c6370b7d977492a1",
+          "pcmSha256": "deca98b602aa757f8ed69f8f64b32468e9923a9837e37a9374745ae51cc0a690"
+        },
+        {
+          "id": "5.3.5",
+          "samples": 196800,
+          "pauseSamples": 7200,
+          "cacheKey": "f003f897b6667399e4bff7d9937994ce5db61ca1e350c82e0352572b919b0216",
+          "pcmSha256": "6c265328e1db3003d37095565bd4782e366acf626076429b693d082ab5fa8791"
+        },
+        {
+          "id": "5.4.1",
+          "samples": 219600,
+          "pauseSamples": 7200,
+          "cacheKey": "26c23f9c67d89819f30852692a5fd4378f27470cfd00adbf14ed45a03edbb497",
+          "pcmSha256": "9a7625b2e0e0377909dd46f5ba21dfe490ae395eb68abdeca0106ec303fd98ae"
+        },
+        {
+          "id": "5.4.2",
+          "samples": 211800,
+          "pauseSamples": 7200,
+          "cacheKey": "a3d76c3f522a3c8f8226492302a36cb65d61f5e936592fbf280d0867b44adf1e",
+          "pcmSha256": "f4b337a2cc2584c355f1c98ef60c3db021efac26b2d13fac99c2ba7d85cfe50f"
+        },
+        {
+          "id": "5.4.3",
+          "samples": 180000,
+          "pauseSamples": 7200,
+          "cacheKey": "8a1b6f53a3b7b57003cb626c66083665615854efe9306f9f24fbcb43723eb0bb",
+          "pcmSha256": "466e5cb84d18faccfaeb20b2057ff4cb5ed45824b17abb46297e1cbc078f1752"
+        },
+        {
+          "id": "5.4.4",
+          "samples": 229200,
+          "pauseSamples": 7200,
+          "cacheKey": "bc639149f8c0e38a2f351dc6f29dc82f16c969ebae934bf848bda74272c9fe99",
+          "pcmSha256": "0d5268f0c967cb5863b3c20e69fdcc57061a922b106375351d63c949ad6c9d3d"
+        },
+        {
+          "id": "5.5.1",
+          "samples": 173400,
+          "pauseSamples": 7200,
+          "cacheKey": "2d0b943c05cb0325205899b470049399a291f7802111c60cff97093c257be97c",
+          "pcmSha256": "60f2e0bb98e7c3fda9057a702298bce2f829123281e37b7028299fa9d4ddd251"
+        },
+        {
+          "id": "5.5.2",
+          "samples": 191400,
+          "pauseSamples": 7200,
+          "cacheKey": "928cc87813ba6898500c0790bfde90ed49e153d1f1685e1e764027d79f9f67f5",
+          "pcmSha256": "56146e4a3d36040a9bf479919f8b6794a211c6e0afa15813668d3e449105aebe"
+        },
+        {
+          "id": "5.5.3",
+          "samples": 224400,
+          "pauseSamples": 7200,
+          "cacheKey": "bf9b02ca29be5e40366cecee16efb836d8dbf1795c15450562888c131b3ea7d9",
+          "pcmSha256": "6c92c2ca9fe0b59c58f137a93f642fbfc0308c62d883753a6121d56931229ed1"
+        },
+        {
+          "id": "5.5.4",
+          "samples": 202800,
+          "pauseSamples": 7200,
+          "cacheKey": "cf9194c7aa997f4825dc3cb07356438b5eafe3c29d7d9eb93a7ea35af918d8c9",
+          "pcmSha256": "044f849d39f4ae485c8145592d9770516bb9cce1a6c4c253b88a715dd72c12eb"
+        }
+      ]
+    },
+    {
+      "id": "ch06",
+      "samples": 4051800,
+      "duration": 168.825,
+      "narrationHash": "ad87804d3b194f107d273be64bbf2d254b6f0c3d05e8cafeb5c1a07a0c9e45d6",
+      "provenance": {
+        "pipeline": 1,
+        "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+        "revision": "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
+        "dtype": "q8",
+        "device": "cpu",
+        "voice": "af_heart",
+        "speed": 1,
+        "sampleRate": 24000,
+        "session": {
+          "intraOpNumThreads": 4,
+          "interOpNumThreads": 1
+        },
+        "packages": {
+          "kokoro-js": "1.2.1",
+          "@huggingface/transformers": "3.8.1",
+          "phonemizer": "1.2.1",
+          "onnxruntime-node": "1.21.0"
+        },
+        "runtime": {
+          "node": "v26.10.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "cpu": "Apple M5 Pro"
+        },
+        "lockfileHash": "4e3a96ca616120702c57daa3f51a953670545e8b04a6ad16f8cd1c509f73317e",
+        "pipelineHash": "6427785486e85a59bf4cb6232d212f759d2a2e1912a7ebaeba015179be2acfb2",
+        "lexiconHash": "14d060438df2de43227a0c1aad4cc96889b7665f2ee0bf34c986ac9b461ee400",
+        "encoding": {
+          "codec": "libmp3lame",
+          "bitrate": "96k",
+          "channels": 1,
+          "sampleRate": 24000,
+          "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        "timing": "Exact float32 PCM sample counts; sentence spans contain generated speech, scene spans additionally contain sentence pauses and scene holds. WebVTT rounds to milliseconds. MP3 gapless decoding removes encoder padding; container duration can include that padding."
+      },
+      "sha256": {
+        "audio": "363f0c7839a81ff90b35c76fff176dfc2298a3f432c541275ee1eb0695426fdb",
+        "captions": "2ee147374d8e1607b65b807d03d0c7e9a8d04b6d099c9d8e9a400c6024f7c0f6",
+        "cues": "e58a10e74328fef322497f4a02653d42933cfea1770ef66495ff85cd967d05e5"
+      },
+      "sentences": [
+        {
+          "id": "6.1.1",
+          "samples": 186000,
+          "pauseSamples": 7200,
+          "cacheKey": "e5644cd44253d9f4df9a540fca84ef3a11c28193c96ae71138698a58221bb8f3",
+          "pcmSha256": "b812857e95c66e6c8da412d39bf5df20920024d5f7f061a6aa0bc1f8fa502116"
+        },
+        {
+          "id": "6.1.2",
+          "samples": 225600,
+          "pauseSamples": 7200,
+          "cacheKey": "86005f9468f5664459de9a2410bb46548b6052e3eab06ae33798ed0ddb653d62",
+          "pcmSha256": "df0a3e380124952af4b4b1e7043de283a52abf18d70a49b115b9a23c70b723c9"
+        },
+        {
+          "id": "6.1.3",
+          "samples": 126000,
+          "pauseSamples": 7200,
+          "cacheKey": "9737cb30cb516483b48ccdc4480d04b3f5036ddedf374bb9f4eed07658560bd8",
+          "pcmSha256": "17a6b67066bd3d279235e00cfd66bd6c77734516018850fa3a3a679541a5e31b"
+        },
+        {
+          "id": "6.1.4",
+          "samples": 137400,
+          "pauseSamples": 7200,
+          "cacheKey": "59685f0a7dd1ad9724975906e0a6bd6309a004ef39b90fee49bcd8847c93a6d1",
+          "pcmSha256": "9e1162db7b1009452f7bbf3f14cbd8dfbe57de7386b3fb4a3b2b9980100385b1"
+        },
+        {
+          "id": "6.1.5",
+          "samples": 195600,
+          "pauseSamples": 7200,
+          "cacheKey": "538f5f8db6c80a777d8c56f8f74d4cc201b385f9e349d11051195e4b66aa04fc",
+          "pcmSha256": "6529dce1454988d52f9ec63c7e2a3a4daa72e6b1fae87a0fd56bc1be3a77d2a5"
+        },
+        {
+          "id": "6.2.1",
+          "samples": 282600,
+          "pauseSamples": 7200,
+          "cacheKey": "192cfdd66893388833a1a7cd5724f8da99c332c17593f952378b14c9efc16efd",
+          "pcmSha256": "e801dec65ccfe1386d8374ffdf9d680da1cbf9a58cbdd9507ddbd7f93dc33669"
+        },
+        {
+          "id": "6.2.2",
+          "samples": 165000,
+          "pauseSamples": 7200,
+          "cacheKey": "9798adf4c7a04bce81b93ad329c913f0d7e2c4a6b8fb099e866b4ea3ba48d36b",
+          "pcmSha256": "a40b89d41b108192c7f4c19e8bef38baef2b71a176f77146120f9735401ed8b0"
+        },
+        {
+          "id": "6.2.3",
+          "samples": 190200,
+          "pauseSamples": 7200,
+          "cacheKey": "ed91f2bee8e1c3aef7f19b5e2d4286d24137114360bfc8b5d716db8b38f3e35b",
+          "pcmSha256": "ba05b94f0388c6ad2b2eed765f4241877d3c15acfbeaae22fde49c23b6bd8dd9"
+        },
+        {
+          "id": "6.3.1",
+          "samples": 213600,
+          "pauseSamples": 7200,
+          "cacheKey": "dc41186313524aadc7d8a948e29c2abdefb065ba6fa731bf726046c2edabb834",
+          "pcmSha256": "1158d7c22636176af1df334cfb92a79f34367995cbe66c2865f17f255fc54708"
+        },
+        {
+          "id": "6.3.2",
+          "samples": 136200,
+          "pauseSamples": 7200,
+          "cacheKey": "a66512d8c7df097c6c668ab19bf3063006f37bc2eeee862961eda288b186a68f",
+          "pcmSha256": "85fb73ce980416d5282fc8104d748f0899f58f9e3de0c1d9e374a86a66b50266"
+        },
+        {
+          "id": "6.3.3",
+          "samples": 201000,
+          "pauseSamples": 7200,
+          "cacheKey": "02bf82311b532af237aaa6e2dd649f586220c95bde535a267e772af8b5e7e002",
+          "pcmSha256": "d4ef546b184e30a515bbc5337aa1c9f4402376f719a8b8858514569a88cf9ae3"
+        },
+        {
+          "id": "6.3.4",
+          "samples": 147600,
+          "pauseSamples": 7200,
+          "cacheKey": "5a40451f8b18a87e0670734b5878e529df8f185216b7d46d189e05db1abb6563",
+          "pcmSha256": "5c2ed4dcfd9028af52226b640e4320e741fe3fe22cd5cda7be7250aabf78921c"
+        },
+        {
+          "id": "6.4.1",
+          "samples": 196800,
+          "pauseSamples": 7200,
+          "cacheKey": "d5a5c9d7fce08f333dacb6b532f5d5153d5453790691439451fd9d48ecfd22da",
+          "pcmSha256": "959693e82b1827ff40246bd09ac1c581e7a601c792a7eec350eeead76ba162c6"
+        },
+        {
+          "id": "6.4.2",
+          "samples": 203400,
+          "pauseSamples": 7200,
+          "cacheKey": "7008c651c38162994aff23a31618cef8493a8cc43b9a2eb8d3b83855eb2384e4",
+          "pcmSha256": "e0d734f1d1aa2e25fa63ec0bf818df13be071fe09ffb7b0c1a1ca3bdbcf15ed1"
+        },
+        {
+          "id": "6.5.1",
+          "samples": 163200,
+          "pauseSamples": 7200,
+          "cacheKey": "93c1e76508ba669b0f8869384ce7a2aa2cb3d57fa7f73ea8488dc7471d6d28e0",
+          "pcmSha256": "5035d86c7202c5063cfe82194ca4774a4c6cc7396462988cf43f414babb5bc9d"
+        },
+        {
+          "id": "6.5.2",
+          "samples": 154800,
+          "pauseSamples": 7200,
+          "cacheKey": "9609b948ca79661617e9713eafedc2b36aee8b422bc54a3a964660e355e8768b",
+          "pcmSha256": "fe97e5ff1a2f2236ba8a9b4b780529c866eaddc59e5b195d585a450852f74ce3"
+        },
+        {
+          "id": "6.5.3",
+          "samples": 224400,
+          "pauseSamples": 7200,
+          "cacheKey": "ab3ef16de897f08a0ff3653954f3644cd339ee7383286014110be4ac5c034058",
+          "pcmSha256": "3f7a43bc31a19eb9d35489510b38e02a8bb7b1a6e04cf24f54c0b4de9c0094f7"
+        },
+        {
+          "id": "6.5.4",
+          "samples": 199200,
+          "pauseSamples": 7200,
+          "cacheKey": "4cc438a3da1fbe720179e79e6c053e5f4b60de6b3489d003026353593f970804",
+          "pcmSha256": "64f21b9964196cd8178dd39705057faa913f80fa0de0f5e68ca8f25f32f7ce3e"
+        },
+        {
+          "id": "6.5.5",
+          "samples": 236400,
+          "pauseSamples": 7200,
+          "cacheKey": "ddd1ef6bc491c26cb2e08e29d528765c66534f6619270490e55e41a1133ad338",
+          "pcmSha256": "cf4cb5f6b97f4e9879c3c74bb46caeba27da743223eea7a4eec10e5bad385913"
+        },
+        {
+          "id": "6.5.6",
+          "samples": 226800,
+          "pauseSamples": 7200,
+          "cacheKey": "b43c940e7bab27a1f4ee72e0e7ef0f9d757334d6229b14af9f71a259d95e5fce",
+          "pcmSha256": "e08893a592e3421fadd2a01d6b821a1ac18d86e12aebbd8e550ef3eb5e3127f6"
+        }
+      ]
+    },
+    {
+      "id": "ch07",
+      "samples": 5964600,
+      "duration": 248.525,
+      "narrationHash": "480ffbe5af4369e165be4b1aeba1900921b142feb2331f2bcd48cb66ce64b5af",
+      "provenance": {
+        "pipeline": 1,
+        "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+        "revision": "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
+        "dtype": "q8",
+        "device": "cpu",
+        "voice": "af_heart",
+        "speed": 1,
+        "sampleRate": 24000,
+        "session": {
+          "intraOpNumThreads": 4,
+          "interOpNumThreads": 1
+        },
+        "packages": {
+          "kokoro-js": "1.2.1",
+          "@huggingface/transformers": "3.8.1",
+          "phonemizer": "1.2.1",
+          "onnxruntime-node": "1.21.0"
+        },
+        "runtime": {
+          "node": "v26.10.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "cpu": "Apple M5 Pro"
+        },
+        "lockfileHash": "4e3a96ca616120702c57daa3f51a953670545e8b04a6ad16f8cd1c509f73317e",
+        "pipelineHash": "6427785486e85a59bf4cb6232d212f759d2a2e1912a7ebaeba015179be2acfb2",
+        "lexiconHash": "14d060438df2de43227a0c1aad4cc96889b7665f2ee0bf34c986ac9b461ee400",
+        "encoding": {
+          "codec": "libmp3lame",
+          "bitrate": "96k",
+          "channels": 1,
+          "sampleRate": 24000,
+          "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        "timing": "Exact float32 PCM sample counts; sentence spans contain generated speech, scene spans additionally contain sentence pauses and scene holds. WebVTT rounds to milliseconds. MP3 gapless decoding removes encoder padding; container duration can include that padding."
+      },
+      "sha256": {
+        "audio": "617d1154b6b20d4f20dd2ef8247aa00d65f1d40c4379268fa4bc48dd212b1f4b",
+        "captions": "6841a5cab9be2663a0556cbe25ad37092b0ab13937719acf5fc9a10b8d3affeb",
+        "cues": "b3bd0c3e3f0d38e80914f18000350dff70d03f9de6b2aa153b1d5921da425e35"
+      },
+      "sentences": [
+        {
+          "id": "7.1.1",
+          "samples": 121200,
+          "pauseSamples": 7200,
+          "cacheKey": "147fb56ca668e94bd50b73563d299c4014af6fc6a8d2a531238545dc3186e242",
+          "pcmSha256": "f4f13c8d37886fb3738b4d5f87be42f7775c4fbc256adcf23b13bf9814b1a947"
+        },
+        {
+          "id": "7.1.2",
+          "samples": 244800,
+          "pauseSamples": 7200,
+          "cacheKey": "1f9e422d617792dd2dd324602f537ff1fae17a7ac8a5d584f26566afd1db0853",
+          "pcmSha256": "564098fcbb2d1eec64ff869ba1b37a51884c0042c261ac3d908cb35ee8fb0e41"
+        },
+        {
+          "id": "7.1.3",
+          "samples": 210000,
+          "pauseSamples": 7200,
+          "cacheKey": "10d3acb9389e56c26820ed2355484aed0c8c9d9d9aae475aca7150e8824cacee",
+          "pcmSha256": "3b75c325e640a70e5704014d3e099496f581b374d56ba18000537e01a07e63e9"
+        },
+        {
+          "id": "7.1.4",
+          "samples": 144000,
+          "pauseSamples": 7200,
+          "cacheKey": "e69a0aa14213152a848d7151492583fba35cfccdd0382377970a598703c62c30",
+          "pcmSha256": "1b7e4add12caf0377f135dc54a30ef30115a6c04556ad7f8304ffa0968fd6e80"
+        },
+        {
+          "id": "7.1.5",
+          "samples": 144600,
+          "pauseSamples": 7200,
+          "cacheKey": "e44975f5a143f7a4a95e010ef9b9e1ba85c428d7decd6d3417c843cd79689ed1",
+          "pcmSha256": "0ce6221729e4c1f70d04e5528d91f0f873595386930f109e3ed7a63199d79478"
+        },
+        {
+          "id": "7.1.6",
+          "samples": 282600,
+          "pauseSamples": 7200,
+          "cacheKey": "d6e9e33cf83956ce43cd733d9d4fc5097b830889add2b312e40153b9199301f5",
+          "pcmSha256": "d2be70cfe5f4219c502d8aabbe40c8ceb5b43620f0354b3aeb95530ee0abcd69"
+        },
+        {
+          "id": "7.2.1",
+          "samples": 316200,
+          "pauseSamples": 7200,
+          "cacheKey": "ad14d4ad201d6da7f7b6a57aa1904d61fda1f65e79eacbf65dbf08b8b5d8badc",
+          "pcmSha256": "08faeff52a1ec55d11464d4e84d80f76640ac0239924cc2c0dff7f1236ac87db"
+        },
+        {
+          "id": "7.2.2",
+          "samples": 163200,
+          "pauseSamples": 7200,
+          "cacheKey": "8f5fb52b734a45aa4776bf9a261ecf23267ad1ea7bbfce21af76c31eb5b943a0",
+          "pcmSha256": "2c74f2724cff5eb1b0611b10a225702561b2caa647397ced5f7bb263050ccc49"
+        },
+        {
+          "id": "7.2.3",
+          "samples": 175200,
+          "pauseSamples": 7200,
+          "cacheKey": "b2d1cacd1e1f052c02320ff3967b61a20e737659abc6fe6760969de8bc134341",
+          "pcmSha256": "3fc086eebcbc9a8211a28004cd34fe836f9c5e9b85465dfc227ab17c45495270"
+        },
+        {
+          "id": "7.2.4",
+          "samples": 210000,
+          "pauseSamples": 7200,
+          "cacheKey": "6900607666947efc6ae8f9acacdf6ac74860d0d5bd5caa2ec0afef7f22c6bf91",
+          "pcmSha256": "b11c4ff6cf6c4435df9e98ecce577dec8022213592b200da89c959fbd4ed21e2"
+        },
+        {
+          "id": "7.3.1",
+          "samples": 212400,
+          "pauseSamples": 7200,
+          "cacheKey": "d4e01c92671f5667ebbb1a8000fbef652f0b9b8da6d158f403f71e5641101c95",
+          "pcmSha256": "b12c74eb18ed5819f6cd17a285f2baa507465def315a4b8784765e6ea71c8168"
+        },
+        {
+          "id": "7.3.2",
+          "samples": 164400,
+          "pauseSamples": 7200,
+          "cacheKey": "5cb6fc3a8b1ab5c51c41a88c715cc1f83c5dcb0bc120ab67dbaa6a12959c1e59",
+          "pcmSha256": "7961cb0b76e34dd5c7b56c577fcfb070a3a0bc5d156a44a1f2eac42b0dd9f530"
+        },
+        {
+          "id": "7.3.3",
+          "samples": 221400,
+          "pauseSamples": 7200,
+          "cacheKey": "a8edbe580e5aa029e77706abdc5c04688475fd2de651e59d05c801ad69373710",
+          "pcmSha256": "c3982d82c88d67bd553ea0094b07b3f5f061061450ec1dfcc497ae55d55ef8a7"
+        },
+        {
+          "id": "7.4.1",
+          "samples": 279000,
+          "pauseSamples": 7200,
+          "cacheKey": "437649f188e8876ae1235492b1fdf38b44ac507b73b28d3e7a772af22c2e4c5d",
+          "pcmSha256": "eaeb428e3418ffd96073a6e1fe96cef14590ad3f100352887bf57623f5421c55"
+        },
+        {
+          "id": "7.4.2",
+          "samples": 187800,
+          "pauseSamples": 7200,
+          "cacheKey": "e9823f49b6ecd61c34f9d7e63cb3790dd8f16661b41a46f17867b44ce0074bfa",
+          "pcmSha256": "01f198f32fc1bb569b11252edeaf7b92e32e3d4e64d423af769149b0b4d83749"
+        },
+        {
+          "id": "7.4.3",
+          "samples": 239400,
+          "pauseSamples": 7200,
+          "cacheKey": "41a9ec850a724932c4fcf0a5d4189aa8ac9f2ba377a7b6c7e3b339a2c3b82102",
+          "pcmSha256": "c5c4f5f3f7e29accec3dae629f12d03e78d036d7194b14acc5eb0433b18f4234"
+        },
+        {
+          "id": "7.4.4",
+          "samples": 142800,
+          "pauseSamples": 7200,
+          "cacheKey": "2c44c77f4934cad2debcad4320930fa5a2475447582b8333d8b065dcf223a084",
+          "pcmSha256": "894cf2856b257a729aaadacbd0f409d476d9615c8a9661f3a1d85c0d1c7948ca"
+        },
+        {
+          "id": "7.4.5",
+          "samples": 207000,
+          "pauseSamples": 7200,
+          "cacheKey": "6dd50d685bc789bcb2ee928b53d414c5d8b0f3f81223f2c8a4275f85befbfff1",
+          "pcmSha256": "d82cae7ab8587b8f7ca63d4352de4b56cc1b76493a2007ba34395f6b96c378c7"
+        },
+        {
+          "id": "7.5.1",
+          "samples": 238800,
+          "pauseSamples": 7200,
+          "cacheKey": "268bd3ee30db9d04ef80cd6f94e2add64c7403c3614ccb79b03d37736f2cba79",
+          "pcmSha256": "3bbd88cbc35ce60b70469564fb66f0e36755d0337fe548e560afd15948355506"
+        },
+        {
+          "id": "7.5.2",
+          "samples": 262800,
+          "pauseSamples": 7200,
+          "cacheKey": "940528535562aef081c8cb05c725fac691607d76434758b907c203ace8f459a8",
+          "pcmSha256": "79ac4ae8ad87eadfd6d20bff971a0f153cc645fe83d1aafe51be0e753699434f"
+        },
+        {
+          "id": "7.6.1",
+          "samples": 206400,
+          "pauseSamples": 7200,
+          "cacheKey": "028ac845795c9a8566f605ae959601fff4f8a46eb625bf2bf4c4c77df41b28b0",
+          "pcmSha256": "62eac5334f1d71bbb5ae7443ea92452ca41ec5cf4df09cf0647f35f7ce0332c6"
+        },
+        {
+          "id": "7.6.2",
+          "samples": 153600,
+          "pauseSamples": 7200,
+          "cacheKey": "4a836258a0af513ba407652ccc8d1da23074890488bc33bd1819ac0b19e79a45",
+          "pcmSha256": "d175a3ebb410ad07375041d01b3a2be72ef1a4eb4cc3e2b746b36a28e37d7901"
+        },
+        {
+          "id": "7.6.3",
+          "samples": 200400,
+          "pauseSamples": 7200,
+          "cacheKey": "605576c3a12bbb94ac170b96b7dbc3f1d6f5c834a861ef78efc7bee747dd1a94",
+          "pcmSha256": "32a498e31d8b533e9cfd6893b0212a3093f118a980bf45f6deeb8fe7a2fe9b38"
+        },
+        {
+          "id": "7.7.1",
+          "samples": 246600,
+          "pauseSamples": 7200,
+          "cacheKey": "7796d9ba6ded7957757a593515d0680e9e278adce5c90fa05b3e645b59de9382",
+          "pcmSha256": "f8bc413092d975190b1b23081b32db5707aa4a9d680d10ee809ea48d4edf129f"
+        },
+        {
+          "id": "7.7.2",
+          "samples": 171000,
+          "pauseSamples": 7200,
+          "cacheKey": "9783230377597cf530163291ea71f4b3baf7ea37f563d048e0b699d08f7d00cb",
+          "pcmSha256": "9546789bddec377ff55825faf59f0c6dc26d364a79c350a1aed18c66597a37aa"
+        },
+        {
+          "id": "7.7.3",
+          "samples": 196200,
+          "pauseSamples": 7200,
+          "cacheKey": "216f8d3204ca67a44fda946f990069ee9226a5ecd66a16b29338bbd6120d7721",
+          "pcmSha256": "8490aac3b7647e305c968433d9f94f6aeb76b246efeb7f63572103ae27afc4e1"
+        },
+        {
+          "id": "7.7.4",
+          "samples": 217200,
+          "pauseSamples": 7200,
+          "cacheKey": "af9373b9baa89442bd3b891d9f35f368f0f2ff586e2c1f4b967dc1d65d4f23ca",
+          "pcmSha256": "8a1f2f23f8bad4b6dbf63f26d01b02212591464aa50e52c6734aa518f43db75b"
+        }
+      ]
+    },
+    {
+      "id": "ch08",
+      "samples": 5388000,
+      "duration": 224.5,
+      "narrationHash": "4deb6dd63a83079048b59316bc8dfab4de68557e43809444f2c6a9f479b94c21",
+      "provenance": {
+        "pipeline": 1,
+        "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+        "revision": "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
+        "dtype": "q8",
+        "device": "cpu",
+        "voice": "af_heart",
+        "speed": 1,
+        "sampleRate": 24000,
+        "session": {
+          "intraOpNumThreads": 4,
+          "interOpNumThreads": 1
+        },
+        "packages": {
+          "kokoro-js": "1.2.1",
+          "@huggingface/transformers": "3.8.1",
+          "phonemizer": "1.2.1",
+          "onnxruntime-node": "1.21.0"
+        },
+        "runtime": {
+          "node": "v26.10.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "cpu": "Apple M5 Pro"
+        },
+        "lockfileHash": "4e3a96ca616120702c57daa3f51a953670545e8b04a6ad16f8cd1c509f73317e",
+        "pipelineHash": "6427785486e85a59bf4cb6232d212f759d2a2e1912a7ebaeba015179be2acfb2",
+        "lexiconHash": "14d060438df2de43227a0c1aad4cc96889b7665f2ee0bf34c986ac9b461ee400",
+        "encoding": {
+          "codec": "libmp3lame",
+          "bitrate": "96k",
+          "channels": 1,
+          "sampleRate": 24000,
+          "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        "timing": "Exact float32 PCM sample counts; sentence spans contain generated speech, scene spans additionally contain sentence pauses and scene holds. WebVTT rounds to milliseconds. MP3 gapless decoding removes encoder padding; container duration can include that padding."
+      },
+      "sha256": {
+        "audio": "3ec0972faa404e89b6e949d3a6e41c4b2becd2c01417d466c7f31b941a0a926c",
+        "captions": "c5ad6d2fca449013c71c63f0bda848959cabe96915be315783f23346d1e2819c",
+        "cues": "dc558e455259f7d04aa64045399eb260ff7443881acd14ae3e2df96ad928e46e"
+      },
+      "sentences": [
+        {
+          "id": "8.1.1",
+          "samples": 237600,
+          "pauseSamples": 7200,
+          "cacheKey": "34d1caa59d073daa1a1e958a0b9633a2119d58cac9b0c99cb3e77be20004af91",
+          "pcmSha256": "714749b564a893da56723ea404a298583527324bddae72138e4e43c485d60571"
+        },
+        {
+          "id": "8.1.2",
+          "samples": 127200,
+          "pauseSamples": 7200,
+          "cacheKey": "d75b8a4aea61bc009929c023e50c57ff2efadc85c858c2c42c842b8d3fa5d107",
+          "pcmSha256": "da0cdd2e8c75b4805e251f55bfac2af969c59a0a4e7197164fdbbdb42b2ed124"
+        },
+        {
+          "id": "8.1.3",
+          "samples": 198600,
+          "pauseSamples": 7200,
+          "cacheKey": "128b3721bb29c431eb58d916ac008e34db2dfae69134e3307509ca03d954d3ee",
+          "pcmSha256": "97092ce7981e8d43d8104416ede5cca86011b7b82e8ad98386df8a8e83d9faa4"
+        },
+        {
+          "id": "8.1.4",
+          "samples": 262800,
+          "pauseSamples": 7200,
+          "cacheKey": "33504f9d46cd5e98e376181eca072ffc872af7c0520b822046c0ddf5c54e7605",
+          "pcmSha256": "e810e15f94cb86fb10368a6a4fcc87c2fce86ebfa32681534d2b9800d36808ef"
+        },
+        {
+          "id": "8.2.1",
+          "samples": 243000,
+          "pauseSamples": 7200,
+          "cacheKey": "a0e5cfdb449e1975d21d894349bebbc8bfa9b3a0a02eef9288373006db607029",
+          "pcmSha256": "154c6add8d08c09e14e31d85aa448550064c3ad903b86a85e738aea907eb15d7"
+        },
+        {
+          "id": "8.2.2",
+          "samples": 132000,
+          "pauseSamples": 7200,
+          "cacheKey": "7f0dada11783ce199061ae8b99ddcde0ecce288cab60a5fd933cefdb1889d381",
+          "pcmSha256": "c42cb60aa15304997cc40f15bcbc0b01f7ae86e02c151e4c10927034dd04cc60"
+        },
+        {
+          "id": "8.2.3",
+          "samples": 220800,
+          "pauseSamples": 7200,
+          "cacheKey": "1af9dfd93f8f08959211884587e6fcb167bc8b32616ceb63f781566d65e7e090",
+          "pcmSha256": "06df47be53faa54070ef7fb28980e2cfbfe5cad2a4f666176d76a16f971935e6"
+        },
+        {
+          "id": "8.2.4",
+          "samples": 127800,
+          "pauseSamples": 7200,
+          "cacheKey": "4e9c8d0f07fd1b89bb72784222ce4b7437c36ffba2ec4d51f8bdac0f33406030",
+          "pcmSha256": "8a7256901b5ed60d9e5f6e8dbc8b2528fc1fb4b5876ffdfe753effc809baabc9"
+        },
+        {
+          "id": "8.2.5",
+          "samples": 158400,
+          "pauseSamples": 7200,
+          "cacheKey": "8d88ea456359f04e16f99b40c9de52ce5941ba66ef11d7d9bc35c1a67c432607",
+          "pcmSha256": "a953117cf90fbbe0828bbb44bae1a646dd4d77239e87e829f13fea1af77ae3f0"
+        },
+        {
+          "id": "8.3.1",
+          "samples": 248400,
+          "pauseSamples": 7200,
+          "cacheKey": "08ed7288c896f8dc285ab71d86efee65734de7acec67b8c76b7d3f840869e2f4",
+          "pcmSha256": "80bf0fe47e95f8193a4d6dedf8fff6620755d00d1d10e0a44ade4998fe4565a8"
+        },
+        {
+          "id": "8.3.2",
+          "samples": 186600,
+          "pauseSamples": 7200,
+          "cacheKey": "2629dc76b32f07875edfccb60f7c83176ff4f8fddcddab845dd587e17701a652",
+          "pcmSha256": "9f75a7b08f246b133d38206712aff1bf9c9cf7fffedb9a05d62d5152bc47dc90"
+        },
+        {
+          "id": "8.3.3",
+          "samples": 171600,
+          "pauseSamples": 7200,
+          "cacheKey": "a765b9d80c1a209410a015523c10e75c0066c01dbe4892ce3700e00d6eecf170",
+          "pcmSha256": "a4d7a485a804bf7b19a7f53e29d7912456c2e110a63c48acd5ecbf18d1e3b823"
+        },
+        {
+          "id": "8.3.4",
+          "samples": 233400,
+          "pauseSamples": 7200,
+          "cacheKey": "f9e71d84f677be6169694f483d7d4b55cdb23e2ccddacbde206943413f3c7d69",
+          "pcmSha256": "8e134a5e98526ac29b051fbffc02e5555e095e18e58be37126e982a06e1411ee"
+        },
+        {
+          "id": "8.4.1",
+          "samples": 261000,
+          "pauseSamples": 7200,
+          "cacheKey": "fb2a1f52bca03bf626b2972d806f987dc3fc539dc845c4d0b832d4c3bedfc336",
+          "pcmSha256": "d06bc93b1a5b45a8a4b9d13612e3d22d2055386da8f027963bcf286042f90815"
+        },
+        {
+          "id": "8.4.2",
+          "samples": 158400,
+          "pauseSamples": 7200,
+          "cacheKey": "128388c861e9fa7dbfa57cc253fa535ae8d4ab270df7ff8d2801b1ee7d01bd29",
+          "pcmSha256": "a420fda929e36469d02aa2a415cf3bfab159377fe16b3b505b9b615d2a498d1e"
+        },
+        {
+          "id": "8.4.3",
+          "samples": 179400,
+          "pauseSamples": 7200,
+          "cacheKey": "c7c887d0990958de63b8628afa2fda1324746728cdec1999f3a49f231fe172c6",
+          "pcmSha256": "0eec4ef2da49980113d4a749aa07e17f836ddfe2025b005058f67923e026b337"
+        },
+        {
+          "id": "8.4.4",
+          "samples": 165600,
+          "pauseSamples": 7200,
+          "cacheKey": "bc1526df8250922f5ebbe48038afd558fd177baec8ec2b39d21043c0cc862cc6",
+          "pcmSha256": "9d0d801b115e9f250485c9aab1e02c3a7b9bda3fa4d580ad5e10ebb0708f36b4"
+        },
+        {
+          "id": "8.5.1",
+          "samples": 237000,
+          "pauseSamples": 7200,
+          "cacheKey": "51e0738b194eb2b4ae6152b34ac956f1aa97d5a4790794bfa43837091dd99587",
+          "pcmSha256": "e5ff67e9ff48767f0ec9a63dff1d764c9b69c60d4b74b2d3e278d876f89dcce0"
+        },
+        {
+          "id": "8.5.2",
+          "samples": 193200,
+          "pauseSamples": 7200,
+          "cacheKey": "317074f465063f921eb14707b1714b5878bb7cc35abb53a8550beccb8f2fedb4",
+          "pcmSha256": "68d521c0bcd0ad50d05d3b829a07d009f5d3f83e140f4be650f0d922c735a134"
+        },
+        {
+          "id": "8.6.1",
+          "samples": 140400,
+          "pauseSamples": 7200,
+          "cacheKey": "7f7c9207049af77008d66d7632cb69f24494323215f6477351e2e9fd204d73a3",
+          "pcmSha256": "73ca3a6df204ca97313dee8ae87e62a6daf21ad44317ef887361200560a5ef9b"
+        },
+        {
+          "id": "8.6.2",
+          "samples": 218400,
+          "pauseSamples": 7200,
+          "cacheKey": "318fd34c4bcc553e65abc3979be278d0d347cc856077df55fcc3db5ae81f176d",
+          "pcmSha256": "19a1a3fae045fd6002674739a08f6e267575cb07f1b481f34eb7280a89b66350"
+        },
+        {
+          "id": "8.6.3",
+          "samples": 153600,
+          "pauseSamples": 7200,
+          "cacheKey": "96edaf95e2f6daff02972eea181bfa1224294c1b9744e222e2baf8304bebf6eb",
+          "pcmSha256": "5fc965a52aebfabf3096df88672b77b87a4be6d97dc3a0a673c6bcacb106b6c8"
+        },
+        {
+          "id": "8.6.4",
+          "samples": 126600,
+          "pauseSamples": 7200,
+          "cacheKey": "0da99610a75218d0fef2f175a67ce33b3bba8d57e5dcd9207c99027b2952f309",
+          "pcmSha256": "a71f046453ecd5ebf466ee218318d5a03b029d2dabddabbd0ff656e4d4e0bc5c"
+        },
+        {
+          "id": "8.6.5",
+          "samples": 139200,
+          "pauseSamples": 7200,
+          "cacheKey": "de76acfa9d6ee0c291de2f0a9a741cf6fd060b14b124302b6d4c9de28b89f2b4",
+          "pcmSha256": "56284312a643568b9c1a79ce739b3d5c77b2b36349b401521ccd7aac3f44d5d0"
+        },
+        {
+          "id": "8.7.1",
+          "samples": 175200,
+          "pauseSamples": 7200,
+          "cacheKey": "0a275f0116b3c2377d9f03865492f4b3c6553093071609bd3b26dc6d6d168fac",
+          "pcmSha256": "8ea7b31b7f2e8de3a22dd1d55f9555d6e6befaf4a0b78430409e4ef1ec145bb2"
+        },
+        {
+          "id": "8.7.2",
+          "samples": 151200,
+          "pauseSamples": 7200,
+          "cacheKey": "b3d593303b98006c8fc8ede8795d94745f0816fd8b1a70c6de211fd636f139b7",
+          "pcmSha256": "c95cb35614f7ca335f97e85d6f297d010051b9296d081656a76cf4116216c240"
+        },
+        {
+          "id": "8.7.3",
+          "samples": 211800,
+          "pauseSamples": 7200,
+          "cacheKey": "b1d4f5846596681134682c7d749cc811476c9079d23a645ef2d5f117f4797e5a",
+          "pcmSha256": "14f4a191a5d6973adf923556e403813ea3852dabb87e05518ffaed321bddc72d"
+        }
+      ]
+    },
+    {
+      "id": "ch09",
+      "samples": 5862000,
+      "duration": 244.25,
+      "narrationHash": "23debebb2d1a710ad4d7b3dc7f16b32365618f3207a0bec244f07f9e76d90572",
+      "provenance": {
+        "pipeline": 1,
+        "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+        "revision": "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
+        "dtype": "q8",
+        "device": "cpu",
+        "voice": "af_heart",
+        "speed": 1,
+        "sampleRate": 24000,
+        "session": {
+          "intraOpNumThreads": 4,
+          "interOpNumThreads": 1
+        },
+        "packages": {
+          "kokoro-js": "1.2.1",
+          "@huggingface/transformers": "3.8.1",
+          "phonemizer": "1.2.1",
+          "onnxruntime-node": "1.21.0"
+        },
+        "runtime": {
+          "node": "v26.10.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "cpu": "Apple M5 Pro"
+        },
+        "lockfileHash": "4e3a96ca616120702c57daa3f51a953670545e8b04a6ad16f8cd1c509f73317e",
+        "pipelineHash": "6427785486e85a59bf4cb6232d212f759d2a2e1912a7ebaeba015179be2acfb2",
+        "lexiconHash": "14d060438df2de43227a0c1aad4cc96889b7665f2ee0bf34c986ac9b461ee400",
+        "encoding": {
+          "codec": "libmp3lame",
+          "bitrate": "96k",
+          "channels": 1,
+          "sampleRate": 24000,
+          "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        "timing": "Exact float32 PCM sample counts; sentence spans contain generated speech, scene spans additionally contain sentence pauses and scene holds. WebVTT rounds to milliseconds. MP3 gapless decoding removes encoder padding; container duration can include that padding."
+      },
+      "sha256": {
+        "audio": "f55ca6322778c00f93d4ccc15515ce077414f891462a9ed21ac51a26e5934127",
+        "captions": "917e61281e200d381d1c8089fbd49869ffaa58931a1632cf75f15ca07577590f",
+        "cues": "bc2e5846d3b89acda60551d106588f3a33adbb0a6beb714281ef2e6cda040202"
+      },
+      "sentences": [
+        {
+          "id": "9.1.1",
+          "samples": 204000,
+          "pauseSamples": 7200,
+          "cacheKey": "b282fb8a56ea93ca2f3d506823792c0b8f8534310b0a74c4cc29d58eabd448af",
+          "pcmSha256": "e043d633057c814649e6fdb12f90b87e62a61e5f6cc901e8dbe54c3ed60ed130"
+        },
+        {
+          "id": "9.1.2",
+          "samples": 234600,
+          "pauseSamples": 7200,
+          "cacheKey": "96cb56d3a4e3babd41ccea3debda7120b619b5ccb266285c5c136e1e103bcd20",
+          "pcmSha256": "8b00a52a94ab16736c668df32398906dea044c4a495d02b5956149af1502e098"
+        },
+        {
+          "id": "9.1.3",
+          "samples": 283200,
+          "pauseSamples": 7200,
+          "cacheKey": "dcea442ae96006659acf48e6e22af58b1935af30c769f3525938314ba424ab98",
+          "pcmSha256": "f268e03c6c08bc8ed84d1bb1465f1579d75ecfc967c6bc0cd39cdc9d53649cf7"
+        },
+        {
+          "id": "9.1.4",
+          "samples": 160200,
+          "pauseSamples": 7200,
+          "cacheKey": "131e9a86b33dd6bbfd3e0191059008e5ee220074f6e672fc865794ea97c9eb5c",
+          "pcmSha256": "87623144740fd0933d616134ff56585a7f67846698d146337bcdf749931fb39a"
+        },
+        {
+          "id": "9.1.5",
+          "samples": 151200,
+          "pauseSamples": 7200,
+          "cacheKey": "fab170970d6639220b616ca7c60e015b9930cb3edb4024bd6e78ccb1ac4cd7a5",
+          "pcmSha256": "d57bf03c0c54ecebbfec2152bc14a621402a5ab72a66e3c7a717d9d9cb550428"
+        },
+        {
+          "id": "9.2.1",
+          "samples": 155400,
+          "pauseSamples": 7200,
+          "cacheKey": "c5332f4bbc275d19b2fc5c02f171d25e6da29f79072b08217a15d38db863a964",
+          "pcmSha256": "9c33b4fdb1c502b1942f7c1b00865834c287d801d65a53356368476a76ee13ab"
+        },
+        {
+          "id": "9.2.2",
+          "samples": 249000,
+          "pauseSamples": 7200,
+          "cacheKey": "e8f1d0c6a3cca7bb99a996ab67bcc4807036c1a0edd87b7eea101961c3f890b8",
+          "pcmSha256": "771e6f57f16e6e7e588ad9bae292e99be430efb378244d9c6337b7b301a8053c"
+        },
+        {
+          "id": "9.2.3",
+          "samples": 186600,
+          "pauseSamples": 7200,
+          "cacheKey": "89aac73b08bdb0e55a46498edd8dbdfd6f95b55a8232843c9c9da4149dd12653",
+          "pcmSha256": "eab20814e75adacea68f04d8695571f656428e0784ef4872aad70fe4c932c304"
+        },
+        {
+          "id": "9.2.4",
+          "samples": 181800,
+          "pauseSamples": 7200,
+          "cacheKey": "509856845ec38460162947dca1dbc16af6db9e552685803758fa16a751f9e5f0",
+          "pcmSha256": "44ea2b81bf6d8412ea20fb5bf027f372c3aed34d1324e70c7b3ae071f94aefe2"
+        },
+        {
+          "id": "9.3.1",
+          "samples": 286200,
+          "pauseSamples": 7200,
+          "cacheKey": "bf0a815533018f04fc4de23d5e154eb8934c2ae0267cac33c7ea1d8c0f098365",
+          "pcmSha256": "4e035b5f89fcaff66461ecc54386daea8847afb72c230589dda01e7e0ded14ec"
+        },
+        {
+          "id": "9.3.2",
+          "samples": 168600,
+          "pauseSamples": 7200,
+          "cacheKey": "e115597b868040300535370718798aeca2266b414b4cdedf8e3051d6f2b57f21",
+          "pcmSha256": "ca6d8cf68ac131c38e51366b95ad577593f24e966a0a02b64301882ff79c885e"
+        },
+        {
+          "id": "9.3.3",
+          "samples": 177000,
+          "pauseSamples": 7200,
+          "cacheKey": "2507b3c7c139f5b434a06c473b85d1be4b650977e4eed10fd20f94a4c5caf36a",
+          "pcmSha256": "6232709090b88018d60053b734e09ecf9a590703c1910bef48f48b6249aceeac"
+        },
+        {
+          "id": "9.3.4",
+          "samples": 225000,
+          "pauseSamples": 7200,
+          "cacheKey": "79dade8b5ecd943d0fa0a16f93e46e0df903d83f3fd4f3c05097a86ed5536b04",
+          "pcmSha256": "dcf350675d7fcbc04d48cb7cab096341bc1b1587457904e070702802bbf77ee2"
+        },
+        {
+          "id": "9.4.1",
+          "samples": 198000,
+          "pauseSamples": 7200,
+          "cacheKey": "49f091089f6c4073aad786ce1117b2b74e31798f70f2d1e8b9913ccfd9328ea1",
+          "pcmSha256": "490730977a5e6dd953907e2050a1bfeae1c285d43540d11bf0b9e58ec84289e4"
+        },
+        {
+          "id": "9.4.2",
+          "samples": 179400,
+          "pauseSamples": 7200,
+          "cacheKey": "82de918178c780003d9de0478801df90715264888a19cc75e44b32bab4accb3f",
+          "pcmSha256": "7a287f1247dcd08a681a1d44361a0da0f0f798ee8531b6e0528c7a273c7da92c"
+        },
+        {
+          "id": "9.4.3",
+          "samples": 228000,
+          "pauseSamples": 7200,
+          "cacheKey": "2be12c4c33f084fa22a628635d770d6e3cbc703ac8051822aeb7eff1b72962f9",
+          "pcmSha256": "dc802fabb54bd65b3dbf3c7cf198b2f43f89b4fa5bc0c62d4fb0afaf210f31f9"
+        },
+        {
+          "id": "9.5.1",
+          "samples": 220200,
+          "pauseSamples": 7200,
+          "cacheKey": "e4c32914cb97facc5b4227f8227faddc80b8f2de2413fd7cc1dec748e24bbfb2",
+          "pcmSha256": "6d0f5381608f1706310ae0e9576d47f17226c3d94bfa34d879082b944ebc0a50"
+        },
+        {
+          "id": "9.5.2",
+          "samples": 244200,
+          "pauseSamples": 7200,
+          "cacheKey": "d79a8b3d6d6b5e2de9d234f4c8af890e6b17176b5a632c6a8fa104106e7d92b6",
+          "pcmSha256": "ab2d005cb9649bb9bee495c0e26685bb53fa672babd06281787f82dd0689ed98"
+        },
+        {
+          "id": "9.5.3",
+          "samples": 270600,
+          "pauseSamples": 7200,
+          "cacheKey": "b7c5ac09f22c9305e8852dfb15521d4c9cfa29a5d1a8300605ed63a34d894779",
+          "pcmSha256": "960d0ecef55a7de5c5be0b11b963998eb60f2ad5fbc3667e82c8e965a6b867b8"
+        },
+        {
+          "id": "9.6.1",
+          "samples": 226800,
+          "pauseSamples": 7200,
+          "cacheKey": "33ac7bb15a335dc09f432a7a342a5c7a716071a3605bb56b0be75c651e53c160",
+          "pcmSha256": "e12983e366612bcbc8774a375243762ecb26c1a5204d155948bb069c3ec1e1bf"
+        },
+        {
+          "id": "9.6.2",
+          "samples": 183000,
+          "pauseSamples": 7200,
+          "cacheKey": "cee15b46245439b34100fd4f35850124aa68962441b9096d3658544bcff915f5",
+          "pcmSha256": "9292f1e3acac7f30fe7efab371b6bb8ca8bf3971fe8b8ffb888be57e402e03b6"
+        },
+        {
+          "id": "9.6.3",
+          "samples": 171600,
+          "pauseSamples": 7200,
+          "cacheKey": "d6e95629117c6b8789081ac3ad9b8a2ddca044372666b4622047162910fe92cc",
+          "pcmSha256": "7a8952bd25939906dd17d2c6d6f66a4b9c1a66d2a8ff3094a72ed93ad3f833be"
+        },
+        {
+          "id": "9.7.1",
+          "samples": 196800,
+          "pauseSamples": 7200,
+          "cacheKey": "460b2cdaea0e52f82b4a5a7f08f454c8f0f932a49e2fc4cdecd0402d0b283ffa",
+          "pcmSha256": "21c48a5679c807840dadd1c509e00e183e584f62ab66709064c5bdab4eb3efbf"
+        },
+        {
+          "id": "9.7.2",
+          "samples": 237000,
+          "pauseSamples": 7200,
+          "cacheKey": "74aeb35536e3ce552d1fab35a0d0f3fb6fe88587e860cb2a482a1488ceea1d03",
+          "pcmSha256": "98bdd73fcaef6337f1f949226f8e5f94885c5967129868b96e07de965b39f316"
+        },
+        {
+          "id": "9.8.1",
+          "samples": 159000,
+          "pauseSamples": 7200,
+          "cacheKey": "51243bcbc238f96e569210331cbb80407dfcfb4930ba3a147dd78d816dce12ed",
+          "pcmSha256": "c151e0b578a4ced40a8e6351dc1612ff20044f3db13040b54b983cb5d082d200"
+        },
+        {
+          "id": "9.8.2",
+          "samples": 201000,
+          "pauseSamples": 7200,
+          "cacheKey": "b799edf8c393f15977b28a0eb92af8fff61fae1d6fb2648813cfaa9ffdae23d5",
+          "pcmSha256": "632d39294ea53d947f88bf12c7cb2840e989e98f1c3b0c632204a791607370d7"
+        },
+        {
+          "id": "9.8.3",
+          "samples": 135600,
+          "pauseSamples": 7200,
+          "cacheKey": "e895a7cd60d277bdd1821fffb49eb1af2a064ef7eb3b888229dd0b111d6887b9",
+          "pcmSha256": "c209b8a77f00aac105d9a028e654489d6483ad6b088b651744e2d789ff5fcea4"
+        }
+      ]
+    },
+    {
+      "id": "ch10",
+      "samples": 6457200,
+      "duration": 269.05,
+      "narrationHash": "5f0184fe119c316f0f299dc28dd164552d5c7e668f73e7f464c488c1b3d38f01",
+      "provenance": {
+        "pipeline": 1,
+        "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+        "revision": "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
+        "dtype": "q8",
+        "device": "cpu",
+        "voice": "af_heart",
+        "speed": 1,
+        "sampleRate": 24000,
+        "session": {
+          "intraOpNumThreads": 4,
+          "interOpNumThreads": 1
+        },
+        "packages": {
+          "kokoro-js": "1.2.1",
+          "@huggingface/transformers": "3.8.1",
+          "phonemizer": "1.2.1",
+          "onnxruntime-node": "1.21.0"
+        },
+        "runtime": {
+          "node": "v26.10.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "cpu": "Apple M5 Pro"
+        },
+        "lockfileHash": "4e3a96ca616120702c57daa3f51a953670545e8b04a6ad16f8cd1c509f73317e",
+        "pipelineHash": "6427785486e85a59bf4cb6232d212f759d2a2e1912a7ebaeba015179be2acfb2",
+        "lexiconHash": "14d060438df2de43227a0c1aad4cc96889b7665f2ee0bf34c986ac9b461ee400",
+        "encoding": {
+          "codec": "libmp3lame",
+          "bitrate": "96k",
+          "channels": 1,
+          "sampleRate": 24000,
+          "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        "timing": "Exact float32 PCM sample counts; sentence spans contain generated speech, scene spans additionally contain sentence pauses and scene holds. WebVTT rounds to milliseconds. MP3 gapless decoding removes encoder padding; container duration can include that padding."
+      },
+      "sha256": {
+        "audio": "50bd9854af306e1a83a1002e61ea17f47eeca1191753875fe646d6549c9fee6f",
+        "captions": "a4d0dfd7cac20549260afeecd7f5c819b2d75549c26822e6598a33cbd5e166d8",
+        "cues": "927b7159d3950f6ff158b6cecf3160fd29cb409e3941c5a51e4d421aecf085bc"
+      },
+      "sentences": [
+        {
+          "id": "10.1.1",
+          "samples": 257400,
+          "pauseSamples": 7200,
+          "cacheKey": "b5db1fb1f4662d24257d12cd13f987e1831793b7ce8f2eb4cc3ce14ecae5d109",
+          "pcmSha256": "4aa77b52105f8c7068a641bbd464957b4bfdae1df861bb1e602a1835d9ed7322"
+        },
+        {
+          "id": "10.1.2",
+          "samples": 251400,
+          "pauseSamples": 7200,
+          "cacheKey": "691337454b54af432971cf6c896574c83e94f37f1388d9edc50a4f6c6e3ace42",
+          "pcmSha256": "5f2e2e4526b77c01aebb60507274d5c48299a9ca63aa2022ea03b2e12b51eb74"
+        },
+        {
+          "id": "10.1.3",
+          "samples": 207000,
+          "pauseSamples": 7200,
+          "cacheKey": "f409f8815a15cafb88979cd159b88efb95ece33a4163f0430c13cb327ab8dce1",
+          "pcmSha256": "1ff1f07dbb648ca7e65b49eb3101a44b83ca0c72465f0473d961e8bdba2bba8c"
+        },
+        {
+          "id": "10.1.4",
+          "samples": 190800,
+          "pauseSamples": 7200,
+          "cacheKey": "8cf18dd19185f00b6be323a539a1bb53ceb401d180c188ad80cfe3b0aef5f862",
+          "pcmSha256": "932536070280db5f96f8bb0b9518447a1570fc64cbe355a3e001b50eb6539b7f"
+        },
+        {
+          "id": "10.2.1",
+          "samples": 232200,
+          "pauseSamples": 7200,
+          "cacheKey": "eef164fd9b9e523128582645947dd1a25a8f3146b484eefd31234d4a961d3a76",
+          "pcmSha256": "4f66801903f8f8be08ddaebab5a2a94ea00d42bcb4b83ad4009d8661d066a429"
+        },
+        {
+          "id": "10.2.2",
+          "samples": 208200,
+          "pauseSamples": 7200,
+          "cacheKey": "9e57fe2c6b31862abe72bff3e075cc5631e922632d0478e41bef5c42adbc8b0b",
+          "pcmSha256": "7a15f53c034b2e394b2500028a295292e82c1acc7f718fd074298ed1a0c3872b"
+        },
+        {
+          "id": "10.2.3",
+          "samples": 189600,
+          "pauseSamples": 7200,
+          "cacheKey": "8d4d1be3d97f8409c331a1c6f254fff653d01dcce35453bcb2e2f50645b09ee7",
+          "pcmSha256": "38239b0408b5675dbdcf666e8918f1794c1a8caade7e40ceaaa844baa109fabe"
+        },
+        {
+          "id": "10.2.4",
+          "samples": 139200,
+          "pauseSamples": 7200,
+          "cacheKey": "70a71bb22ef08f2252c1a40b0873db46b8afaf084d8bd7199cc7b748842af188",
+          "pcmSha256": "408a5e502cc474b5a66e23d11f7a7fa5eee6faded4e5a7035271fc98d622a15c"
+        },
+        {
+          "id": "10.3.1",
+          "samples": 234600,
+          "pauseSamples": 7200,
+          "cacheKey": "d9f54b59cdd023ce2a64f51484022a7c6233c9344aa1e8c73a1bf69d5b8139f0",
+          "pcmSha256": "27db193d854249bea6026e5de521cda838c745f87b09540e16c29968e1696f22"
+        },
+        {
+          "id": "10.3.2",
+          "samples": 208800,
+          "pauseSamples": 7200,
+          "cacheKey": "fbbd81a695898ac766157eafaee87814bdcd2450168a67cdce3c365a1eb76717",
+          "pcmSha256": "b147af1e82c66ed56e20333ac02bd59297c021d2e3f5120244a71ab5488a2bbc"
+        },
+        {
+          "id": "10.3.3",
+          "samples": 174600,
+          "pauseSamples": 7200,
+          "cacheKey": "4539e410c924a310eac06d489b8ec4d664721a73b32195655cf6a7e48c9bc6f1",
+          "pcmSha256": "9c172eb4d8c97695631a0b0fb40fc5f50edfc2ab00f9e0ce8c6768b8db6b0f29"
+        },
+        {
+          "id": "10.3.4",
+          "samples": 187800,
+          "pauseSamples": 7200,
+          "cacheKey": "9954eb55f840591d4a0db1903b7bb5ede2fb460606f6ac13252d51d10c80460f",
+          "pcmSha256": "1634097a2b3f2fa1ef4574b16b0afafd5851222f45e610f92371f2ecfa562e0f"
+        },
+        {
+          "id": "10.4.1",
+          "samples": 217200,
+          "pauseSamples": 7200,
+          "cacheKey": "d17d754b6833f711f0e95a49a655d7257139d09ad65a6f8e9ae7ce36f4d76ec7",
+          "pcmSha256": "9eb87e9ad66891529fa1292ec4b8c88bd066b613e60f75d3192b3ff4d15161cc"
+        },
+        {
+          "id": "10.4.2",
+          "samples": 216000,
+          "pauseSamples": 7200,
+          "cacheKey": "b25f20b65f00af942fd333c868da7bc0469357898af64fb2af16c4313606edbc",
+          "pcmSha256": "ba9de8d6b1f3e958360673a17132bf6a4e51c017eab5e7001f22be5cd1e334cd"
+        },
+        {
+          "id": "10.4.3",
+          "samples": 237600,
+          "pauseSamples": 7200,
+          "cacheKey": "99bc46ad2dbe20589d9f1ff5b67df22b76eacf195782abb8d4803452c28b22a2",
+          "pcmSha256": "a002555a7cf48a99d96562d21d5a4c033676eb24fd6ec3bc4b4481ea0f22f2cc"
+        },
+        {
+          "id": "10.4.4",
+          "samples": 168600,
+          "pauseSamples": 7200,
+          "cacheKey": "afc0e8e98da15460e308ce3d58c26e5e18bf083d3b5dfefe0db02be3bbd8626f",
+          "pcmSha256": "a720e3eaf6c24668d1abadcec5e51c8589395fee877626a48f74d1be0f9a4a8c"
+        },
+        {
+          "id": "10.5.1",
+          "samples": 202200,
+          "pauseSamples": 7200,
+          "cacheKey": "91305f892ca1838124b4a222baa7b2c355212a7b566b932ebd3562583b8211b5",
+          "pcmSha256": "605bc7d43f61b486394e1fd2f4d073851d012c3f92a924225a2f0d8a1b1b4c97"
+        },
+        {
+          "id": "10.5.2",
+          "samples": 198600,
+          "pauseSamples": 7200,
+          "cacheKey": "849bd4844c57097fd7254ac0bf5c1e92a06b949141d6b9fed94ea22b67f843cf",
+          "pcmSha256": "cc741b99a0660a508e0339372989416c200332743acb46a5ce867dc84cb7979e"
+        },
+        {
+          "id": "10.5.3",
+          "samples": 207600,
+          "pauseSamples": 7200,
+          "cacheKey": "d45146f8f4136943ce1ee71c46326d35bad0069cd6bf2b4c4a6d7852ef17d4ba",
+          "pcmSha256": "0e82a6661eff1829dc59c6a1b6003a92c3e55df98a8c7d46e54edfe91226305c"
+        },
+        {
+          "id": "10.6.1",
+          "samples": 156600,
+          "pauseSamples": 7200,
+          "cacheKey": "1fd8fc05e5661d79cb0210b448d4afaf95c7c277f88d765ce26ca4dd98993783",
+          "pcmSha256": "94f6bb03829630bd45ae169bbf51e4f2a61b3747d16eb93a8c16feeeb949e5e2"
+        },
+        {
+          "id": "10.6.2",
+          "samples": 213600,
+          "pauseSamples": 7200,
+          "cacheKey": "d91c52e30d4cefccfba3f79577d5a7efdf70abf193686ec1fa28fee3fbe87ab7",
+          "pcmSha256": "447cb5fb8d6a020fcb5c0d6ef6bf9201fd0fc70f2e2c6970c7e34db2d95171f3"
+        },
+        {
+          "id": "10.6.3",
+          "samples": 120600,
+          "pauseSamples": 7200,
+          "cacheKey": "a25f043cb2faedd236aba722a9ed19cf63ce36dc659296871634c5379026f288",
+          "pcmSha256": "427058d323429efc34ad559c7039eb2acc9fd068835a69175cae767585141d64"
+        },
+        {
+          "id": "10.7.1",
+          "samples": 288000,
+          "pauseSamples": 7200,
+          "cacheKey": "c14d8c062f272eea9c24ecb0dbc3563f83092f0f9604347acc89b5ace2ed078d",
+          "pcmSha256": "0b3f9848189ec1cd13899b9ef1146ad5d536bbef786639b3827339b87ae091a1"
+        },
+        {
+          "id": "10.7.2",
+          "samples": 198600,
+          "pauseSamples": 7200,
+          "cacheKey": "f41b0f6b331308ff7465f6933df03016b638bfeff6cf35bec172d3a2b9005039",
+          "pcmSha256": "976077582ed40bde473f64ae0ec8cf0ea18fe9db2d905304e0435e34e3d96656"
+        },
+        {
+          "id": "10.7.3",
+          "samples": 165600,
+          "pauseSamples": 7200,
+          "cacheKey": "601cbe097c1ce472f9cb29e256b220fa57c92873fe717ac6266e07d8649613a4",
+          "pcmSha256": "901d89486d3f92ab0ce25fb434689fcb09a527270d885b8d4009f99f0a6e0d9e"
+        },
+        {
+          "id": "10.8.1",
+          "samples": 219600,
+          "pauseSamples": 7200,
+          "cacheKey": "426e505b1802f8d74254b09f10b24ff1db636d0ba13c7bdfedb37ea9d05acce6",
+          "pcmSha256": "026ac391ccd00d9b4d20fd3ff7de491292ad21e86c406e273b179a304eed8e3e"
+        },
+        {
+          "id": "10.8.2",
+          "samples": 239400,
+          "pauseSamples": 7200,
+          "cacheKey": "b714602bc5748bdb6f447a00f794502e2a8f1cca1897f816edda5c134df604b5",
+          "pcmSha256": "51fc69f29e197eaf35dc01b7a645a2b04267a5ac71003d90bf73ee8b1e73cb46"
+        },
+        {
+          "id": "10.9.1",
+          "samples": 241200,
+          "pauseSamples": 7200,
+          "cacheKey": "6585c69436e86ae31e29de216bd9729e3c7fba207e82cbce02a5b105a8bab5cc",
+          "pcmSha256": "d245d988e3283adb3f35acdca78b0b20f009d2d5a804c9ce17cb652b9b278b10"
+        },
+        {
+          "id": "10.9.2",
+          "samples": 177000,
+          "pauseSamples": 7200,
+          "cacheKey": "80bd430d9b2a16ef013e28ce95205105b529ce0388124a6bd237c90a94725ae5",
+          "pcmSha256": "9149e3cad53198e6f1b016934e91057dad0c462fd7f7142139bbd82195d2e01b"
+        },
+        {
+          "id": "10.9.3",
+          "samples": 118800,
+          "pauseSamples": 7200,
+          "cacheKey": "c5f11a2ce17d4db0912b8725ee969826a486d6aa9f8783eb8c7fdae8aa290c10",
+          "pcmSha256": "2c9b1cda4b3ce483f4e88f5c8c41ffae56fa4dc7e8749976f99e1166dfdbd647"
+        }
+      ]
+    },
+    {
+      "id": "ch11",
+      "samples": 4013400,
+      "duration": 167.225,
+      "narrationHash": "984162270e6722c3597acaa5eb76041ebdbde8fd83be72148352d23a49ca12a9",
+      "provenance": {
+        "pipeline": 1,
+        "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+        "revision": "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
+        "dtype": "q8",
+        "device": "cpu",
+        "voice": "af_heart",
+        "speed": 1,
+        "sampleRate": 24000,
+        "session": {
+          "intraOpNumThreads": 4,
+          "interOpNumThreads": 1
+        },
+        "packages": {
+          "kokoro-js": "1.2.1",
+          "@huggingface/transformers": "3.8.1",
+          "phonemizer": "1.2.1",
+          "onnxruntime-node": "1.21.0"
+        },
+        "runtime": {
+          "node": "v26.10.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "cpu": "Apple M5 Pro"
+        },
+        "lockfileHash": "4e3a96ca616120702c57daa3f51a953670545e8b04a6ad16f8cd1c509f73317e",
+        "pipelineHash": "6427785486e85a59bf4cb6232d212f759d2a2e1912a7ebaeba015179be2acfb2",
+        "lexiconHash": "14d060438df2de43227a0c1aad4cc96889b7665f2ee0bf34c986ac9b461ee400",
+        "encoding": {
+          "codec": "libmp3lame",
+          "bitrate": "96k",
+          "channels": 1,
+          "sampleRate": 24000,
+          "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        "timing": "Exact float32 PCM sample counts; sentence spans contain generated speech, scene spans additionally contain sentence pauses and scene holds. WebVTT rounds to milliseconds. MP3 gapless decoding removes encoder padding; container duration can include that padding."
+      },
+      "sha256": {
+        "audio": "0ca2c8067e1586ba577ea4b67e97739e83f8bfa934baa0f2d410935f74880c1f",
+        "captions": "91eaaba1a57a6e38d87276fe235a79e4ec9c7533abfa4092e1aa6a2a43117781",
+        "cues": "4616d64e35d6befc62ad624bd69b71f6c80753f8fe7905807d19a6f6d9e6df7c"
+      },
+      "sentences": [
+        {
+          "id": "11.1.1",
+          "samples": 264000,
+          "pauseSamples": 7200,
+          "cacheKey": "d937a81422d6277354d93c282760a0529907b58705eed01ad39b86ea82156201",
+          "pcmSha256": "e5d8997812c1ae176795b9a1244f48928e34b2ade1208cf4d3f255ebeefe4598"
+        },
+        {
+          "id": "11.1.2",
+          "samples": 237000,
+          "pauseSamples": 7200,
+          "cacheKey": "2ba1b525ec877e72858b6b989a9f13532d5a30fb389cd8bb10a8da691ba42526",
+          "pcmSha256": "383336889b909d2bbb9d1721144f00c153c5438ebb25428aaff5f6adb689ed40"
+        },
+        {
+          "id": "11.1.3",
+          "samples": 205800,
+          "pauseSamples": 7200,
+          "cacheKey": "743f783e308ba1a9e83160b3058c4b0bf373232e0a6dcce8b54dc10c0e883dc3",
+          "pcmSha256": "0db499f93ce792a58aedbb00f9b2e491341f71ae4efd419b518103acdbbb0899"
+        },
+        {
+          "id": "11.2.1",
+          "samples": 205200,
+          "pauseSamples": 7200,
+          "cacheKey": "3f287a273e9fe06421e7810bdb67eaf10054ff2b269e95cefce9962a33f32ed3",
+          "pcmSha256": "2b706a698cd8348d2df8fbd934c3258930fe9941e35991acfd7c32e9860e6153"
+        },
+        {
+          "id": "11.2.2",
+          "samples": 196800,
+          "pauseSamples": 7200,
+          "cacheKey": "e1c1f7b4455b1467e8f1bdae15a7160723eb2aecef8c2f28490f2e8790067d51",
+          "pcmSha256": "356c370e9df4769ec283f11a9a24db3bbd056aa1aaba43856a1426c288991ce2"
+        },
+        {
+          "id": "11.2.3",
+          "samples": 123600,
+          "pauseSamples": 7200,
+          "cacheKey": "5ece80ebed0145a63dc0819e3ee822c4569b817ba199d563cff4fc2ae35d6731",
+          "pcmSha256": "e8aa93bb358fb6521e58842070f2cd6939a0a75f4bf0ef8798e02dd49ef625f5"
+        },
+        {
+          "id": "11.2.4",
+          "samples": 174000,
+          "pauseSamples": 7200,
+          "cacheKey": "72fd84f2dcd67fbb372d3542f0234b6921f60b6b7b75421803c11875648143dd",
+          "pcmSha256": "f3e38a4dadb39419ad392a92d2f68b99718f650f9a3a22ad49c2c2960ccb43cf"
+        },
+        {
+          "id": "11.2.5",
+          "samples": 181800,
+          "pauseSamples": 7200,
+          "cacheKey": "0fa1d4d4a3204191bd52f0c6fb76c854b89694c8cbb194ec69966e9d42e7f18f",
+          "pcmSha256": "5579b870cb2239af27a728ccdea306ab5d2ad902881ec85728f42d39bfa0c1f3"
+        },
+        {
+          "id": "11.3.1",
+          "samples": 211800,
+          "pauseSamples": 7200,
+          "cacheKey": "50ddab592b45afcf93281a8792b08bd9a69e334c71735c37c68681c16da83781",
+          "pcmSha256": "4d9397cc8c3a055747f49a666e25944966d4aaa9793ac3b50c0d59511c4e9794"
+        },
+        {
+          "id": "11.3.2",
+          "samples": 235200,
+          "pauseSamples": 7200,
+          "cacheKey": "e69e1d9894df2fb43590842a31ae8d17eb3c784685aa248af14adc55bcf862df",
+          "pcmSha256": "b4c73a48e77fbf33a5db743625589bd9ec92200be6651ef8aa5e607196eaa7b4"
+        },
+        {
+          "id": "11.3.3",
+          "samples": 225600,
+          "pauseSamples": 7200,
+          "cacheKey": "241ae1a44005478ff1615579b5c0b096b362aab1cb876301873f5c04158e85af",
+          "pcmSha256": "26f2fa666518cf1d27098e8f89f4670e21b6d66223d8751730fda27a4531a635"
+        },
+        {
+          "id": "11.3.4",
+          "samples": 180600,
+          "pauseSamples": 7200,
+          "cacheKey": "d0818947f105cde5dcc85dcdf4e1eb34fd04974189af3c200808859ad2d20d3a",
+          "pcmSha256": "b95d8d500ca9191c5e310179177490e8f8a4a6bfe10d9218453a8eaed7257fa7"
+        },
+        {
+          "id": "11.4.1",
+          "samples": 258600,
+          "pauseSamples": 7200,
+          "cacheKey": "e8ac54c075e4be11cd0e00467918a96cb402fd1f3e59fd25d81f4882fb058c62",
+          "pcmSha256": "f532eeea39afebb90db8774fccf30f3c2a1f1be0c537ffa553f14366e1203bfc"
+        },
+        {
+          "id": "11.4.2",
+          "samples": 207600,
+          "pauseSamples": 7200,
+          "cacheKey": "4a31f1960fa6c9865a1b23851fcfa0dbc3e87bf174b5973e3538992c3a092efb",
+          "pcmSha256": "d3946219d33d334b9cbc90a695846fad107df209c170bdfeae4d4490baa4d157"
+        },
+        {
+          "id": "11.4.3",
+          "samples": 210000,
+          "pauseSamples": 7200,
+          "cacheKey": "0dd5ccf69e5bf197f1a51662ecacc01995a80dce10ee8fcba8cb727f40bea25c",
+          "pcmSha256": "6b08b8cb680447a085ef1a9ca8e333c9dfc64b249a25bb0efdfe83b49d799cbf"
+        },
+        {
+          "id": "11.4.4",
+          "samples": 150000,
+          "pauseSamples": 7200,
+          "cacheKey": "0b1390c7a7b2ed8ca7a1ab83d5a0e5f46a6e407753f9460dd5caf49305cdf025",
+          "pcmSha256": "77c8521bb70c531093a423fcdbcfe98ec44a7b6076d481553a7b0da4e04dc25d"
+        },
+        {
+          "id": "11.5.1",
+          "samples": 243600,
+          "pauseSamples": 7200,
+          "cacheKey": "fc6aa86b7a1ebe89f9336135199ff935d0d571457126011ff0499c16d8b7ee40",
+          "pcmSha256": "df27f2db4d1f13f5f863668f12d0fc500eefecd4c56c72cb37beb92324da21c1"
+        },
+        {
+          "id": "11.5.2",
+          "samples": 117000,
+          "pauseSamples": 7200,
+          "cacheKey": "d5015ac6ba8132d55ad5eb5ac6177078e3c1a4d855d1d6025aeeab9848dcd1ca",
+          "pcmSha256": "3d87b1b97bd2fea9e3965bd06bbea4f54290f307c5c9a6f2b57ca39b5a0959bb"
+        },
+        {
+          "id": "11.5.3",
+          "samples": 123600,
+          "pauseSamples": 7200,
+          "cacheKey": "f2e61e77956a66a529760949173115a76703d25cf80448adb103028d96edb86c",
+          "pcmSha256": "fb03751404b1af80c5d435590b3119537b9ffe6fbe1cb63312038124ebbb5e15"
+        }
+      ]
+    },
+    {
+      "id": "ch12",
+      "samples": 4629000,
+      "duration": 192.875,
+      "narrationHash": "7bec84eae214d31bc9bd1f4ce1307d9b7c9c09da0d00e2f003ae0c59bdbce3dc",
+      "provenance": {
+        "pipeline": 1,
+        "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+        "revision": "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
+        "dtype": "q8",
+        "device": "cpu",
+        "voice": "af_heart",
+        "speed": 1,
+        "sampleRate": 24000,
+        "session": {
+          "intraOpNumThreads": 4,
+          "interOpNumThreads": 1
+        },
+        "packages": {
+          "kokoro-js": "1.2.1",
+          "@huggingface/transformers": "3.8.1",
+          "phonemizer": "1.2.1",
+          "onnxruntime-node": "1.21.0"
+        },
+        "runtime": {
+          "node": "v26.10.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "cpu": "Apple M5 Pro"
+        },
+        "lockfileHash": "4e3a96ca616120702c57daa3f51a953670545e8b04a6ad16f8cd1c509f73317e",
+        "pipelineHash": "6427785486e85a59bf4cb6232d212f759d2a2e1912a7ebaeba015179be2acfb2",
+        "lexiconHash": "14d060438df2de43227a0c1aad4cc96889b7665f2ee0bf34c986ac9b461ee400",
+        "encoding": {
+          "codec": "libmp3lame",
+          "bitrate": "96k",
+          "channels": 1,
+          "sampleRate": 24000,
+          "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        "timing": "Exact float32 PCM sample counts; sentence spans contain generated speech, scene spans additionally contain sentence pauses and scene holds. WebVTT rounds to milliseconds. MP3 gapless decoding removes encoder padding; container duration can include that padding."
+      },
+      "sha256": {
+        "audio": "fa19f74dba92fed7429e0c6236e7836494a463155ac5229c19a96f5a254a15c8",
+        "captions": "7cd15410f087a54a439f817f589fa4974367001f49540cb58545d012f390cb0c",
+        "cues": "d3e812adf2b9a50f2f96d59a95dfb99c13ab9d11d5029e058404826d8c3d206b"
+      },
+      "sentences": [
+        {
+          "id": "12.1.1",
+          "samples": 231000,
+          "pauseSamples": 7200,
+          "cacheKey": "8034d97d10548e782001f802b5a6026952294a2d67ad3ba822c72ec30a5f4a80",
+          "pcmSha256": "f4ef63226f08ef4e3e9eefd9ed997a58a55dc9925b6f5ade61eed24a52bfac17"
+        },
+        {
+          "id": "12.1.2",
+          "samples": 184200,
+          "pauseSamples": 7200,
+          "cacheKey": "88a98c6fcecfd3c8702be17c83f4198527d87377cb7eecf91188a82351a9fe34",
+          "pcmSha256": "aab06df957e2bbe9eaf7dd6318a37522d56b3c65e71ab13e6c2bd3866189d8c2"
+        },
+        {
+          "id": "12.2.1",
+          "samples": 318000,
+          "pauseSamples": 7200,
+          "cacheKey": "f54ebfe3bb99b2d413130e1c99ea3be61f0af6df0aa77bcde85c5b9a08c8a22a",
+          "pcmSha256": "4ac389f8a1883f894cef04ffd0f341b361483c65f62a7131b920320ba1a09748"
+        },
+        {
+          "id": "12.2.2",
+          "samples": 222600,
+          "pauseSamples": 7200,
+          "cacheKey": "f92eb8294049cb4d45929c8d4c6e330eea32e65854f2abfac9112de6e5cd4d13",
+          "pcmSha256": "818f38a4dc316fdd7ce620be9cba57b2a7df5926d914c5d26bfdc23699d49310"
+        },
+        {
+          "id": "12.3.1",
+          "samples": 243600,
+          "pauseSamples": 7200,
+          "cacheKey": "09a053d396205d6b7cd52e7ab45045f1a29867bf68d89760831069b97a60f1ed",
+          "pcmSha256": "befd7cccc8dac8a22275d7911df1b4fad52e56c043da288ec979a9dc56dee5a1"
+        },
+        {
+          "id": "12.3.2",
+          "samples": 218400,
+          "pauseSamples": 7200,
+          "cacheKey": "8287ec968ea9591ab8f77629c498863c373ae51188edc405a11147d93db9eace",
+          "pcmSha256": "ec7abea3fce6315212ca588a36672b05f413254b0b4cf967da661309a6e35e72"
+        },
+        {
+          "id": "12.4.1",
+          "samples": 213000,
+          "pauseSamples": 7200,
+          "cacheKey": "80ada802b8bf411e3c1c0e3d3be0783556ecbb340a7ff28ce8e71380f09a7e99",
+          "pcmSha256": "65410351308b5dc399789f590a9de38a07ebfb4cf0bb91e6b882105a6f7f01d6"
+        },
+        {
+          "id": "12.4.2",
+          "samples": 191400,
+          "pauseSamples": 7200,
+          "cacheKey": "d24a2f10022d4966a5b85b72d9efefc81281717fc85e23d095f03c8d75b42327",
+          "pcmSha256": "396081c1fc900e4e9925a29947e78b208e582f308a375e31bc94ce8f9c9d13c0"
+        },
+        {
+          "id": "12.4.3",
+          "samples": 129600,
+          "pauseSamples": 7200,
+          "cacheKey": "606bcca1afb6b4bb42ae20597d0a9d0881c83c9c20e5409b02cb341fa17afeb5",
+          "pcmSha256": "d505ac0a999d242fd71da568924e44a99d58b5ec846bf1aea402e1ff56b55834"
+        },
+        {
+          "id": "12.5.1",
+          "samples": 219600,
+          "pauseSamples": 7200,
+          "cacheKey": "6d6c5b2d7f59d104aa79f97c5a4117cda609ff2ce23d70910d8910cf0a112c1a",
+          "pcmSha256": "55467f18c7ebac0fb0dd48a28413a00bba71ecc3e206efe29b7a679f27a3e9b8"
+        },
+        {
+          "id": "12.5.2",
+          "samples": 166200,
+          "pauseSamples": 7200,
+          "cacheKey": "f65a30c269f98217985964a0f2341b84597d55d6549c2764850af2de81ff6c8d",
+          "pcmSha256": "4bac4c9230e138e8579e2bbb15d7cfe8a6f08082265031bac6e127eacaff580c"
+        },
+        {
+          "id": "12.5.3",
+          "samples": 182400,
+          "pauseSamples": 7200,
+          "cacheKey": "abede4b74b218e492e7274035b051e9e3d815a506439a10c71d83df08b403b38",
+          "pcmSha256": "81854b19bf63393d018fa6e85b7a24185a3a44ebb77b39eb5ba212f1ffc94a1f"
+        },
+        {
+          "id": "12.6.1",
+          "samples": 255600,
+          "pauseSamples": 7200,
+          "cacheKey": "2c42acd55f415e83e37af974a80d6c88f035f17d29679674b1b418cc057d73d1",
+          "pcmSha256": "f42462c84ea51345884f30230283486e88f90837abeff068a284bf867e533f8e"
+        },
+        {
+          "id": "12.6.2",
+          "samples": 220800,
+          "pauseSamples": 7200,
+          "cacheKey": "5ca1a3f36b18b22db35354f7286b40672eed20c525c1ccfbc9500ab2b164be60",
+          "pcmSha256": "90c1725f8f6795dd597821eba7d29a5bc6617bba55491c0cd5284dc77a87d159"
+        },
+        {
+          "id": "12.6.3",
+          "samples": 153000,
+          "pauseSamples": 7200,
+          "cacheKey": "2baa1f9290ea7ec99268aeee6438ef85145f9cfe55ba0dbd0b4286a58a4c54c5",
+          "pcmSha256": "5cb92ce6348c132bc7435264aac935e4980f6642f97f7012966f6916a9108e05"
+        },
+        {
+          "id": "12.7.1",
+          "samples": 227400,
+          "pauseSamples": 7200,
+          "cacheKey": "2f18140db28a4c9b3907dfab5c67cfaf660113978504bdcde8e3358b75fb9d8f",
+          "pcmSha256": "530e2d63fb05f57783c418a5553c46ff8dde3b36846d44215163c7801ceab5d7"
+        },
+        {
+          "id": "12.7.2",
+          "samples": 212400,
+          "pauseSamples": 7200,
+          "cacheKey": "67fd04f6832818e56c33da99edbf6411d7fb02f808bedd1385cf46ca349bff7f",
+          "pcmSha256": "7909767b45908e222a431a4a9c0f6721ef88cfcef56ddf88833b0f3423c17888"
+        },
+        {
+          "id": "12.8.1",
+          "samples": 264600,
+          "pauseSamples": 7200,
+          "cacheKey": "ccc6ee65804b536dacbb64466abe93cb01d7264a85ae402bd6c5c120220667ba",
+          "pcmSha256": "ad48bf9cb004b0f2e0f323df633895d33745d9ed7fdb154754f18d6edb796133"
+        },
+        {
+          "id": "12.8.2",
+          "samples": 237600,
+          "pauseSamples": 7200,
+          "cacheKey": "7cc15080eba4168e3e64cb1b0e06515b8318c07040ea142e05894111af440374",
+          "pcmSha256": "51febeebf156d642acbaa1550e578727ff77b413c05146b926bf45015e625fb8"
+        },
+        {
+          "id": "12.8.3",
+          "samples": 201600,
+          "pauseSamples": 7200,
+          "cacheKey": "4c647463d95248e9ccd538265a7ce4e7ee25f6ed494eefef9a14a37392d17579",
+          "pcmSha256": "8879df6a30e1c4ac0d8e68535e0544306c976de4eabd638384a81c5743354e8b"
+        }
+      ]
+    },
+    {
+      "id": "ch13",
+      "samples": 1089000,
+      "duration": 45.375,
+      "narrationHash": "1a7f27fc895785cd47c1d99e81bd1d1e9d3311ac8db7c7e5cbabae58b0fb9029",
+      "provenance": {
+        "pipeline": 1,
+        "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+        "revision": "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
+        "dtype": "q8",
+        "device": "cpu",
+        "voice": "af_heart",
+        "speed": 1,
+        "sampleRate": 24000,
+        "session": {
+          "intraOpNumThreads": 4,
+          "interOpNumThreads": 1
+        },
+        "packages": {
+          "kokoro-js": "1.2.1",
+          "@huggingface/transformers": "3.8.1",
+          "phonemizer": "1.2.1",
+          "onnxruntime-node": "1.21.0"
+        },
+        "runtime": {
+          "node": "v26.10.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "cpu": "Apple M5 Pro"
+        },
+        "lockfileHash": "4e3a96ca616120702c57daa3f51a953670545e8b04a6ad16f8cd1c509f73317e",
+        "pipelineHash": "6427785486e85a59bf4cb6232d212f759d2a2e1912a7ebaeba015179be2acfb2",
+        "lexiconHash": "14d060438df2de43227a0c1aad4cc96889b7665f2ee0bf34c986ac9b461ee400",
+        "encoding": {
+          "codec": "libmp3lame",
+          "bitrate": "96k",
+          "channels": 1,
+          "sampleRate": 24000,
+          "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        "timing": "Exact float32 PCM sample counts; sentence spans contain generated speech, scene spans additionally contain sentence pauses and scene holds. WebVTT rounds to milliseconds. MP3 gapless decoding removes encoder padding; container duration can include that padding."
+      },
+      "sha256": {
+        "audio": "c71bfc16f0250e2fd493399f4578942771a122f48435bdd29be270bbb56e5ed3",
+        "captions": "68a0c70e7e954a2fc90140ac7a3ad109b491612143b8b592c0ba6af4d5869ca9",
+        "cues": "f06375831638ca55bc7588ff89359289b6fb5a82a3918394a399fd456b952692"
+      },
+      "sentences": [
+        {
+          "id": "13.1.1",
+          "samples": 132000,
+          "pauseSamples": 7200,
+          "cacheKey": "612adacd303bc1254fe8edea6fe343d91992de9acdec6f2f9a9dcbaa28746149",
+          "pcmSha256": "43329419c290d02d75aeb58e9e9c95c594b792f933d1a5ff26c503412093745c"
+        },
+        {
+          "id": "13.1.2",
+          "samples": 210600,
+          "pauseSamples": 7200,
+          "cacheKey": "e9967fd0df4eb45ee4029b658a1c42f09167fbdcc8c3cc4dd53d808bc678d985",
+          "pcmSha256": "b2b03fb4eed3d1622e0bdbbaad5ecb867bf52bc7b0758e980cdccd3490544542"
+        },
+        {
+          "id": "13.1.3",
+          "samples": 142800,
+          "pauseSamples": 7200,
+          "cacheKey": "a273747492917ed64be7d04d59dd1005a62ed1f1f72e2347e213be4a68abd9a5",
+          "pcmSha256": "67b2fe9d353c742c13a0790e5cbfbcb667bd2fda5ef729bc835e145d54360922"
+        },
+        {
+          "id": "13.1.4",
+          "samples": 133800,
+          "pauseSamples": 7200,
+          "cacheKey": "d1fecd62bc6cf90e9219029afbc9501561c6e6f41d14d3b34337a2df1b777b82",
+          "pcmSha256": "9e953ba83f2447a0d62949ff6bc04b43cd0ee06b286caa1ec537f05fd82730fc"
+        },
+        {
+          "id": "13.1.5",
+          "samples": 141600,
+          "pauseSamples": 7200,
+          "cacheKey": "add552fe5fd5dd0413f967e37267a3cfc07958ef5c291498ad2c0284fa9e167b",
+          "pcmSha256": "86aae700a8cf1caa56c02a9b056a3d50ed93bb59e5b8ed57fd82ea4e0ac85a1c"
+        },
+        {
+          "id": "13.1.6",
+          "samples": 120000,
+          "pauseSamples": 7200,
+          "cacheKey": "0431f08e5ec8c8bf3be29a11a2120e0e6c15d7ca1b7e4569bea550de98024c43",
+          "pcmSha256": "2bfe22ca8711f3a9ae63817625c4fa8d6a747b01e95df71f757f9c6be3829d8d"
+        },
+        {
+          "id": "13.1.7",
+          "samples": 109800,
+          "pauseSamples": 7200,
+          "cacheKey": "dc885b77fee09fc7268b9a888fee4f2790fd409d8074b7d884c7b5c3fed21888",
+          "pcmSha256": "bce88b2acca710be0a2137ae5f21cdcd52597e638a70d730102e901ccfe43cb6"
+        }
+      ]
+    }
+  ]
+}

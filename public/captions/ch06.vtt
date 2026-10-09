@@ -1,0 +1,81 @@
+WEBVTT
+
+6.1.1
+00:00:00.000 --> 00:00:07.750
+Next-generation harnesses are developing along several axes, starting with composition rather than another model.
+
+6.1.2
+00:00:08.050 --> 00:00:17.450
+DeepSeek documents its MIT-licensed Harness as a Cordis runtime with replaceable loop, model adapter, tools, and session storage.
+
+6.1.3
+00:00:17.750 --> 00:00:23.000
+The supporting composability paper is a preprint, not proof of better coding.
+
+6.1.4
+00:00:23.300 --> 00:00:29.025
+And this remains an unaudited developer preview, not a production-security guarantee.
+
+6.1.5
+00:00:29.325 --> 00:00:37.475
+Unloading a plugin reverses its runtime registrations, not necessarily an email sent or a file deleted.
+
+6.2.1
+00:00:38.575 --> 00:00:50.350
+DeepSeek’s V4.1 technical report describes reinforcement learning across Claude Code versions, OpenCode, Pi, and different DeepSeek Harness configurations.
+
+6.2.2
+00:00:50.650 --> 00:00:57.525
+That is training for interface diversity, not demonstrated robustness to every unseen harness.
+
+6.2.3
+00:00:57.825 --> 00:01:05.750
+The system runs real scaffolds and tools in sandboxes, then converts their interactions into a common training format.
+
+6.3.1
+00:01:06.850 --> 00:01:15.750
+In the vendor’s fixed-checkpoint comparison, Minimal outscored Standard and programmatic tool calling on both reported coding benchmarks.
+
+6.3.2
+00:01:16.050 --> 00:01:21.725
+But mini-SWE led on DeepSWE, showing why the task set matters.
+
+6.3.3
+00:01:22.025 --> 00:01:30.400
+Separately, the independent Claw-SWE-Bench preprint placed Hermes ahead of DeepSeek Harness for all three tested models.
+
+6.3.4
+00:01:30.700 --> 00:01:36.850
+Different benchmarks and protocols make this a counterpoint, not an independent replication.
+
+6.4.1
+00:01:37.950 --> 00:01:46.150
+DeepSeek’s V3.2 report warns that treating tool results as user messages can discard earlier reasoning.
+
+6.4.2
+00:01:46.450 --> 00:01:54.925
+In its own ablation, MiniMax also reports lower SWE-bench Verified scores when earlier thinking is discarded.
+
+6.5.1
+00:01:56.025 --> 00:02:02.825
+Self-improvement can instead mean changing memories, skills, and instructions while model weights stay fixed.
+
+6.5.2
+00:02:03.125 --> 00:02:09.575
+Prime Agent’s technical report even describes preserving an exploit as a reusable skill.
+
+6.5.3
+00:02:09.875 --> 00:02:19.225
+Durable execution is another axis: surviving a worker crash requires more than keeping work alive after the interface disconnects.
+
+6.5.4
+00:02:19.525 --> 00:02:27.825
+Anthropic describes restarting from an external event log; Temporal describes durable waits around existing inner harnesses.
+
+6.5.5
+00:02:28.125 --> 00:02:37.975
+ACP links user-facing clients to agents; A2A links independent agentic applications, not their internal subagent schedules.
+
+6.5.6
+00:02:38.275 --> 00:02:47.725
+Composition, training, persistence, and interoperability solve different problems; none establishes a universally superior harness.

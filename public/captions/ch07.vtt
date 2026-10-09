@@ -1,0 +1,109 @@
+WEBVTT
+
+7.1.1
+00:00:00.000 --> 00:00:05.050
+Multi-agent design starts with the task, not with a desired headcount.
+
+7.1.2
+00:00:05.350 --> 00:00:15.550
+Mixture-of-Agents names a specific layered proposal-and-synthesis method published at ICLR in 2025, not every system with subagents.
+
+7.1.3
+00:00:15.850 --> 00:00:24.600
+A single loop retains control; an isolated worker separates context; parallel map-and-reduce separates independent work.
+
+7.1.4
+00:00:24.900 --> 00:00:30.900
+Debate revises answers through discussion, while layered synthesis aggregates proposals.
+
+7.1.5
+00:00:31.200 --> 00:00:37.225
+Routing selects a model; a cascade can escalate until its stopping criterion is met.
+
+7.1.6
+00:00:37.525 --> 00:00:49.300
+Use isolated workers to contain exploration history, parallel branches for separable research, and avoid splitting a tightly dependent reasoning chain just to add participants.
+
+7.2.1
+00:00:50.400 --> 00:01:03.575
+The original MoA study reported 65.1 percent against GPT-4 Omni’s 57.5 percent on AlpacaEval 2.0’s length-controlled win rate.
+
+7.2.2
+00:01:03.875 --> 00:01:10.675
+That historical, judge-based instruction-following result is not a repository-repair success rate.
+
+7.2.3
+00:01:10.975 --> 00:01:18.275
+Peer-reviewed sampling-and-voting work supports trying independent candidates before adding elaborate communication.
+
+7.2.4
+00:01:18.575 --> 00:01:27.325
+Peer-reviewed debate results show gains, but another study found strong single-model prompting could nearly match the best discussions.
+
+7.3.1
+00:01:28.425 --> 00:01:37.275
+Self-MoA found repeated sampling from its strongest proposer could beat mixed proposers, while keeping a different model as aggregator.
+
+7.3.2
+00:01:37.575 --> 00:01:44.425
+The X-MAS preprint instead found benefits from choosing models for particular functions and domains.
+
+7.3.3
+00:01:44.725 --> 00:01:53.950
+The practical lesson is to preserve competence while testing useful diversity: a collection of brands is not, by itself, an architecture.
+
+7.4.1
+00:01:55.050 --> 00:02:06.675
+Anthropic reported a 90.2 percent improvement on its internal research evaluation: an Opus 4 lead with Sonnet 4 workers, compared with Opus 4 alone.
+
+7.4.2
+00:02:06.975 --> 00:02:14.800
+Its roughly fifteenfold token observation compares multi-agent systems with chat, not with a single agent.
+
+7.4.3
+00:02:15.100 --> 00:02:25.075
+The Science of Scaling preprint, version three, suggests benefits for parallelizable tasks and harm for sequential planning, with small coding samples.
+
+7.4.4
+00:02:25.375 --> 00:02:31.325
+MAST documents failures in system design, inter-agent alignment, and verification.
+
+7.4.5
+00:02:31.625 --> 00:02:40.250
+Cognition’s 2026 follow-up supports clean-context reviewers around a single writer, revising its earlier warning.
+
+7.5.1
+00:02:41.350 --> 00:02:51.300
+Peer-reviewed work finds self-preference in evaluation and surface-form biases in code judging, so reviewer approval cannot establish correctness.
+
+7.5.2
+00:02:51.600 --> 00:03:02.550
+Agent-as-a-Judge supports giving evaluators access to actual artifacts and requirements; agreement with humans still is not production bug-detection performance.
+
+7.6.1
+00:03:03.650 --> 00:03:12.250
+HyperAgent’s preprint supplies an early measured example of strong planning and editing with cheaper navigation and execution.
+
+7.6.2
+00:03:12.550 --> 00:03:18.950
+That supports a role-specific option, not a permanent model shopping list or fixed team size.
+
+7.6.3
+00:03:19.250 --> 00:03:27.600
+For review, ask a separate evaluator to inspect the implementation and requirements, rather than simply approve the editor’s account.
+
+7.7.1
+00:03:28.700 --> 00:03:38.975
+The research points to eleven conditional principles, with confidence levels that distinguish well-supported recommendations from experiments still worth testing.
+
+7.7.2
+00:03:39.275 --> 00:03:46.400
+Cross-family review has low direct evidence for superior defect detection; treat it as an experiment.
+
+7.7.3
+00:03:46.700 --> 00:03:54.875
+Track latency and total compute separately: parallel completion can be faster while consuming more resources overall.
+
+7.7.4
+00:03:55.175 --> 00:04:04.225
+Start simple, delegate separable work through explicit contracts, preserve evidence, and verify whether the coordination actually pays.

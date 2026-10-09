@@ -1,0 +1,85 @@
+WEBVTT
+
+5.1.1
+00:00:00.000 --> 00:00:08.675
+Pi, omp, Hermes Agent, and OpenClaw emphasize different design priorities, rather than forming a sequence of upgrades.
+
+5.1.2
+00:00:08.975 --> 00:00:20.775
+Pi centers on control; omp integrates developer tools; Hermes emphasizes persistent learning; OpenClaw connects a personal assistant to devices and chats.
+
+5.1.3
+00:00:21.075 --> 00:00:30.375
+All four publish MIT-licensed core repositories, while connected models, hosted services, and subscriptions keep their own terms.
+
+5.2.1
+00:00:31.475 --> 00:00:41.625
+Mario Zechner’s November 2025 account describes building Pi for predictable behavior and direct visibility into what the model sees.
+
+5.2.2
+00:00:41.925 --> 00:00:47.575
+His original recipe used four default tools: read, write, edit, and bash.
+
+5.2.3
+00:00:47.875 --> 00:00:54.625
+He reported the original system prompt and tool definitions together at below one thousand tokens.
+
+5.2.4
+00:00:54.925 --> 00:01:03.850
+On September twenty-ninth, twenty twenty-six, Pi added MCP, tool search, and JavaScript codemode as built-in extensions.
+
+5.2.5
+00:01:04.150 --> 00:01:12.850
+Its current MCP design controls which tools enter context, rather than exposing every server tool directly to the model.
+
+5.3.1
+00:01:13.950 --> 00:01:21.475
+omp explicitly forks Pi, with Can Bölük leading the project and Stencil Labs credited as its builder.
+
+5.3.2
+00:01:21.775 --> 00:01:31.875
+GitHub records the repository’s creation on December thirty-first, twenty twenty-five, a source-history milestone rather than a package-release date.
+
+5.3.3
+00:01:32.175 --> 00:01:40.650
+The documented integration brings together language servers, a debugger, hash-anchored edits, memory, and first-class subagents.
+
+5.3.4
+00:01:40.950 --> 00:01:48.750
+Bölük’s argument is that a model can understand a task yet struggle with the interface used to express its changes.
+
+5.3.5
+00:01:49.050 --> 00:01:57.250
+His creator-run editing experiment tested that idea by changing the edit interface while leaving the model weights alone.
+
+5.4.1
+00:01:58.350 --> 00:02:07.500
+Nous Research released Hermes Agent on February twenty-fifth, twenty twenty-six, aiming to carry useful knowledge across interactions.
+
+5.4.2
+00:02:07.800 --> 00:02:16.625
+It retains facts and reusable skills across terminal and messaging sessions, updating external state rather than training the model.
+
+5.4.3
+00:02:16.925 --> 00:02:24.425
+Memory depends on actual tool writes, and its bounded prompt snapshot refreshes only when a new session starts.
+
+5.4.4
+00:02:24.725 --> 00:02:34.275
+Hermes Agent is application software with multiple model providers, distinct from Nous Research’s separately trained Hermes model family.
+
+5.5.1
+00:02:35.375 --> 00:02:42.600
+Peter Steinberger’s OpenClaw connects the story to assistants on personal devices and in chat channels.
+
+5.5.2
+00:02:42.900 --> 00:02:50.875
+Its earlier assistant integrated Pi, connecting that minimal coding toolkit to a broader personal-assistant workflow.
+
+5.5.3
+00:02:51.175 --> 00:03:00.525
+By October 2026, OpenClaw documents its own agent runtime, while Pi’s terminal UI toolkit remains a dependency.
+
+5.5.4
+00:03:00.825 --> 00:03:09.275
+Shared ancestry does not make these projects interchangeable: choose the priorities and integration boundaries that fit your work.

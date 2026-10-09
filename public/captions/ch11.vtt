@@ -1,0 +1,77 @@
+WEBVTT
+
+11.1.1
+00:00:00.000 --> 00:00:11.000
+Choose omp settings around your goal: interactive safety, controlled spending, or more explicit review, rather than searching for one universally best preset.
+
+11.1.2
+00:00:11.300 --> 00:00:21.175
+These profiles combine official guidance with recommendations based on documented behavior; their benefits still need testing on your repository.
+
+11.1.3
+00:00:21.475 --> 00:00:30.050
+Start by comparing each proposed change with the shipped default, so the choice of extra autonomy, work, or oversight is deliberate.
+
+11.2.1
+00:00:31.150 --> 00:00:39.700
+For interactive safety, write mode allows workspace edits but prompts for execution; always-ask also prompts for edits.
+
+11.2.2
+00:00:40.000 --> 00:00:48.200
+Official guidance adds an explicit eval prompt or deny policy when bash restrictions must cover eval’s shell path.
+
+11.2.3
+00:00:48.500 --> 00:00:53.650
+Keep the advisor’s default read-only tools unless you trust broader grants.
+
+11.2.4
+00:00:53.950 --> 00:01:01.200
+Use view-only Collab links for observers and process-local configuration overlays for demonstrations.
+
+11.2.5
+00:01:01.500 --> 00:01:09.075
+Remember that parent approval mode alone does not confine headless children; required prompts can fail their work.
+
+11.3.1
+00:01:10.175 --> 00:01:19.000
+For cost-conscious work, keep worker LSP off for search-only assignments, enabling it when the extra navigation is worth the work.
+
+11.3.2
+00:01:19.300 --> 00:01:29.100
+Keep task concurrency finite, and separately cap provider requests according to your provider limits; no optimal universal count is established.
+
+11.3.3
+00:01:29.400 --> 00:01:38.800
+Reuse a context-bearing agent for follow-ups, and leave automatic continuation off when avoiding extra private capture turns is the goal.
+
+11.3.4
+00:01:39.100 --> 00:01:46.625
+These controls bound particular kinds of work; they are not measured promises of lower total spend or better answers.
+
+11.4.1
+00:01:47.725 --> 00:01:58.500
+For rigor, official guidance favors exact provider-qualified selectors when provider identity matters, routed through named roles and agent overrides.
+
+11.4.2
+00:01:58.800 --> 00:02:07.450
+Strict final advisor review can wait without a time limit, so choose it when the review boundary matters more than predictable latency.
+
+11.4.3
+00:02:07.750 --> 00:02:16.500
+Strict schemas protect downstream shape, and visible resolved-model badges expose routing, but neither validates factual claims.
+
+11.4.4
+00:02:16.800 --> 00:02:23.050
+Treat cross-family review as an experiment, not an assurance of superior defect detection.
+
+11.5.1
+00:02:24.150 --> 00:02:34.300
+Compare a strong simple baseline, record model IDs and configuration, and track validated quality, total cost, and elapsed time separately.
+
+11.5.2
+00:02:34.600 --> 00:02:39.475
+Require an observed benefit before paying for additional coordination.
+
+11.5.3
+00:02:39.775 --> 00:02:44.925
+Re-evaluate after model or harness changes, and measure on your workload.
