@@ -1,0 +1,424 @@
+{
+  "id": "ch11",
+  "slug": "recommended-settings",
+  "title": "Recommended settings, by goal",
+  "act": "Act IV — omp in practice",
+  "targetSeconds": 150,
+  "takeaway": "Defaults are starting points: choose a goal, make trade-offs explicit, and measure on your workload.",
+  "scenes": [
+    {
+      "id": "11.1",
+      "title": "Defaults are not an optimum",
+      "visual": "11.1.1: statCard says no universal preset. 11.1.2: diagram separates shipped defaults from three proposed profile cards. Pin dateStamp and gradeBadge C; profiles remain explicitly conditional, not benchmark winners. 11.1.3: underline defaults versus deliberate deviations.",
+      "sentences": [
+        {
+          "id": "11.1.1",
+          "text": "Choose omp settings around your goal: interactive safety, controlled spending, or more explicit review, rather than searching for one universally best preset.",
+          "claims": [
+            "C10-T11",
+            "C07-T10"
+          ],
+          "sources": [
+            "ompdocs-settings"
+          ]
+        },
+        {
+          "id": "11.1.2",
+          "text": "These profiles combine official guidance with recommendations based on documented behavior; their benefits still need testing on your repository.",
+          "claims": [
+            "C10-T11"
+          ],
+          "sources": [
+            "ompdocs-settings",
+            "ompdocs-advisor-watchdog"
+          ]
+        },
+        {
+          "id": "11.1.3",
+          "text": "Start by comparing each proposed change with the shipped default, so the choice of extra autonomy, work, or oversight is deliberate.",
+          "claims": [
+            "C10-T11"
+          ],
+          "sources": [
+            "ompdocs-settings",
+            "ompdocs-advisor-watchdog"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "11.1.a",
+          "kind": "label",
+          "text": "No universal preset · conditional recommendations, not measured optima · as of 2026-10-08",
+          "claims": [
+            "C10-T11",
+            "C07-T10"
+          ],
+          "at": "11.1.1"
+        },
+        {
+          "id": "11.1.b",
+          "kind": "code",
+          "text": "Shipped omp 18.8.6 defaults: tools.approvalMode: yolo; task.enableLsp: false; task.maxConcurrency: 32; providers.maxInFlightRequests: {}; autolearn.autoContinue: false; advisor.enabled: false; task.showResolvedModelBadge: false · per-call task argument schemaMode: permissive · defaults, not recommendations",
+          "claims": [],
+          "sources": [
+            "ompdocs-tools-task",
+            "ompdocs-settings",
+            "ompdocs-advisor-watchdog",
+            "ohmypimaintainers2026task",
+            "ohmypimaintainers2026task-2"
+          ],
+          "at": "11.1.2",
+          "grade": "C"
+        }
+      ],
+      "holdAfter": 0.8
+    },
+    {
+      "id": "11.2",
+      "title": "Safety-first",
+      "visual": "11.2.1–11.2.2: profile card reveals approval tiers with per-row class and citation. 11.2.3: highlight retained read-only advisor grants. 11.2.4: show observer link and process-local overlay as text/code cards, not an executed command. 11.2.5: child-mode warning remains prominent.",
+      "sentences": [
+        {
+          "id": "11.2.1",
+          "text": "For interactive safety, write mode allows workspace edits but prompts for execution; always-ask also prompts for edits.",
+          "claims": [],
+          "sources": [
+            "ompdocs-approval-mode",
+            "ompdocs-tools-task"
+          ]
+        },
+        {
+          "id": "11.2.2",
+          "text": "Official guidance adds an explicit eval prompt or deny policy when bash restrictions must cover eval’s shell path.",
+          "claims": [],
+          "sources": [
+            "ompdocs-approval-mode"
+          ]
+        },
+        {
+          "id": "11.2.3",
+          "text": "Keep the advisor’s default read-only tools unless you trust broader grants.",
+          "claims": [],
+          "sources": [
+            "ompdocs-advisor-watchdog"
+          ]
+        },
+        {
+          "id": "11.2.4",
+          "text": "Use view-only Collab links for observers and process-local configuration overlays for demonstrations.",
+          "claims": [],
+          "sources": [
+            "ompdocs-collab",
+            "ompdocs-settings"
+          ]
+        },
+        {
+          "id": "11.2.5",
+          "text": "Remember that parent approval mode alone does not confine headless children; required prompts can fail their work.",
+          "claims": [
+            "C10-T7"
+          ],
+          "sources": [
+            "ompdocs-tools-task",
+            "ompdocs-approval-mode"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "11.2.a",
+          "kind": "code",
+          "text": "Behavior-justified · tools.approvalMode: write — reads/writes allowed, execution prompts; always-ask — edits prompt too · not inherited child confinement",
+          "claims": [],
+          "sources": [
+            "ompdocs-approval-mode",
+            "ompdocs-tools-task"
+          ],
+          "at": "11.2.1",
+          "grade": "C"
+        },
+        {
+          "id": "11.2.b",
+          "kind": "code",
+          "text": "Official guidance · tools.approval.eval: prompt (or deny) · bash pattern rules do not cover eval shell execution; headless prompts fail",
+          "claims": [],
+          "sources": [
+            "ompdocs-approval-mode"
+          ],
+          "at": "11.2.2",
+          "grade": "C"
+        },
+        {
+          "id": "11.2.c",
+          "kind": "code",
+          "text": "Official guidance · WATCHDOG.yml advisors[].tools: retain default read, grep, glob and optional recall · do not add mutating grants without trust",
+          "claims": [],
+          "sources": [
+            "ompdocs-advisor-watchdog"
+          ],
+          "at": "11.2.3",
+          "grade": "C"
+        },
+        {
+          "id": "11.2.d",
+          "kind": "code",
+          "text": "Behavior-justified · /collab view — observation, still exposes readable session content\nBehavior-justified · --config — process-local overlays, not machine-wide policy edits",
+          "claims": [],
+          "sources": [
+            "ompdocs-collab",
+            "ompdocs-settings"
+          ],
+          "at": "11.2.4",
+          "grade": "C"
+        }
+      ],
+      "holdAfter": 0.8
+    },
+    {
+      "id": "11.3",
+      "title": "Cost-conscious",
+      "visual": "11.3.1: profile card retains worker LSP default. 11.3.2: split task semaphore from provider requests, leave values conditional rather than inventing a universal cap. 11.3.3: diagram routes a follow-up to existing agent; capture-turn toggle stays off. Each row has class and citation. 11.3.4: add no quantified savings caption beneath the separate limits.",
+      "sentences": [
+        {
+          "id": "11.3.1",
+          "text": "For cost-conscious work, keep worker LSP off for search-only assignments, enabling it when the extra navigation is worth the work.",
+          "claims": [],
+          "sources": [
+            "ohmypimaintainers2026task-2"
+          ]
+        },
+        {
+          "id": "11.3.2",
+          "text": "Keep task concurrency finite, and separately cap provider requests according to your provider limits; no optimal universal count is established.",
+          "claims": [],
+          "sources": [
+            "ompdocs-tools-task",
+            "ompdocs-tools-eval",
+            "ompdocs-settings"
+          ]
+        },
+        {
+          "id": "11.3.3",
+          "text": "Reuse a context-bearing agent for follow-ups, and leave automatic continuation off when avoiding extra private capture turns is the goal.",
+          "claims": [],
+          "sources": [
+            "ompdocs-tools-task",
+            "ompdocs-settings"
+          ]
+        },
+        {
+          "id": "11.3.4",
+          "text": "These controls bound particular kinds of work; they are not measured promises of lower total spend or better answers.",
+          "claims": [
+            "C10-T11"
+          ],
+          "sources": [
+            "ompdocs-tools-task",
+            "ompdocs-settings",
+            "ompdocs-tools-eval",
+            "ohmypimaintainers2026task-2"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "11.3.a",
+          "kind": "code",
+          "text": "Behavior-justified · task.enableLsp: false for search-only workers · shipped default; official schema describes the token trade-off, not measured savings",
+          "claims": [],
+          "sources": [
+            "ohmypimaintainers2026task-2"
+          ],
+          "at": "11.3.1",
+          "grade": "C"
+        },
+        {
+          "id": "11.3.b",
+          "kind": "code",
+          "text": "Behavior-justified · task.maxConcurrency: choose a finite numeric limit; shipped 32 is not an optimum; 0 is unlimited\nBehavior-justified · providers.maxInFlightRequests: positive per-provider limits matching your allowance; {} leaves providers uncapped · explanatory notation, not paste-ready YAML",
+          "claims": [],
+          "sources": [
+            "ompdocs-tools-task",
+            "ompdocs-tools-eval",
+            "ompdocs-settings"
+          ],
+          "at": "11.3.2",
+          "grade": "C"
+        },
+        {
+          "id": "11.3.c",
+          "kind": "code",
+          "text": "Official guidance · write agent://<id> for retained follow-up\nBehavior-justified · autolearn.autoContinue: false — avoid extra autonomous capture turns; separate from memory-backend choice",
+          "claims": [],
+          "sources": [
+            "ompdocs-tools-task",
+            "ompdocs-settings"
+          ],
+          "at": "11.3.3",
+          "grade": "C"
+        }
+      ],
+      "holdAfter": 0.8
+    },
+    {
+      "id": "11.4",
+      "title": "Max-rigor",
+      "visual": "11.4.1: profile card names exact-selector guidance without recommending a particular model. 11.4.2: timeline shows agent-end strict wait and visible failure exit. 11.4.3: schema gate and explicit nondefault model-badge code card. 11.4.4: cross-family review badge says Low confidence for defect superiority, not source grade.",
+      "sentences": [
+        {
+          "id": "11.4.1",
+          "text": "For rigor, official guidance favors exact provider-qualified selectors when provider identity matters, routed through named roles and agent overrides.",
+          "claims": [],
+          "sources": [
+            "ompdocs-task-agent-discovery",
+            "ompdocs-models"
+          ]
+        },
+        {
+          "id": "11.4.2",
+          "text": "Strict final advisor review can wait without a time limit, so choose it when the review boundary matters more than predictable latency.",
+          "claims": [],
+          "sources": [
+            "ompdocs-advisor-watchdog"
+          ]
+        },
+        {
+          "id": "11.4.3",
+          "text": "Strict schemas protect downstream shape, and visible resolved-model badges expose routing, but neither validates factual claims.",
+          "claims": [],
+          "sources": [
+            "ompdocs-tools-task",
+            "ompdocs-tools-eval",
+            "ohmypimaintainers2026task"
+          ]
+        },
+        {
+          "id": "11.4.4",
+          "text": "Treat cross-family review as an experiment, not an assurance of superior defect detection.",
+          "claims": [
+            "C07-T9"
+          ],
+          "sources": [
+            "panickssery2024llm",
+            "moon2026don",
+            "spiliopoulou2025play"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "11.4.a",
+          "kind": "code",
+          "text": "Official guidance · modelRoles.<role>: provider/model-id; task.agentModelOverrides.<agent>: \"@<role>\" · explanatory notation; real YAML uses nested mappings · exact provider identity, not a quality ranking",
+          "claims": [],
+          "sources": [
+            "ompdocs-task-agent-discovery",
+            "ompdocs-models"
+          ],
+          "at": "11.4.1",
+          "grade": "C"
+        },
+        {
+          "id": "11.4.b",
+          "kind": "code",
+          "text": "Official documented pattern · default advisor without a WATCHDOG roster: advisor.enabled: true; advisor.reviewMode: agent-end; advisor.syncBacklog: strict · opt-in; unbounded wall-clock wait, released by failures/abort and documented stop conditions · roster entries configure their own reviewMode and syncBacklog",
+          "claims": [],
+          "sources": [
+            "ompdocs-advisor-watchdog"
+          ],
+          "at": "11.4.2",
+          "grade": "C"
+        },
+        {
+          "id": "11.4.c",
+          "kind": "code",
+          "text": "Behavior-justified · per-call schemaMode: strict — fail after exhausted invalid-output retries; shape only\nBehavior-justified · task.showResolvedModelBadge: true — explicit deviation from false default, exposes actual model",
+          "claims": [],
+          "sources": [
+            "ompdocs-tools-task",
+            "ompdocs-tools-eval",
+            "ohmypimaintainers2026task"
+          ],
+          "at": "11.4.3",
+          "grade": "C"
+        },
+        {
+          "id": "11.4.d",
+          "kind": "caption",
+          "text": "Editorial synthesis — cross-family review ablation: Low confidence for superior defect detection · compare equally capable fresh-context reviewers; measure precision, recall, and cost",
+          "claims": [
+            "C07-T10"
+          ],
+          "sources": [
+            "panickssery2024llm",
+            "moon2026don",
+            "spiliopoulou2025play",
+            "yan2026multiagents"
+          ],
+          "at": "11.4.4"
+        }
+      ],
+      "holdAfter": 0.8
+    },
+    {
+      "id": "11.5",
+      "title": "Measure on your workload",
+      "visual": "11.5.1: diagram returns profile to baseline comparison, recording model/config and separate quality/cost/latency axes. 11.5.2: compare observed benefit against coordination cost. 11.5.3: timeline loops when model or harness changes; settle on the closing instruction.",
+      "sentences": [
+        {
+          "id": "11.5.1",
+          "text": "Compare a strong simple baseline, record model IDs and configuration, and track validated quality, total cost, and elapsed time separately.",
+          "claims": [
+            "C07-T10"
+          ]
+        },
+        {
+          "id": "11.5.2",
+          "text": "Require an observed benefit before paying for additional coordination.",
+          "claims": [
+            "C07-T10"
+          ]
+        },
+        {
+          "id": "11.5.3",
+          "text": "Re-evaluate after model or harness changes, and measure on your workload.",
+          "claims": [
+            "C07-T10"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "11.5.a",
+          "kind": "caption",
+          "text": "Editorial synthesis: strong baseline → record model IDs/configuration/date → quality + total cost + latency → re-evaluate after changes",
+          "claims": [
+            "C07-T10"
+          ],
+          "sources": [
+            "li2026rethinking",
+            "li2024more",
+            "wang2024rethinking",
+            "ye2025xmas",
+            "kim2026towards",
+            "phan2025hyperagent",
+            "anthropic2026advisor",
+            "anthropicfrontierredteam2026patterns"
+          ],
+          "at": "11.5.1"
+        },
+        {
+          "id": "11.5.b",
+          "kind": "label",
+          "text": "Measure on your workload.",
+          "claims": [
+            "C07-T10"
+          ],
+          "at": "11.5.3"
+        }
+      ],
+      "holdAfter": 2
+    }
+  ]
+}

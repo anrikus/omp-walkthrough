@@ -1,0 +1,118 @@
+{
+  "id":"ch01",
+  "slug":"landscape",
+  "title":"What a harness is — the landscape",
+  "act":"Act I — The harness matters",
+  "targetSeconds":180,
+  "takeaway":"Read a dated landscape along independent axes: source rights, provider choice, and interface, rather than a single product ranking.",
+  "scenes":[
+    {
+      "id":"1.1",
+      "title":"The machinery around the model",
+      "visual":"1.1.1: diagram opens a cutaway with a fixed model core and surrounding planning, memory, perception, and action ring; gradeBadge A accompanies the survey grounding. 1.1.2: add context, tools, execution, state, policy, and orchestration as an explanatory synthesis, not an academic standard. 1.1.3: move CLI, editor, and web surfaces outside the harness boundary.",
+      "sentences":[
+        {"id":"1.1.1","text":"A coding model is not the whole agent: a peer-reviewed survey describes planning, memory, perception, and action around it.","claims":["C01-T1"],"sources":["liu2026large"]},
+        {"id":"1.1.2","text":"Practitioners use harness for surrounding machinery: context, tools, execution, state, policy, and orchestration.","claims":["C01-T2"]},
+        {"id":"1.1.3","text":"That is different from the interface where you watch and supervise the work.","claims":["C01-T2","C01-T4"]}
+      ],
+      "onScreen":[
+        {"id":"1.1.a","kind":"label","text":"Model core → planning, memory, perception, action · survey-grounded agent components, not a universal harness taxonomy","grade":"A","claims":["C01-T1"],"sources":["liu2026large"],"at":"1.1.1"},
+        {"id":"1.1.b","kind":"label","text":"Harness: context · tools · execution · state · policy · orchestration | Human surfaces: CLI · editor · web · explanatory synthesis","grade":"C","claims":["C01-T2","C01-T4"],"at":"1.1.2"}
+      ]
+    },
+    {
+      "id":"1.2",
+      "title":"Useful, not settled vocabulary",
+      "visual":"1.2.1: quoteCard displays Chase's exact short quotation with attribution and dateStamp. 1.2.2: diagram gives framework, runtime, and harness overlapping outlines rather than hard nested boundaries.",
+      "sentences":[
+        {"id":"1.2.1","text":"In October 2025, LangChain's Harrison Chase described harness as a term gaining currency.","spoken":"In October twenty twenty five, LangChain's Harrison Chase described harness as a term gaining currency.","claims":["C01-T3"]},
+        {"id":"1.2.2","text":"He acknowledged blurry boundaries with frameworks and runtimes, and explicitly disclaimed inventing the term.","claims":["C01-T3"]}
+      ],
+      "onScreen":[
+        {"id":"1.2.a","kind":"quote","text":"“just starting to see be used more” · Harrison Chase on “Agent Harness” · October 25, 2025 · first-party terminology discussion, not a coinage claim","grade":"C","claims":["C01-T3"],"at":"1.2.1"}
+      ]
+    },
+    {
+      "id":"1.3",
+      "title":"Independent axes, not a podium",
+      "visual":"1.3.1: diagram shows an unranked matrix with source rights, provider freedom, and interface columns. 1.3.2: place Codex CLI and Amp as dated example rows, not scored dots. 1.3.3: expand the Codex row into multiple surfaces and draw an ACP editor-to-agent boundary; use gradeBadge C and dateStamp throughout. 1.3.4: emphasize the provider-performance and component-license conditions already attached to the map.",
+      "sentences":[
+        {"id":"1.3.1","text":"Read this landscape along independent axes: source rights, provider freedom, and the work surface.","claims":["C01-T4","C01-T5"]},
+        {"id":"1.3.2","text":"Codex CLI is open source with custom and local providers; Amp is proprietary but supports multiple models and provider connections.","claims":["C01-T5"]},
+        {"id":"1.3.3","text":"OpenAI documents a shared Codex harness across surfaces, while Agent Client Protocol lets compatible editors host independently developed agents.","claims":["C01-T4"]},
+        {"id":"1.3.4","text":"Provider choice does not guarantee equal performance; repository licenses and service terms have different scopes.","claims":["C01-T5"],"sources":["openaindcodex","corporationndamp"]}
+      ],
+      "onScreen":[
+        {"id":"1.3.a","kind":"label","text":"As of 2026-10-08 · Codex CLI/core: Apache-2.0, custom/local providers | Amp: proprietary, multi-model, provider connections · licenses apply to named components, not every associated service","grade":"C","claims":["C01-T5"],"at":"1.3.1"},
+        {"id":"1.3.b","kind":"label","text":"One Codex harness → multiple surfaces | Agent Client Protocol (ACP): compatible editor ↔ independent agent · documented compatibility, not equal performance across models","grade":"C","claims":["C01-T4","C01-T5"],"at":"1.3.3"}
+      ]
+    },
+    {
+      "id":"1.4",
+      "title":"Reported use, conditional trust",
+      "visual":"1.4.1: barChart reveals independent bars, never a pie, retaining denominator and overlapping-selections caption. 1.4.2: emphasize the overlapping-selections caption. 1.4.3: a separate trust panel shows its own question and population rather than stacking into the product chart. Keep gradeBadge C and dateStamp visible.",
+      "sentences":[
+        {"id":"1.4.1","text":"Stack Overflow's 2026 survey reports past-year use: Claude Code, 65.5%; Copilot, 58.7%; and Codex, 29.5%.","spoken":"Stack Overflow's twenty twenty six survey reports past year use: Claude Code, sixty five point five percent; Copilot, fifty eight point seven percent; and Codex, twenty nine point five percent.","claims":["C01-T6"]},
+        {"id":"1.4.2","text":"These are overlapping survey selections among respondents, not mutually exclusive market shares.","claims":["C01-T6"]},
+        {"id":"1.4.3","text":"Trust is conditional: 48.0% trust easily verified output; only 6.6% trust AI with important work decisions, in a separate survey question.","spoken":"Trust is conditional: forty eight percent trust easily verified output; only six point six percent trust A I with important work decisions, in a separate survey question.","claims":["C01-T7"]}
+      ],
+      "onScreen":[
+        {"id":"1.4.a","kind":"stat","text":"Stack Overflow Developer Survey 2026 · AICodeAgent, Used group, n = 12,255 · v2026.1 · Claude Code 65.5% · GitHub Copilot 58.7% · OpenAI Codex 29.5% · past-year use, overlapping selections, not exclusive market shares · product labels span different surfaces · accessed 2026-10-08","grade":"C","claims":["C01-T6"],"at":"1.4.1"},
+        {"id":"1.4.b","kind":"stat","text":"Stack Overflow Developer Survey 2026 · AITrust, single-select, n = 14,304 · v2026.1 · 48.0%: trust when output is easy to verify | 6.6%: trust with important work decisions · separate question, not the product-use denominator · accessed 2026-10-08","grade":"C","claims":["C01-T7"],"at":"1.4.3"}
+      ]
+    },
+    {
+      "id":"1.5",
+      "title":"Contributions become a dataset",
+      "visual":"1.5.1: statCard counts to the paper total only while its cutoff stays attached. 1.5.2: reveal a separate v4 artifact card, with a different gradeBadge and cutoff; never tween the first count into the second or imply a census.",
+      "sentences":[
+        {"id":"1.5.1","text":"The peer-reviewed AIDev paper records 932,791 agent-authored pull requests, through August 1, 2025.","spoken":"The peer reviewed A I Dev paper records nine hundred thirty two thousand seven hundred ninety one agent authored pull requests, through August first, twenty twenty five.","claims":["C01-T8"]},
+        {"id":"1.5.2","text":"Its later dataset snapshot covers a different population, not a census of all AI coding.","claims":["C01-T8"]}
+      ],
+      "onScreen":[
+        {"id":"1.5.a","kind":"stat","text":"AIDev published paper · 932,791 agent-authored PRs · cutoff 2025-08-01 · 5 agents · MSR 2026 · observed public GitHub workflows, not all AI coding","grade":"A","claims":["C01-T8"],"sources":["li2026aidev"],"at":"1.5.1"},
+        {"id":"1.5.b","kind":"stat","text":"Separate author-maintained artifact · AIDev v4 · 2,743,854 PRs · cutoff November 2025 · 6 agents · accessed 2026-10-08 · not the published paper's sample","grade":"C","claims":["C01-T8"],"sources":["li2025aidev"],"at":"1.5.2"}
+      ]
+    },
+    {
+      "id":"1.6",
+      "title":"Shared names, different boundaries",
+      "visual":"1.6.1: diagram places AGENTS.md and Agent Skills beside the agent as instruction inputs. 1.6.2: draw MCP to external tools/data, ACP to an editor, and A2A to a separate opaque agent application. 1.6.3: add a native internal-worker branch explicitly distinct from A2A. 1.6.4: retain the protocol map while highlighting the warning that common formats do not guarantee common behavior.",
+      "sentences":[
+        {"id":"1.6.1","text":"Shared primitives address different jobs: AGENTS.md carries project guidance, while Agent Skills package reusable procedures.","claims":["C01-T9"]},
+        {"id":"1.6.2","text":"MCP connects external systems; Agent Client Protocol connects editors and agents; A2A connects independent agent applications.","spoken":"M C P connects external systems; Agent Client Protocol connects editors and agents; A two A connects independent agent applications.","claims":["C01-T9"]},
+        {"id":"1.6.3","text":"That last boundary is not a prescription for an agent's internal subagents.","claims":["C01-T9"],"sources":["protocol2026agent2agent"]},
+        {"id":"1.6.4","text":"Shared formats do not establish identical discovery rules, execution policies, or safety guarantees.","claims":["C01-T9"],"sources":["agentsmdmaintainers2026agents","agentskillsmaintainers2026agent"]}
+      ],
+      "onScreen":[
+        {"id":"1.6.a","kind":"label","text":"AGENTS.md: project guidance | Agent Skills: reusable procedures | MCP: external systems | ACP: Agent Client Protocol, editor ↔ agent | A2A: independent agent ↔ independent agent, not internal subagent scheduling · shared formats do not guarantee identical discovery, policy, or safety · as of 2026-10-08","grade":"C","claims":["C01-T9"],"at":"1.6.1"}
+      ]
+    },
+    {
+      "id":"1.7",
+      "title":"Keep the map dated",
+      "visual":"1.7.1: timeline flips Windsurf to Devin Desktop, then Kimi CLI to Kimi Code CLI; place Roo Code in a retired lane. Show only verified milestones: Devin launch date, Kimi legacy final-release date, and Roo's undated-year shutdown wording rather than inventing a release date. 1.7.2: hold the historical/retired label, not a recommendation button.",
+      "sentences":[
+        {"id":"1.7.1","text":"The map changes: Windsurf became Devin Desktop, Kimi CLI gave way to Kimi Code CLI, and Roo Code's documentation now reports its extension shut down.","claims":["C01-T10"]},
+        {"id":"1.7.2","text":"Historical names therefore need historical labels, rather than an active recommendation.","claims":["C01-T10"]}
+      ],
+      "onScreen":[
+        {"id":"1.7.a","kind":"label","text":"As of 2026-10-08 · Windsurf → Devin Desktop: successor launch 2026-06-02 | Kimi CLI → Kimi Code CLI: legacy final release 2026-09-22 | Roo Code extension: official docs report shutdown, historical/retired entry · milestones, not inferred first releases","grade":"C","claims":["C01-T10"],"at":"1.7.1"}
+      ]
+    },
+    {
+      "id":"1.8",
+      "title":"Place omp without crowning it",
+      "visual":"1.8.1: return to the independent-axes diagram and place a plain-text omp row. 1.8.2: fan out LSP, debugger, subagents, and memory labels. 1.8.3: align these with the map rather than a podium; dateStamp and non-exclusivity caption close the chapter.",
+      "sentences":[
+        {"id":"1.8.1","text":"omp's repository describes an open-source, multi-provider Pi fork built by Stencil Labs.","claims":["C01-T11"]},
+        {"id":"1.8.2","text":"Its integrated tool surface includes language-server tooling, debugger access, structured subagents, and memory.","claims":["C01-T11"]},
+        {"id":"1.8.3","text":"Those categories are not exclusive; compare dated capabilities and boundaries, not just product names.","claims":["C01-T11"],"sources":["openaindcodex","agentsmdmaintainers2026agents","agentclientprotocolmaintainers2026introduction"]}
+      ],
+      "onScreen":[
+        {"id":"1.8.a","kind":"label","text":"omp · Pi fork · Stencil Labs · MIT repository · multi-provider · integrated LSP, debugger, structured subagents, memory · first-party documentation, as of 2026-10-08 · feature categories are not exclusive","grade":"C","claims":["C01-T11"],"sources":["openaindcodex","agentsmdmaintainers2026agents","agentclientprotocolmaintainers2026introduction"],"at":"1.8.1"}
+      ],
+      "holdAfter":1.2
+    }
+  ]
+}

@@ -1,0 +1,440 @@
+{
+  "id": "ch04",
+  "slug": "mainstream-tradeoffs",
+  "title": "Claude Code and Codex: strengths, trade-offs, and dated history",
+  "act": "Act II — Where the field is",
+  "targetSeconds": 180,
+  "takeaway": "Compare current provider freedom, integration depth, policy, and defaults—not obsolete missing-feature claims.",
+  "scenes": [
+    {
+      "id": "4.1",
+      "title": "Start with the strengths",
+      "visual": "4.1.1: diagram presents equal-size product cards, not a winner podium; dateStamp stays visible. 4.1.2: reveal Codex license/provider label. 4.1.3: reveal Claude integration label with gradeBadge C. 4.1.4: retain both cards with local LSP setup and model/API compatibility conditions always visible.",
+      "sentences": [
+        {
+          "id": "4.1.1",
+          "text": "Claude Code and Codex pair leading benchmark results with substantial tools, but they make different choices about openness and control.",
+          "claims": [
+            "C02-T3",
+            "C04-T2",
+            "C04-T11"
+          ]
+        },
+        {
+          "id": "4.1.2",
+          "text": "Codex CLI is Apache-licensed and supports custom providers and local models; its cloud service has separate authentication requirements.",
+          "claims": [
+            "C04-T2"
+          ],
+          "sources": [
+            "openaindauthentication"
+          ]
+        },
+        {
+          "id": "4.1.3",
+          "text": "Claude Code documents subagents, language-server plugins, and deferred MCP loading, so missing-feature criticisms from earlier versions can mislead.",
+          "claims": [
+            "C04-T5",
+            "C04-T11"
+          ]
+        },
+        {
+          "id": "4.1.4",
+          "text": "Language-server plugins need local setup, while provider compatibility depends on the selected model and API.",
+          "claims": [
+            "C04-T2",
+            "C04-T11"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "4.1.a",
+          "kind": "label",
+          "text": "As of 2026-10-08 · Terminal-Bench 4.0 official board: Claude Code and Codex model–agent combinations lead. These are system results, not isolated harness scores.",
+          "grade": "C",
+          "claims": [
+            "C02-T3"
+          ],
+          "at": "4.1.1"
+        },
+        {
+          "id": "4.1.b",
+          "kind": "label",
+          "text": "Codex CLI: Apache-2.0; custom/local providers. Cloud authentication and entitlements remain separate.",
+          "grade": "C",
+          "claims": [
+            "C04-T2"
+          ],
+          "at": "4.1.2",
+          "sources": [
+            "openaindauthentication"
+          ]
+        },
+        {
+          "id": "4.1.c",
+          "kind": "label",
+          "text": "Claude Code: subagents; LSP plugins require plugin + server installation and exclude cloud sessions; MCP definitions deferred by default.",
+          "grade": "C",
+          "claims": [
+            "C04-T5",
+            "C04-T11"
+          ],
+          "at": "4.1.3"
+        }
+      ]
+    },
+    {
+      "id": "4.2",
+      "title": "Diagnose the layer",
+      "visual": "4.2.1: diagram separates harness, tool boundary, API, and serving lanes; highlight serving only. 4.2.2: keep the other lanes visible without fault markers.",
+      "sentences": [
+        {
+          "id": "4.2.1",
+          "text": "Anthropic traced its September 2025 quality incident to serving-infrastructure bugs, rather than a Claude Code prompt regression.",
+          "claims": [
+            "C04-T7"
+          ],
+          "spoken": "Anthropic traced its September twenty twenty-five quality incident to serving-infrastructure bugs, rather than a Claude Code prompt regression."
+        },
+        {
+          "id": "4.2.2",
+          "text": "A different harness still depends on the infrastructure serving its model.",
+          "claims": [
+            "C04-T1",
+            "C04-T7"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "4.2.a",
+          "kind": "label",
+          "text": "September 2025 incident · Anthropic postmortem: serving infrastructure, not an established harness-prompt failure.",
+          "grade": "B",
+          "claims": [
+            "C04-T7"
+          ],
+          "at": "4.2.1"
+        }
+      ]
+    },
+    {
+      "id": "4.3",
+      "title": "History, not today’s default",
+      "visual": "4.3.1: timeline opens a historical 2025 lane with statCard. 4.3.2: connect to a current mitigation card. 4.3.3: quoteCard attributes the complaint to Zechner; never turn it into a present feature checklist. 4.3.4: join historical overhead and current mitigation with a shared design-lesson caption.",
+      "sentences": [
+        {
+          "id": "4.3.1",
+          "text": "In November 2025, Anthropic illustrated fifty-eight tools consuming approximately fifty-five thousand tokens before conversation.",
+          "claims": [
+            "C04-T5"
+          ],
+          "spoken": "In November twenty twenty-five, Anthropic illustrated fifty-eight tools consuming approximately fifty-five thousand tokens before conversation."
+        },
+        {
+          "id": "4.3.2",
+          "text": "Today, Claude Code loads those definitions on demand, leaving more context available before a tool is needed.",
+          "claims": [
+            "C04-T5"
+          ]
+        },
+        {
+          "id": "4.3.3",
+          "text": "Around that time, Pi creator Mario Zechner described frustration with changing behavior and limited visibility into the model’s context.",
+          "claims": [
+            "C05-T1"
+          ]
+        },
+        {
+          "id": "4.3.4",
+          "text": "The design choice is when tool information enters context, not simply how many tools a harness offers.",
+          "claims": [
+            "C04-T5"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "4.3.a",
+          "kind": "stat",
+          "text": "2025-11-24 · Anthropic example: 58 tools, approximately 55K tokens before conversation, across GitHub, Slack, Sentry, Grafana and Splunk. Not a universal session measurement.",
+          "grade": "C",
+          "claims": [
+            "C04-T5"
+          ],
+          "at": "4.3.1"
+        },
+        {
+          "id": "4.3.b",
+          "kind": "label",
+          "text": "As of 2026-10-08 · MCP tool definitions deferred by default; names and server instructions still consume context before use.",
+          "grade": "C",
+          "claims": [
+            "C04-T5"
+          ],
+          "at": "4.3.2"
+        },
+        {
+          "id": "4.3.c",
+          "kind": "label",
+          "text": "Mario Zechner · 2025-11-30 creator account: changing behavior, context control, interaction visibility. Historical personal assessment.",
+          "grade": "C",
+          "claims": [
+            "C05-T1"
+          ],
+          "at": "4.3.3"
+        }
+      ]
+    },
+    {
+      "id": "4.4",
+      "title": "Policy has separate lanes",
+      "visual": "4.4.1: diagram separates credential handling from billing, with compact label cards for restrictions and license terms. 4.4.2: timeline displays June pause and October update beside separate-credit conditions. 4.4.3: keep unmodified-client hosting conditions and unresolved interpretation caption visible; no compliance seal. Each card has its own evidence chip and dateStamp.",
+      "sentences": [
+        {
+          "id": "4.4.1",
+          "text": "Anthropic’s credential rules bar third-party developers from collecting Claude account tokens or routing Free, Pro, or Max plan requests on behalf of their users.",
+          "claims": [
+            "C04-T3"
+          ]
+        },
+        {
+          "id": "4.4.2",
+          "text": "Its October seventh update nevertheless says Agent SDK, noninteractive CLI, and third-party apps can still use subscription limits.",
+          "claims": [
+            "C04-T4"
+          ]
+        },
+        {
+          "id": "4.4.3",
+          "text": "End users may sign into the unmodified Claude Code client; the pages leave some third-party authentication routes unspecified.",
+          "claims": [
+            "C04-T3",
+            "C04-T4"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "4.4.a",
+          "kind": "label",
+          "text": "As of 2026-10-08 · Credential lane: no third-party Claude.ai login offerings; no routing through users’ Free/Pro/Max credentials; no collecting, storing or intermediating Claude.ai credentials/session tokens. Sign-in must complete through Anthropic’s own flow.",
+          "grade": "C",
+          "claims": [
+            "C04-T3"
+          ],
+          "at": "4.4.1"
+        },
+        {
+          "id": "4.4.b",
+          "kind": "label",
+          "text": "Billing lane · 2026-06-15: SDK changes paused. 2026-10-07: Agent SDK, claude -p and third-party apps can still use subscription limits. Eligible Max/Team accounts can claim separate monthly API credits; those credits do not cover interactive Claude Code or extra usage.",
+          "grade": "C",
+          "claims": [
+            "C04-T4"
+          ],
+          "at": "4.4.2",
+          "sources": [
+            "anthropic2026monthly"
+          ]
+        },
+        {
+          "id": "4.4.c",
+          "kind": "caption",
+          "text": "As of 2026-10-08 · Separate billing and credential rules; these pages do not certify any particular third-party authentication implementation.",
+          "grade": "C",
+          "claims": [
+            "C04-T3",
+            "C04-T4"
+          ],
+          "at": "4.4.3"
+        },
+        {
+          "id": "4.4.d",
+          "kind": "caption",
+          "text": "Hosted Claude Code: commercial terms apply unless otherwise agreed. Binary must remain unmodified; authentication methods cannot be removed, disabled or restricted. Each end user authenticates and is billed under their own agreement; hosts may not pay for, resell or intermediate that usage.",
+          "grade": "C",
+          "claims": ["C04-T3"],
+          "at": "4.4.3"
+        },
+        {
+          "id": "4.4.e",
+          "kind": "label",
+          "text": "Claude Code license terms · Commercial: Team, Enterprise, API. Consumer: Free, Pro, Max. These are not an open-source license.",
+          "grade": "C",
+          "claims": ["C04-T3"],
+          "at": "4.4.1"
+        }
+      ]
+    },
+    {
+      "id": "4.5",
+      "title": "Strength and cost together",
+      "visual": "4.5.1–4.5.2: diagram reveals a continuity/observability card with strength and cost columns. 4.5.3: sandbox scope diagram encloses shell only. 4.5.4: gradeBadge A accompanies hardening card; patched advisories remain labelled historical. 4.5.5: highlight processes outside the shell enclosure.",
+      "sentences": [
+        {
+          "id": "4.5.1",
+          "text": "Context management brings another trade-off: compaction keeps a session going, but early conversational instructions can be lost.",
+          "claims": [
+            "C04-T6"
+          ]
+        },
+        {
+          "id": "4.5.2",
+          "text": "Claude Code shows context usage; Codex’s documented server-side compaction can retain an opaque, encrypted representation.",
+          "claims": [
+            "C04-T6"
+          ]
+        },
+        {
+          "id": "4.5.3",
+          "text": "Execution boundaries also vary: Claude Code’s local Bash sandbox covers shell commands and defaults off.",
+          "claims": [
+            "C04-T8"
+          ]
+        },
+        {
+          "id": "4.5.4",
+          "text": "Revised, peer-reviewed ToolLeak research found newer Claude Code configurations resisted its tested command-invocation attack after older configurations had failed.",
+          "claims": [
+            "C04-T9"
+          ],
+          "sources": [
+            "openai2025sandbox",
+            "anthropic2026claude"
+          ]
+        },
+        {
+          "id": "4.5.5",
+          "text": "Patched advisories show why implementation details matter; check which tools and processes actually sit inside your chosen boundary.",
+          "claims": [
+            "C04-T8"
+          ],
+          "sources": [
+            "openai2025sandbox",
+            "anthropic2026claude"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "4.5.a",
+          "kind": "label",
+          "text": "As of 2026-10-08 · Continuity ↔ recall: compaction is not lossless. Claude Code: context inspection. Codex: documented server-side opaque encrypted compacted representation.",
+          "grade": "C",
+          "claims": [
+            "C04-T6"
+          ],
+          "at": "4.5.1"
+        },
+        {
+          "id": "4.5.b",
+          "kind": "label",
+          "text": "As of 2026-10-08 · Claude local Bash sandbox: off by default; shell commands only. File/web tools, MCP, LSP and hooks run outside it. Codex command networking defaults off.",
+          "grade": "C",
+          "claims": [
+            "C04-T8"
+          ],
+          "at": "4.5.3"
+        },
+        {
+          "id": "4.5.c",
+          "kind": "caption",
+          "text": "Patched advisories: Codex CVE-2025-59532 fixed CLI 0.39.0 / extension 0.4.12 (cwd write-root flaw; network restriction not bypassed). Claude CVE-2026-25725 fixed 2.1.2 (absent settings file, malicious bubblewrap execution, restart). No victim-rate inference.",
+          "grade": "C",
+          "claims": [],
+          "at": "4.5.4",
+          "sources": [
+            "openai2025sandbox",
+            "anthropic2026claude"
+          ]
+        },
+        {
+          "id": "4.5.d",
+          "kind": "stat",
+          "text": "ToolLeak revised v6, 2026-06-28: Claude Code 2.1.138 tested cells: 0 successes / 10 attempts each; Sonnet 4, 4.5, 4.6, Opus 4.7. Attacker-controlled external tool, selected configurations; older 2.0.37 cells had successes. Not a causal defense ablation or population risk estimate; Codex not evaluated.",
+          "grade": "A",
+          "claims": [
+            "C04-T9"
+          ],
+          "at": "4.5.4"
+        }
+      ]
+    },
+    {
+      "id": "4.6",
+      "title": "Accepted work is a different outcome",
+      "visual": "4.6.1: statCard and diagram form a PR funnel. 4.6.2: show revision branch and human-baseline caveat, never a product ranking. 4.6.3: hold observational caveats and revision branch together.",
+      "sentences": [
+        {
+          "id": "4.6.1",
+          "text": "A peer-reviewed study of early Claude Code contributions found four hundred seventy-five of five hundred sixty-seven pull requests merged.",
+          "claims": [
+            "C04-T10"
+          ]
+        },
+        {
+          "id": "4.6.2",
+          "text": "Two hundred fourteen merged requests needed revisions, and the matched human submissions also commonly changed before acceptance.",
+          "claims": [
+            "C04-T10"
+          ]
+        },
+        {
+          "id": "4.6.3",
+          "text": "That observational sample measures contribution workflows, not today’s defect rate or a controlled contest between harnesses.",
+          "claims": [
+            "C04-T10",
+            "C04-T12"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "4.6.a",
+          "kind": "stat",
+          "text": "TOSEM 2026 · Marked Claude Code-assisted PRs created 2025-02-24–2025-04-30: 475 / 567 merged; 214 / 475 merged PRs revised. Matched human PRs also commonly revised. Observational selection; open PRs excluded; client/model versions uncontrolled.",
+          "grade": "A",
+          "claims": [
+            "C04-T10"
+          ],
+          "at": "4.6.1"
+        }
+      ]
+    },
+    {
+      "id": "4.7",
+      "title": "Choose the boundaries",
+      "visual": "4.7.1: diagram separates benchmark result from accepted contribution. 4.7.2: four equal question cards bridge to philosophies, without vendor ranking.",
+      "sentences": [
+        {
+          "id": "4.7.1",
+          "text": "Passing a benchmark and delivering an accepted, maintainable contribution are different outcomes.",
+          "claims": [
+            "C04-T12"
+          ]
+        },
+        {
+          "id": "4.7.2",
+          "text": "Choose on provider freedom, integration depth, deployment scope, and defaults, rather than yesterday’s missing-feature list.",
+          "claims": [
+            "C04-T11"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "4.7.a",
+          "kind": "label",
+          "text": "Decision questions: provider freedom · integration depth · deployment scope · out-of-box defaults.",
+          "grade": "C",
+          "claims": [
+            "C04-T11"
+          ],
+          "at": "4.7.2"
+        }
+      ]
+    }
+  ]
+}

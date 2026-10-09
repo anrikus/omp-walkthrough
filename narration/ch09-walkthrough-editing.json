@@ -1,0 +1,728 @@
+{
+  "id": "ch09",
+  "slug": "walkthrough-editing",
+  "title": "Walkthrough I: editing and code intelligence",
+  "act": "Act IV — omp in practice",
+  "targetSeconds": 240,
+  "takeaway": "Understand the address, the tool, and the execution boundary before trusting the result.",
+  "scenes": [
+    {
+      "id": "9.1",
+      "title": "An edit gets an address",
+      "visual": "Use createTerminal with Titanium, Unicode, rounded chrome, band composer and curved ╰─ prompt; begin after the startup banner, with no logo. Keep recreationLabel \"Recreation · omp 18.8.6 defaults · illustrative coupons fixture\" and dateStamp \"as of 2026-10-08\" visible. Status model segment: ⬢ Opus 5.5 · ◒ high, assuming one usable Anthropic account, unchanged catalog, no competing usable chat provider and no explicit model override. Do not show cost, token or timing measurements. 9.1.1 introduce /demo/coupons and a compact ompUi Read row; read.toolResultPreview remains false. Fixture source src/coupons.ts has isExpired(expiresAt: number, now: number): boolean on line 1, return expiresAt < now on line 2, and closing brace on line 3. src/checkout.ts imports isExpired on line 1, declares checkout on line 2, and returns !isExpired(expiresAt, now) on line 3. src/index.ts imports checkout, defines now = Date.now(), then logs checkout(now, now). This illustrative project continues through ch10. 9.1.2 show the model-facing hashline address on an external code card, then ompUi framed edit diff changing < to <=. 9.1.3 reveal pairedBars for the historical benchmark with gradeBadge C and full conditions from 9.1.e. 9.1.4 retain the historical-format qualifier and evidence card. 9.1.5 return focus to the current addressed edit.",
+      "sentences": [
+        {
+          "id": "9.1.1",
+          "text": "In omp, follow a small TypeScript checkout project from a coupon expiry bug to the tools that inspect and change it.",
+          "claims": [
+            "C08-T1",
+            "C08-T2"
+          ],
+          "sources": [
+            "ompdocs-tools-edit",
+            "ompdocs-tools-lsp"
+          ]
+        },
+        {
+          "id": "9.1.2",
+          "text": "Hashline gives each edit an address: a file snapshot tag and original line or block anchors, instead of a verbatim copy of the old code.",
+          "claims": [
+            "C08-T2"
+          ],
+          "sources": [
+            "ompdocs-tools-edit"
+          ]
+        },
+        {
+          "id": "9.1.3",
+          "text": "The creator reports Grok Code Fast 1 rising from 6.7% to 68.3% on synthetic React repairs using a historical edit format.",
+          "claims": [
+            "C08-T3",
+            "C08-N1"
+          ],
+          "sources": [
+            "boluk2026improved"
+          ],
+          "spoken": "The creator reports Grok Code Fast One rising from six point seven percent to sixty eight point three percent on synthetic React repairs using a historical edit format."
+        },
+        {
+          "id": "9.1.4",
+          "text": "That result belongs to the historical experiment, not this release or a general coding benchmark.",
+          "claims": [
+            "C08-T3"
+          ],
+          "sources": [
+            "boluk2026improved"
+          ]
+        },
+        {
+          "id": "9.1.5",
+          "text": "For the current workflow, copy the address from the latest source view, then inspect the resulting diff.",
+          "claims": [
+            "C08-T2"
+          ],
+          "sources": [
+            "ompdocs-tools-edit"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "9.1.a",
+          "kind": "tui",
+          "text": "● Read src/coupons.ts",
+          "grade": "C",
+          "claims": [
+            "C08-T2"
+          ],
+          "sources": [
+            "ompdocs-tools-read"
+          ],
+          "at": "9.1.1"
+        },
+        {
+          "id": "9.1.b",
+          "kind": "tui",
+          "text": "⬢ Opus 5.5 · ◒ high",
+          "grade": "C",
+          "claims": [
+            "C12-T1",
+            "C12-T3",
+            "C12-T6"
+          ],
+          "sources": [
+            "stencillabs2026bundled",
+            "stencillabs2026model",
+            "stencillabs2026provider",
+            "stencillabs2026statusline",
+            "stencillabs2026default"
+          ],
+          "at": "9.1.1"
+        },
+        {
+          "id": "9.1.c",
+          "kind": "code",
+          "text": "Illustrative model-facing edit (not the Read preview)\n[src/coupons.ts#A1B2]\nPUT 2.=2:\n+  return expiresAt <= now;",
+          "grade": "C",
+          "claims": [
+            "C08-T2"
+          ],
+          "sources": [
+            "ompdocs-tools-edit"
+          ],
+          "at": "9.1.2"
+        },
+        {
+          "id": "9.1.d",
+          "kind": "tui",
+          "text": "╭─── ✎ Edit: 🟦 src/coupons.ts ⟦+1/-1⟧ ──────────────────────────────────────╮\n│@@ -1,3 +1,3 @@                                                             │\n│ export function isExpired(expiresAt: number, now: number): boolean {       │\n│-··return expiresAt < now;                                                  │\n│+··return expiresAt <= now;                                                 │\n│ }                                                                          │\n╰────────────────────────────────────────────────────────────────────────────╯",
+          "grade": "C",
+          "claims": [
+            "C08-T2"
+          ],
+          "sources": [
+            "ompdocs-tools-edit"
+          ],
+          "at": "9.1.2"
+        },
+        {
+          "id": "9.1.e",
+          "kind": "stat",
+          "text": "Creator-reported: Grok Code Fast 1 · 6.7% patch → 68.3% historical hashline\n180 synthetic React mutation-repair tasks × 3 runs; fresh sessions; comparison to originals before/after formatting; 2026-02-12. Not omp 18.8.6 or SWE-bench. Model revision, harness commit and confidence intervals unspecified; raw reports unavailable in dossier. Title: 15 models; methodology: 16.",
+          "grade": "C",
+          "claims": [
+            "C08-T3",
+            "C08-N1"
+          ],
+          "sources": [
+            "boluk2026improved"
+          ],
+          "at": "9.1.3"
+        }
+      ],
+      "holdAfter": 0.8
+    },
+    {
+      "id": "9.2",
+      "title": "Choose the search question",
+      "visual": "Use createTerminal with Titanium, Unicode, rounded chrome, band composer and curved ╰─ prompt; begin after the startup banner, with no logo. Keep recreationLabel \"Recreation · omp 18.8.6 defaults · illustrative coupons fixture\" and dateStamp \"as of 2026-10-08\" visible. Status model segment: ⬢ Opus 5.5 · ◒ high, assuming one usable Anthropic account, unchanged catalog, no competing usable chat provider and no explicit model override. Do not show cost, token or timing measurements. 9.2.1 use diagram branches for names, text, syntax and behavior. 9.2.2 reveal the exact requests in 9.2.a on external code cards. 9.2.3 trace the coupon query through a judge/network arrow with its prerequisite label; invent no relevance score. 9.2.4 connect isExpired to its declaration, import and checkout call.",
+      "sentences": [
+        {
+          "id": "9.2.1",
+          "text": "First ask what you need to find: a filename, a known expression, or the code behind a behavior.",
+          "claims": [
+            "C08-T4"
+          ],
+          "sources": [
+            "ompdocs-tools-grep",
+            "ompdocs-tools-glob",
+            "ompdocs-tools-find",
+            "ompdocs-tools-lsp",
+            "ompdocs-tools-ast-grep"
+          ]
+        },
+        {
+          "id": "9.2.2",
+          "text": "Glob discovers filenames, grep searches text, and AST grep matches syntax; semantic find asks models to judge likely implementations.",
+          "claims": [
+            "C08-T4"
+          ],
+          "sources": [
+            "ompdocs-tools-grep",
+            "ompdocs-tools-glob",
+            "ompdocs-tools-find",
+            "ompdocs-tools-lsp",
+            "ompdocs-tools-ast-grep"
+          ]
+        },
+        {
+          "id": "9.2.3",
+          "text": "Ask find where expired coupons are rejected, remembering that its judge can receive source passages over the network.",
+          "claims": [
+            "C08-T4"
+          ],
+          "sources": [
+            "ompdocs-tools-find"
+          ]
+        },
+        {
+          "id": "9.2.4",
+          "text": "Once you have a symbol, use language-server definitions and references to follow its relationships through the project.",
+          "claims": [
+            "C08-T1"
+          ],
+          "sources": [
+            "ompdocs-tools-lsp"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "9.2.a",
+          "kind": "code",
+          "text": "Illustrative requests · coupons fixture\nglob {path:\"src/**/*.ts\"}\ngrep {pattern:\"isExpired\",path:\"src\"}\nast_grep {pat:\"console.log($ARG)\",path:\"src\"}\nfind {query:\"where are expired coupons rejected?\",grep_keywords:[],path:\"src\"}",
+          "grade": "C",
+          "claims": [
+            "C08-T4"
+          ],
+          "sources": [
+            "ompdocs-tools-grep",
+            "ompdocs-tools-glob",
+            "ompdocs-tools-find",
+            "ompdocs-tools-lsp",
+            "ompdocs-tools-ast-grep"
+          ],
+          "at": "9.2.2"
+        },
+        {
+          "id": "9.2.b",
+          "kind": "label",
+          "text": "Names · Text · Syntax · Model-judged implementation search\nfind: auto; native System One judge prerequisite; source may leave host",
+          "grade": "C",
+          "claims": [
+            "C08-T4"
+          ],
+          "sources": [
+            "ompdocs-tools-grep",
+            "ompdocs-tools-glob",
+            "ompdocs-tools-find",
+            "ompdocs-tools-lsp",
+            "ompdocs-tools-ast-grep"
+          ],
+          "at": "9.2.3"
+        }
+      ],
+      "holdAfter": 0.8
+    },
+    {
+      "id": "9.3",
+      "title": "Static knowledge, runtime state",
+      "visual": "Use createTerminal with Titanium, Unicode, rounded chrome, band composer and curved ╰─ prompt; begin after the startup banner, with no logo. Keep recreationLabel \"Recreation · omp 18.8.6 defaults · illustrative coupons fixture\" and dateStamp \"as of 2026-10-08\" visible. Status model segment: ⬢ Opus 5.5 · ◒ high, assuming one usable Anthropic account, unchanged catalog, no competing usable chat provider and no explicit model override. Do not show cost, token or timing measurements. 9.3.1 use createTerminal panes with ompUi LSP and DAP frames populated exactly from 9.3.a/b. Follow gallery-lsp-done-160x45.txt and gallery-debug-done-160x45.txt header, request, Response, Session and Output layout. LSP shows three illustrative references including the declaration and import; the collapsed checkout group hides its line 3, col 11 call. DAP shows the same isExpired/checkout source locations in a prepared source-mapped TypeScript fixture, launched from dist/index.js with js-debug-adapter. Frame IDs and positions are fixture data, not measurements. 9.3.2 keep installation/source-map prerequisites visible. 9.3.3 show the complete rename request with apply:false; do not apply it or rename the continuing fixture. 9.3.4 distinguish successful diagnostics from missing-server failure on an external label.",
+      "sentences": [
+        {
+          "id": "9.3.1",
+          "text": "Language-server integration exposes definitions, references, diagnostics, and rename; debugger integration exposes breakpoints, stack frames, and runtime variables.",
+          "claims": [
+            "C08-T1"
+          ],
+          "sources": [
+            "ompdocs-tools-lsp",
+            "ompdocs-lsp-config",
+            "ompdocs-tools-debug"
+          ]
+        },
+        {
+          "id": "9.3.2",
+          "text": "Both are enabled by default, but you still need suitable language servers and debugger adapters installed.",
+          "claims": [
+            "C08-T1"
+          ],
+          "sources": [
+            "ompdocs-tools-lsp",
+            "ompdocs-lsp-config",
+            "ompdocs-tools-debug"
+          ]
+        },
+        {
+          "id": "9.3.3",
+          "text": "Preview a rename explicitly: the documented rename operation otherwise applies changes by default.",
+          "claims": [
+            "C08-T1"
+          ],
+          "sources": [
+            "ompdocs-tools-lsp"
+          ]
+        },
+        {
+          "id": "9.3.4",
+          "text": "Check that the server answered successfully before treating diagnostics as evidence; a missing server cannot give the project a clean bill of health.",
+          "claims": [
+            "C08-T1"
+          ],
+          "sources": [
+            "ompdocs-tools-lsp"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "9.3.a",
+          "kind": "tui",
+          "text": "╭─── 💡 LSP references ──────────────────────────────────────────────────────╮\n│ src/coupons.ts                                                             │\n│ line 1                                                                     │\n│ symbol: isExpired                                                          │\n├─── Response ───────────────────────────────────────────────────────────────┤\n│ 💡 3 found⟦⌃O: Expand⟧                                                     │\n│  ├─ src/coupons.ts 1 reference                                             │\n│  │  └─ line 1, col 17                                                      │\n│  └─ src/checkout.ts 2 references                                           │\n│     ├─ line 1, col 10                                                      │\n│     └─ … 1 more                                                            │\n╰────────────────────────────────────────────────────────────────────────────╯",
+          "grade": "C",
+          "claims": [
+            "C08-T1"
+          ],
+          "sources": [
+            "ompdocs-tools-lsp"
+          ],
+          "at": "9.3.1"
+        },
+        {
+          "id": "9.3.b",
+          "kind": "tui",
+          "text": "╭─── 🐞 Debug stack trace ───────────────────────────────────────────────────╮\n├─── Session ────────────────────────────────────────────────────────────────┤\n│ Session dbg-1                                                              │\n│ Adapter: js-debug-adapter                                                  │\n│ Status: stopped                                                            │\n│ CWD: /demo/coupons                                                         │\n│ Program: ./dist/index.js                                                   │\n│ Stop reason: breakpoint                                                    │\n│ Frame: isExpired                                                           │\n│ Location: src/coupons.ts:2:3                                               │\n├─── Output ─────────────────────────────────────────────────────────────────┤\n│ Stack trace:                                                               │\n│ - #1000 isExpired @ src/coupons.ts:2:3                                     │\n│ - #1001 checkout @ src/checkout.ts:3:3                                     │\n╰────────────────────────────────────────────────────────────────────────────╯",
+          "grade": "C",
+          "claims": [
+            "C08-T1"
+          ],
+          "sources": [
+            "ompdocs-tools-debug"
+          ],
+          "at": "9.3.1"
+        },
+        {
+          "id": "9.3.c",
+          "kind": "code",
+          "text": "Rename preview request\nlsp {action:\"rename\",file:\"src/coupons.ts\",line:1,symbol:\"isExpired\",new_name:\"hasExpired\",apply:false}",
+          "grade": "C",
+          "claims": [
+            "C08-T1"
+          ],
+          "sources": [
+            "ompdocs-tools-lsp"
+          ],
+          "at": "9.3.3"
+        },
+        {
+          "id": "9.3.d",
+          "kind": "badge",
+          "text": "LSP + DAP: enabled by default; installed server / adapter required\nIllustrative coupons fixture: TypeScript source maps prepared; reference counts, positions and frame IDs are example data, not an executed result",
+          "grade": "C",
+          "claims": [
+            "C08-T1"
+          ],
+          "sources": [
+            "ompdocs-tools-lsp",
+            "ompdocs-lsp-config",
+            "ompdocs-tools-debug"
+          ],
+          "at": "9.3.2"
+        }
+      ],
+      "holdAfter": 0.8
+    },
+    {
+      "id": "9.4",
+      "title": "Syntax, not coincidence",
+      "visual": "Use createTerminal with Titanium, Unicode, rounded chrome, band composer and curved ╰─ prompt; begin after the startup banner, with no logo. Keep recreationLabel \"Recreation · omp 18.8.6 defaults · illustrative coupons fixture\" and dateStamp \"as of 2026-10-08\" visible. Status model segment: ⬢ Opus 5.5 · ◒ high, assuming one usable Anthropic account, unchanged catalog, no competing usable chat provider and no explicit model override. Do not show cost, token or timing measurements. 9.4.1 use a syntax diagram and external code card to highlight the console.log call in src/index.ts while dimming the matching comment; show compact and multiline formatting as alternate views of that call. 9.4.2 preview console.log($ARG) to console.info($ARG), with files NOT modified yet and default badges. 9.4.3 display the xd://reject write from 9.4.c; keep the partial-apply warning in 9.4.b visible. Discard this preview so the continuing fixture stays unchanged.",
+      "sentences": [
+        {
+          "id": "9.4.1",
+          "text": "Structural search matches a call expression across formatting differences, rather than confusing it with the same words in a comment.",
+          "claims": [
+            "C08-T4"
+          ],
+          "sources": [
+            "ompdocs-tools-ast-grep"
+          ]
+        },
+        {
+          "id": "9.4.2",
+          "text": "AST grep is off by default; AST edit is on and produces a preview before applying changes.",
+          "claims": [],
+          "sources": [
+            "ompdocs-tools-ast-grep",
+            "ompdocs-tools-ast-edit",
+            "ompdocs-resolve-tool-runtime"
+          ]
+        },
+        {
+          "id": "9.4.3",
+          "text": "Apply that preview through the resolution device, or discard it; applying across files can still leave partial changes after a write failure.",
+          "claims": [],
+          "sources": [
+            "ompdocs-tools-ast-edit",
+            "ompdocs-resolve-tool-runtime"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "9.4.a",
+          "kind": "code",
+          "text": "Illustrative src/index.ts syntax excerpt\nconsole.log(checkout(now, now));\n// console.log(checkout(now, now));\nPattern: console.log($ARG)\nReplacement: console.info($ARG)\nPreview: files NOT modified yet",
+          "grade": "C",
+          "claims": [],
+          "sources": [
+            "ompdocs-tools-ast-edit",
+            "ompdocs-resolve-tool-runtime"
+          ],
+          "at": "9.4.1"
+        },
+        {
+          "id": "9.4.b",
+          "kind": "badge",
+          "text": "astGrep.enabled=false · astEdit.enabled=true\nPreview first; resolve applies; reject discards\nWrite failures can leave a multi-file apply partially written",
+          "grade": "C",
+          "claims": [],
+          "sources": [
+            "ompdocs-tools-ast-grep",
+            "ompdocs-tools-ast-edit",
+            "ompdocs-resolve-tool-runtime"
+          ],
+          "at": "9.4.2"
+        },
+        {
+          "id": "9.4.c",
+          "kind": "code",
+          "text": "write {path:\"xd://reject\",content:\"Discard this illustrative preview\"}",
+          "grade": "C",
+          "claims": [],
+          "sources": [
+            "ompdocs-tools-ast-edit",
+            "ompdocs-resolve-tool-runtime"
+          ],
+          "at": "9.4.3"
+        }
+      ],
+      "holdAfter": 0.8
+    },
+    {
+      "id": "9.5",
+      "title": "Stateful execution surfaces",
+      "visual": "Use createTerminal with Titanium, Unicode, rounded chrome, band composer and curved ╰─ prompt; begin after the startup banner, with no logo. Keep recreationLabel \"Recreation · omp 18.8.6 defaults · illustrative coupons fixture\" and dateStamp \"as of 2026-10-08\" visible. Status model segment: ⬢ Opus 5.5 · ◒ high, assuming one usable Anthropic account, unchanged catalog, no competing usable chat provider and no explicit model override. Do not show cost, token or timing measurements. 9.5.1 use external Python code cells for coupon_codes and its later display, plus a separate JavaScript state lane; do not invent an Eval result renderer. 9.5.2 diagram notebook source and saved output independently, leaving the output stale. 9.5.3 split browser tabs from native windows, with backend/permission prerequisites.",
+      "sentences": [
+        {
+          "id": "9.5.1",
+          "text": "Eval keeps Python and JavaScript state in separate persistent runtimes, so loaded coupon data remains available to later cells.",
+          "claims": [
+            "C08-T5"
+          ],
+          "sources": [
+            "ompdocs-tools-eval",
+            "ompdocs-python-repl"
+          ]
+        },
+        {
+          "id": "9.5.2",
+          "text": "Python runs in a retained subprocess, not Jupyter; editing a notebook changes its source without executing cells or refreshing saved outputs.",
+          "claims": [
+            "C08-T5"
+          ],
+          "sources": [
+            "ompdocs-python-repl",
+            "ompdocs-notebook-tool-runtime"
+          ]
+        },
+        {
+          "id": "9.5.3",
+          "text": "Browser automation and native computer use are Eval preludes: browser APIs operate on tabs, while opt-in computer use reaches native windows and input.",
+          "claims": [
+            "C08-T6"
+          ],
+          "sources": [
+            "ompdocs-tools-browser",
+            "ompdocs-tools-computer"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "9.5.a",
+          "kind": "code",
+          "text": "Illustrative analysis of the coupons fixture\nPython cell: coupon_codes = [\"WELCOME\", \"RETURN\"]\nLater Python cell: display(coupon_codes)\nJavaScript has separate retained state",
+          "grade": "C",
+          "claims": [
+            "C08-T5"
+          ],
+          "sources": [
+            "ompdocs-tools-eval"
+          ],
+          "at": "9.5.1"
+        },
+        {
+          "id": "9.5.b",
+          "kind": "label",
+          "text": "Notebook source edit ≠ execution; stored output can be stale",
+          "grade": "C",
+          "claims": [
+            "C08-T5"
+          ],
+          "sources": [
+            "ompdocs-notebook-tool-runtime"
+          ],
+          "at": "9.5.2"
+        },
+        {
+          "id": "9.5.c",
+          "kind": "badge",
+          "text": "Browser: on with Eval; backend required\nComputer: off by default; platform permissions required",
+          "grade": "C",
+          "claims": [
+            "C08-T6"
+          ],
+          "sources": [
+            "ompdocs-tools-browser",
+            "ompdocs-tools-computer"
+          ],
+          "at": "9.5.3"
+        }
+      ],
+      "holdAfter": 0.8
+    },
+    {
+      "id": "9.6",
+      "title": "Rewind the context, not the disk",
+      "visual": "Use createTerminal with Titanium, Unicode, rounded chrome, band composer and curved ╰─ prompt; begin after the startup banner, with no logo. Keep recreationLabel \"Recreation · omp 18.8.6 defaults · illustrative coupons fixture\" and dateStamp \"as of 2026-10-08\" visible. Status model segment: ⬢ Opus 5.5 · ◒ high, assuming one usable Anthropic account, unchanged catalog, no competing usable chat provider and no explicit model override. Do not show cost, token or timing measurements. 9.6.1 use diagram context lane: coupon investigation, compact fixture reads from 9.6.a, retained report. 9.6.2 freeze a separate disk/process lane. 9.6.3 keep the inclusive expiry source edit visible while exploratory context contracts; no undo animation on disk.",
+      "sentences": [
+        {
+          "id": "9.6.1",
+          "text": "Checkpoint and rewind let an investigation collapse into a retained report, replacing exploratory conversation with its conclusion.",
+          "claims": [
+            "C08-T7"
+          ],
+          "sources": [
+            "ompdocs-tools-checkpoint",
+            "ompdocs-tools-rewind"
+          ]
+        },
+        {
+          "id": "9.6.2",
+          "text": "They are off by default, and their rewind affects context, not files, Git commits, running processes, or the desktop.",
+          "claims": [
+            "C08-T7"
+          ],
+          "sources": [
+            "ompdocs-tools-checkpoint",
+            "ompdocs-tools-rewind"
+          ]
+        },
+        {
+          "id": "9.6.3",
+          "text": "If the investigation changed the expiry check, rewinding the conversation leaves that source edit in place.",
+          "claims": [
+            "C08-T7"
+          ],
+          "sources": [
+            "ompdocs-tools-checkpoint",
+            "ompdocs-tools-rewind"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "9.6.a",
+          "kind": "tui",
+          "text": "● Read src/coupons.ts\n● Read src/checkout.ts",
+          "grade": "C",
+          "claims": [
+            "C08-T7"
+          ],
+          "sources": [
+            "ompdocs-tools-read",
+            "ompdocs-tools-checkpoint",
+            "ompdocs-tools-rewind"
+          ],
+          "at": "9.6.1"
+        },
+        {
+          "id": "9.6.b",
+          "kind": "label",
+          "text": "checkpoint.enabled=false\nRewind: context only; disk and processes are not restored",
+          "grade": "C",
+          "claims": [
+            "C08-T7"
+          ],
+          "sources": [
+            "ompdocs-tools-checkpoint",
+            "ompdocs-tools-rewind"
+          ],
+          "at": "9.6.2"
+        }
+      ],
+      "holdAfter": 0.8
+    },
+    {
+      "id": "9.7",
+      "title": "Where native code fits",
+      "visual": "Keep dateStamp \"as of 2026-10-08\" visible. 9.7.1 use diagram TypeScript policy → Node-API → Rust algorithms/platform services. 9.7.2 add Windows x64 and ARM64 target chips with the dated documentation caveat; no Windows footage or acceptance evidence.",
+      "sentences": [
+        {
+          "id": "9.7.1",
+          "text": "Under these tools, Rust handles search, structural editing, shell operations, and platform services through a native addon.",
+          "claims": [
+            "C08-T8"
+          ],
+          "sources": [
+            "ompdocs-natives-architecture",
+            "ompdocs-natives-shell-pty-process"
+          ]
+        },
+        {
+          "id": "9.7.2",
+          "text": "TypeScript owns higher-level policy and rendering, while the documented native targets include Windows x64 and ARM64.",
+          "claims": [
+            "C08-T8",
+            "C08-N12"
+          ],
+          "sources": [
+            "ompdocs-natives-architecture"
+          ],
+          "spoken": "TypeScript owns higher level policy and rendering, while the documented native targets include Windows x sixty four and ARM sixty four."
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "9.7.a",
+          "kind": "label",
+          "text": "TypeScript policy/rendering → Node-API → Rust algorithms/platform services",
+          "grade": "C",
+          "claims": [
+            "C08-T8"
+          ],
+          "sources": [
+            "ompdocs-natives-architecture",
+            "ompdocs-natives-shell-pty-process"
+          ],
+          "at": "9.7.1"
+        },
+        {
+          "id": "9.7.b",
+          "kind": "label",
+          "text": "Documented native targets include Windows x64 + ARM64\nAs of 2026-10-08; platform support is not tested feature parity",
+          "grade": "C",
+          "claims": [
+            "C08-T8",
+            "C08-N12"
+          ],
+          "sources": [
+            "ompdocs-natives-architecture"
+          ],
+          "at": "9.7.2"
+        }
+      ],
+      "holdAfter": 0.8
+    },
+    {
+      "id": "9.8",
+      "title": "Read the execution boundary",
+      "visual": "Use createTerminal with Titanium, Unicode, rounded chrome, band composer and curved ╰─ prompt; begin after the startup banner, with no logo. Keep recreationLabel \"Recreation · omp 18.8.6 defaults · illustrative coupons fixture\" and dateStamp \"as of 2026-10-08\" visible. Status model segment: ⬢ Opus 5.5 · ◒ high, assuming one usable Anthropic account, unchanged catalog, no competing usable chat provider and no explicit model override. Do not show cost, token or timing measurements. 9.8.1 use badge matrix with explicit words: enabled, opt-in, installed dependency, credentials. 9.8.2 boundary diagram places approval decisions inside ambient host access, not inside an OS sandbox. 9.8.3 hold the address/tool/execution-boundary takeaway.",
+      "sentences": [
+        {
+          "id": "9.8.1",
+          "text": "Before using an integration, separate what is enabled from what is installed, credentialed, and approved.",
+          "claims": [
+            "C08-T9",
+            "C08-T10"
+          ],
+          "sources": [
+            "ompdocs-bash-tool-runtime",
+            "ompdocs-tools-computer",
+            "ompdocs-tools-github",
+            "ompdocs-tools-security-scan",
+            "ompdocs-tools-generate-image",
+            "ompdocs-tools-tts",
+            "ompdocs-tools-checkpoint",
+            "ompdocs-approval-mode"
+          ]
+        },
+        {
+          "id": "9.8.2",
+          "text": "Approval defaults to yolo, and approved shell or Eval code retains broad host access: approval is not a sandbox.",
+          "claims": [
+            "C08-T9"
+          ],
+          "sources": [
+            "ompdocs-approval-mode"
+          ]
+        },
+        {
+          "id": "9.8.3",
+          "text": "Understand the address, the tool, and the execution boundary before trusting the result.",
+          "claims": [
+            "C08-T9",
+            "C08-T10"
+          ],
+          "sources": [
+            "ompdocs-bash-tool-runtime",
+            "ompdocs-tools-computer",
+            "ompdocs-tools-github",
+            "ompdocs-tools-security-scan",
+            "ompdocs-tools-generate-image",
+            "ompdocs-tools-tts",
+            "ompdocs-tools-checkpoint",
+            "ompdocs-approval-mode"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "9.8.a",
+          "kind": "badge",
+          "text": "Off by default: computer use · GitHub · security scans · image generation · speech-file generation · checkpoint/rewind",
+          "grade": "C",
+          "claims": [
+            "C08-T9",
+            "C08-T10"
+          ],
+          "sources": [
+            "ompdocs-bash-tool-runtime",
+            "ompdocs-tools-computer",
+            "ompdocs-tools-github",
+            "ompdocs-tools-security-scan",
+            "ompdocs-tools-generate-image",
+            "ompdocs-tools-tts",
+            "ompdocs-tools-checkpoint",
+            "ompdocs-approval-mode"
+          ],
+          "at": "9.8.1"
+        },
+        {
+          "id": "9.8.b",
+          "kind": "label",
+          "text": "tools.approvalMode: yolo\nApproval ≠ sandbox; shell / Eval retain host access",
+          "grade": "C",
+          "claims": [
+            "C08-T9"
+          ],
+          "sources": [
+            "ompdocs-approval-mode"
+          ],
+          "at": "9.8.2"
+        }
+      ],
+      "holdAfter": 0.8
+    }
+  ]
+}

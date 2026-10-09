@@ -1,0 +1,372 @@
+{
+  "id": "ch06",
+  "slug": "next-generation",
+  "title": "The next generation: harness–model co-design",
+  "act": "Act II — Where the field is",
+  "targetSeconds": 150,
+  "takeaway": "Composition, cross-harness training, durable execution and interoperability are distinct directions, not a single product ranking.",
+  "scenes": [
+    {
+      "id": "6.1",
+      "title": "Composition, not a new model",
+      "visual": "6.1.1–6.1.2: diagram of replaceable Cordis plugins; model adapter, loop, tools and session log exchange without an invented UI. 6.1.3: caption separates composability from coding evidence; no invented quotation. 6.1.4: persistent preview/safety label. dateStamp 2026-10-08 throughout chapter. 6.1.5: diagram emphasizes reversible registrations, not external undo.",
+      "sentences": [
+        {
+          "id": "6.1.1",
+          "text": "Next-generation harnesses are developing along several axes, starting with composition rather than another model.",
+          "claims": [
+            "C06-T1",
+            "C06-T9",
+            "C06-T10"
+          ]
+        },
+        {
+          "id": "6.1.2",
+          "text": "DeepSeek documents its MIT-licensed Harness as a Cordis runtime with replaceable loop, model adapter, tools, and session storage.",
+          "spoken": "DeepSeek documents its M I T licensed Harness as a Cordis runtime with replaceable loop, model adapter, tools, and session storage.",
+          "claims": [
+            "C06-T1"
+          ]
+        },
+        {
+          "id": "6.1.3",
+          "text": "The supporting composability paper is a preprint, not proof of better coding.",
+          "claims": [
+            "C06-T6"
+          ]
+        },
+        {
+          "id": "6.1.4",
+          "text": "And this remains an unaudited developer preview, not a production-security guarantee.",
+          "claims": [],
+          "sources": [
+            "deepseekai2026safety"
+          ]
+        },
+        {
+          "id": "6.1.5",
+          "text": "Unloading a plugin reverses its runtime registrations, not necessarily an email sent or a file deleted.",
+          "claims": [
+            "C06-T6"
+          ],
+          "sources": [
+            "deepseekai2026deepseek-2",
+            "deepseekai2026safety"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "6.1.a",
+          "kind": "caption",
+          "text": "DeepSeek Harness · MIT · Cordis plugins: loop / model adapter / tools / session storage. Official docs accessed 2026-10-08.",
+          "claims": [
+            "C06-T1"
+          ],
+          "grade": "C",
+          "at": "6.1.1"
+        },
+        {
+          "id": "6.1.b",
+          "kind": "caption",
+          "text": "Cordis: composability preprint, not coding-quality proof. Reversible runtime registrations are not a guarantee of undoing external actions.",
+          "claims": [
+            "C06-T6"
+          ],
+          "grade": "B",
+          "at": "6.1.3",
+          "sources": [
+            "shi2026programming",
+            "deepseekai2026deepseek-2",
+            "deepseekai2026safety"
+          ]
+        },
+        {
+          "id": "6.1.c",
+          "kind": "caption",
+          "text": "Developer preview · not security-audited · not to be treated as secure or production-ready. As of 2026-10-08.",
+          "claims": [],
+          "grade": "C",
+          "at": "6.1.4",
+          "sources": [
+            "deepseekai2026safety"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6.2",
+      "title": "Training across harnesses",
+      "visual": "6.2.1: diagram feeds Claude Code versions, OpenCode, Pi and dsh configurations into RL training. 6.2.2: label training/evaluation overlap; no held-out inference implied. 6.2.3: diagram separates the actual scaffold sandbox from the worker that normalizes trajectories.",
+      "sentences": [
+        {
+          "id": "6.2.1",
+          "text": "DeepSeek’s V4.1 technical report describes reinforcement learning across Claude Code versions, OpenCode, Pi, and different DeepSeek Harness configurations.",
+          "claims": [
+            "C06-T2"
+          ],
+          "spoken": "DeepSeek’s V four point one technical report describes reinforcement learning across Claude Code versions, OpenCode, Pi, and different DeepSeek Harness configurations."
+        },
+        {
+          "id": "6.2.2",
+          "text": "That is training for interface diversity, not demonstrated robustness to every unseen harness.",
+          "claims": [
+            "C06-T2"
+          ],
+          "sources": [
+            "deepseekai2026deepseekv4"
+          ]
+        },
+        {
+          "id": "6.2.3",
+          "text": "The system runs real scaffolds and tools in sandboxes, then converts their interactions into a common training format.",
+          "claims": [
+            "C06-T2"
+          ],
+          "sources": [
+            "deepseekai2026deepseekv4"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "6.2.a",
+          "kind": "caption",
+          "text": "DeepSeek-V4.1-Flash report, 2026-09-17 · Figure 7: single-scaffold RL scaling in dsh Minimal. Figure 8: joint RL across Claude Code versions and across OpenCode, Pi, dsh Standard/PTC. Evaluated harnesses are not all established as held out.",
+          "claims": [
+            "C06-T2"
+          ],
+          "grade": "B",
+          "at": "6.2.1"
+        }
+      ]
+    },
+    {
+      "id": "6.3",
+      "title": "Two evidence panels",
+      "visual": "6.3.1–6.3.2: smallMultiples shows DeepSWE and TB2.1 separately, each labeled vendor technical report; no shared benchmark axis. 6.3.3: replace with independent Claw panel, not an overlaid replication. 6.3.4: hold distinct-protocol warning. All build and sampling conditions remain legible.",
+      "sentences": [
+        {
+          "id": "6.3.1",
+          "text": "In the vendor’s fixed-checkpoint comparison, Minimal outscored Standard and programmatic tool calling on both reported coding benchmarks.",
+          "claims": [
+            "C06-T3"
+          ]
+        },
+        {
+          "id": "6.3.2",
+          "text": "But mini-SWE led on DeepSWE, showing why the task set matters.",
+          "claims": [
+            "C06-T4"
+          ],
+          "sources": [
+            "deepseekai2026deepseekv4"
+          ]
+        },
+        {
+          "id": "6.3.3",
+          "text": "Separately, the independent Claw-SWE-Bench preprint placed Hermes ahead of DeepSeek Harness for all three tested models.",
+          "claims": [
+            "C06-T4"
+          ],
+          "spoken": "Separately, the independent Claw-SWE-Bench preprint placed Hermes ahead of DeepSeek Harness for all three tested models."
+        },
+        {
+          "id": "6.3.4",
+          "text": "Different benchmarks and protocols make this a counterpoint, not an independent replication.",
+          "claims": [
+            "C06-T4"
+          ],
+          "sources": [
+            "zheng2026clawswebench"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "6.3.a",
+          "kind": "stat",
+          "text": "VENDOR TECH REPORT · DeepSWE v1.1 · resolved (%): DSH Minimal 72.6 / Standard 70.5 / PTC 67.6; mini-SWE 74.2 · V4.1-Flash, effort 100, N=8 samples/task, Linux, 1M-token context, 500 model-generation rounds, T=1.0, top-p=0.95; no CI; report 2026-09-17.",
+          "claims": [
+            "C06-N1",
+            "C06-N3"
+          ],
+          "grade": "B",
+          "at": "6.3.1"
+        },
+        {
+          "id": "6.3.b",
+          "kind": "stat",
+          "text": "VENDOR TECH REPORT · Terminal-Bench v2.1 · pass@1 (%): DSH Minimal 90.6 / Standard 85.8 / PTC 85.8; mini-SWE 90.3 · V4.1-Flash, effort 100, N=3 samples/task, Linux, 1M-token context, 500 model-generation rounds, T=1.0, top-p=0.95, no network; no CI; report 2026-09-17.",
+          "claims": [
+            "C06-N2",
+            "C06-N3"
+          ],
+          "grade": "B",
+          "at": "6.3.1"
+        },
+        {
+          "id": "6.3.c",
+          "kind": "caption",
+          "text": "Vendor builds: Standard/PTC 0.1.1+custom.202609011522; Minimal build unspecified; mini_swe_v2 port of 04d809ceab9df28f9adaed044884180159172930. Native prompts, schemas and turn logic differ.",
+          "claims": [
+            "C06-N1",
+            "C06-N3"
+          ],
+          "grade": "B",
+          "at": "6.3.1"
+        },
+        {
+          "id": "6.3.d",
+          "kind": "stat",
+          "text": "INDEPENDENT PREPRINT · 3 models · Claw-SWE-Bench full-350 · mean pass@1 (%), dsh/Hermes: V4.1-Flash 76.5/81.7; GLM5.1 69.1/73.1; Qwen3.6-flash 56.8/62.8. Three runs, 3,600s/task, concurrency 3, shell timeout 180s; max_turns=300 where supported. All models via OpenRouter; external network blocked except inference; future Git commits cleaned. Exact builds/decoding/CIs unspecified; v2 2026-09-28. DIFFERENT BENCHMARK AND PROTOCOL.",
+          "claims": [
+            "C06-N4",
+            "C06-N5",
+            "C06-N6"
+          ],
+          "grade": "B",
+          "at": "6.3.3"
+        }
+      ]
+    },
+    {
+      "id": "6.4",
+      "title": "Reasoning belongs to the interface",
+      "visual": "6.4.1: diagram routes tool output through tool versus user message lanes; mark V3.2-specific retention behavior. 6.4.2: separate pairedBars with C badge, retained versus discarded thinking; never suggest all models share this policy.",
+      "sentences": [
+        {
+          "id": "6.4.1",
+          "text": "DeepSeek’s V3.2 report warns that treating tool results as user messages can discard earlier reasoning.",
+          "spoken": "DeepSeek’s V three point two report warns that treating tool results as user messages can discard earlier reasoning.",
+          "claims": [
+            "C06-T5"
+          ]
+        },
+        {
+          "id": "6.4.2",
+          "text": "In its own ablation, MiniMax also reports lower SWE-bench Verified scores when earlier thinking is discarded.",
+          "claims": [
+            "C06-N8"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "6.4.a",
+          "kind": "caption",
+          "text": "DeepSeek-V3.2 report · 2025-12-02 · tool-result message roles affect thinking retention; model/version-specific protocol behavior.",
+          "claims": [
+            "C06-T5"
+          ],
+          "grade": "B",
+          "at": "6.4.1"
+        },
+        {
+          "id": "6.4.b",
+          "kind": "stat",
+          "text": "MiniMax-M2 · SWE-bench Verified · resolved (%): retain thinking 69.4 / discard 67.2 · first-party ablation, 2025-11-03; full harness versions, runs and CIs not supplied.",
+          "claims": [
+            "C06-N8"
+          ],
+          "grade": "C",
+          "at": "6.4.2"
+        }
+      ]
+    },
+    {
+      "id": "6.5",
+      "title": "Learning, durability, interoperability",
+      "visual": "6.5.1–6.5.2: diagram separates weight training from memory/skill refinement; warning card shows exploit retained. 6.5.3–6.5.4: smallMultiples distinguishes UI detachment from crash recovery via external event histories. 6.5.5–6.5.6: protocol boundary diagram puts ACP at client/agent edge and A2A between independent apps; internal scheduling remains inside. No omp² architecture here.",
+      "sentences": [
+        {
+          "id": "6.5.1",
+          "text": "Self-improvement can instead mean changing memories, skills, and instructions while model weights stay fixed.",
+          "claims": [
+            "C06-T8"
+          ]
+        },
+        {
+          "id": "6.5.2",
+          "text": "Prime Agent’s technical report even describes preserving an exploit as a reusable skill.",
+          "claims": [
+            "C06-T8"
+          ]
+        },
+        {
+          "id": "6.5.3",
+          "text": "Durable execution is another axis: surviving a worker crash requires more than keeping work alive after the interface disconnects.",
+          "claims": [
+            "C06-T9"
+          ]
+        },
+        {
+          "id": "6.5.4",
+          "text": "Anthropic describes restarting from an external event log; Temporal describes durable waits around existing inner harnesses.",
+          "claims": [
+            "C06-T9"
+          ],
+          "sources": [
+            "martin2026scaling",
+            "davis2026temporal"
+          ]
+        },
+        {
+          "id": "6.5.5",
+          "text": "ACP links user-facing clients to agents; A2A links independent agentic applications, not their internal subagent schedules.",
+          "claims": [
+            "C06-T10"
+          ],
+          "spoken": "A C P links user-facing clients to agents; A two A links independent agentic applications, not their internal subagent schedules."
+        },
+        {
+          "id": "6.5.6",
+          "text": "Composition, training, persistence, and interoperability solve different problems; none establishes a universally superior harness.",
+          "claims": [
+            "C06-T1",
+            "C06-T2",
+            "C06-T4",
+            "C06-T9",
+            "C06-T10"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "6.5.a",
+          "kind": "caption",
+          "text": "Prime Agent · fixed-weight refinement of memories, supplemental instructions and executable skills; base prompt remains immutable. Exploit preservation is a reported case, not a success-rate estimate. Technical report v1 dated 2026-08-24; manuscript first published 2026-08-05.",
+          "claims": [
+            "C06-T8"
+          ],
+          "grade": "B",
+          "at": "6.5.1"
+        },
+        {
+          "id": "6.5.b",
+          "kind": "caption",
+          "text": "Background lifecycle ≠ durable recovery. Prime: UI-detached work (B technical report). Anthropic Managed Agents: external event log and harness restart (C engineering article, 2026-04-08). Temporal: durable waits/event histories; earlier than public preview at its 2026-08-20 announcement (C).",
+          "claims": [
+            "C06-T9"
+          ],
+          "grade": "C",
+          "at": "6.5.3",
+          "sources": [
+            "martin2026scaling",
+            "davis2026temporal"
+          ]
+        },
+        {
+          "id": "6.5.c",
+          "kind": "caption",
+          "text": "Client —ACP→ agent | Independent agentic application —A2A→ independent application. Neither chooses the best internal multi-agent architecture. As of 2026-10-08.",
+          "claims": [
+            "C06-T10"
+          ],
+          "grade": "C",
+          "at": "6.5.5"
+        }
+      ]
+    }
+  ]
+}

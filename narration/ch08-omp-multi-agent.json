@@ -1,0 +1,803 @@
+{
+  "id": "ch08",
+  "slug": "omp-multi-agent",
+  "title": "omp’s multi-agent toolkit",
+  "act": "Act III — Multi-agent, done on evidence",
+  "targetSeconds": 210,
+  "takeaway": "omp exposes orchestration primitives, not a winning topology or a confinement guarantee.",
+  "scenes": [
+    {
+      "id": "8.1",
+      "title": "Delegate through contracts",
+      "visual": "8.1.1: diagram maps task to the contract principle. 8.1.2: createTerminal with ompUi task lifecycle, Titanium, Unicode, band composer, no startup art or worker model badges. Render a pending Task scout frame with illustrative AuthFlow and AuthTests bullets from 8.1.b; no completed results or metrics. 8.1.3–8.1.4: shared context fans into isolated child histories; highlight scope, artifact, and acceptance criteria. Keep the recreation label visible.",
+      "sentences": [
+        {
+          "id": "8.1.1",
+          "text": "omp provides building blocks for these patterns, but its documentation is not evidence that an omp ensemble outperforms a single loop.",
+          "claims": [
+            "C10-T1"
+          ],
+          "sources": [
+            "ompdocs-tools-task",
+            "ompdocs-tools-eval"
+          ]
+        },
+        {
+          "id": "8.1.2",
+          "text": "The task tool delegates to named specialists and can launch a batch in the background.",
+          "claims": [
+            "C10-T1"
+          ]
+        },
+        {
+          "id": "8.1.3",
+          "text": "Children start without the parent’s conversation history, so shared context and self-contained assignments must carry what matters.",
+          "claims": [
+            "C10-T1"
+          ]
+        },
+        {
+          "id": "8.1.4",
+          "text": "Give each specialist a concrete contract: scope, expected artifacts, evidence, dependencies, and completion criteria that another agent can actually use.",
+          "claims": [
+            "C07-T10"
+          ],
+          "sources": [
+            "cemri2025do",
+            "hadfield2025built",
+            "hong2024metagpt"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "8.1.a",
+          "kind": "label",
+          "text": "Recreation · omp 18.8.6 defaults · illustrative model roles, not an endorsement",
+          "claims": [
+            "C12-T6"
+          ],
+          "at": "8.1.1",
+          "grade": "C"
+        },
+        {
+          "id": "8.1.b",
+          "kind": "code",
+          "text": "Illustrative task input: {context: \"Read-only session-cookie audit; return paths and unresolved questions.\", tasks: [{name: \"AuthFlow\", agent: \"scout\", task: \"Trace cookie validation in packages/server/src/auth.\", solutionSpace: \"Bounded flow mapping; no edits.\"}, {name: \"AuthTests\", agent: \"scout\", task: \"Locate existing cookie-validation tests and list covered behaviors.\", solutionSpace: \"Bounded test inventory; no edits.\"}]} · fictional repository fixture; no parent history inherited",
+          "claims": [
+            "C10-T1"
+          ],
+          "at": "8.1.2",
+          "grade": "C"
+        },
+        {
+          "id": "8.1.c",
+          "kind": "caption",
+          "text": "Editorial mapping: contract principle → shared context + self-contained task + solutionSpace · no measured omp performance claim",
+          "claims": [
+            "C07-T10",
+            "C10-T1"
+          ],
+          "at": "8.1.4"
+        }
+      ],
+      "holdAfter": 0.8
+    },
+    {
+      "id": "8.2",
+      "title": "Agent, role, concrete model",
+      "visual": "8.2.1: roster diagram shows exactly five bundled types. 8.2.2: route board groups ten chat roles and five model-kind roles. 8.2.3: clearly labelled Profile B teaching configuration expands role → exact selector; keep all assignments visible without presenting them as automatic defaults. 8.2.4–8.2.5: small createTerminal status/Hub fragments use the exact palette, scout medium and main high; no task feed model badges. Nonchat services remain selector rows.",
+      "sentences": [
+        {
+          "id": "8.2.1",
+          "text": "The bundled roster has five types: scout, reviewer, security-reviewer, task, and sonic; additional specialists can come from other definitions.",
+          "claims": [
+            "C10-T2"
+          ]
+        },
+        {
+          "id": "8.2.2",
+          "text": "Fifteen built-in model roles separate the job from its concrete model assignment.",
+          "claims": [
+            "C10-T3"
+          ]
+        },
+        {
+          "id": "8.2.3",
+          "text": "Here, explicit assignments connect roles to models across providers; treat this as a worked example rather than a recommended shopping list.",
+          "claims": [
+            "C12-T2",
+            "C12-T4"
+          ],
+          "sources": [
+            "stencillabs2026role",
+            "stencillabs2026model",
+            "ompdocs-models",
+            "ompdocs-settings"
+          ]
+        },
+        {
+          "id": "8.2.4",
+          "text": "The terminal status uses friendly names; Agent Hub uses model IDs.",
+          "claims": [
+            "C12-T6"
+          ]
+        },
+        {
+          "id": "8.2.5",
+          "text": "A scout’s small-model role is a routing choice, not proof that the chosen model is best for scouting.",
+          "claims": [
+            "C10-T2",
+            "C07-T10"
+          ],
+          "sources": [
+            "ompdocs-settings"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "8.2.a",
+          "kind": "label",
+          "text": "5 bundled agents: scout · reviewer · security-reviewer · task · sonic · pinned omp 18.8.6 roster, as of 2026-10-08",
+          "claims": [
+            "C10-T2"
+          ],
+          "at": "8.2.1",
+          "grade": "C"
+        },
+        {
+          "id": "8.2.b",
+          "kind": "label",
+          "text": "15 built-in roles · Profile B: explicit illustrative assignments, not shipped universal assignments · access assumed, untested · as of 2026-10-08",
+          "claims": [
+            "C10-T3",
+            "C12-T4"
+          ],
+          "at": "8.2.2",
+          "grade": "C"
+        },
+        {
+          "id": "8.2.r1",
+          "kind": "code",
+          "text": "DEFAULT  anthropic/claude-opus-5-5",
+          "claims": [],
+          "sources": [
+            "stencillabs2026bundled",
+            "stencillabs2026role",
+            "stencillabs2026model",
+            "ompdocs-models",
+            "stencillabs2026provider",
+            "ompdocs-settings"
+          ],
+          "at": "8.2.3",
+          "grade": "C"
+        },
+        {
+          "id": "8.2.r2",
+          "kind": "code",
+          "text": "SMOL  google-antigravity/gemini-3.8-flash",
+          "claims": [],
+          "sources": [
+            "stencillabs2026bundled",
+            "stencillabs2026role",
+            "stencillabs2026model",
+            "ompdocs-models",
+            "stencillabs2026provider",
+            "ompdocs-settings"
+          ],
+          "at": "8.2.3",
+          "grade": "C"
+        },
+        {
+          "id": "8.2.r3",
+          "kind": "code",
+          "text": "SLOW  openai-codex/gpt-5.6-sol",
+          "claims": [],
+          "sources": [
+            "stencillabs2026bundled",
+            "stencillabs2026role",
+            "stencillabs2026model",
+            "ompdocs-models",
+            "stencillabs2026provider",
+            "ompdocs-settings"
+          ],
+          "at": "8.2.3",
+          "grade": "C"
+        },
+        {
+          "id": "8.2.r4",
+          "kind": "code",
+          "text": "VISION  google/gemini-3.1-pro-preview",
+          "claims": [],
+          "sources": [
+            "stencillabs2026bundled",
+            "stencillabs2026role",
+            "stencillabs2026model",
+            "ompdocs-models",
+            "stencillabs2026provider",
+            "ompdocs-settings"
+          ],
+          "at": "8.2.3",
+          "grade": "C"
+        },
+        {
+          "id": "8.2.r5",
+          "kind": "code",
+          "text": "PLAN  openai-codex/gpt-5.6-sol",
+          "claims": [],
+          "sources": [
+            "stencillabs2026bundled",
+            "stencillabs2026role",
+            "stencillabs2026model",
+            "ompdocs-models",
+            "stencillabs2026provider",
+            "ompdocs-settings"
+          ],
+          "at": "8.2.3",
+          "grade": "C"
+        },
+        {
+          "id": "8.2.r6",
+          "kind": "code",
+          "text": "COMMIT  anthropic/claude-opus-5-5",
+          "claims": [],
+          "sources": [
+            "stencillabs2026bundled",
+            "stencillabs2026role",
+            "stencillabs2026model",
+            "ompdocs-models",
+            "stencillabs2026provider",
+            "ompdocs-settings"
+          ],
+          "at": "8.2.3",
+          "grade": "C"
+        },
+        {
+          "id": "8.2.r7",
+          "kind": "code",
+          "text": "TINY  google-antigravity/gemini-3.8-flash",
+          "claims": [],
+          "sources": [
+            "stencillabs2026bundled",
+            "stencillabs2026role",
+            "stencillabs2026model",
+            "ompdocs-models",
+            "stencillabs2026provider",
+            "ompdocs-settings"
+          ],
+          "at": "8.2.3",
+          "grade": "C"
+        },
+        {
+          "id": "8.2.r8",
+          "kind": "code",
+          "text": "MEMORY  google-antigravity/gemini-3.8-flash",
+          "claims": [],
+          "sources": [
+            "stencillabs2026bundled",
+            "stencillabs2026role",
+            "stencillabs2026model",
+            "ompdocs-models",
+            "stencillabs2026provider",
+            "ompdocs-settings"
+          ],
+          "at": "8.2.3",
+          "grade": "C"
+        },
+        {
+          "id": "8.2.r9",
+          "kind": "code",
+          "text": "TASK  anthropic/claude-opus-5-5",
+          "claims": [],
+          "sources": [
+            "stencillabs2026bundled",
+            "stencillabs2026role",
+            "stencillabs2026model",
+            "ompdocs-models",
+            "stencillabs2026provider",
+            "ompdocs-settings"
+          ],
+          "at": "8.2.3",
+          "grade": "C"
+        },
+        {
+          "id": "8.2.r10",
+          "kind": "code",
+          "text": "ADVISOR  openai-codex/gpt-5.6-sol",
+          "claims": [],
+          "sources": [
+            "stencillabs2026bundled",
+            "stencillabs2026role",
+            "stencillabs2026model",
+            "ompdocs-models",
+            "stencillabs2026provider",
+            "ompdocs-settings"
+          ],
+          "at": "8.2.3",
+          "grade": "C"
+        },
+        {
+          "id": "8.2.r11",
+          "kind": "code",
+          "text": "IMAGE  openai/gpt-image-2",
+          "claims": [],
+          "sources": [
+            "stencillabs2026bundled",
+            "stencillabs2026role",
+            "stencillabs2026model",
+            "ompdocs-models",
+            "stencillabs2026provider",
+            "ompdocs-settings"
+          ],
+          "at": "8.2.3",
+          "grade": "C"
+        },
+        {
+          "id": "8.2.r12",
+          "kind": "code",
+          "text": "WEB  web/parallel",
+          "claims": [],
+          "sources": [
+            "stencillabs2026bundled",
+            "stencillabs2026role",
+            "stencillabs2026model",
+            "ompdocs-models",
+            "stencillabs2026provider",
+            "ompdocs-settings"
+          ],
+          "at": "8.2.3",
+          "grade": "C"
+        },
+        {
+          "id": "8.2.r13",
+          "kind": "code",
+          "text": "SPEECH  local/kokoro",
+          "claims": [],
+          "sources": [
+            "stencillabs2026bundled",
+            "stencillabs2026role",
+            "stencillabs2026model",
+            "ompdocs-models",
+            "stencillabs2026provider",
+            "ompdocs-settings"
+          ],
+          "at": "8.2.3",
+          "grade": "C"
+        },
+        {
+          "id": "8.2.r14",
+          "kind": "code",
+          "text": "DICTATION  local/parakeet-tdt-0.6b-v3",
+          "claims": [],
+          "sources": [
+            "stencillabs2026bundled",
+            "stencillabs2026role",
+            "stencillabs2026model",
+            "ompdocs-models",
+            "stencillabs2026provider",
+            "ompdocs-settings"
+          ],
+          "at": "8.2.3",
+          "grade": "C"
+        },
+        {
+          "id": "8.2.r15",
+          "kind": "code",
+          "text": "JUDGE  typesafe/jev-latest",
+          "claims": [],
+          "sources": [
+            "stencillabs2026bundled",
+            "stencillabs2026role",
+            "stencillabs2026model",
+            "ompdocs-models",
+            "stencillabs2026provider",
+            "ompdocs-settings"
+          ],
+          "at": "8.2.3",
+          "grade": "C"
+        },
+        {
+          "id": "8.2.c",
+          "kind": "tui",
+          "text": "Status: ⬢ Opus 5.5 · ◒ high\nTask-worker Hub badge: TASK · claude-opus-5-5 ◒ high\nScout Hub badge: SMOL · gemini-3.8-flash ◑ med\nReviewer Hub badge: SLOW · gpt-5.6-sol ◒ high\nTask worker shown after auto effort resolves high; not a universal task effort default.",
+          "claims": [
+            "C12-T6"
+          ],
+          "sources": [
+            "stencillabs2026statusline",
+            "stencillabs2026agent",
+            "ompdocs-settings"
+          ],
+          "at": "8.2.4",
+          "grade": "C"
+        },
+        {
+          "id": "8.2.d",
+          "kind": "label",
+          "text": "Recreation · omp 18.8.6 defaults · illustrative model roles, not an endorsement",
+          "claims": [
+            "C12-T6"
+          ],
+          "at": "8.2.3",
+          "grade": "C"
+        }
+      ],
+      "holdAfter": 0.8
+    },
+    {
+      "id": "8.3",
+      "title": "Fan out, integrate deliberately",
+      "visual": "8.3.1: diagram sends bounded read-only scouts into parallel lanes. 8.3.2: separate optional edit lanes turn on task isolation with an explicit nondefault badge. 8.3.3–8.3.4: outputSchema cards carry paths and assumptions into one integration owner; label architectural mapping as inference.",
+      "sentences": [
+        {
+          "id": "8.3.1",
+          "text": "Parallel scouts map naturally to separable investigations, returning focused evidence rather than repeatedly copying their entire exploration history.",
+          "claims": [
+            "C07-T10"
+          ],
+          "sources": [
+            "ompdocs-tools-task",
+            "ompdocs-settings"
+          ]
+        },
+        {
+          "id": "8.3.2",
+          "text": "Optional task isolation separates edits in Git workspaces for controlled integration; it is off by default.",
+          "claims": [],
+          "sources": [
+            "ompdocs-tools-task",
+            "ohmypimaintainers2026task"
+          ]
+        },
+        {
+          "id": "8.3.3",
+          "text": "Structured results can preserve artifact references and consequential decisions for the integration owner.",
+          "claims": [
+            "C07-T10"
+          ],
+          "sources": [
+            "ompdocs-tools-task",
+            "ompdocs-tools-eval"
+          ]
+        },
+        {
+          "id": "8.3.4",
+          "text": "Keep one owner responsible for reconciling shared interfaces and assumptions before treating the separate contributions as an integrated result.",
+          "claims": [
+            "C07-T10"
+          ],
+          "sources": [
+            "ompdocs-tools-task"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "8.3.a",
+          "kind": "caption",
+          "text": "Editorial mapping: separable work → scouts; ownership → integration owner; provenance → outputSchema + artifact references",
+          "claims": [
+            "C07-T10"
+          ],
+          "sources": [
+            "ompdocs-tools-task",
+            "ompdocs-tools-eval",
+            "ompdocs-settings"
+          ],
+          "at": "8.3.1"
+        },
+        {
+          "id": "8.3.b",
+          "kind": "code",
+          "text": "Optional deviation: task.isolation.enabled: true; request isolated: true · Git required · shipped task.isolation.enabled: false · workspace separation, not sandboxing",
+          "claims": [
+            "C10-T7"
+          ],
+          "sources": [
+            "ompdocs-tools-task",
+            "ohmypimaintainers2026task"
+          ],
+          "at": "8.3.2",
+          "grade": "C"
+        }
+      ],
+      "holdAfter": 0.8
+    },
+    {
+      "id": "8.4",
+      "title": "Review versus verification",
+      "visual": "8.4.1: timeline with ompUi advisor card, advisor enabled explicitly labelled nondefault. Use the captured concern layout with illustrative text: Verify the greeting preserves empty-input behavior; keep Recreation · omp 18.8.6 defaults visible with the advisor-enabled exception. 8.4.2: contrast advice with an external-check gate. 8.4.3: diagram contrasts stateless completion, dependency waves of agent handles, reusable workpool, and judge. 8.4.4: typed-result outline stops before the factual verification gate.",
+      "sentences": [
+        {
+          "id": "8.4.1",
+          "text": "An optional advisor reviews transcript updates and can investigate with read-only tools by default, sending concerns without becoming an approval authority.",
+          "claims": [
+            "C10-T4"
+          ]
+        },
+        {
+          "id": "8.4.2",
+          "text": "Its advice still needs adjudication; additional mutating tool grants change the trust boundary.",
+          "claims": [
+            "C10-T4"
+          ],
+          "sources": [
+            "ompdocs-advisor-watchdog"
+          ]
+        },
+        {
+          "id": "8.4.3",
+          "text": "Eval also offers tool-free completions, real agent handles, reusable workpools, and typed judgments.",
+          "claims": [
+            "C10-T6"
+          ]
+        },
+        {
+          "id": "8.4.4",
+          "text": "A valid schema constrains shape, while a judge’s probability is not a calibrated guarantee of correctness.",
+          "claims": [
+            "C10-T6"
+          ],
+          "sources": [
+            "ompdocs-tools-task",
+            "ompdocs-tools-eval",
+            "ohmypimaintainers2026eval-2"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "8.4.a",
+          "kind": "caption",
+          "text": "Advisor: opt-in; advisor.enabled defaults false · default investigative tools read-only · not approval authority",
+          "claims": [
+            "C10-T4"
+          ],
+          "sources": [
+            "ompdocs-advisor-watchdog"
+          ],
+          "at": "8.4.1",
+          "grade": "C"
+        },
+        {
+          "id": "8.4.b",
+          "kind": "code",
+          "text": "completion(): no tools/history · agent() + wait(handles): staged dependency waves · workpool(): reusable workers · judge(): typed assessment",
+          "claims": [
+            "C10-T6"
+          ],
+          "at": "8.4.3",
+          "grade": "C"
+        },
+        {
+          "id": "8.4.c",
+          "kind": "caption",
+          "text": "Shape validation ≠ factual correctness · judgment probability ≠ calibrated guarantee",
+          "claims": [],
+          "sources": [
+            "ompdocs-tools-task",
+            "ompdocs-tools-eval",
+            "ohmypimaintainers2026eval-2"
+          ],
+          "at": "8.4.4",
+          "grade": "C"
+        }
+      ],
+      "holdAfter": 0.8
+    },
+    {
+      "id": "8.5",
+      "title": "Make the work observable",
+      "visual": "8.5.1: createTerminal/ompUi populated Agent Hub recreation using captured rounded chrome and source-derived worker rows AuthFlow and AuthTests, both with Profile B SMOL badges; do not show the main agent as a Hub row. Use illustrative recent activity: Locate cookie validation and Locate cookie tests. Keep fixture and recreation labels visible; no performance metrics or claimed findings. 8.5.2: highlight transcript, usage-panel labels, steering, and parked-worker revival controls without inventing executed outcomes.",
+      "sentences": [
+        {
+          "id": "8.5.1",
+          "text": "Agent Hub exposes workers’ transcripts, models, and usage, making orchestration inspectable rather than just a collection of status messages.",
+          "claims": [
+            "C10-T5"
+          ]
+        },
+        {
+          "id": "8.5.2",
+          "text": "You can steer workers and revive parked ones; the separate agents command manages definitions rather than the live team.",
+          "claims": [
+            "C10-T5"
+          ],
+          "sources": [
+            "ompdocs-agent-hub"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "8.5.a",
+          "kind": "label",
+          "text": "Recreation · omp 18.8.6 defaults · illustrative model roles, not an endorsement",
+          "claims": [
+            "C12-T6"
+          ],
+          "at": "8.5.1",
+          "grade": "C"
+        },
+        {
+          "id": "8.5.b",
+          "kind": "code",
+          "text": "Alt+A: Agent Hub · transcript / model / usage / steer / revive parked workers\n/agents: definitions and model overrides",
+          "claims": [
+            "C10-T5"
+          ],
+          "sources": [
+            "ompdocs-agent-hub"
+          ],
+          "at": "8.5.1",
+          "grade": "C"
+        },
+        {
+          "id": "8.5.c",
+          "kind": "tui",
+          "text": "Illustrative AuthFlow worker: SMOL · gemini-3.8-flash ◑ med\nIllustrative AuthTests worker: SMOL · gemini-3.8-flash ◑ med",
+          "claims": [
+            "C12-T6"
+          ],
+          "sources": [
+            "stencillabs2026agent",
+            "ompdocs-settings"
+          ],
+          "at": "8.5.1",
+          "grade": "C"
+        }
+      ],
+      "holdAfter": 0.8
+    },
+    {
+      "id": "8.6",
+      "title": "Autonomy is not confinement",
+      "visual": "8.6.1: safety statCard pins yolo default. 8.6.2: diagram shows explicit per-tool policies survive the headless boundary, with prompt failure rather than implied human forwarding. 8.6.3: distinguish workspace lanes from security perimeter. 8.6.4–8.6.5: separate concurrency controls and role availability selection versus request recovery.",
+      "sentences": [
+        {
+          "id": "8.6.1",
+          "text": "The default approval mode is yolo, and headless task children explicitly run in yolo.",
+          "claims": [
+            "C10-T7"
+          ]
+        },
+        {
+          "id": "8.6.2",
+          "text": "Explicit deny or prompt policies still matter; a required prompt without an interactive interface fails rather than granting permission.",
+          "claims": [
+            "C10-T7"
+          ],
+          "sources": [
+            "ompdocs-tools-task",
+            "ompdocs-approval-mode"
+          ]
+        },
+        {
+          "id": "8.6.3",
+          "text": "Workspace isolation is not network, credential, or arbitrary filesystem confinement.",
+          "claims": [
+            "C10-T7"
+          ]
+        },
+        {
+          "id": "8.6.4",
+          "text": "Task concurrency does not cap every eval agent or provider request.",
+          "claims": [
+            "C10-T8"
+          ]
+        },
+        {
+          "id": "8.6.5",
+          "text": "Role candidate selection and request-failure fallback chains are separate mechanisms.",
+          "claims": [
+            "C10-T9"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "8.6.a",
+          "kind": "code",
+          "text": "Shipped: tools.approvalMode: yolo · headless task children: yolo · explicit tool restrictions still apply · omp 18.8.6, 2026-10-08",
+          "claims": [
+            "C10-T7"
+          ],
+          "at": "8.6.1",
+          "grade": "C"
+        },
+        {
+          "id": "8.6.b",
+          "kind": "caption",
+          "text": "Isolation ≠ sandbox · parent approval mode alone ≠ child confinement · headless required prompt fails",
+          "claims": [
+            "C10-T7"
+          ],
+          "sources": [
+            "ompdocs-tools-task",
+            "ompdocs-approval-mode"
+          ],
+          "at": "8.6.2",
+          "grade": "C"
+        },
+        {
+          "id": "8.6.c",
+          "kind": "caption",
+          "text": "Separate limits: task spawns / eval agent jobs / workpools / judgments / provider requests",
+          "claims": [
+            "C10-T8"
+          ],
+          "at": "8.6.4",
+          "grade": "C"
+        },
+        {
+          "id": "8.6.d",
+          "kind": "code",
+          "text": "Role candidates: first available match\nretry.fallbackChains: request-failure recovery; exact model rules outrank role rules",
+          "claims": [
+            "C10-T9"
+          ],
+          "at": "8.6.5",
+          "grade": "C"
+        }
+      ],
+      "holdAfter": 0.8
+    },
+    {
+      "id": "8.7",
+      "title": "Not additional algorithms",
+      "visual": "8.7.1–8.7.2: diagram cards distinguish humans sharing one session from one session changing model. 8.7.3: return to the principles map; no performance chart.",
+      "sentences": [
+        {
+          "id": "8.7.1",
+          "text": "Collab lets humans observe or steer a shared live session; it is not another autonomous-agent algorithm.",
+          "claims": [
+            "C10-T10"
+          ]
+        },
+        {
+          "id": "8.7.2",
+          "text": "Prewalk hands a session from one model to another once, rather than creating parallel debaters.",
+          "claims": [],
+          "sources": [
+            "ompdocs-prewalk"
+          ]
+        },
+        {
+          "id": "8.7.3",
+          "text": "Choose the primitive that fits your dependency graph, then measure the integrated outcome instead of assuming orchestration creates quality.",
+          "claims": [
+            "C07-T10",
+            "C10-T11"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "8.7.a",
+          "kind": "caption",
+          "text": "Collab: humans share one running session · Prewalk: one-shot model handoff · neither is a multi-agent algorithm",
+          "claims": [
+            "C10-T10"
+          ],
+          "sources": [
+            "ompdocs-prewalk"
+          ],
+          "at": "8.7.1",
+          "grade": "C"
+        },
+        {
+          "id": "8.7.b",
+          "kind": "caption",
+          "text": "Editorial mapping: principles to primitives; no omp-specific performance result established",
+          "claims": [
+            "C07-T10",
+            "C10-T11"
+          ],
+          "at": "8.7.3"
+        }
+      ],
+      "holdAfter": 0.8
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "id":"ch02",
+  "slug":"benchmarks",
+  "title":"How harnesses are measured — and how benchmarks mislead",
+  "act":"Act I — The harness matters",
+  "targetSeconds":165,
+  "takeaway":"A score belongs to a model, harness, task set, and protocol; passing the benchmark is not proof of complete correctness.",
+  "scenes":[
+    {
+      "id":"2.1",
+      "title":"A score belongs to a system",
+      "visual":"2.1.1: diagram assembles model, agent harness, task set, and protocol into a score, with no isolated model trophy. 2.1.2: split a SWE-bench board into all-agent and fixed mini-SWE-agent views. 2.1.3: distinguish agent control flow from an outer evaluation-harness boundary; animate a patch through a clean re-grade as an example protocol, not a universal implementation.",
+      "sentences":[
+        {"id":"2.1.1","text":"A coding-agent score belongs to a model, a harness, a task set, and an evaluation protocol.","claims":["C02-T1"]},
+        {"id":"2.1.2","text":"SWE-bench separates its all-agent leaderboard from a bash-only model comparison using mini-SWE-agent.","claims":["C02-T1"]},
+        {"id":"2.1.3","text":"The agent harness does the work; the evaluation harness sets up tasks and grades results.","claims":["C02-T1"],"sources":["kapoor2026holistic"]}
+      ],
+      "onScreen":[
+        {"id":"2.1.a","kind":"label","text":"Model + agent harness + task set + evaluation protocol = reported system score · SWE-bench all-agent view ≠ fixed mini-SWE-agent model comparison · as of 2026-10-08","grade":"C","claims":["C02-T1"],"at":"2.1.1"},
+        {"id":"2.1.b","kind":"label","text":"Agent harness: prompts, tools, control flow | Evaluation harness: task setup, execution, grading · Pro V2 example: pristine-image patch re-grade","grade":"C","claims":["C02-T1"],"sources":["kapoor2026holistic","scale2026swebench"],"at":"2.1.3"}
+      ]
+    },
+    {
+      "id":"2.2",
+      "title":"Read both columns",
+      "visual":"2.2.1: pairedBars shows only GPT-5.2 on Terminal-Bench 2.0, with agent names and confidence whiskers. 2.2.2: reveal the system-comparison caveat under the bars; gradeBadge C identifies the live-board source even though the original benchmark paper is peer-reviewed.",
+      "sentences":[
+        {"id":"2.2.1","text":"On Terminal-Bench 2.0, the official board lists GPT-5.2 at 62.9% with Codex CLI and 54.0% with Terminus 2.","spoken":"On Terminal Bench two point zero, the official board lists G P T five point two at sixty two point nine percent with Codex C L I and fifty four percent with Terminus two.","claims":["C02-T2"]},
+        {"id":"2.2.2","text":"That compares systems, not harnesses with matched budgets across every task.","claims":["C02-T2"]}
+      ],
+      "onScreen":[
+        {"id":"2.2.a","kind":"stat","text":"GPT-5.2 · Terminal-Bench 2.0, 89 tasks · Codex CLI 62.9% ± 3.0 pp | Terminus 2 54.0% ± 2.9 pp · reported 95% CIs · board accessed 2026-10-08 · exact package versions and per-row repeats not displayed; not a budget-matched ablation","grade":"C","claims":["C02-T2"],"sources":["terminalbenchteam2026terminalbench2"],"at":"2.2.1"}
+      ]
+    },
+    {
+      "id":"2.3",
+      "title":"Versions change the question",
+      "visual":"2.3.1: timeline advances Terminal-Bench releases to 4.0 without connecting scores across versions; statCard shows the current leading row and uncertainty. 2.3.2: add separate SWE-bench Pro V2 Full and HARD-51 cards with denominators. 2.3.3: smallMultiples preserves three physically distinct panels, no shared percentage axis, trend line, or cross-benchmark rank. 2.3.4: highlight task repairs and resource revisions on the terminal-release timeline.",
+      "sentences":[
+        {"id":"2.3.1","text":"The October 8, 2026 snapshot of Terminal-Bench 4.0 lists Opus 5.5 in Claude Code first, at 64.8%.","spoken":"The October eighth, twenty twenty six snapshot of Terminal Bench four point zero lists Opus five point five in Claude Code first, at sixty four point eight percent.","claims":["C02-T3","C02-N7"]},
+        {"id":"2.3.2","text":"SWE-bench Pro v2 has 642 public tasks and a separate HARD-51 subset.","spoken":"S W E bench Pro version two has six hundred forty two public tasks and a separate Hard fifty one subset.","claims":["C02-N4"]},
+        {"id":"2.3.3","text":"Changed tasks and protocols make a shared ranking axis misleading.","claims":["C02-T1","C02-T3","C02-N4"]},
+        {"id":"2.3.4","text":"The new terminal release repaired tasks, revised resource limits, and removed saturated problems.","claims":["C02-T3"]}
+      ],
+      "onScreen":[
+        {"id":"2.3.a","kind":"stat","text":"Terminal-Bench 4.0 · official board, accessed 2026-10-08 (October 2026) · 66 tasks · listed first: Opus 5.5 / max, Claude Code · 64.8% ± 3.1 percentage points, reported 95% CI · intervals overlap other entries; package versions and row repeats not displayed","grade":"C","claims":["C02-T3","C02-N7"],"at":"2.3.1"},
+        {"id":"2.3.b","kind":"stat","text":"SWE-bench Pro V2 Full · 642 public tasks, 11 repositories · released 2026-09-22 · 50-minute task budget, model endpoint only during agent phase, pristine-image patch re-grade · accessed 2026-10-08","grade":"C","claims":["C02-N4"],"sources":["scale2026swebench","scalelabs2026swebench-2"],"at":"2.3.2"},
+        {"id":"2.3.c","kind":"stat","text":"SWE-bench Pro V2 HARD-51 · 51-task subset, not the 642-task Full split · selected using failures of named model families · accessed 2026-10-08","grade":"C","claims":["C02-N4"],"sources":["scale2026swebench"],"at":"2.3.2"}
+      ]
+    },
+    {
+      "id":"2.4",
+      "title":"Passing is not correctness",
+      "visual":"2.4.1: diagram shows passing tests leaving an uncovered edge case, then added UTBoost tests expose it. 2.4.2: statCard names the historical aggregate; smallMultiples shows separate Lite and Verified ranking-change counts, not current leaderboard movement. gradeBadge A remains prominent.",
+      "sentences":[
+        {"id":"2.4.1","text":"The peer-reviewed UTBoost study uncovered 345 erroneous patches that passed the original SWE-bench tests.","spoken":"The peer reviewed U T Boost study uncovered three hundred forty five erroneous patches that passed the original S W E bench tests.","claims":["C02-T4","C02-N9"]},
+        {"id":"2.4.2","text":"Those findings changed historical Lite and Verified rankings; they do not describe today's standings.","claims":["C02-T4","C02-N10"]}
+      ],
+      "onScreen":[
+        {"id":"2.4.a","kind":"stat","text":"UTBoost · ACL 2025 · 345 erroneous passing patches, aggregated across studied SWE-bench systems · 36 affected task instances · not one model or a percentage of all tasks","grade":"A","claims":["C02-N9"],"at":"2.4.1"},
+        {"id":"2.4.b","kind":"stat","text":"UTBoost historical rankings · Lite: 18 ranking changes | Verified: 11 ranking changes · separate boards, not October 2026 rank movements","grade":"A","claims":["C02-N10"],"at":"2.4.2"}
+      ]
+    },
+    {
+      "id":"2.5",
+      "title":"Validity, cost, and held-out evaluation",
+      "visual":"2.5.1: diagram splits false acceptance from false rejection, with source-specific A and C badges. 2.5.2: checklist names task validity, outcome validity, and reporting; keep the historical empty-response example in an inset. 2.5.3: scatter plots only HAL Table A23's GPT-5 Medium pair on cost versus best-run accuracy, with full conditions and no points imported from other tables.",
+      "sentences":[
+        {"id":"2.5.1","text":"Validity cuts both ways: weak tests accept bad fixes, while overly specific tests or broken environments reject good ones.","claims":["C02-T5"]},
+        {"id":"2.5.2","text":"The peer-reviewed Agentic Benchmark Checklist separates task validity, outcome validity, and reporting.","claims":["C02-T6"]},
+        {"id":"2.5.3","text":"AI Agents That Matter recommends cost alongside accuracy and protected holdouts; HAL charts those trade-offs.","spoken":"A I Agents That Matter recommends cost alongside accuracy and protected holdouts; Hal charts those trade offs.","claims":["C02-T6","C02-N12"],"sources":["kapoor2026holistic"]}
+      ],
+      "onScreen":[
+        {"id":"2.5.a","kind":"label","text":"False acceptance: inadequate tests | False rejection: over-specific tests, unreliable environments · UTBoost research and OpenAI's Verified motivation","claims":["C02-T5"],"at":"2.5.1"},
+        {"id":"2.5.b","kind":"label","text":"Agentic Benchmark Checklist · NeurIPS 2025 · task validity / outcome validity / reporting · historical example: empty-response policy scored 38% on the examined τ-bench-Airline setup, not a current τ³ result","grade":"A","claims":["C02-T6","C02-N11"],"at":"2.5.2"},
+        {"id":"2.5.c","kind":"stat","text":"HAL Table A23 only · GPT-5 Medium · SWE-bench Verified Mini, 50 tasks · Generalist: 12.0%, $57.58 | SWE-Agent: 46.0%, $162.93 · best-run accuracy and corresponding full-run cost, not mean or cost per issue · prices 2025-09-24; exact row run dates absent · ICLR 2026","grade":"A","claims":["C03-N13"],"sources":["kapoor2026holistic"],"at":"2.5.3"},
+        {"id":"2.5.d","kind":"caption","text":"HAL study scale: 21,730 rollouts, 9 models, 9 benchmarks, about $40,000 · historical research expenditure, not a current price quote","grade":"A","claims":["C02-N12"],"at":"2.5.3"}
+      ]
+    },
+    {
+      "id":"2.6",
+      "title":"Time horizon is task difficulty",
+      "visual":"2.6.1: diagram draws a schematic success curve against human-expert task duration, explicitly labelled illustrative with no fabricated model points. A horizontal selected-success threshold intersects the curve; do not show an agent-runtime stopwatch. 2.6.2: emphasize the clean-task scope caption rather than mapping the curve to workplace hours saved.",
+      "sentences":[
+        {"id":"2.6.1","text":"METR's time horizon measures task difficulty in human time at a chosen success probability, not agent runtime.","claims":["C02-T7"]},
+        {"id":"2.6.2","text":"Its clean, self-contained tasks differ from a familiar employee's everyday work.","claims":["C02-T7"],"sources":["metr2026taskcompletion"]}
+      ],
+      "onScreen":[
+        {"id":"2.6.a","kind":"label","text":"METR time horizon · human-expert task duration vs. predicted success · schematic, no model data plotted · not agent runtime; clean self-contained tasks differ from contextual workplace activity","claims":["C02-T7"],"at":"2.6.1"}
+      ]
+    },
+    {
+      "id":"2.7",
+      "title":"Locate the alternatives' evidence",
+      "visual":"2.7.1: statCard gives omp's workflow result without a competitor podium. 2.7.2: reveal the reasoning/provider caveat and bounded flagship search result. 2.7.3: diagram separates independent Claw-SWE preprint and vendor DeepSeek report lanes. 2.7.4: add a fixed-Hermes model-comparison lane with excluded-task and provisional badges. 2.7.5: resolve to the model/harness/tasks/protocol labels from the opening.",
+      "sentences":[
+        {"id":"2.7.1","text":"Composio reports omp completing 17 of 30 SaaS workflows with DeepSeek V4 Flash, not a flagship coding-board result.","spoken":"Composio reports omp completing seventeen of thirty software as a service workflows with DeepSeek V four Flash, not a flagship coding board result.","claims":["C02-T8","C02-N15"]},
+        {"id":"2.7.2","text":"Its Pi comparison changes reasoning settings and providers, limiting harness-only conclusions.","claims":["C02-T8"]},
+        {"id":"2.7.3","text":"Hermes and DeepSeek Harness appear in an independent preprint; Pi and DeepSeek Harness also appear in DeepSeek's own evaluation.","claims":["C02-T9"]},
+        {"id":"2.7.4","text":"The Hermes Index compares models within Hermes, excludes GPU tasks from its terminal suite, and flags provisional results.","spoken":"The Hermes Index compares models within Hermes, excludes G P U tasks from its terminal suite, and flags provisional results.","claims":["C02-T10"]},
+        {"id":"2.7.5","text":"Read the system and protocol before treating a passing score as capability.","claims":["C02-T1","C02-T4","C02-T5"]}
+      ],
+      "onScreen":[
+        {"id":"2.7.a","kind":"stat","text":"Composio Golden Eval · OMP + DeepSeek V4 Flash · 17/30 successes (56.7%) · SaaS workflows, 900 seconds/task · article 2026-08-11 · no CIs or exact package versions · evaluator's first-party report, not peer-reviewed","grade":"C","claims":["C02-T8","C02-N15"],"at":"2.7.1"},
+        {"id":"2.7.b","kind":"caption","text":"Pi used different reasoning settings and two providers · no named omp entry found in inspected SWE-bench Verified all-agent and Terminal-Bench 2.0/4.0 tables · snapshot 2026-10-08, not an exhaustive search","grade":"C","claims":["C02-T8"],"sources":["swebenchteam2026swebench","terminalbenchteam2026terminalbench2","terminalbenchteam2026terminalbench4"],"at":"2.7.2"},
+        {"id":"2.7.c","kind":"label","text":"Independent Claw-SWE-Bench v2 preprint: Hermes + DeepSeek Harness | DeepSeek technical report: Pi + DeepSeek Harness · different evidence from an independently reproduced flagship submission · as of 2026-10-08","grade":"B","claims":["C02-T9"],"at":"2.7.3"},
+        {"id":"2.7.d","kind":"label","text":"Hermes Index · models within fixed Hermes · Terminal-Bench 4 component excludes GPU tasks · some scores/costs provisional · not comparable to the full official TB4 board · as of 2026-10-08","grade":"C","claims":["C02-T10"],"at":"2.7.4"}
+      ],
+      "holdAfter":1.2
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "ch00",
+  "slug": "cold-open",
+  "title": "Same model, different harness",
+  "act": "Act I — The harness matters",
+  "targetSeconds": 60,
+  "takeaway": "The harness is part of the result; the same model can score differently in different systems, without a universal winner.",
+  "scenes": [
+    {
+      "id": "0.1",
+      "title": "Hold the model still",
+      "visual": "0.1.1: pairedBars builds three independent model rows in a harness matrix, with gradeBadge A and reported confidence whiskers; model labels stay fixed while harness labels change. Show all conditions below the matrix, not behind an interaction. 0.1.2: highlight GPT-5's Codex CLI result, then the reversed vendor-harness ordering for Opus; never animate this as a universal winner. 0.1.3: dateStamp and a historical-study label remain visible. No product UI or logo recreation.",
+      "sentences": [
+        {"id":"0.1.1","text":"Peer-reviewed Terminal-Bench and SWE-agent studies show different scores from the same model with different harnesses.","spoken":"Peer reviewed Terminal Bench and S W E agent studies show different scores from the same model with different harnesses.","claims":["C03-N14","C03-N15","C03-N16","C03-T1"]},
+        {"id":"0.1.2","text":"Codex beat Terminus with GPT-5; Terminus outscored Claude Code with Opus 4.5.","spoken":"Codex beat Terminus with G P T five; Terminus outscored Claude Code with Opus four point five.","claims":["C03-N15","C03-N16"]},
+        {"id":"0.1.3","text":"These historical comparisons do not rank today's products.","claims":["C03-N14","C03-N15","C03-N16"],"pauseAfter":0.5}
+      ],
+      "onScreen": [
+        {"id":"0.1.a","kind":"stat","text":"Gemini 2.5 Pro · OpenHands 15.7% ± 2.6 pp | Terminus 2 32.6% ± 3.0 pp","grade":"A","claims":["C03-N14"],"at":"0.1.1"},
+        {"id":"0.1.b","kind":"stat","text":"GPT-5 · Terminus 2 35.2% ± 3.1 pp | Codex CLI 49.6% ± 2.9 pp","grade":"A","claims":["C03-N16"],"at":"0.1.1"},
+        {"id":"0.1.c","kind":"stat","text":"Claude Opus 4.5 · Claude Code 52.1% ± 2.5 pp | Terminus 2 57.8% ± 2.5 pp","grade":"A","claims":["C03-N15"],"at":"0.1.1"},
+        {"id":"0.1.d","kind":"caption","text":"Historical ICLR 2026 study · Terminal-Bench 2.0 · 89 tasks · at least 5 trials per task for supported pairs · reported 95% CIs · provider-default reasoning · result rows do not name package versions · not October 2026 standings","grade":"A","claims":["C03-N14","C03-N15","C03-N16"],"at":"0.1.1"}
+      ]
+    },
+    {
+      "id":"0.2",
+      "title":"An interface intervention",
+      "visual":"0.2.1: diagram fixes the GPT-4 Turbo core while an outer shell-only ring swaps to the SWE-agent interface; pairedBars shows only the Lite comparison. Keep the demonstration and budget conditions beside both bars; no additive waterfall or comparison with the preceding Terminal-Bench axis. 0.2.2: hold the fixed core and changed interface together for the takeaway.",
+      "sentences":[
+        {"id":"0.2.1","text":"With GPT-4 Turbo, SWE-agent raised success from 11% to 18% against a shell, both with demonstrations.","spoken":"With G P T four Turbo, S W E agent raised success from eleven to eighteen percent against a shell, both with demonstrations.","claims":["C03-T1","C03-N1"],"pauseAfter":0.5},
+        {"id":"0.2.2","text":"The interface changed; the model weights did not.","claims":["C03-T1"]}
+      ],
+      "onScreen":[
+        {"id":"0.2.a","kind":"stat","text":"GPT-4 Turbo (gpt-4-1106-preview) · shell-only 11.00% → SWE-agent ACI 18.00% · SWE-bench Lite, 300 issues · both with demonstrations · $4 per issue cap · 2024 study, Table 1 · single reported ablation evaluation","grade":"A","claims":["C03-T1","C03-N1"],"at":"0.2.1"}
+      ]
+    },
+    {
+      "id":"0.3",
+      "title":"An independent, cited tour",
+      "visual":"0.3.1: diagram resolves into an independent typographic title card, The Harness Layer, with omp as nominative plain text, no borrowed wordmark. 0.3.2: dateStamp and independence caption settle below it. 0.3.3: gradeBadge reveals the complete A–E legend with both letters and labels. 0.3.4: hold the legend and dateStamp while a closing label lands the harness takeaway; cite the product description and study conclusion, not the editorial disclaimer.",
+      "sentences":[
+        {"id":"0.3.1","text":"This independent tour introduces omp, a Pi fork with integrated developer tools.","spoken":"This independent tour introduces O M P, a Pi fork with integrated developer tools.","claims":["C01-T11"],"sources":["stencillabsndohmypi"]},
+        {"id":"0.3.2","text":"We are not affiliated with Stencil Labs; our snapshot is October 2026.","spoken":"We are not affiliated with Stencil Labs; our snapshot is October twenty twenty six.","claims":[]},
+        {"id":"0.3.3","text":"Badges distinguish peer-reviewed work, preprints, technical reports, first-party accounts, secondary sources, and anecdotes.","spoken":"Badges distinguish peer reviewed work, preprints, technical reports, first party accounts, secondary sources, and anecdotes.","claims":[],"pauseAfter":0.5},
+        {"id":"0.3.4","text":"The harness is part of the result, not decoration.","claims":["C03-T1","C03-N14","C03-N15","C03-N16"]}
+      ],
+      "onScreen":[
+        {"id":"0.3.a","kind":"label","text":"The Harness Layer · An independent introduction to omp · Pi-derived, open-source, multi-provider, integrated tool surface","grade":"C","claims":["C01-T11"],"at":"0.3.1"},
+        {"id":"0.3.b","kind":"caption","text":"Independent community explainer · not affiliated with Stencil Labs · facts as of 2026-10-08 (October 2026)","claims":[],"at":"0.3.2"},
+        {"id":"0.3.c","kind":"badge","text":"A Peer-reviewed · B Preprint/tech report · C First-party · D Secondary · E Anecdotal","claims":[],"at":"0.3.3"},
+        {"id":"0.3.d","kind":"label","text":"The harness is part of the result · no universal winner follows","grade":"A","claims":["C03-T1","C03-N14","C03-N15","C03-N16"],"at":"0.3.4"}
+      ],
+      "holdAfter":1.5
+    }
+  ]
+}

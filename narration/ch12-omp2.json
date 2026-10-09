@@ -1,0 +1,625 @@
+{
+  "id": "ch12",
+  "slug": "omp2",
+  "title": "omp²: the next architecture",
+  "act": "Act V — What's next",
+  "targetSeconds": 180,
+  "takeaway": "Shared complexity needs one owner; public pre-release implementation is not a stable release.",
+  "scenes": [
+    {
+      "id": "12.1",
+      "title": "A separate pre-release",
+      "visual": "12.1.1: diagram separates public branch from released product. 12.1.2: add a third target-architecture card; use no terminal recreation. Persistent gradeBadge C, pre-release/design badge and dateStamp throughout. All factual labels link to evidence cards.",
+      "sentences": [
+        {
+          "id": "12.1.1",
+          "text": "There is another omp taking shape: omp², a public Rust rewrite whose branch explicitly warns about pre-release breaking changes.",
+          "spoken": "There is another O-M-P taking shape: O-M-P squared, a public Rust rewrite whose branch explicitly warns about pre-release breaking changes.",
+          "claims": [
+            "C11-T1"
+          ]
+        },
+        {
+          "id": "12.1.2",
+          "text": "This is not the released omp used in this walkthrough; the public branch and its target architecture are different things.",
+          "spoken": "This is not the released omp used in this walkthrough; the public branch and its target architecture are different things.",
+          "claims": [
+            "C11-T1",
+            "C11-T3"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "12.1.a",
+          "kind": "label",
+          "text": "Released omp 18.8.6 ≠ public omp2 pre-release branch ≠ target architecture",
+          "claims": [
+            "C11-T1",
+            "C11-T3"
+          ],
+          "grade": "C"
+        },
+        {
+          "id": "12.1.z",
+          "kind": "badge",
+          "text": "PRE-RELEASE / DESIGN · as of 2026-10-08",
+          "claims": [
+            "C11-T1"
+          ],
+          "grade": "C"
+        }
+      ],
+      "holdAfter": 1.0
+    },
+    {
+      "id": "12.2",
+      "title": "Saving the whole session",
+      "visual": "12.2.1: diagram splits messages, extension state, jobs, configuration and UI into separate boxes. 12.2.2: rewind only the message rail; label this an illustration of the creator’s diagnosis, not a reproduced bug. Persistent gradeBadge C, pre-release/design badge and dateStamp throughout. All factual labels link to evidence cards.",
+      "sentences": [
+        {
+          "id": "12.2.1",
+          "text": "The creator’s diagnosis includes omp itself, not just competitors: message history, extension state, background jobs, configuration, and interface state accumulated separate owners.",
+          "spoken": "The creator’s diagnosis includes O-M-P itself, not just competitors: message history, extension state, background jobs, configuration, and interface state accumulated separate owners.",
+          "claims": [
+            "C11-T2"
+          ]
+        },
+        {
+          "id": "12.2.2",
+          "text": "Saving messages was not enough: rewind could restore the conversation while leaving jobs, settings, and interface state at a different moment.",
+          "spoken": "Saving messages was not enough: rewind could restore the conversation while leaving jobs, settings, and interface state at a different moment.",
+          "claims": [
+            "C11-T2"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "12.2.a",
+          "kind": "label",
+          "text": "Creator’s diagnosis, including omp itself · schematic illustration, not a current competitor audit",
+          "claims": [
+            "C11-T2"
+          ],
+          "grade": "C"
+        },
+        {
+          "id": "12.2.z",
+          "kind": "badge",
+          "text": "PRE-RELEASE / DESIGN · as of 2026-10-08",
+          "claims": [
+            "C11-T1"
+          ],
+          "grade": "C"
+        }
+      ],
+      "holdAfter": 1.0
+    },
+    {
+      "id": "12.3",
+      "title": "Commitments, not release announcements",
+      "visual": "12.3.1: diagram reveals the five exact commitment headings. 12.3.2: each pillar shows component-specific author-reported status, not a single pillar-complete badge. Keep the individual statuses and their source chips readable. Persistent gradeBadge C, pre-release/design badge and dateStamp throughout.",
+      "sentences": [
+        {
+          "id": "12.3.1",
+          "text": "The playbook names five commitments: one authoritative session, a trusted control plane, bounded work, explicit compatibility, and views are projections.",
+          "spoken": "The playbook names five commitments: one authoritative session, a trusted control plane, bounded work, explicit compatibility, and views are projections.",
+          "claims": [
+            "C11-T3"
+          ]
+        },
+        {
+          "id": "12.3.2",
+          "text": "Their common thread is ownership: shared responsibilities belong in the engine, rather than being rebuilt independently by every extension.",
+          "spoken": "Their common thread is ownership: shared responsibilities belong in the engine, rather than being rebuilt independently by every extension.",
+          "claims": [
+            "C11-T2",
+            "C11-T3"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "12.3.a",
+          "kind": "label",
+          "text": "Five design commitments · not five shipped announcements",
+          "claims": [
+            "C11-T3"
+          ],
+          "grade": "C"
+        },
+        {
+          "id": "12.3.b",
+          "kind": "label",
+          "text": "One authoritative session — tree reported implemented; A trusted control plane — minimized stub partial; Bounded work — output bounds/jobs reported implemented; Explicit compatibility — compiled knowledge reported implemented, grammar budgets partial; Views are projections — controller split reported implemented, full web equivalence partial",
+          "claims": [
+            "C11-T3"
+          ],
+          "grade": "C",
+          "sources": [
+            "ohmypicontributors2026one",
+            "ohmypicontributors2026controller",
+            "ohmypicontributors2026policy",
+            "ohmypicontributors2026output",
+            "ohmypicontributors2026one-2",
+            "ohmypicontributors2026model",
+            "ohmypicontributors2026inference",
+            "ohmypicontributors2026typed"
+          ]
+        },
+        {
+          "id": "12.3.z",
+          "kind": "badge",
+          "text": "PRE-RELEASE / DESIGN · as of 2026-10-08",
+          "claims": [
+            "C11-T1"
+          ],
+          "grade": "C"
+        }
+      ],
+      "holdAfter": 1.0
+    },
+    {
+      "id": "12.4",
+      "title": "Journal to authoritative state",
+      "visual": "12.4.1: diagram folds journal events into a session tree. 12.4.2: a scrubber reconstructs snapshots feeding rewind, fork, resume, prompts and views. 12.4.3: keep filesystem/network effects outside the rewind area. Persistent gradeBadge C, pre-release/design badge and dateStamp throughout. All factual labels link to evidence cards.",
+      "sentences": [
+        {
+          "id": "12.4.1",
+          "text": "At the center of that design, a journal reconstructs the session tree, holding messages, tools, jobs, todos, and queues together.",
+          "spoken": "At the center of that design, a journal reconstructs the session tree, holding messages, tools, jobs, todos, and queues together.",
+          "claims": [
+            "C11-T4"
+          ]
+        },
+        {
+          "id": "12.4.2",
+          "text": "Rewind, fork, resume, prompts, and views all draw from that tree, instead of maintaining competing versions of the truth.",
+          "spoken": "Rewind, fork, resume, prompts, and views all draw from that tree, instead of maintaining competing versions of the truth.",
+          "claims": [
+            "C11-T4"
+          ]
+        },
+        {
+          "id": "12.4.3",
+          "text": "This is session reconstruction, not a promise to reverse external side effects.",
+          "spoken": "This is session reconstruction, not a promise to reverse external side effects.",
+          "claims": [
+            "C11-T4"
+          ],
+          "sources": [
+            "boluk2026harness",
+            "fowler2005event"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "12.4.a",
+          "kind": "label",
+          "text": "Journal → authoritative session tree → prompts and views",
+          "claims": [
+            "C11-T4"
+          ],
+          "grade": "C"
+        },
+        {
+          "id": "12.4.b",
+          "kind": "label",
+          "text": "Session-state reconstruction does not imply reversal of filesystem or network side effects",
+          "claims": [
+            "C11-T4"
+          ],
+          "grade": "C",
+          "sources": [
+            "boluk2026harness",
+            "fowler2005event"
+          ]
+        },
+        {
+          "id": "12.4.z",
+          "kind": "badge",
+          "text": "PRE-RELEASE / DESIGN · as of 2026-10-08",
+          "claims": [
+            "C11-T1"
+          ],
+          "grade": "C"
+        }
+      ],
+      "holdAfter": 1.0
+    },
+    {
+      "id": "12.5",
+      "title": "A boundary with unfinished work",
+      "visual": "12.5.1: diagram draws a thick boundary between host and executor. 12.5.2: capped request/result streams join one job model. 12.5.3: partial badge remains on minimized stub; never show a security shield. Persistent gradeBadge C, pre-release/design badge and dateStamp throughout. All factual labels link to evidence cards.",
+      "sentences": [
+        {
+          "id": "12.5.1",
+          "text": "In the design, the trusted host retains state, routing, approvals, and limits; execution crosses a boundary into an obedient stub.",
+          "spoken": "In the design, the trusted host retains state, routing, approvals, and limits; execution crosses a boundary into an obedient stub.",
+          "claims": [
+            "C11-T5"
+          ]
+        },
+        {
+          "id": "12.5.2",
+          "text": "Work becomes bounded, cancellable streams, with long-running calls and subagents sharing a job model.",
+          "spoken": "Work becomes bounded, cancellable streams, with long-running calls and subagents sharing a job model.",
+          "claims": [
+            "C11-T5"
+          ],
+          "sources": [
+            "boluk2026harness",
+            "ohmypicontributors2026output",
+            "ohmypicontributors2026one-2"
+          ]
+        },
+        {
+          "id": "12.5.3",
+          "text": "The minimized remote stub is still partial, so cancellation must not be confused with proven security confinement.",
+          "spoken": "The minimized remote stub is still partial, so cancellation must not be confused with proven security confinement.",
+          "claims": [
+            "C11-T5"
+          ],
+          "sources": [
+            "ohmypicontributors2026policy",
+            "ohmypicontributors2026extension-2",
+            "ohmypicontributors2026ompsandbox"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "12.5.a",
+          "kind": "label",
+          "text": "Host: state · routing · approvals · limits | Executor: bounded requests/results",
+          "claims": [
+            "C11-T5"
+          ],
+          "grade": "C"
+        },
+        {
+          "id": "12.5.b",
+          "kind": "label",
+          "text": "Partial: minimized remote/container/VM stub. Effective extension-confinement defaults unresolved; cancellation is not a security guarantee.",
+          "claims": [
+            "C11-T5"
+          ],
+          "grade": "C",
+          "sources": [
+            "ohmypicontributors2026policy",
+            "ohmypicontributors2026extension-2",
+            "ohmypicontributors2026ompsandbox"
+          ]
+        },
+        {
+          "id": "12.5.z",
+          "kind": "badge",
+          "text": "PRE-RELEASE / DESIGN · as of 2026-10-08",
+          "claims": [
+            "C11-T1"
+          ],
+          "grade": "C"
+        }
+      ],
+      "holdAfter": 1.0
+    },
+    {
+      "id": "12.6",
+      "title": "Owners for settings and behavior",
+      "visual": "12.6.1: diagram animates convar scope/persistence cards and a Plan / ForceTool Director stack, labelled playbook design, not CLI syntax. 12.6.2: separate rulebook receives model/provider inputs. 12.6.3: separate provider semantics from plugin migration. Persistent gradeBadge C, pre-release/design badge and dateStamp throughout. All factual labels link to evidence cards.",
+      "sentences": [
+        {
+          "id": "12.6.1",
+          "text": "Settings gain declared scope and persistence through convars; Directors compose behavior across turns, with Plan nesting ForceTool in the playbook’s example.",
+          "spoken": "Settings gain declared scope and persistence through convars; Directors compose behavior across turns, with Plan nesting ForceTool in the playbook’s example.",
+          "claims": [
+            "C11-T6"
+          ]
+        },
+        {
+          "id": "12.6.2",
+          "text": "A compiled compatibility rulebook owns model and provider quirks; an analogous refactor already shipped in the existing omp line.",
+          "spoken": "A compiled compatibility rulebook owns model and provider quirks; an analogous refactor already shipped in the existing O-M-P line.",
+          "claims": [
+            "C11-T7"
+          ]
+        },
+        {
+          "id": "12.6.3",
+          "text": "Here, compatibility means model and provider behavior, not running old plugins unchanged.",
+          "spoken": "Here, compatibility means model and provider behavior, not running old plugins unchanged.",
+          "claims": [
+            "C11-T7"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "12.6.a",
+          "kind": "label",
+          "text": "Convars: scope + persistence | Directors: Plan → ForceTool | Rulebook: model/provider semantics",
+          "claims": [
+            "C11-T6",
+            "C11-T7"
+          ],
+          "grade": "C"
+        },
+        {
+          "id": "12.6.b",
+          "kind": "label",
+          "text": "Analogous KDL compatibility refactor shipped in omp 18.x; not an old-plugin compatibility guarantee",
+          "claims": [
+            "C11-T7"
+          ],
+          "grade": "C"
+        },
+        {
+          "id": "12.6.z",
+          "kind": "badge",
+          "text": "PRE-RELEASE / DESIGN · as of 2026-10-08",
+          "claims": [
+            "C11-T1"
+          ],
+          "grade": "C"
+        }
+      ],
+      "holdAfter": 1.0
+    },
+    {
+      "id": "12.7",
+      "title": "Views without competing authority",
+      "visual": "12.7.1: diagram feeds terminal, remote and inspector silhouettes from one session; full web equivalence has a partial badge. 12.7.2: gradeBadge B marks the bounded transcript-model evidence. Renderer and tool-roster labels open evidence cards; their numbers appear only inside those cards, never in the architecture diagram. Persistent pre-release/design badge and dateStamp throughout.",
+      "sentences": [
+        {
+          "id": "12.7.1",
+          "text": "In this architecture, terminal, remote, and inspector views consume shared state instead of owning it; full web equivalence remains incomplete.",
+          "spoken": "In this architecture, terminal, remote, and inspector views consume shared state instead of owning it; full web equivalence remains incomplete.",
+          "claims": [
+            "C11-T8"
+          ],
+          "sources": [
+            "ohmypicontributors2026typed"
+          ]
+        },
+        {
+          "id": "12.7.2",
+          "text": "A technical report describes bounded model checks for a transcript protocol, not a proof that the entire application is bug-free.",
+          "spoken": "A technical report describes bounded model checks for a transcript protocol, not a proof that the entire application is bug-free.",
+          "claims": [
+            "C11-T8",
+            "C11-T9"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "12.7.a",
+          "kind": "label",
+          "text": "Shared state → terminal / remote / inspector · full web equivalence partial",
+          "claims": [
+            "C11-T8"
+          ],
+          "grade": "C",
+          "sources": [
+            "ohmypicontributors2026typed"
+          ]
+        },
+        {
+          "id": "12.7.b",
+          "kind": "label",
+          "text": "B · Technical report: finite TLA+ checks of Elastic Slots transcript protocol; not whole-application verification or Rust refinement proof",
+          "claims": [
+            "C11-T8",
+            "C11-T9"
+          ],
+          "grade": "B",
+          "sources": [
+            "stencilhostedreport2026elastic"
+          ]
+        },
+        {
+          "id": "12.7.c",
+          "kind": "label",
+          "text": "Renderer measurement · render time only; comparable hardware/run protocol not supplied",
+          "claims": [
+            "C11-N6"
+          ],
+          "grade": "C"
+        },
+        {
+          "id": "12.7.d",
+          "kind": "label",
+          "text": "Tool-roster sweep · incomplete inference setup and success criteria; batching and turns vary; not an omp² leaderboard result",
+          "claims": [
+            "C11-N9",
+            "C11-N13"
+          ],
+          "grade": "C"
+        },
+        {
+          "id": "12.7.z",
+          "kind": "badge",
+          "text": "PRE-RELEASE / DESIGN · as of 2026-10-08",
+          "claims": [
+            "C11-T1"
+          ],
+          "grade": "C"
+        }
+      ],
+      "holdAfter": 1.0
+    },
+    {
+      "id": "12.8",
+      "title": "Read the implementation register",
+      "visual": "12.8.1: statCard displays 36 ADRs: 25 Implemented / 11 Partial, as author-reported status sections, beside a component register distinguishing partial infrastructure from the absent tiny model. 12.8.2: configuration migration and upgrade guarantee remain separate cards. 12.8.3: source and release citation links stay beside the ownership takeaway; no installation instructions. Persistent gradeBadge C, pre-release/design badge and dateStamp throughout.",
+      "sentences": [
+        {
+          "id": "12.8.1",
+          "text": "The public architecture records report 25 decisions implemented and 11 partial, including supporting work for a tiny local model that is not present.",
+          "spoken": "The public architecture records report twenty-five decisions implemented and eleven partial, including supporting work for a tiny local model that is not present.",
+          "claims": [],
+          "sources": [
+            "ohmypicontributors2026architecture",
+            "ohmypicontributors2026four",
+            "ohmypicontributors2026push",
+            "ohmypicontributors2026one",
+            "ohmypicontributors2026rewind",
+            "ohmypicontributors2026controller",
+            "ohmypicontributors2026policy",
+            "ohmypicontributors2026subagents",
+            "ohmypicontributors2026tool",
+            "ohmypicontributors2026output",
+            "ohmypicontributors2026one-2",
+            "ohmypicontributors2026cancellation",
+            "ohmypicontributors2026settings",
+            "ohmypicontributors2026children",
+            "ohmypicontributors2026binds",
+            "ohmypicontributors2026directors",
+            "ohmypicontributors2026directors-2",
+            "ohmypicontributors2026model",
+            "ohmypicontributors2026provider",
+            "ohmypicontributors2026forced",
+            "ohmypicontributors2026validate",
+            "ohmypicontributors2026inference",
+            "ohmypicontributors2026adapter",
+            "ohmypicontributors2026embedded",
+            "ohmypicontributors2026every",
+            "ohmypicontributors2026dyn",
+            "ohmypicontributors2026every-2",
+            "ohmypicontributors2026read",
+            "ohmypicontributors2026bash",
+            "ohmypicontributors2026agents",
+            "ohmypicontributors2026richtext",
+            "ohmypicontributors2026typed",
+            "ohmypicontributors2026semantic",
+            "ohmypicontributors2026debug",
+            "ohmypicontributors2026blocks",
+            "ohmypicontributors2026language",
+            "ohmypicontributors2026embedded-2"
+          ]
+        },
+        {
+          "id": "12.8.2",
+          "text": "The branch includes configuration migration, but the opened sources establish neither a complete upgrade guarantee nor a dated release commitment.",
+          "spoken": "The branch includes configuration migration, but the opened sources establish neither a complete upgrade guarantee nor a dated release commitment.",
+          "claims": [
+            "C11-T10",
+            "C11-T11"
+          ]
+        },
+        {
+          "id": "12.8.3",
+          "text": "Treat this as pre-release work to inspect, not a promised upgrade; the central idea is that shared complexity needs one owner.",
+          "spoken": "Treat this as pre-release work to inspect, not a promised upgrade; the central idea is that shared complexity needs one owner.",
+          "claims": [
+            "C11-T1",
+            "C11-T2",
+            "C11-T10"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "12.8.a",
+          "kind": "label",
+          "text": "As of 2026-10-08: 36 ADRs — 25 “Implemented”, 11 “Partial” in author-reported status sections; not independently run or a stable release",
+          "claims": [],
+          "grade": "C",
+          "sources": [
+            "ohmypicontributors2026architecture",
+            "ohmypicontributors2026four",
+            "ohmypicontributors2026push",
+            "ohmypicontributors2026one",
+            "ohmypicontributors2026rewind",
+            "ohmypicontributors2026controller",
+            "ohmypicontributors2026policy",
+            "ohmypicontributors2026subagents",
+            "ohmypicontributors2026tool",
+            "ohmypicontributors2026output",
+            "ohmypicontributors2026one-2",
+            "ohmypicontributors2026cancellation",
+            "ohmypicontributors2026settings",
+            "ohmypicontributors2026children",
+            "ohmypicontributors2026binds",
+            "ohmypicontributors2026directors",
+            "ohmypicontributors2026directors-2",
+            "ohmypicontributors2026model",
+            "ohmypicontributors2026provider",
+            "ohmypicontributors2026forced",
+            "ohmypicontributors2026validate",
+            "ohmypicontributors2026inference",
+            "ohmypicontributors2026adapter",
+            "ohmypicontributors2026embedded",
+            "ohmypicontributors2026every",
+            "ohmypicontributors2026dyn",
+            "ohmypicontributors2026every-2",
+            "ohmypicontributors2026read",
+            "ohmypicontributors2026bash",
+            "ohmypicontributors2026agents",
+            "ohmypicontributors2026richtext",
+            "ohmypicontributors2026typed",
+            "ohmypicontributors2026semantic",
+            "ohmypicontributors2026debug",
+            "ohmypicontributors2026blocks",
+            "ohmypicontributors2026language",
+            "ohmypicontributors2026embedded-2"
+          ]
+        },
+        {
+          "id": "12.8.b",
+          "kind": "label",
+          "text": "Built (author report): session fold, convars, Directors. Partial: minimized stub, grammar budgets, full web equivalence. Planned: tiny local chore model; supporting layer partial.",
+          "claims": [],
+          "grade": "C",
+          "sources": [
+            "ohmypicontributors2026one",
+            "ohmypicontributors2026policy",
+            "ohmypicontributors2026settings",
+            "ohmypicontributors2026directors",
+            "ohmypicontributors2026inference",
+            "ohmypicontributors2026embedded",
+            "ohmypicontributors2026typed"
+          ]
+        },
+        {
+          "id": "12.8.c",
+          "kind": "label",
+          "text": "Legacy configuration conversion exists; complete old-omp session continuity and unchanged JS/TS extension execution are not established.",
+          "claims": [
+            "C11-T10"
+          ],
+          "grade": "C",
+          "sources": [
+            "ohmypicontributors2026embedded-2",
+            "ohmypicontributors2026configcommand",
+            "ohmypicontributors2026configuration",
+            "ohmypicontributors2026claude"
+          ]
+        },
+        {
+          "id": "12.8.d",
+          "kind": "label",
+          "text": "Public pre-release source / releases · supported migration path and dated release commitment not established in opened sources",
+          "claims": [
+            "C11-T1",
+            "C11-T10",
+            "C11-T11"
+          ],
+          "grade": "C"
+        },
+        {
+          "id": "12.8.z",
+          "kind": "badge",
+          "text": "PRE-RELEASE / DESIGN · as of 2026-10-08",
+          "claims": [
+            "C11-T1"
+          ],
+          "grade": "C"
+        }
+      ],
+      "holdAfter": 1.0
+    }
+  ]
+}

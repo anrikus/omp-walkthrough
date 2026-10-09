@@ -1,0 +1,539 @@
+{
+  "id": "ch03",
+  "slug": "harness-evidence",
+  "title": "Same model, better harness: the evidence",
+  "act": "Act I — The harness matters",
+  "targetSeconds": 225,
+  "takeaway": "Harness effects are measurable and sometimes automatable, but no design wins universally.",
+  "scenes": [
+    {
+      "id": "3.1",
+      "title": "Controlled interface changes",
+      "visual": "3.1.1: diagram freezes the model core. 3.1.2: pairedBars swaps shell for ACI. 3.1.3–3.1.4: smallMultiples shows four separate Table 3 ablations, each returning to the same baseline; never stack gains or imply statistical independence. 3.1.5: highlight fixed model and task conditions. gradeBadge A and conditions remain visible; every evidence item has a citation chip.",
+      "sentences": [
+        {
+          "id": "3.1.1",
+          "text": "Changing the harness can change a model’s results; controlled comparisons show why.",
+          "claims": [
+            "C03-T1"
+          ]
+        },
+        {
+          "id": "3.1.2",
+          "text": "In the peer-reviewed SWE-agent study, GPT-4 Turbo rose from 11% to 18% on SWE-bench Lite, with demonstrations supplied to both systems.",
+          "claims": [
+            "C03-N1"
+          ],
+          "spoken": "In the peer-reviewed SWE-agent study, GPT four Turbo rose from eleven percent to eighteen percent on SWE-bench Lite, with demonstrations supplied to both systems."
+        },
+        {
+          "id": "3.1.3",
+          "text": "Separate ablations tested linting, shorter observation history, windowed viewing, and summarized search.",
+          "claims": [
+            "C03-N2",
+            "C03-N3",
+            "C03-N4",
+            "C03-N5"
+          ]
+        },
+        {
+          "id": "3.1.4",
+          "text": "These are configuration-specific comparisons, not independent gains that can be added together.",
+          "claims": [
+            "C03-T2"
+          ]
+        },
+        {
+          "id": "3.1.5",
+          "text": "Holding the model and tasks fixed makes the interface easier to study.",
+          "claims": [
+            "C03-N1"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "3.1.a",
+          "kind": "stat",
+          "text": "GPT-4 Turbo / gpt-4-1106-preview · Shell + demo 11.00% → SWE-agent ACI + demo 18.00% · SWE-bench Lite, 300 issues, $4/issue cap; 2024 paper; single ablation evaluation.",
+          "claims": [
+            "C03-N1"
+          ],
+          "grade": "A",
+          "at": "3.1.2"
+        },
+        {
+          "id": "3.1.b",
+          "kind": "caption",
+          "text": "Separate SWE-agent Table 3 ablations; same GPT-4 Turbo / Lite / $4 setup, 2024: linting 15.0→18.0%; full history→last five observations 15.0→18.0%; full file→100-line window 12.7→18.0%; iterative→summarized search 12.0→18.0%. NOT ADDITIVE.",
+          "claims": [
+            "C03-N2",
+            "C03-N3",
+            "C03-N4",
+            "C03-N5"
+          ],
+          "grade": "A",
+          "at": "3.1.3"
+        }
+      ]
+    },
+    {
+      "id": "3.2",
+      "title": "Action space, not serialization",
+      "visual": "3.2.1: pairedBars compares composed actions. 3.2.2: diagram opens loops and variables inside the code action. 3.2.3: separate pairedBars flips the winner for atomic calls.",
+      "sentences": [
+        {
+          "id": "3.2.1",
+          "text": "Peer-reviewed CodeAct found executable Python beating JSON actions, 74.4% against 52.4%, on composed tool tasks.",
+          "claims": [
+            "C03-N6"
+          ],
+          "spoken": "Peer-reviewed CodeAct found executable Python beating JSON actions, seventy-four point four percent against fifty-two point four percent, on composed tool tasks."
+        },
+        {
+          "id": "3.2.2",
+          "text": "But code could compose more work inside each turn.",
+          "claims": [
+            "C03-T3"
+          ]
+        },
+        {
+          "id": "3.2.3",
+          "text": "On atomic calls, JSON won instead: the action space mattered, not just serialization.",
+          "claims": [
+            "C03-N8"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "3.2.a",
+          "kind": "stat",
+          "text": "CodeAct Table 3 · GPT-4 Turbo / gpt-4-1106-preview · M³ToolEval, 82 tasks, zero-shot, max 10 turns, 2024: Python 74.4%, JSON 52.4%; Python can compose tools.",
+          "claims": [
+            "C03-N6"
+          ],
+          "grade": "A",
+          "at": "3.2.1"
+        },
+        {
+          "id": "3.2.b",
+          "kind": "stat",
+          "text": "CodeAct Table 2 · GPT-4 Turbo / gpt-4-1106-preview, 2024 · API-Bank level 1 atomic calls: JSON 82.7%, code 76.7%; no composition advantage.",
+          "claims": [
+            "C03-N8"
+          ],
+          "grade": "A",
+          "at": "3.2.3"
+        }
+      ]
+    },
+    {
+      "id": "3.3",
+      "title": "Complexity and cost",
+      "visual": "3.3.1: diagram shows Agentless localization, repair, validation. 3.3.2–3.3.3: scatter shows only HAL Table A23's four points, best-run accuracy versus corresponding total evaluation cost; both axes start at zero. 3.3.4: separate Terminal-Bench caption card, never merged into HAL axes. 3.3.5: highlight the second HAL pair. Keep gradeBadge A, benchmark size, model labels, best-run convention and citation chips visible.",
+      "sentences": [
+        {
+          "id": "3.3.1",
+          "text": "Peer-reviewed Agentless demonstrated a competitive prescribed workflow, rather than unrestricted agent control.",
+          "claims": [
+            "C03-T4"
+          ]
+        },
+        {
+          "id": "3.3.2",
+          "text": "In peer-reviewed HAL, GPT-4.1 rose from 2% to 44% after a scaffold swap, at substantially higher cost.",
+          "claims": [
+            "C03-N12"
+          ],
+          "spoken": "In peer-reviewed HAL, GPT four point one rose from two percent to forty-four percent after a scaffold swap, at substantially higher cost."
+        },
+        {
+          "id": "3.3.3",
+          "text": "These are best-run whole-system results, not average gains from a single tool.",
+          "claims": [
+            "C03-N12",
+            "C03-N13"
+          ]
+        },
+        {
+          "id": "3.3.4",
+          "text": "Terminal-Bench likewise found minimal scaffolds competitive, while Codex CLI remained stronger for the GPT models tested.",
+          "claims": [
+            "C03-T4"
+          ]
+        },
+        {
+          "id": "3.3.5",
+          "text": "HAL’s second comparison also traded higher cost for higher success.",
+          "claims": [
+            "C03-N13"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "3.3.a",
+          "kind": "caption",
+          "text": "Agentless · prescribed localization → repair → validation; competitive evidence, not a controlled cross-product ranking. FSE 2025.",
+          "claims": [
+            "C03-T4"
+          ],
+          "grade": "A",
+          "at": "3.3.1"
+        },
+        {
+          "id": "3.3.b",
+          "kind": "stat",
+          "text": "HAL Table A23 · SWE-bench Verified Mini, 50 tasks · HAL Generalist→SWE-Agent. GPT-4.1 (Apr 2025): 2.0→44.0%, $51.80→$393.65. GPT-5 Medium (Aug 2025): 12.0→46.0%, $57.58→$162.93. Best-run accuracy + corresponding whole-evaluation cost, not means; ICLR 2026; row CIs/repeats unreported.",
+          "claims": [
+            "C03-N12",
+            "C03-N13"
+          ],
+          "grade": "A",
+          "at": "3.3.2"
+        },
+        {
+          "id": "3.3.c",
+          "kind": "caption",
+          "text": "Terminal-Bench 2.0 · ICLR 2026 historical study: minimal scaffolds win some comparisons; Codex CLI stronger for tested GPT models. Not October 2026 rankings.",
+          "claims": [
+            "C03-T4"
+          ],
+          "grade": "A",
+          "at": "3.3.4"
+        }
+      ]
+    },
+    {
+      "id": "3.4",
+      "title": "Signal, not size",
+      "visual": "3.4.1: diagram marks evidence positions, not an invented universal decay curve. 3.4.2: statCard for memory; 3.4.3: separate AppWorld statCard. Peer-reviewed results only here; Context Rot moves to 3.6. 3.4.4: hold the evidence panel and emphasize its qualification; do not introduce a new chart.",
+      "sentences": [
+        {
+          "id": "3.4.1",
+          "text": "Context is another harness decision: the peer-reviewed Lost in the Middle study found retrieval sensitive to information position.",
+          "claims": [
+            "C03-N24"
+          ]
+        },
+        {
+          "id": "3.4.2",
+          "text": "Dynamic Cheatsheet took GPT-4o from 19% to 99% with curated memory, but on a repetitive arithmetic task, Game of 24.",
+          "claims": [
+            "C03-N26"
+          ],
+          "spoken": "Dynamic Cheatsheet took GPT four o from nineteen percent to ninety-nine percent with curated memory, but on a repetitive arithmetic task, Game of twenty-four."
+        },
+        {
+          "id": "3.4.3",
+          "text": "ACE improved AppWorld by adapting context offline, using labeled training examples.",
+          "claims": [
+            "C03-N28"
+          ]
+        },
+        {
+          "id": "3.4.4",
+          "text": "The lesson is to select useful evidence, rather than always shrink or always retain context.",
+          "claims": [
+            "C03-T2",
+            "C03-N28"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "3.4.a",
+          "kind": "caption",
+          "text": "Lost in the Middle · TACL 2024 · gpt-3.5-turbo-16k-0613; synthetic retrieval position effects, not a universal current-model curve.",
+          "claims": [
+            "C03-N24"
+          ],
+          "grade": "A",
+          "at": "3.4.1"
+        },
+        {
+          "id": "3.4.b",
+          "kind": "stat",
+          "text": "Dynamic Cheatsheet Table 1 · GPT-4o · DC-empty 19% → DC-RS 99% · Game of 24, 100 sequential tasks, same instructions, retrieval + curation; API snapshot unspecified; EACL 2026. Narrow arithmetic task.",
+          "claims": [
+            "C03-N26"
+          ],
+          "grade": "A",
+          "at": "3.4.2"
+        },
+        {
+          "id": "3.4.c",
+          "kind": "stat",
+          "text": "ACE Table 1 · DeepSeek-V3.1-671B, non-thinking in all roles · ReAct 42.4 → offline ACE + labels 59.4 · AppWorld average of four TGC/SGC normal/challenge metrics; v3 2026-03-29; ICLR 2026.",
+          "claims": [
+            "C03-N28"
+          ],
+          "grade": "A",
+          "at": "3.4.3"
+        }
+      ]
+    },
+    {
+      "id": "3.5",
+      "title": "Searching for harnesses",
+      "visual": "3.5.1: timeline places ADAS/AFlow/DGM in code-search lane. 3.5.2: statCard isolates held-out transfer. 3.5.3: diagram separates prompt search and weight updates. 3.5.4: gradeBadge B marks Meta-Harness; overlay same-task caveat. 3.5.5: hold the evidence panel and emphasize its qualification; do not introduce a new chart.",
+      "sentences": [
+        {
+          "id": "3.5.1",
+          "text": "Peer-reviewed ADAS, AFlow, and Darwin Gödel Machine automate harness design while keeping execution models frozen.",
+          "claims": [
+            "C03-T6"
+          ]
+        },
+        {
+          "id": "3.5.2",
+          "text": "Darwin Gödel Machine transferred an evolved agent to unseen Polyglot tasks, improving from 14.2% to 28.9%.",
+          "claims": [
+            "C03-N32"
+          ],
+          "spoken": "Darwin Gödel Machine transferred an evolved agent to unseen Polyglot tasks, improving from fourteen point two percent to twenty-eight point nine percent."
+        },
+        {
+          "id": "3.5.3",
+          "text": "Peer-reviewed GEPA made prompt optimization competitive with reinforcement learning, though reinforcement learning won its AIME evaluation.",
+          "claims": [
+            "C03-T7"
+          ]
+        },
+        {
+          "id": "3.5.4",
+          "text": "The Meta-Harness preprint also searched coding harnesses, but reused the evaluation tasks during search.",
+          "claims": [
+            "C03-N36"
+          ]
+        },
+        {
+          "id": "3.5.5",
+          "text": "Those searches still consume compute, and may use stronger helper models.",
+          "claims": [
+            "C03-T6"
+          ],
+          "sources": [
+            "hu2025automated"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "3.5.a",
+          "kind": "caption",
+          "text": "ADAS / AFlow / DGM: frozen execution models; offline search and extra inference remain costs.",
+          "claims": [
+            "C03-T6"
+          ],
+          "grade": "A",
+          "at": "3.5.1"
+        },
+        {
+          "id": "3.5.b",
+          "kind": "stat",
+          "text": "DGM Figure 4 / §4.4 · o3-mini executor; Claude 3.5 Sonnet (New) self-modifier · initial 14.2% → SWE-bench-evolved agent 28.9% · entirely held-out Polyglot; 80-iteration search; v3 2026-03-12, ICLR 2026.",
+          "claims": [
+            "C03-N32"
+          ],
+          "grade": "A",
+          "at": "3.5.2"
+        },
+        {
+          "id": "3.5.c",
+          "kind": "caption",
+          "text": "GEPA Table 1 · Qwen3-8B · Prompt optimization ≠ weight training. GRPO outperformed GEPA on AIME-2025 under unequal study rollout budgets; ICLR 2026.",
+          "claims": [
+            "C03-T7"
+          ],
+          "grade": "A",
+          "at": "3.5.3"
+        },
+        {
+          "id": "3.5.d",
+          "kind": "caption",
+          "text": "Meta-Harness · Haiku 4.5 · Terminal-Bench 2; same 89 tasks for search and evaluation; leaderboard comparators, not held-out coding generalization; preprint v1 2026-03-30.",
+          "claims": [
+            "C03-N36"
+          ],
+          "grade": "B",
+          "at": "3.5.4"
+        }
+      ]
+    },
+    {
+      "id": "3.6",
+      "title": "Practitioner reports",
+      "visual": "3.6.1: quoteCard marks Context Rot C. 3.6.2–3.6.3: two isolated pairedBars, each gradeBadge C and complete conditions; no common benchmark axis. 3.6.4: hold the evidence panel and emphasize its qualification; do not introduce a new chart.",
+      "sentences": [
+        {
+          "id": "3.6.1",
+          "text": "Now, first-party reports: Chroma found focused excerpts better than full history, with different retrieval burdens.",
+          "claims": [
+            "C03-N25"
+          ]
+        },
+        {
+          "id": "3.6.2",
+          "text": "LangChain reports 52.8% to 66.5% on Terminal-Bench, without a held-out generalization test.",
+          "claims": [
+            "C03-T8"
+          ],
+          "spoken": "LangChain reports fifty-two point eight percent to sixty-six point five percent on Terminal-Bench, without a held-out generalization test."
+        },
+        {
+          "id": "3.6.3",
+          "text": "Can Bölük reports Grok Code Fast 1 rising from 6.7% to 68.3% with hashline, on synthetic React mutations checked against original files.",
+          "claims": [
+            "C03-N19"
+          ],
+          "spoken": "Can Bölük reports Grok Code Fast one rising from six point seven percent to sixty-eight point three percent with hashline, on synthetic React mutations checked against original files."
+        },
+        {
+          "id": "3.6.4",
+          "text": "These are engineering leads, but their gains need testing on ordinary repository work.",
+          "claims": [
+            "C03-T8",
+            "C03-T9"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "3.6.a",
+          "kind": "caption",
+          "text": "Chroma Context Rot · first-party, July 2025 · Sonnet 4 non-thinking; 306 cleaned LongMemEval_s prompts; focused excerpts vs full history (~113k tokens); retrieval burden differs.",
+          "claims": [
+            "C03-N25"
+          ],
+          "grade": "C",
+          "at": "3.6.1"
+        },
+        {
+          "id": "3.6.b",
+          "kind": "stat",
+          "text": "LangChain · gpt-5.2-codex · default→tuned deepagents-cli 52.8→66.5% · TB2.0, 89 tasks; prompts/tools/middleware/reasoning allocation; repeats/CI unreported, no held-out test; 2026-02-17.",
+          "claims": [
+            "C03-N37"
+          ],
+          "grade": "C",
+          "at": "3.6.2"
+        },
+        {
+          "id": "3.6.c",
+          "kind": "stat",
+          "text": "Creator report · Grok Code Fast 1 · patch 6.7% → hashline 68.3% · 180 synthetic React tasks × 3 runs; fresh sessions; original-file matching may reject alternate valid fixes; no independently replicated CI; 2026-02-12 article, accessed 2026-10-08.",
+          "claims": [
+            "C03-N19"
+          ],
+          "grade": "C",
+          "at": "3.6.3"
+        }
+      ]
+    },
+    {
+      "id": "3.7",
+      "title": "Reversals matter",
+      "visual": "3.7.1: pairedBars reverses direction across models, with B badge. 3.7.2: diagram replaces more-is-better with a feedback gate. 3.7.3: hold the evidence panel and emphasize its qualification; do not introduce a new chart.",
+      "sentences": [
+        {
+          "id": "3.7.1",
+          "text": "Diff-XYZ’s revised preprint found search-and-replace helping GPT-4.1 but hurting its nano counterpart in diff generation.",
+          "claims": [
+            "C03-N22",
+            "C03-N23"
+          ],
+          "spoken": "Diff X Y Z’s revised preprint found search-and-replace helping GPT four point one but hurting its nano counterpart in diff generation."
+        },
+        {
+          "id": "3.7.2",
+          "text": "More instructions, memory, and reasoning can also hurt, depending on the task and feedback.",
+          "claims": [
+            "C03-T10"
+          ]
+        },
+        {
+          "id": "3.7.3",
+          "text": "A larger model’s preferred interface may be a poor default for a smaller one.",
+          "claims": [
+            "C03-N22",
+            "C03-N23"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "3.7.a",
+          "kind": "stat",
+          "text": "Diff-XYZ v2, 2025-11-17 · Table 5 · 1,000 edits; diff generation, definition + example per format; unified diff→search/replace: GPT-4.1 exact match 0.81→0.95; GPT-4.1-nano 0.50→0.07. Revised quantitative results graded B; workshop, not NeurIPS main-track.",
+          "claims": [
+            "C03-N22",
+            "C03-N23"
+          ],
+          "grade": "B",
+          "at": "3.7.1"
+        },
+        {
+          "id": "3.7.b",
+          "kind": "caption",
+          "text": "No universal best edit format or context policy; reversals depend on models, tasks, and feedback.",
+          "claims": [
+            "C03-T10"
+          ],
+          "at": "3.7.2"
+        }
+      ]
+    },
+    {
+      "id": "3.8",
+      "title": "Training meets interface",
+      "visual": "3.8.1: diagram connects training to patch interface. 3.8.2: expand to multiple harnesses; 3.8.3: takeaway quoteCard.",
+      "sentences": [
+        {
+          "id": "3.8.1",
+          "text": "OpenAI documents training for its patch format; compatibility is part of the story.",
+          "claims": [
+            "C03-T11"
+          ]
+        },
+        {
+          "id": "3.8.2",
+          "text": "DeepSeek’s technical report goes further, describing training across several harnesses.",
+          "claims": [
+            "C03-T11"
+          ]
+        },
+        {
+          "id": "3.8.3",
+          "text": "The evidence supports measuring harness design, not crowning a universal winner.",
+          "claims": [
+            "C03-T10"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "3.8.a",
+          "kind": "caption",
+          "text": "OpenAI: format-specific patch training documented; not proof alternate tools cannot work. As of 2026-10-08.",
+          "claims": [
+            "C03-T11"
+          ],
+          "grade": "C",
+          "at": "3.8.1"
+        },
+        {
+          "id": "3.8.b",
+          "kind": "caption",
+          "text": "DeepSeek V4.1 report: training across Claude Code, OpenCode, Pi and dsh; September 2026. As of 2026-10-08.",
+          "claims": [
+            "C03-T11"
+          ],
+          "grade": "B",
+          "at": "3.8.2"
+        }
+      ]
+    }
+  ]
+}

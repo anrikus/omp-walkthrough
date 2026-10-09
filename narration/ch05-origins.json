@@ -1,0 +1,355 @@
+{
+  "id": "ch05",
+  "slug": "origins",
+  "title": "Why Pi, omp and Hermes exist",
+  "act": "Act II — Where the field is",
+  "targetSeconds": 180,
+  "takeaway": "Four projects emphasize different values; they are not rungs on one ladder.",
+  "scenes": [
+    {
+      "id": "5.1",
+      "title": "Different centers of gravity",
+      "visual": "5.1.1: diagram arranges four equal cards around an empty center, never stairs. 5.1.2: add philosophy labels marked editorial synthesis. 5.1.3: gradeBadge C and shared license strip retain the software/service distinction.",
+      "sentences": [
+        {
+          "id": "5.1.1",
+          "text": "Pi, omp, Hermes Agent, and OpenClaw emphasize different design priorities, rather than forming a sequence of upgrades.",
+          "claims": [
+            "C05-T10"
+          ]
+        },
+        {
+          "id": "5.1.2",
+          "text": "Pi centers on control; omp integrates developer tools; Hermes emphasizes persistent learning; OpenClaw connects a personal assistant to devices and chats.",
+          "claims": [
+            "C05-T10"
+          ]
+        },
+        {
+          "id": "5.1.3",
+          "text": "All four publish MIT-licensed core repositories, while connected models, hosted services, and subscriptions keep their own terms.",
+          "claims": [
+            "C05-T10"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "5.1.a",
+          "kind": "label",
+          "text": "Editorial synthesis, not scores: Pi — control; omp — integrated developer tools; Hermes Agent — persistent learning; OpenClaw — assistant connectivity.",
+          "grade": "C",
+          "claims": [
+            "C05-T10"
+          ],
+          "at": "5.1.1"
+        },
+        {
+          "id": "5.1.b",
+          "kind": "label",
+          "text": "As of 2026-10-08 · MIT core repositories; connected services and models have separate terms.",
+          "grade": "C",
+          "claims": [
+            "C05-T10"
+          ],
+          "at": "5.1.3"
+        }
+      ]
+    },
+    {
+      "id": "5.2",
+      "title": "Pi: control, then evolution",
+      "visual": "5.2.1: quoteCard introduces creator and date. 5.2.2–5.2.3: diagram shows original four-tool recipe beside statCard with historical conditions. 5.2.4: timeline flips to dated MCP release, keeping both dates visible. 5.2.5: diagram reveals default codemode discovery, with server tools outside direct model declarations; persistent label carries the current date and evidence chip.",
+      "sentences": [
+        {
+          "id": "5.2.1",
+          "text": "Mario Zechner’s November 2025 account describes building Pi for predictable behavior and direct visibility into what the model sees.",
+          "claims": [
+            "C05-T1"
+          ],
+          "spoken": "Mario Zechner’s November twenty twenty-five account describes building Pi for predictable behavior and direct visibility into what the model sees."
+        },
+        {
+          "id": "5.2.2",
+          "text": "His original recipe used four default tools: read, write, edit, and bash.",
+          "claims": [
+            "C05-T2"
+          ]
+        },
+        {
+          "id": "5.2.3",
+          "text": "He reported the original system prompt and tool definitions together at below one thousand tokens.",
+          "claims": [
+            "C05-T2"
+          ]
+        },
+        {
+          "id": "5.2.4",
+          "text": "On September twenty-ninth, twenty twenty-six, Pi added MCP, tool search, and JavaScript codemode as built-in extensions.",
+          "claims": [
+            "C05-T3"
+          ]
+        },
+        {
+          "id": "5.2.5",
+          "text": "Its current MCP design controls which tools enter context, rather than exposing every server tool directly to the model.",
+          "claims": [
+            "C05-T3"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "5.2.a",
+          "kind": "quote",
+          "text": "“if I don't need it, it won't be built” — Mario Zechner, 2025-11-30 creator account.",
+          "grade": "C",
+          "claims": [
+            "C05-T1"
+          ],
+          "at": "5.2.1"
+        },
+        {
+          "id": "5.2.b",
+          "kind": "stat",
+          "text": "November 2025 original Pi recipe, creator-reported: 4 default tools (read, write, edit, bash); system prompt + tool definitions < 1,000 tokens. Not today’s configurable installation.",
+          "grade": "C",
+          "claims": [
+            "C05-T2"
+          ],
+          "at": "5.2.2"
+        },
+        {
+          "id": "5.2.c",
+          "kind": "label",
+          "text": "2026-09-29 · Pi v0.99.0 adds MCP, tool search and JavaScript codemode as built-in extensions. As of 2026-10-08, default codemode exposure discovers server tools programmatically instead of declaring each directly to the model.",
+          "grade": "C",
+          "claims": [
+            "C05-T3"
+          ],
+          "at": "5.2.4"
+        }
+      ]
+    },
+    {
+      "id": "5.3",
+      "title": "omp: the interface matters",
+      "visual": "5.3.1–5.3.2: timeline draws one lineage arrow labelled explicit fork and repository creation, not first release. 5.3.3: diagram connects editor, language server, debugger, memory and worker nodes. 5.3.4–5.3.5: quoteCard states attributed interface thesis beside experiment caveat; no benchmark trophy.",
+      "sentences": [
+        {
+          "id": "5.3.1",
+          "text": "omp explicitly forks Pi, with Can Bölük leading the project and Stencil Labs credited as its builder.",
+          "claims": [
+            "C05-T4"
+          ]
+        },
+        {
+          "id": "5.3.2",
+          "text": "GitHub records the repository’s creation on December thirty-first, twenty twenty-five, a source-history milestone rather than a package-release date.",
+          "claims": ["C05-N6"],
+          "sources": [
+            "github2026repository"
+          ]
+        },
+        {
+          "id": "5.3.3",
+          "text": "The documented integration brings together language servers, a debugger, hash-anchored edits, memory, and first-class subagents.",
+          "claims": [
+            "C05-T4"
+          ]
+        },
+        {
+          "id": "5.3.4",
+          "text": "Bölük’s argument is that a model can understand a task yet struggle with the interface used to express its changes.",
+          "claims": [
+            "C05-T5"
+          ]
+        },
+        {
+          "id": "5.3.5",
+          "text": "His creator-run editing experiment tested that idea by changing the edit interface while leaving the model weights alone.",
+          "claims": [
+            "C05-T5"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "5.3.a",
+          "kind": "label",
+          "text": "Pi → omp: explicit fork · repository created 2025-12-31; not a first-release claim. Led by Can Bölük; built by Stencil Labs.",
+          "grade": "C",
+          "claims": [
+            "C05-T4"
+          ],
+          "at": "5.3.1",
+          "sources": [
+            "github2026repository"
+          ]
+        },
+        {
+          "id": "5.3.b",
+          "kind": "label",
+          "text": "As of 2026-10-08 · Documented integrated surface: LSP · DAP debugger · hash-anchored edits · memory · subagents. Integration choices, not exclusive capabilities.",
+          "grade": "C",
+          "claims": [
+            "C05-T4"
+          ],
+          "at": "5.3.3"
+        },
+        {
+          "id": "5.3.c",
+          "kind": "quote",
+          "text": "“Often the model isn't flaky at understanding the task. It's flaky at expressing itself.” — Can Bölük, 2026-02-12. Creator thesis, not universal benchmark proof.",
+          "grade": "C",
+          "claims": [
+            "C05-T5"
+          ],
+          "at": "5.3.4"
+        }
+      ]
+    },
+    {
+      "id": "5.4",
+      "title": "Hermes Agent: persistent knowledge",
+      "visual": "5.4.1: timeline introduces official release. 5.4.2: quoteCard joins memory/skill diagram; distinguish persisted files from model weights. 5.4.3: bounded store and session boundary appear. 5.4.4: split application and model-family cards with no lineage arrow between weights and learning loop.",
+      "sentences": [
+        {
+          "id": "5.4.1",
+          "text": "Nous Research released Hermes Agent on February twenty-fifth, twenty twenty-six, aiming to carry useful knowledge across interactions.",
+          "claims": [
+            "C05-T7"
+          ]
+        },
+        {
+          "id": "5.4.2",
+          "text": "It retains facts and reusable skills across terminal and messaging sessions, updating external state rather than training the model.",
+          "claims": [
+            "C05-T7"
+          ]
+        },
+        {
+          "id": "5.4.3",
+          "text": "Memory depends on actual tool writes, and its bounded prompt snapshot refreshes only when a new session starts.",
+          "claims": [
+            "C05-T7"
+          ],
+          "sources": [
+            "nousresearch2026persistent"
+          ]
+        },
+        {
+          "id": "5.4.4",
+          "text": "Hermes Agent is application software with multiple model providers, distinct from Nous Research’s separately trained Hermes model family.",
+          "claims": [
+            "C05-T8"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "5.4.a",
+          "kind": "label",
+          "text": "Hermes Agent · Nous Research official release: 2026-02-25.",
+          "grade": "C",
+          "claims": [
+            "C05-T7"
+          ],
+          "at": "5.4.1"
+        },
+        {
+          "id": "5.4.b",
+          "kind": "quote",
+          "text": "“The agent that grows with you” — Nous Research, repository tagline, accessed 2026-10-08. Product aim, not measured guaranteed improvement.",
+          "grade": "C",
+          "claims": [
+            "C05-T7"
+          ],
+          "at": "5.4.2"
+        },
+        {
+          "id": "5.4.c",
+          "kind": "label",
+          "text": "As of 2026-10-08 · Memory/skills persist external state; bounded stores, actual tool writes, prompt snapshot at new session. Agent software ≠ Hermes model weights.",
+          "grade": "C",
+          "claims": [
+            "C05-T7",
+            "C05-T8"
+          ],
+          "at": "5.4.3",
+          "sources": [
+            "nousresearch2026persistent"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5.5",
+      "title": "OpenClaw: connectivity and ownership",
+      "visual": "5.5.1: diagram connects personal devices and chat channels. 5.5.2: lineage map displays historical Pi integration. 5.5.3: dated current frame changes runtime ownership while retaining a Pi-TUI dependency line. 5.5.4: return to four equal philosophy cards, no ranking.",
+      "sentences": [
+        {
+          "id": "5.5.1",
+          "text": "Peter Steinberger’s OpenClaw connects the story to assistants on personal devices and in chat channels.",
+          "claims": [
+            "C05-T9"
+          ]
+        },
+        {
+          "id": "5.5.2",
+          "text": "Its earlier assistant integrated Pi, connecting that minimal coding toolkit to a broader personal-assistant workflow.",
+          "claims": [
+            "C05-T9"
+          ]
+        },
+        {
+          "id": "5.5.3",
+          "text": "By October 2026, OpenClaw documents its own agent runtime, while Pi’s terminal UI toolkit remains a dependency.",
+          "spoken": "By October twenty twenty-six, OpenClaw documents its own agent runtime, while Pi’s terminal UI toolkit remains a dependency.",
+          "claims": [
+            "C05-T9"
+          ]
+        },
+        {
+          "id": "5.5.4",
+          "text": "Shared ancestry does not make these projects interchangeable: choose the priorities and integration boundaries that fit your work.",
+          "claims": [
+            "C05-T10"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "5.5.a",
+          "kind": "label",
+          "text": "As of 2026-10-08 · OpenClaw: personal devices, chats, user-held state and configurable providers.",
+          "grade": "C",
+          "claims": [
+            "C05-T9"
+          ],
+          "at": "5.5.1"
+        },
+        {
+          "id": "5.5.b",
+          "kind": "label",
+          "text": "Historical: Pi integration. As of 2026-10-08: OpenClaw-owned runtime; @earendil-works/pi-tui retained. Exact runtime-internalization date not established.",
+          "grade": "C",
+          "claims": [
+            "C05-T9"
+          ],
+          "at": "5.5.2"
+        },
+        {
+          "id": "5.5.c",
+          "kind": "label",
+          "text": "Four priorities, not a ladder: control · integrated tooling · persistent learning · connectivity.",
+          "grade": "C",
+          "claims": [
+            "C05-T10"
+          ],
+          "at": "5.5.4"
+        }
+      ]
+    }
+  ]
+}

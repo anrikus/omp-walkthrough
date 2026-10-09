@@ -1,0 +1,107 @@
+{
+  "id": "ch13",
+  "slug": "close",
+  "title": "Measure what matters",
+  "act": "Act V — What's next",
+  "targetSeconds": 45,
+  "takeaway": "The harness is part of the result; no design wins everywhere; measure on your own work.",
+  "scenes": [
+    {
+      "id": "13.1",
+      "title": "The claims that survive",
+      "visual": "13.1.1: diagram introduces three evidence-backed takeaways for choosing a coding agent. 13.1.2: reveal harness-as-variable card with gradeBadge A. 13.1.3: reveal model/task-dependent design card, linked to the reversal evidence. 13.1.4: reveal measure-your-work recommendation labelled evidence synthesis. 13.1.5: add #references and #atlas navigation. 13.1.6–13.1.7: keep all three takeaways visible with the independence disclaimer and dateStamp on the closing slate.",
+      "sentences": [
+        {
+          "id": "13.1.1",
+          "text": "For anyone choosing a coding agent, the evidence leaves three practical takeaways.",
+          "spoken": "For anyone choosing a coding agent, the evidence leaves three practical takeaways.",
+          "claims": [
+            "C03-T10"
+          ]
+        },
+        {
+          "id": "13.1.2",
+          "text": "First, the harness is part of the result: a peer-reviewed study shows that changing the interface can change what the same model achieves.",
+          "spoken": "First, the harness is part of the result: a peer-reviewed study shows that changing the interface can change what the same model achieves.",
+          "claims": [
+            "C03-T1"
+          ]
+        },
+        {
+          "id": "13.1.3",
+          "text": "Second, no design wins everywhere; advantages reverse across models and tasks.",
+          "spoken": "Second, no design wins everywhere; advantages reverse across models and tasks.",
+          "claims": [
+            "C03-T10"
+          ]
+        },
+        {
+          "id": "13.1.4",
+          "text": "Third, measure on your own work, including whether added coordination earns its cost.",
+          "spoken": "Third, measure on your own work, including whether added coordination earns its cost.",
+          "claims": [
+            "C07-T10"
+          ]
+        },
+        {
+          "id": "13.1.5",
+          "text": "Use the references to examine the evidence, and the Feature Atlas to explore omp.",
+          "spoken": "Use the references to examine the evidence, and the Feature Atlas to explore omp.",
+          "claims": []
+        },
+        {
+          "id": "13.1.6",
+          "text": "This independent community explainer is not affiliated with Stencil Labs.",
+          "spoken": "This independent community explainer is not affiliated with Stencil Labs.",
+          "claims": []
+        },
+        {
+          "id": "13.1.7",
+          "text": "The facts presented here are dated October eighth, twenty twenty-six.",
+          "spoken": "The facts presented here are dated October eighth, twenty twenty-six.",
+          "claims": []
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "13.1.a",
+          "kind": "label",
+          "text": "The harness is part of the result",
+          "claims": [
+            "C03-T1"
+          ],
+          "grade": "A"
+        },
+        {
+          "id": "13.1.b",
+          "kind": "label",
+          "text": "No design wins everywhere",
+          "claims": [
+            "C03-T10"
+          ]
+        },
+        {
+          "id": "13.1.c",
+          "kind": "label",
+          "text": "Measure on your own work · evidence synthesis, not a proven universal optimum",
+          "claims": [
+            "C07-T10"
+          ]
+        },
+        {
+          "id": "13.1.d",
+          "kind": "label",
+          "text": "Independent community explainer · not affiliated with Stencil Labs",
+          "claims": []
+        },
+        {
+          "id": "13.1.e",
+          "kind": "label",
+          "text": "Facts as of 2026-10-08 · References · Feature Atlas",
+          "claims": []
+        }
+      ],
+      "holdAfter": 2.0
+    }
+  ]
+}

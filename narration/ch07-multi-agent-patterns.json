@@ -1,0 +1,646 @@
+{
+  "id": "ch07",
+  "slug": "multi-agent-patterns",
+  "title": "Multi-agent systems: which pattern fits which task",
+  "act": "Act III — Multi-agent, done on evidence",
+  "targetSeconds": 210,
+  "takeaway": "Match the pattern to the task, compare a strong baseline, and verify the integrated result.",
+  "scenes": [
+    {
+      "id": "7.1",
+      "title": "Separate the mechanisms",
+      "visual": "7.1.1: diagram lays out six mechanisms with identical request cards. 7.1.2: highlight layered proposal and synthesis, with gradeBadge A. 7.1.3–7.1.5: animate separate evidence paths, discussion edges, and router/cascade gates; do not imply equal cost. 7.1.6: highlight task fit: bounded exploration, independent search, and a sequential chain that remains intact.",
+      "sentences": [
+        {
+          "id": "7.1.1",
+          "text": "Multi-agent design starts with the task, not with a desired headcount.",
+          "claims": [
+            "C07-T10"
+          ]
+        },
+        {
+          "id": "7.1.2",
+          "text": "Mixture-of-Agents names a specific layered proposal-and-synthesis method published at ICLR in 2025, not every system with subagents.",
+          "claims": [
+            "C07-T1"
+          ],
+          "spoken": "Mixture of Agents names a specific layered proposal and synthesis method published at ICLR in twenty twenty five, not every system with subagents."
+        },
+        {
+          "id": "7.1.3",
+          "text": "A single loop retains control; an isolated worker separates context; parallel map-and-reduce separates independent work.",
+          "claims": [],
+          "sources": [
+            "kim2026towards",
+            "hadfield2025built"
+          ]
+        },
+        {
+          "id": "7.1.4",
+          "text": "Debate revises answers through discussion, while layered synthesis aggregates proposals.",
+          "claims": [],
+          "sources": [
+            "wang2025mixtureofagents",
+            "du2024improving"
+          ]
+        },
+        {
+          "id": "7.1.5",
+          "text": "Routing selects a model; a cascade can escalate until its stopping criterion is met.",
+          "claims": [],
+          "sources": [
+            "ong2025routellm",
+            "chen2024frugalgpt"
+          ]
+        },
+        {
+          "id": "7.1.6",
+          "text": "Use isolated workers to contain exploration history, parallel branches for separable research, and avoid splitting a tightly dependent reasoning chain just to add participants.",
+          "claims": [
+            "C07-T10"
+          ],
+          "sources": [
+            "kim2026towards",
+            "hadfield2025built"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "7.1.a",
+          "kind": "label",
+          "text": "Six mechanisms: single loop · isolated worker · parallel map/reduce · debate · layered MoA · router/cascade",
+          "claims": [],
+          "sources": [
+            "wang2025mixtureofagents",
+            "du2024improving",
+            "kim2026towards",
+            "hadfield2025built",
+            "ong2025routellm",
+            "chen2024frugalgpt"
+          ],
+          "at": "7.1.1"
+        },
+        {
+          "id": "7.1.b",
+          "kind": "caption",
+          "text": "MoA: ICLR 2025 · proposal → synthesis · prompt-based answer generation, not necessarily autonomous tool use",
+          "claims": [
+            "C07-T1"
+          ],
+          "at": "7.1.2",
+          "grade": "A"
+        }
+      ],
+      "holdAfter": 0.8
+    },
+    {
+      "id": "7.2",
+      "title": "What extra inference buys",
+      "visual": "7.2.1–7.2.2: pairedBars shows only the MoA comparison, with full conditions and gradeBadge A. 7.2.3: diagram swaps to independent samples and voting. 7.2.4: separate discussion panel adds the strong-prompt baseline; never combine these studies into a leaderboard.",
+      "sentences": [
+        {
+          "id": "7.2.1",
+          "text": "The original MoA study reported 65.1 percent against GPT-4 Omni’s 57.5 percent on AlpacaEval 2.0’s length-controlled win rate.",
+          "claims": [
+            "C07-T2"
+          ],
+          "spoken": "The original MoA study reported sixty five point one percent against GPT four Omni’s fifty seven point five percent on AlpacaEval two point zero’s length controlled win rate."
+        },
+        {
+          "id": "7.2.2",
+          "text": "That historical, judge-based instruction-following result is not a repository-repair success rate.",
+          "claims": [
+            "C07-T2"
+          ]
+        },
+        {
+          "id": "7.2.3",
+          "text": "Peer-reviewed sampling-and-voting work supports trying independent candidates before adding elaborate communication.",
+          "claims": [
+            "C07-T4"
+          ]
+        },
+        {
+          "id": "7.2.4",
+          "text": "Peer-reviewed debate results show gains, but another study found strong single-model prompting could nearly match the best discussions.",
+          "claims": [
+            "C07-T5"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "7.2.a",
+          "kind": "stat",
+          "text": "MoA 65.1% ± 0.6 SD vs GPT-4 Omni (05/13) 57.5% · AlpacaEval 2.0 LC win rate · 805 instructions · 3 runs · ICLR 2025 · six proposers: Qwen1.5-110B/72B-Chat, WizardLM-8x22B, Llama-3-70B-Instruct, Mixtral-8x22B, DBRX; three layers; Qwen1.5-110B final aggregator · GPT-4-based judge/reference · not coding accuracy or a same-cost repository comparison",
+          "claims": [
+            "C07-N1"
+          ],
+          "at": "7.2.1",
+          "grade": "A"
+        },
+        {
+          "id": "7.2.b",
+          "kind": "caption",
+          "text": "Sampling/voting ≠ autonomous collaboration · Debate must beat strong prompting",
+          "claims": [
+            "C07-T4",
+            "C07-T5"
+          ],
+          "at": "7.2.3",
+          "grade": "A"
+        }
+      ],
+      "holdAfter": 0.8
+    },
+    {
+      "id": "7.3",
+      "title": "Diversity is not enough",
+      "visual": "7.3.1: diagram repeats the strongest proposer while retaining a distinct aggregator; gradeBadge A. 7.3.2: role-by-domain matrix with gradeBadge B replaces brand-colored nodes. 7.3.3: keep competence caption visible.",
+      "sentences": [
+        {
+          "id": "7.3.1",
+          "text": "Self-MoA found repeated sampling from its strongest proposer could beat mixed proposers, while keeping a different model as aggregator.",
+          "claims": [
+            "C07-T3"
+          ],
+          "sources": [
+            "li2026rethinking"
+          ]
+        },
+        {
+          "id": "7.3.2",
+          "text": "The X-MAS preprint instead found benefits from choosing models for particular functions and domains.",
+          "claims": [
+            "C07-T3"
+          ],
+          "sources": [
+            "ye2025xmas"
+          ]
+        },
+        {
+          "id": "7.3.3",
+          "text": "The practical lesson is to preserve competence while testing useful diversity: a collection of brands is not, by itself, an architecture.",
+          "claims": [
+            "C07-T10"
+          ],
+          "sources": [
+            "li2026rethinking",
+            "ye2025xmas"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "7.3.a",
+          "kind": "caption",
+          "text": "Self-MoA: repeated strongest proposer; distinct aggregator retained · TMLR 2026; numerical experiment from identified preprint version",
+          "claims": [
+            "C07-T3"
+          ],
+          "sources": [
+            "li2026rethinking"
+          ],
+          "at": "7.3.1",
+          "grade": "A"
+        },
+        {
+          "id": "7.3.b",
+          "kind": "caption",
+          "text": "X-MAS v1 (2025-05-22): role/domain selection · not evidence that brand diversity always helps",
+          "claims": [
+            "C07-T3"
+          ],
+          "sources": [
+            "ye2025xmas"
+          ],
+          "at": "7.3.2",
+          "grade": "B"
+        }
+      ],
+      "holdAfter": 0.8
+    },
+    {
+      "id": "7.4",
+      "title": "Scale with care",
+      "visual": "7.4.1: statCard displays Anthropic internal result. 7.4.2: denominator diagram anchors token multiplier to chat. 7.4.3: help/hurt smallMultiples shows direction only, with v3 caveat. 7.4.4: MAST failure categories. 7.4.5: timeline explicitly advances Cognition from its earlier warning to the follow-up.",
+      "sentences": [
+        {
+          "id": "7.4.1",
+          "text": "Anthropic reported a 90.2 percent improvement on its internal research evaluation: an Opus 4 lead with Sonnet 4 workers, compared with Opus 4 alone.",
+          "claims": [
+            "C07-T6"
+          ],
+          "spoken": "Anthropic reported a ninety point two percent improvement on its internal research evaluation: an Opus four lead with Sonnet four workers, compared with Opus four alone."
+        },
+        {
+          "id": "7.4.2",
+          "text": "Its roughly fifteenfold token observation compares multi-agent systems with chat, not with a single agent.",
+          "claims": [
+            "C07-T6"
+          ]
+        },
+        {
+          "id": "7.4.3",
+          "text": "The Science of Scaling preprint, version three, suggests benefits for parallelizable tasks and harm for sequential planning, with small coding samples.",
+          "claims": [],
+          "sources": [
+            "kim2026towards"
+          ]
+        },
+        {
+          "id": "7.4.4",
+          "text": "MAST documents failures in system design, inter-agent alignment, and verification.",
+          "claims": [],
+          "sources": [
+            "cemri2025do"
+          ]
+        },
+        {
+          "id": "7.4.5",
+          "text": "Cognition’s 2026 follow-up supports clean-context reviewers around a single writer, revising its earlier warning.",
+          "claims": [
+            "C07-T8"
+          ],
+          "spoken": "Cognition’s twenty twenty six follow-up supports clean-context reviewers around a single writer, revising its earlier warning."
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "7.4.a",
+          "kind": "stat",
+          "text": "Anthropic, 2025-06-13: 90.2% reported improvement · Opus 4 lead + Sonnet 4 workers vs single Opus 4 · proprietary internal research evaluation · metric definition, sample count, and CI undisclosed",
+          "claims": [
+            "C07-T6"
+          ],
+          "at": "7.4.1",
+          "grade": "C"
+        },
+        {
+          "id": "7.4.b",
+          "kind": "stat",
+          "text": "Anthropic operational observation: multi-agent ≈15× chat tokens; agents ≈4× chat tokens · not a universal coding multiplier",
+          "claims": [
+            "C07-T6"
+          ],
+          "at": "7.4.2",
+          "grade": "C"
+        },
+        {
+          "id": "7.4.c",
+          "kind": "caption",
+          "text": "Science of Scaling v3 · 2026-04-08 · suggestive task-dependent direction · coding and terminal subsets: 20 tasks each · internal presentation inconsistencies; not a universal law",
+          "claims": [],
+          "sources": [
+            "kim2026towards"
+          ],
+          "at": "7.4.3",
+          "grade": "B"
+        },
+        {
+          "id": "7.4.d",
+          "kind": "caption",
+          "text": "MAST: system design · inter-agent alignment · verification",
+          "claims": [],
+          "sources": [
+            "cemri2025do"
+          ],
+          "at": "7.4.4",
+          "grade": "A"
+        },
+        {
+          "id": "7.4.e",
+          "kind": "caption",
+          "text": "Cognition: June 2025 warning → April 2026 follow-up · one writer + clean-context review/advice · first-party experience, no controlled effect size",
+          "claims": [
+            "C07-T8"
+          ],
+          "at": "7.4.5",
+          "grade": "C"
+        }
+      ],
+      "holdAfter": 0.8
+    },
+    {
+      "id": "7.5",
+      "title": "Approval is not proof",
+      "visual": "7.5.1: quoteCard contrasts approval with evidence. 7.5.2: diagram gives evaluator access to files and requirements; gradeBadge A. No fabricated defect-detection score.",
+      "sentences": [
+        {
+          "id": "7.5.1",
+          "text": "Peer-reviewed work finds self-preference in evaluation and surface-form biases in code judging, so reviewer approval cannot establish correctness.",
+          "claims": [
+            "C07-T9"
+          ]
+        },
+        {
+          "id": "7.5.2",
+          "text": "Agent-as-a-Judge supports giving evaluators access to actual artifacts and requirements; agreement with humans still is not production bug-detection performance.",
+          "claims": [
+            "C07-T9"
+          ],
+          "sources": [
+            "zhuge2025agentasajudge"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "7.5.a",
+          "kind": "caption",
+          "text": "Reviewed ≠ verified · inspect implementation and requirements · run external checks · judge agreement is not code pass rate",
+          "claims": [
+            "C07-T9"
+          ],
+          "sources": [
+            "cemri2025do",
+            "zhuge2025agentasajudge",
+            "moon2026don"
+          ],
+          "at": "7.5.1",
+          "grade": "A"
+        }
+      ],
+      "holdAfter": 0.8
+    },
+    {
+      "id": "7.6",
+      "title": "A conditional coding split",
+      "visual": "7.6.1–7.6.2: diagram highlights planner, navigator, editor, executor as the actual HyperAgent roles. 7.6.3: add an evidence-seeking reviewer in a dashed synthesis boundary, never attribute it as a HyperAgent role.",
+      "sentences": [
+        {
+          "id": "7.6.1",
+          "text": "HyperAgent’s preprint supplies an early measured example of strong planning and editing with cheaper navigation and execution.",
+          "claims": [
+            "C07-T7"
+          ]
+        },
+        {
+          "id": "7.6.2",
+          "text": "That supports a role-specific option, not a permanent model shopping list or fixed team size.",
+          "claims": [
+            "C07-T7"
+          ]
+        },
+        {
+          "id": "7.6.3",
+          "text": "For review, ask a separate evaluator to inspect the implementation and requirements, rather than simply approve the editor’s account.",
+          "claims": [
+            "C07-T7",
+            "C07-T9"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "7.6.a",
+          "kind": "caption",
+          "text": "HyperAgent v3 · 2025-09-05 · Planner / Navigator / Editor / Executor · historical role/model ablations; no universal recipe",
+          "claims": [
+            "C07-T7"
+          ],
+          "sources": [
+            "phan2025hyperagent"
+          ],
+          "at": "7.6.1",
+          "grade": "B"
+        },
+        {
+          "id": "7.6.b",
+          "kind": "label",
+          "text": "Editorial synthesis — workflow option: strong planner · cheaper scouts · capable editor · evidence-seeking reviewer",
+          "claims": [
+            "C07-T7",
+            "C07-T9"
+          ],
+          "at": "7.6.3"
+        }
+      ],
+      "holdAfter": 0.8
+    },
+    {
+      "id": "7.7",
+      "title": "Eleven conditional principles",
+      "visual": "7.7.1: diagram reveals all eleven principles in readable groups, with persistent High/Medium/Low text badges distinct from evidence grades. 7.7.2: emphasize low direct evidence for cross-family defect detection. 7.7.3: highlight separate latency and total-compute meters. 7.7.4: settle all eleven into the checklist for the closing sentence and final hold.",
+      "sentences": [
+        {
+          "id": "7.7.1",
+          "text": "The research points to eleven conditional principles, with confidence levels that distinguish well-supported recommendations from experiments still worth testing.",
+          "claims": [
+            "C07-T10"
+          ]
+        },
+        {
+          "id": "7.7.2",
+          "text": "Cross-family review has low direct evidence for superior defect detection; treat it as an experiment.",
+          "claims": [
+            "C07-T9"
+          ],
+          "sources": [
+            "panickssery2024llm",
+            "moon2026don",
+            "spiliopoulou2025play"
+          ]
+        },
+        {
+          "id": "7.7.3",
+          "text": "Track latency and total compute separately: parallel completion can be faster while consuming more resources overall.",
+          "claims": [
+            "C07-T10"
+          ],
+          "sources": [
+            "li2024more",
+            "hadfield2025built"
+          ]
+        },
+        {
+          "id": "7.7.4",
+          "text": "Start simple, delegate separable work through explicit contracts, preserve evidence, and verify whether the coordination actually pays.",
+          "claims": [
+            "C07-T10"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "7.7.a",
+          "kind": "label",
+          "text": "11 principles · our conditional synthesis of the evidence · confidence is not source grade",
+          "claims": [
+            "C07-T10"
+          ],
+          "at": "7.7.1"
+        },
+        {
+          "id": "7.7.p1",
+          "kind": "caption",
+          "text": "1. Start with a strong simple baseline — High confidence",
+          "claims": [
+            "C07-T10"
+          ],
+          "sources": [
+            "li2026rethinking",
+            "li2024more",
+            "wang2024rethinking",
+            "kim2026towards",
+            "xia2025demystifying"
+          ],
+          "at": "7.7.1"
+        },
+        {
+          "id": "7.7.p2",
+          "kind": "caption",
+          "text": "2. Parallelize separable information or independent candidates — High confidence",
+          "claims": [
+            "C07-T10"
+          ],
+          "sources": [
+            "kim2026towards",
+            "hadfield2025built",
+            "phan2025hyperagent",
+            "anthropicfrontierredteam2026patterns"
+          ],
+          "at": "7.7.1"
+        },
+        {
+          "id": "7.7.p3",
+          "kind": "caption",
+          "text": "3. Keep one integration owner for coupled edits; explicit ownership/dependencies for multi-writer teams — Medium confidence",
+          "claims": [
+            "C07-T10"
+          ],
+          "sources": [
+            "yan2025don",
+            "yan2026multiagents",
+            "anthropicfrontierredteam2026patterns",
+            "deepseekai2026deepseekv4"
+          ],
+          "at": "7.7.1"
+        },
+        {
+          "id": "7.7.p4",
+          "kind": "caption",
+          "text": "4. Define tasks as contracts, not job titles — High confidence",
+          "claims": [
+            "C07-T10"
+          ],
+          "sources": [
+            "cemri2025do",
+            "hadfield2025built",
+            "hong2024metagpt"
+          ],
+          "at": "7.7.1"
+        },
+        {
+          "id": "7.7.p5",
+          "kind": "caption",
+          "text": "5. Choose models by measured role performance — High confidence",
+          "claims": [
+            "C07-T10"
+          ],
+          "sources": [
+            "wang2025mixtureofagents",
+            "li2026rethinking",
+            "ye2025xmas",
+            "phan2025hyperagent"
+          ],
+          "at": "7.7.1"
+        },
+        {
+          "id": "7.7.p6",
+          "kind": "caption",
+          "text": "6. Cheap scouts plus strong planner: an option, not a shopping list — Medium confidence",
+          "claims": [
+            "C07-T10"
+          ],
+          "sources": [
+            "phan2025hyperagent",
+            "anthropic2026advisor",
+            "yan2026multiagents"
+          ],
+          "at": "7.7.1"
+        },
+        {
+          "id": "7.7.p7",
+          "kind": "caption",
+          "text": "7. Preserve consequential decisions and provenance in handoffs — High confidence",
+          "claims": [
+            "C07-T10"
+          ],
+          "sources": [
+            "cemri2025do",
+            "hadfield2025built",
+            "yan2025don",
+            "phan2025hyperagent"
+          ],
+          "at": "7.7.1"
+        },
+        {
+          "id": "7.7.p8",
+          "kind": "caption",
+          "text": "8. Seek evidence and external checks; reviewed is not verified — High confidence",
+          "claims": [
+            "C07-T10"
+          ],
+          "sources": [
+            "cemri2025do",
+            "zhuge2025agentasajudge",
+            "moon2026don",
+            "anthropicfrontierredteam2026patterns"
+          ],
+          "at": "7.7.1"
+        },
+        {
+          "id": "7.7.p9",
+          "kind": "caption",
+          "text": "9. Try cross-family review as an ablation, not an assurance — Low for superior defect detection; medium as a bias-mitigation hypothesis",
+          "claims": [
+            "C07-T10"
+          ],
+          "sources": [
+            "panickssery2024llm",
+            "moon2026don",
+            "spiliopoulou2025play",
+            "yan2026multiagents"
+          ],
+          "at": "7.7.2"
+        },
+        {
+          "id": "7.7.p10",
+          "kind": "caption",
+          "text": "10. Control budget, latency, and communication separately — High confidence",
+          "claims": [
+            "C07-T10"
+          ],
+          "sources": [
+            "li2024more",
+            "hadfield2025built",
+            "ong2025routellm",
+            "chen2024frugalgpt",
+            "anthropic2026advisor",
+            "deepseekai2026deepseekv4"
+          ],
+          "at": "7.7.3"
+        },
+        {
+          "id": "7.7.p11",
+          "kind": "caption",
+          "text": "11. Re-evaluate after changing model or harness — High confidence",
+          "claims": [
+            "C07-T10"
+          ],
+          "sources": [
+            "ye2025xmas",
+            "kim2026towards",
+            "phan2025hyperagent",
+            "anthropic2026advisor",
+            "anthropicfrontierredteam2026patterns"
+          ],
+          "at": "7.7.3"
+        }
+      ],
+      "holdAfter": 4
+    }
+  ]
+}

@@ -1,0 +1,798 @@
+{
+  "id": "ch10",
+  "slug": "walkthrough-context",
+  "title": "Walkthrough II: context, memory and extensibility",
+  "act": "Act IV — omp in practice",
+  "targetSeconds": 240,
+  "takeaway": "Choose what persists, what executes, and what can leave the machine.",
+  "scenes": [
+    {
+      "id": "10.1",
+      "title": "Different context lifetimes",
+      "visual": "Use createTerminal with Titanium, Unicode, rounded chrome, band composer and curved ╰─ prompt; begin after the startup banner, with no logo. Keep recreationLabel \"Recreation · omp 18.8.6 defaults · illustrative coupons fixture\" and dateStamp \"as of 2026-10-08\" visible. Status model segment: ⬢ Opus 5.5 · ◒ high, assuming one usable Anthropic account, unchanged catalog, no competing usable chat provider and no explicit model override. Do not show cost, token or timing measurements. Continue the illustrative /demo/coupons TypeScript project from ch09: src/coupons.ts owns isExpired, src/checkout.ts calls it, and src/index.ts logs checkout. 10.1.1 use diagram of information lifetimes beside terminal. 10.1.2 type /extensions without inventing selector output; show project instructions, a short inclusive-expiry rule, an on-demand coupon-review skill and memory in distinct lanes. 10.1.3 animate nearest nonempty .omp directory shadowing farther native context. 10.1.4 keep the RULES ribbon short.",
+      "sentences": [
+        {
+          "id": "10.1.1",
+          "text": "In omp, a long-running checkout task crosses several information boundaries: what the model sees now, what persists later, and what integrations execute.",
+          "claims": [
+            "C09-T1"
+          ],
+          "sources": [
+            "ompdocs-context-files",
+            "ompdocs-memory",
+            "ompdocs-skills"
+          ]
+        },
+        {
+          "id": "10.1.2",
+          "text": "Project instructions, always-carried rules, on-demand skills, and cross-session memory serve different lifetimes; choose the mechanism to match the information.",
+          "claims": [
+            "C09-T1"
+          ],
+          "sources": [
+            "ompdocs-context-files",
+            "ompdocs-memory",
+            "ompdocs-skills"
+          ]
+        },
+        {
+          "id": "10.1.3",
+          "text": "Native project discovery stops at the nearest nonempty configuration directory, which can block instructions farther up the tree.",
+          "claims": [
+            "C09-T1"
+          ],
+          "sources": [
+            "ompdocs-context-files",
+            "ompdocs-memory",
+            "ompdocs-skills"
+          ]
+        },
+        {
+          "id": "10.1.4",
+          "text": "Keep always-carried requirements short, and inspect the discovered sources before assuming the project instructions loaded.",
+          "claims": [
+            "C09-T1"
+          ],
+          "sources": [
+            "ompdocs-context-files",
+            "ompdocs-memory",
+            "ompdocs-skills"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "10.1.a",
+          "kind": "tui",
+          "text": "╰─ /extensions",
+          "grade": "C",
+          "claims": [
+            "C09-T1"
+          ],
+          "sources": [
+            "ompdocs-context-files",
+            "ompdocs-memory",
+            "ompdocs-skills"
+          ],
+          "at": "10.1.2"
+        },
+        {
+          "id": "10.1.b",
+          "kind": "tui",
+          "text": "⬢ Opus 5.5 · ◒ high",
+          "grade": "C",
+          "claims": [
+            "C12-T1",
+            "C12-T3",
+            "C12-T6"
+          ],
+          "sources": [
+            "stencillabs2026bundled",
+            "stencillabs2026model",
+            "stencillabs2026provider",
+            "stencillabs2026statusline",
+            "stencillabs2026default"
+          ],
+          "at": "10.1.1"
+        },
+        {
+          "id": "10.1.c",
+          "kind": "label",
+          "text": "Coupons fixture context\nProject instructions · native user/project RULES.md on every request · skills on demand · memory across sessions\nNative project discovery stops at nearest nonempty .omp/",
+          "grade": "C",
+          "claims": [
+            "C09-T1"
+          ],
+          "sources": [
+            "ompdocs-context-files",
+            "ompdocs-memory",
+            "ompdocs-skills"
+          ],
+          "at": "10.1.3"
+        }
+      ],
+      "holdAfter": 0.8
+    },
+    {
+      "id": "10.2",
+      "title": "Correction has a timing model",
+      "visual": "Use createTerminal with Titanium, Unicode, rounded chrome, band composer and curved ╰─ prompt; begin after the startup banner, with no logo. Keep recreationLabel \"Recreation · omp 18.8.6 defaults · illustrative coupons fixture\" and dateStamp \"as of 2026-10-08\" visible. Status model segment: ⬢ Opus 5.5 · ◒ high, assuming one usable Anthropic account, unchanged catalog, no competing usable chat provider and no explicit model override. Do not show cost, token or timing measurements. 10.2.1 show a new illustrative attempted edit reverting the coupon check to expiresAt < now, followed by the ompUi TTSR notice in 10.2.a for the authored coupon-expiry-inclusive rule. Use terminal Injecting rule wording with rewind glyph and italic rule description; this live-notice shape is source-derived, not a resumed captured event. 10.2.2 diagram separates regex streaming and AST pre-execution lanes. 10.2.3 begin the judged lane only after completed output; keep judge prerequisites visible. 10.2.4 separate correction from execution containment.",
+      "sentences": [
+        {
+          "id": "10.2.1",
+          "text": "Time Traveling Stream Rules can interrupt a matching streamed attempt, inject corrective guidance, and retry; the facility is enabled by default.",
+          "claims": [
+            "C09-T2"
+          ],
+          "sources": [
+            "ompdocs-ttsr-injection-lifecycle"
+          ]
+        },
+        {
+          "id": "10.2.2",
+          "text": "Regex rules can match during streaming, while AST rules inspect finalized source-bearing tool arguments before execution.",
+          "claims": [
+            "C09-T2"
+          ],
+          "sources": [
+            "ompdocs-ttsr-injection-lifecycle"
+          ]
+        },
+        {
+          "id": "10.2.3",
+          "text": "Judged question rules wait for completed output, so they cannot interrupt the stream; their judge must also be available.",
+          "claims": [
+            "C09-T2"
+          ],
+          "sources": [
+            "ompdocs-ttsr-injection-lifecycle"
+          ]
+        },
+        {
+          "id": "10.2.4",
+          "text": "Use this for corrective guidance, not as the security boundary around tool execution.",
+          "claims": [
+            "C09-T2"
+          ],
+          "sources": [
+            "ompdocs-ttsr-injection-lifecycle"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "10.2.a",
+          "kind": "tui",
+          "text": "⚠ Injecting rule: coupon-expiry-inclusive  ↶\nUse an inclusive boundary when checking coupon expiry.",
+          "grade": "C",
+          "claims": [
+            "C09-T2"
+          ],
+          "sources": [
+            "ompdocs-ttsr-injection-lifecycle"
+          ],
+          "at": "10.2.1"
+        },
+        {
+          "id": "10.2.b",
+          "kind": "label",
+          "text": "Illustrative authored rule: use an inclusive expiry boundary\nRegex: streaming · AST: finalized source-bearing arguments, before execution\nQuestion: after output; no stream interruption\nTTSR enabled; judge auto requires native System One resolution",
+          "grade": "C",
+          "claims": [
+            "C09-T2"
+          ],
+          "sources": [
+            "ompdocs-ttsr-injection-lifecycle"
+          ],
+          "at": "10.2.3"
+        }
+      ],
+      "holdAfter": 0.8
+    },
+    {
+      "id": "10.3",
+      "title": "Transform history deliberately",
+      "visual": "Use createTerminal with Titanium, Unicode, rounded chrome, band composer and curved ╰─ prompt; begin after the startup banner, with no logo. Keep recreationLabel \"Recreation · omp 18.8.6 defaults · illustrative coupons fixture\" and dateStamp \"as of 2026-10-08\" visible. Status model segment: ⬢ Opus 5.5 · ◒ high, assuming one usable Anthropic account, unchanged catalog, no competing usable chat provider and no explicit model override. Do not show cost, token or timing measurements. 10.3.1 type /compact and use diagram summary plus recent tail, preserving the visible transcript lane. 10.3.2 turn older coupon-investigation text into bounded schematic raster tiles without token-savings counters. 10.3.3 retain the downstream-image-cost label. 10.3.4 type the focused /handoff from 10.3.c and keep the same session identity tile.",
+      "sentences": [
+        {
+          "id": "10.3.1",
+          "text": "As the checkout investigation grows, compaction reduces model-visible history to a summary and recent tail while preserving visible scrollback.",
+          "claims": [
+            "C09-T3"
+          ],
+          "sources": [
+            "ompdocs-compaction",
+            "ompdocs-handoff-generation-pipeline"
+          ]
+        },
+        {
+          "id": "10.3.2",
+          "text": "Snapcompact instead renders older text into images locally, without a summarization model; the next model must support vision.",
+          "claims": [
+            "C09-T3"
+          ],
+          "sources": [
+            "ompdocs-compaction",
+            "ompdocs-handoff-generation-pipeline"
+          ]
+        },
+        {
+          "id": "10.3.3",
+          "text": "That image archive is bounded and can be truncated, and reading it later still incurs the provider’s image costs.",
+          "claims": [
+            "C09-T3"
+          ],
+          "sources": [
+            "ompdocs-compaction",
+            "ompdocs-handoff-generation-pipeline"
+          ]
+        },
+        {
+          "id": "10.3.4",
+          "text": "For a focused continuation, handoff generates a document within the same session rather than creating another agent.",
+          "claims": [
+            "C09-T3"
+          ],
+          "sources": [
+            "ompdocs-compaction",
+            "ompdocs-handoff-generation-pipeline"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "10.3.a",
+          "kind": "tui",
+          "text": "╰─ /compact",
+          "grade": "C",
+          "claims": [
+            "C09-T3"
+          ],
+          "sources": [
+            "ompdocs-compaction",
+            "ompdocs-handoff-generation-pipeline"
+          ],
+          "at": "10.3.1"
+        },
+        {
+          "id": "10.3.b",
+          "kind": "label",
+          "text": "Compaction: enabled\nSnapcompact: second method after remote; vision required; bounded/truncated archive\nLocal rasterization ≠ free downstream image inference\nHandoff: usable model/auth and uncompacted history required; not while streaming",
+          "grade": "C",
+          "claims": [
+            "C09-T3"
+          ],
+          "sources": [
+            "ompdocs-compaction",
+            "ompdocs-handoff-generation-pipeline"
+          ],
+          "at": "10.3.2"
+        },
+        {
+          "id": "10.3.c",
+          "kind": "tui",
+          "text": "╰─ /handoff Focus on the coupon expiry boundary",
+          "grade": "C",
+          "claims": [
+            "C09-T3"
+          ],
+          "sources": [
+            "ompdocs-compaction",
+            "ompdocs-handoff-generation-pipeline"
+          ],
+          "at": "10.3.4"
+        }
+      ],
+      "holdAfter": 0.8
+    },
+    {
+      "id": "10.4",
+      "title": "Memory is a backend choice",
+      "visual": "Use createTerminal with Titanium, Unicode, rounded chrome, band composer and curved ╰─ prompt; begin after the startup banner, with no logo. Keep recreationLabel \"Recreation · omp 18.8.6 defaults · illustrative coupons fixture\" and dateStamp \"as of 2026-10-08\" visible. Status model segment: ⬢ Opus 5.5 · ◒ high, assuming one usable Anthropic account, unchanged catalog, no competing usable chat provider and no explicit model override. Do not show cost, token or timing measurements. 10.4.1 use diagram backend capability matrix; terminal contains an unsubmitted /memory stats. 10.4.2 separate local storage from processing/network arrows. 10.4.3 keep structured retain/recall tools absent from the local-summary row; use the fixture lesson \"Expiry is inclusive\" as an explicitly illustrative memory card, not a retrieved service result. 10.4.4 send that lesson back through a current-source check.",
+      "sentences": [
+        {
+          "id": "10.4.1",
+          "text": "Cross-session memory is opt-in, with five documented modes including off: local summaries, Hindsight, Mnemopi, and Sharpshooter.",
+          "claims": [
+            "C09-T4",
+            "C09-T5"
+          ],
+          "sources": [
+            "ompdocs-memory",
+            "ompdocs-mnemosyne-memory-backend",
+            "ompdocs-providers"
+          ]
+        },
+        {
+          "id": "10.4.2",
+          "text": "Hindsight needs a reachable server; Mnemopi keeps local databases, but its default processing route can use an online model.",
+          "claims": [
+            "C09-T4",
+            "C09-T5"
+          ],
+          "sources": [
+            "ompdocs-memory",
+            "ompdocs-mnemosyne-memory-backend",
+            "ompdocs-providers"
+          ]
+        },
+        {
+          "id": "10.4.3",
+          "text": "Separate storage from processing: the local summary backend has no structured memory tools, and a local database does not imply offline inference.",
+          "claims": [
+            "C09-T4",
+            "C09-T5"
+          ],
+          "sources": [
+            "ompdocs-memory",
+            "ompdocs-mnemosyne-memory-backend",
+            "ompdocs-providers"
+          ]
+        },
+        {
+          "id": "10.4.4",
+          "text": "Treat a remembered coupon policy as a lead to verify against current source, not a permanent authority.",
+          "claims": [
+            "C09-T4",
+            "C09-T5"
+          ],
+          "sources": [
+            "ompdocs-memory",
+            "ompdocs-mnemosyne-memory-backend",
+            "ompdocs-providers"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "10.4.a",
+          "kind": "tui",
+          "text": "╰─ /memory stats",
+          "grade": "C",
+          "claims": [
+            "C09-T4",
+            "C09-T5"
+          ],
+          "sources": [
+            "ompdocs-memory",
+            "ompdocs-mnemosyne-memory-backend",
+            "ompdocs-providers"
+          ],
+          "at": "10.4.1"
+        },
+        {
+          "id": "10.4.b",
+          "kind": "stat",
+          "text": "5 documented memory.backend modes, including off\noff (default) · local · hindsight · mnemopi · sharpshooter\nDocumentation as of 2026-10-08; Sharpshooter operational detail limited",
+          "grade": "C",
+          "claims": [
+            "C09-T4",
+            "C09-T5"
+          ],
+          "sources": [
+            "ompdocs-memory",
+            "ompdocs-mnemosyne-memory-backend",
+            "ompdocs-providers"
+          ],
+          "at": "10.4.1"
+        },
+        {
+          "id": "10.4.c",
+          "kind": "label",
+          "text": "Hindsight: reachable server required\nMnemopi: local SQLite; default smol processing may go online\nlocal: summaries, no structured retain/recall/reflect tool set\nIllustrative remembered lesson: Expiry is inclusive; verify current source",
+          "grade": "C",
+          "claims": [
+            "C09-T4",
+            "C09-T5"
+          ],
+          "sources": [
+            "ompdocs-memory",
+            "ompdocs-mnemosyne-memory-backend",
+            "ompdocs-providers"
+          ],
+          "at": "10.4.3"
+        }
+      ],
+      "holdAfter": 0.8
+    },
+    {
+      "id": "10.5",
+      "title": "Navigate a tree, or fork an identity",
+      "visual": "Use createTerminal with Titanium, Unicode, rounded chrome, band composer and curved ╰─ prompt; begin after the startup banner, with no logo. Keep recreationLabel \"Recreation · omp 18.8.6 defaults · illustrative coupons fixture\" and dateStamp \"as of 2026-10-08\" visible. Status model segment: ⬢ Opus 5.5 · ◒ high, assuming one usable Anthropic account, unchanged catalog, no competing usable chat provider and no explicit model override. Do not show cost, token or timing measurements. 10.5.1 type /tree; external diagram branches between inclusive-expiry and alternative-policy paths using ├─ and └─, not an invented selector layout. 10.5.2 show /fork as a separate prompt and split the identity card. 10.5.3 highlight selected ancestry while retaining the ordinary-branching versus pruning distinction.",
+      "sentences": [
+        {
+          "id": "10.5.1",
+          "text": "Session history is a tree: return to an earlier checkout decision while ordinary branching preserves the alternative path.",
+          "claims": [
+            "C09-T6"
+          ],
+          "sources": [
+            "ompdocs-session-operations-export-share-fork-resume",
+            "ompdocs-tree",
+            "ompdocs-session"
+          ]
+        },
+        {
+          "id": "10.5.2",
+          "text": "Tree navigation stays in the same session file; forking creates a new identity and, in persistent mode, a new file.",
+          "claims": [
+            "C09-T6"
+          ],
+          "sources": [
+            "ompdocs-session-operations-export-share-fork-resume",
+            "ompdocs-tree",
+            "ompdocs-session"
+          ]
+        },
+        {
+          "id": "10.5.3",
+          "text": "Active context follows the selected ancestry; separate pruning and destructive rewrite operations can remove history.",
+          "claims": [
+            "C09-T6"
+          ],
+          "sources": [
+            "ompdocs-session-operations-export-share-fork-resume",
+            "ompdocs-tree",
+            "ompdocs-session"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "10.5.a",
+          "kind": "tui",
+          "text": "╰─ /tree",
+          "grade": "C",
+          "claims": [
+            "C09-T6"
+          ],
+          "sources": [
+            "ompdocs-session-operations-export-share-fork-resume",
+            "ompdocs-tree",
+            "ompdocs-session"
+          ],
+          "at": "10.5.1"
+        },
+        {
+          "id": "10.5.b",
+          "kind": "label",
+          "text": "Coupons fixture: inclusive expiry / alternative policy branches\nOrdinary branch: same session, prior branch retained\n/fork: new identity/file in persistent mode\nPruning and destructive helpers are separate",
+          "grade": "C",
+          "claims": [
+            "C09-T6"
+          ],
+          "sources": [
+            "ompdocs-session-operations-export-share-fork-resume",
+            "ompdocs-tree",
+            "ompdocs-session"
+          ],
+          "at": "10.5.2"
+        }
+      ],
+      "holdAfter": 0.8
+    },
+    {
+      "id": "10.6",
+      "title": "Review versus model handoff",
+      "visual": "Use createTerminal with Titanium, Unicode, rounded chrome, band composer and curved ╰─ prompt; begin after the startup banner, with no logo. Keep recreationLabel \"Recreation · omp 18.8.6 defaults · illustrative coupons fixture\" and dateStamp \"as of 2026-10-08\" visible. Status model segment: ⬢ Opus 5.5 · ◒ high, assuming one usable Anthropic account, unchanged catalog, no competing usable chat provider and no explicit model override. Do not show cost, token or timing measurements. 10.6.1 show shortcut and /plan-review over an external synthetic coupon-change plan, stopping before approval; use captured ompUi plan banner only. 10.6.2 keep terminal model status unchanged while a separate schematic shows the optional todo gate, eligible result, turn boundary and target role. 10.6.3 retain the initial edit tile before the handoff; no invented model assignment or savings.",
+      "sentences": [
+        {
+          "id": "10.6.1",
+          "text": "Plan mode gives the checkout change a review boundary, but fresh sessions do not enter it automatically.",
+          "claims": [
+            "C09-T7"
+          ],
+          "sources": [
+            "ompdocs-settings",
+            "ompdocs-keybindings",
+            "ompdocs-slash-command-internals"
+          ]
+        },
+        {
+          "id": "10.6.2",
+          "text": "Prewalk is separate and off by default: it switches models after an eligible edit or write result, at the completed-turn boundary.",
+          "claims": [
+            "C09-T7"
+          ],
+          "sources": [
+            "ompdocs-prewalk",
+            "ompdocs-keybindings",
+            "ompdocs-slash-command-internals"
+          ]
+        },
+        {
+          "id": "10.6.3",
+          "text": "The starting model may already have edited code before handing over the task.",
+          "claims": [
+            "C09-T7"
+          ],
+          "sources": [
+            "ompdocs-prewalk",
+            "ompdocs-keybindings",
+            "ompdocs-slash-command-internals"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "10.6.a",
+          "kind": "tui",
+          "text": "╰─ /plan-review",
+          "grade": "C",
+          "claims": [
+            "C09-T7"
+          ],
+          "sources": [
+            "ompdocs-prewalk",
+            "ompdocs-keybindings",
+            "ompdocs-slash-command-internals"
+          ],
+          "at": "10.6.1"
+        },
+        {
+          "id": "10.6.b",
+          "kind": "label",
+          "text": "Alt+Shift+P toggles plan mode\nplan.enabled=true · plan.defaultOnStartup=false\n/plan-review requires active plan mode and an existing plan",
+          "grade": "C",
+          "claims": [
+            "C09-T7"
+          ],
+          "sources": [
+            "ompdocs-settings",
+            "ompdocs-keybindings",
+            "ompdocs-slash-command-internals"
+          ],
+          "at": "10.6.1"
+        },
+        {
+          "id": "10.6.c",
+          "kind": "label",
+          "text": "Prewalk: off by default\nIf todo is active: successful todo call opens gate\nEligible edit/write result → completed-turn boundary → target @smol\nEven unsuccessful eligible edit results can trigger the switch",
+          "grade": "C",
+          "claims": [
+            "C09-T7"
+          ],
+          "sources": [
+            "ompdocs-prewalk",
+            "ompdocs-keybindings",
+            "ompdocs-slash-command-internals"
+          ],
+          "at": "10.6.2"
+        }
+      ],
+      "holdAfter": 0.8
+    },
+    {
+      "id": "10.7",
+      "title": "Instructions versus executable integration",
+      "visual": "Use createTerminal with Titanium, Unicode, rounded chrome, band composer and curved ╰─ prompt; begin after the startup banner, with no logo. Keep recreationLabel \"Recreation · omp 18.8.6 defaults · illustrative coupons fixture\" and dateStamp \"as of 2026-10-08\" visible. Status model segment: ⬢ Opus 5.5 · ◒ high, assuming one usable Anthropic account, unchanged catalog, no competing usable chat provider and no explicit model override. Do not show cost, token or timing measurements. 10.7.1 show compact Read skill://coupon-review; diagram expands instruction text separately from an executable function. 10.7.2 add MCP bridge and server-instructions toggle, without launching a server. 10.7.3 highlight executable extension loading as a code-trust boundary.",
+      "sentences": [
+        {
+          "id": "10.7.1",
+          "text": "Skills supply instructions, tools execute functions, and extensions register capabilities or intercept lifecycle events; modern hook files use that extension runtime.",
+          "claims": [
+            "C09-T8"
+          ],
+          "sources": [
+            "ompdocs-skills",
+            "ompdocs-hooks",
+            "ompdocs-extensions",
+            "ompdocs-mcp-config"
+          ]
+        },
+        {
+          "id": "10.7.2",
+          "text": "MCP connects external tools, resources, and prompts, adding server-controlled instructions as another trust surface.",
+          "claims": [
+            "C09-T8"
+          ],
+          "sources": [
+            "ompdocs-skills",
+            "ompdocs-hooks",
+            "ompdocs-extensions",
+            "ompdocs-mcp-config"
+          ]
+        },
+        {
+          "id": "10.7.3",
+          "text": "Loading an executable extension means trusting its code, not simply adding a page of guidance.",
+          "claims": [
+            "C09-T8"
+          ],
+          "sources": [
+            "ompdocs-skills",
+            "ompdocs-hooks",
+            "ompdocs-extensions",
+            "ompdocs-mcp-config"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "10.7.a",
+          "kind": "tui",
+          "text": "● Read skill://coupon-review",
+          "grade": "C",
+          "claims": [
+            "C09-T8"
+          ],
+          "sources": [
+            "ompdocs-skills",
+            "ompdocs-hooks",
+            "ompdocs-extensions",
+            "ompdocs-mcp-config"
+          ],
+          "at": "10.7.1"
+        },
+        {
+          "id": "10.7.b",
+          "kind": "label",
+          "text": "Illustrative coupon-review skill\nSkill = instructions · tool = execution · extension = runtime integration\nMCP server instructions: enabled by default; server-controlled/unverified",
+          "grade": "C",
+          "claims": [
+            "C09-T8"
+          ],
+          "sources": [
+            "ompdocs-skills",
+            "ompdocs-hooks",
+            "ompdocs-extensions",
+            "ompdocs-mcp-config"
+          ],
+          "at": "10.7.2"
+        }
+      ],
+      "holdAfter": 0.8
+    },
+    {
+      "id": "10.8",
+      "title": "Count the denominator",
+      "visual": "Use createTerminal with Titanium, Unicode, rounded chrome, band composer and curved ╰─ prompt; begin after the startup banner, with no logo. Keep recreationLabel \"Recreation · omp 18.8.6 defaults · illustrative coupons fixture\" and dateStamp \"as of 2026-10-08\" visible. Status model segment: ⬢ Opus 5.5 · ◒ high, assuming one usable Anthropic account, unchanged catalog, no competing usable chat provider and no explicit model override. Do not show cost, token or timing measurements. 10.8.1 use statCard for the researcher count with complete table denominator and date; type /model without inventing a roster. 10.8.2 retain count conditions beside a separate Codex custom/local-provider comparison card; no exclusivity claim.",
+      "sentences": [
+        {
+          "id": "10.8.1",
+          "text": "The documentation’s credential tables contain 79 distinct provider IDs, by our count, including local-engine rows.",
+          "claims": [
+            "C09-T9",
+            "C09-N1"
+          ],
+          "sources": [
+            "ompdocs-providers",
+            "openaindconfiguration"
+          ],
+          "spoken": "The documentation’s credential tables contain seventy nine distinct provider I Ds, by our count, including local engine rows."
+        },
+        {
+          "id": "10.8.2",
+          "text": "That describes table breadth, not independent model makers or usable accounts; Codex CLI also documents custom and local providers.",
+          "claims": [
+            "C09-T9",
+            "C09-N1"
+          ],
+          "sources": [
+            "ompdocs-providers",
+            "openaindconfiguration"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "10.8.a",
+          "kind": "tui",
+          "text": "╰─ /model",
+          "grade": "C",
+          "claims": [
+            "C09-T9",
+            "C09-N1"
+          ],
+          "sources": [
+            "ompdocs-providers",
+            "openaindconfiguration"
+          ],
+          "at": "10.8.1"
+        },
+        {
+          "id": "10.8.b",
+          "kind": "stat",
+          "text": "Researcher count: 79 distinct provider IDs\nCredential tables: 14 Core + 65 IDs across 63 Additional-hosted rows; grouped rows split; local-engine rows included. As of 2026-10-08. Not exhaustive support, model makers, model count, or account access.",
+          "grade": "C",
+          "claims": [
+            "C09-T9",
+            "C09-N1"
+          ],
+          "sources": [
+            "ompdocs-providers",
+            "openaindconfiguration"
+          ],
+          "at": "10.8.1"
+        },
+        {
+          "id": "10.8.c",
+          "kind": "label",
+          "text": "Provider customization is not exclusive to omp; Codex CLI documents custom/local providers\nThis local configuration does not carry over to managed Local computer access with Work Cloud",
+          "grade": "C",
+          "claims": [
+            "C09-T9",
+            "C09-N1"
+          ],
+          "sources": [
+            "ompdocs-providers",
+            "openaindconfiguration"
+          ],
+          "at": "10.8.2"
+        }
+      ],
+      "holdAfter": 0.8
+    },
+    {
+      "id": "10.9",
+      "title": "Persistence also creates disclosure risk",
+      "visual": "Use createTerminal with Titanium, Unicode, rounded chrome, band composer and curved ╰─ prompt; begin after the startup banner, with no logo. Keep recreationLabel \"Recreation · omp 18.8.6 defaults · illustrative coupons fixture\" and dateStamp \"as of 2026-10-08\" visible. Status model segment: ⬢ Opus 5.5 · ◒ high, assuming one usable Anthropic account, unchanged catalog, no competing usable chat provider and no explicit model override. Do not show cost, token or timing measurements. 10.9.1 use trust diagram to distinguish supported message text from excluded surfaces; show only DEMO_PASSWORD_NOT_REAL. 10.9.2 stop the export arrow at a review warning; do not execute /export on real data. 10.9.3 hold persistence, execution and disclosure labels.",
+      "sentences": [
+        {
+          "id": "10.9.1",
+          "text": "Secret obfuscation is off by default and partial when enabled; static prompts, static tool definitions, and binaries fall outside its boundary.",
+          "claims": [
+            "C09-T10"
+          ],
+          "sources": [
+            "ompdocs-secrets",
+            "ompdocs-session-operations-export-share-fork-resume"
+          ]
+        },
+        {
+          "id": "10.9.2",
+          "text": "HTML exports can contain raw context, so review what a working session contains before sharing it.",
+          "claims": [
+            "C09-T10"
+          ],
+          "sources": [
+            "ompdocs-secrets",
+            "ompdocs-session-operations-export-share-fork-resume"
+          ]
+        },
+        {
+          "id": "10.9.3",
+          "text": "Choose deliberately what persists, what executes, and what can leave the machine.",
+          "claims": [
+            "C09-T10"
+          ],
+          "sources": [
+            "ompdocs-secrets",
+            "ompdocs-session-operations-export-share-fork-resume"
+          ]
+        }
+      ],
+      "onScreen": [
+        {
+          "id": "10.9.a",
+          "kind": "label",
+          "text": "secrets.enabled=false\nWhen enabled: selective reversible text substitution, not universal redaction\nExcluded: static prompts · static tool definitions · binaries · opaque encrypted replay",
+          "grade": "C",
+          "claims": [
+            "C09-T10"
+          ],
+          "sources": [
+            "ompdocs-secrets",
+            "ompdocs-session-operations-export-share-fork-resume"
+          ],
+          "at": "10.9.1"
+        },
+        {
+          "id": "10.9.b",
+          "kind": "label",
+          "text": "HTML exports can contain raw context\nChoose persistence · execution · disclosure deliberately",
+          "grade": "C",
+          "claims": [
+            "C09-T10"
+          ],
+          "sources": [
+            "ompdocs-secrets",
+            "ompdocs-session-operations-export-share-fork-resume"
+          ],
+          "at": "10.9.2"
+        }
+      ],
+      "holdAfter": 0.8
+    }
+  ]
+}
