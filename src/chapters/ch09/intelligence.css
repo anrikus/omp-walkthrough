@@ -1,0 +1,204 @@
+.ch09-intelligence .scene-header {
+  grid-template-rows: 72px 112px;
+  row-gap: 8px;
+}
+
+.ch09-intelligence .scene-title {
+  font-size: 64px;
+  line-height: 1.12;
+}
+
+.ch09-intelligence .scene-stamps > .kit-date {
+  padding: 4px 8px;
+  color: var(--color-muted);
+  background: var(--color-paper);
+  border-color: var(--color-control-line);
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.ch09-intelligence .ch09-intelligence__prerequisites {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content;
+  align-items: start;
+  gap: 24px;
+  min-width: 0;
+}
+
+.ch09-intelligence .ch09-intelligence__prerequisite-copy {
+  min-width: 0;
+}
+
+.ch09-intelligence .ch09-intelligence__prerequisite-text {
+  margin: 0;
+  font-size: 22px;
+  line-height: 26px;
+  white-space: pre-line;
+}
+
+
+.ch09-intelligence .scene-evidence {
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 8px;
+  font-size: 22px;
+  line-height: 26px;
+  white-space: nowrap;
+}
+
+.ch09-intelligence .scene-evidence > .kit-grade {
+  gap: 6px;
+  padding: 3px 8px 3px 3px;
+  color: var(--color-ink);
+  background: var(--color-paper);
+  border-color: var(--color-control-line);
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.ch09-intelligence .kit-grade-letter {
+  min-width: 26px;
+  height: 26px;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.ch09-intelligence .scene-evidence > .scene-evidence-button {
+  padding: 3px 10px;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.ch09-intelligence .scene-visual {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr) 62px;
+  gap: 12px;
+}
+
+.ch09-intelligence .ch09-intelligence__panes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  min-width: 0;
+  min-height: 0;
+}
+
+.ch09-intelligence .ch09-intelligence__pane {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+  min-height: 0;
+}
+
+.ch09-intelligence .ch09-intelligence__terminal,
+.ch09-intelligence .ch09-intelligence__status {
+  --kit-terminal-size: 22px;
+  --kit-line-height: 26px;
+  box-sizing: border-box;
+  flex: none;
+  min-width: 0;
+  width: 100%;
+  overflow: visible;
+}
+
+.ch09-intelligence .ch09-intelligence__terminal > .kit-recreation {
+  box-sizing: border-box;
+  height: 40px;
+  padding: 5px 8px 6px;
+  border-radius: 8px 8px 0 0;
+  font-size: 22px;
+  line-height: 28px;
+  white-space: nowrap;
+}
+
+.ch09-intelligence .ch09-intelligence__terminal > .kit-term-viewport {
+  padding: 8px;
+  overflow: visible;
+}
+
+.ch09-intelligence .ch09-intelligence__fixture-evidence {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 38px;
+  font-size: 22px;
+  line-height: 26px;
+  white-space: nowrap;
+}
+
+.ch09-intelligence .ch09-intelligence__rename {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+  padding-top: 8px;
+  border-top: 1px solid var(--color-control-line);
+}
+
+.ch09-intelligence .ch09-intelligence__rename-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-width: 0;
+}
+
+.ch09-intelligence .ch09-intelligence__rename-title {
+  margin: 0;
+  font: 600 22px/26px var(--font-display);
+}
+
+.ch09-intelligence .ch09-intelligence__rename-code {
+  margin: 0;
+  font: 22px/26px var(--font-mono);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.ch09-intelligence .ch09-intelligence__status > .kit-term-viewport {
+  padding: 4px 12px;
+  overflow: visible;
+}
+
+.ch09-intelligence .ch09-intelligence__account {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.ch09-intelligence .scene-notes {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 4px;
+  width: 100%;
+}
+
+.ch09-intelligence .ch09-intelligence__diagnosis {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  min-width: 0;
+  color: var(--color-muted);
+}
+
+.ch09-intelligence .ch09-intelligence__diagnosis-text {
+  flex: 1;
+  min-width: 0;
+  max-width: none;
+  margin: 0;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.ch09-intelligence .ch09-intelligence__diagnosis > .scene-evidence {
+  flex: none;
+}

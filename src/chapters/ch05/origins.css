@@ -1,0 +1,465 @@
+.origins p,
+.origins h3,
+.origins figure,
+.origins blockquote {
+  margin: 0;
+}
+
+.origins [hidden] {
+  display: none !important;
+}
+
+.origins .origins-fact {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px 20px;
+  border: 1px solid var(--color-line);
+  border-radius: 10px;
+  background: var(--color-paper);
+}
+
+.origins .origins-exact {
+  font-size: 24px;
+  line-height: 1.3;
+  color: var(--color-ink);
+}
+
+.origins .origins-node {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 28px;
+  border: 2px solid var(--color-line);
+  border-radius: 12px;
+  background: var(--color-panel);
+}
+
+.origins .origins-node h3 {
+  font-family: var(--font-display);
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.18;
+}
+
+.origins .origins-node p {
+  font-size: 27px;
+  line-height: 1.25;
+  color: var(--color-muted);
+}
+
+.origins .origins-node p:empty {
+  display: none;
+}
+
+.origins-philosophies {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  gap: 56px 240px;
+  height: 436px;
+  flex: none;
+  padding-inline: 24px;
+}
+
+.origins .origins-philosophies .origins-node {
+  padding: 28px 36px;
+}
+
+.origins .origins-philosophies .origins-node[data-emphasis='active'] {
+  border-color: var(--color-accent);
+}
+
+.origins .origins-philosophies h3 {
+  font-size: 44px;
+}
+
+.origins .origins-philosophies p {
+  font-size: 32px;
+}
+
+.origins .origins-synthesis {
+  border: 0;
+  padding: 8px 0 0;
+  background: transparent;
+}
+
+.origins .origins-synthesis .origins-exact {
+  font-size: 27px;
+}
+
+.origins .origins-footer-fact {
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.origins-footer-fact .origins-exact {
+  flex: 1;
+  min-width: 0;
+}
+
+.origins-footer-fact .scene-evidence {
+  flex: none;
+}
+
+.origins .origins-note {
+  font-size: 24px;
+  line-height: 1.35;
+}
+
+.origins .origins-quote {
+  box-sizing: border-box;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  border: 0;
+  border-left: 5px solid var(--color-accent);
+  border-radius: 0 12px 12px 0;
+  background: var(--color-accent-soft);
+  color: var(--color-ink);
+}
+
+.origins .origins-quote .kit-quote-text {
+  font-family: var(--font-display);
+  font-size: 43px;
+  font-weight: 500;
+  line-height: 1.23;
+  color: var(--color-ink);
+}
+
+.origins .origins-quote .kit-quote-attribution {
+  font: 400 24px/1.35 var(--font-body);
+  color: var(--color-muted);
+}
+
+.origins-pi-layout {
+  display: grid;
+  grid-template-columns: 620px minmax(0, 1fr);
+  gap: 32px;
+  height: 616px;
+}
+
+.origins-pi-attribution {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.origins-evolution {
+  display: grid;
+  grid-template-rows: 72px minmax(0, 1fr);
+  gap: 20px;
+  min-width: 0;
+}
+
+.origins-dates {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  border-bottom: 2px solid var(--color-line);
+  font-size: 24px;
+  line-height: 1.3;
+  color: var(--color-muted);
+}
+
+.origins-dates span:last-child {
+  text-align: right;
+}
+
+.origins-pages {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+}
+
+.origins-pi-history,
+.origins-pi-current {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.origins-tool-recipe {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.origins-tool {
+  display: grid;
+  place-items: center;
+  height: 88px;
+  border: 2px solid var(--color-line);
+  border-radius: 10px;
+  background: var(--color-panel);
+  font-family: var(--font-mono);
+  font-size: 34px;
+}
+
+.origins .origins-prompt-size {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 16px 24px;
+  border: 0;
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+.origins .origins-prompt-size .kit-stat-value {
+  color: var(--color-accent);
+  font-size: 54px;
+  line-height: 1.05;
+}
+
+.origins .origins-prompt-size .kit-stat-label {
+  color: var(--color-ink);
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.origins .origins-prompt-size .kit-stat-condition {
+  color: var(--color-muted);
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.origins .origins-discovery-boundary {
+  padding-inline: 12px;
+  border-left: 4px solid var(--color-accent);
+  font-size: 24px;
+  line-height: 1.3;
+  color: var(--color-muted);
+}
+
+.origins-drawing {
+  position: relative;
+  flex: none;
+}
+
+.origins-drawing > svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.origins-positioned {
+  position: absolute;
+}
+
+.origins-drawing .origins-node {
+  gap: 6px;
+  padding: 16px 20px;
+}
+
+.origins-drawing .origins-node h3 {
+  font-size: 30px;
+}
+
+.origins-drawing .origins-node p {
+  font-size: 24px;
+}
+
+.origins-link,
+.origins-link--historical {
+  fill: none;
+  stroke: var(--color-accent);
+  stroke-width: 4px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.origins-link--historical {
+  stroke: var(--color-muted);
+  stroke-width: 2px;
+}
+
+.origins-lineage-strip {
+  display: grid;
+  grid-template-columns: 550px minmax(0, 1fr);
+  gap: 32px;
+  height: 150px;
+  flex: none;
+}
+
+.origins-lineage-strip .origins-fact {
+  justify-content: center;
+}
+
+.origins .origins-fork-label {
+  position: absolute;
+  left: 181px;
+  top: 95px;
+  font-size: 24px;
+  color: var(--color-muted);
+}
+
+.origins-omp-lower {
+  display: grid;
+  grid-template-columns: 1000px minmax(0, 1fr);
+  gap: 32px;
+  height: 450px;
+}
+
+.origins-integrated {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.origins .origins-tool-node {
+  padding: 4px 24px;
+  border-width: 1px;
+  border-radius: 6px;
+  background: var(--color-paper);
+}
+
+.origins .origins-tool-node h3 {
+  font-size: 27px;
+}
+
+.origins-hermes-layout {
+  display: grid;
+  grid-template-columns: 648px 1080px;
+  gap: 32px;
+  height: 616px;
+}
+
+.origins-hermes-attribution {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.origins-mechanism,
+.origins-current-ownership {
+  position: absolute;
+  inset: 0;
+}
+
+.origins .origins-application-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font: 600 30px/1.2 var(--font-display);
+}
+
+.origins .origins-write-label {
+  position: absolute;
+  left: 268px;
+  top: 39px;
+  width: 122px;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--color-muted);
+}
+
+.origins .origins-no-training {
+  position: absolute;
+  top: 360px;
+  left: 0;
+  width: 655px;
+  font-size: 28px;
+  line-height: 1.3;
+  color: var(--color-accent);
+}
+
+.origins .origins-weights {
+  border-style: dashed;
+  background: var(--color-paper);
+}
+
+.origins .origins-weights h3 {
+  font-size: 30px;
+}
+
+.origins-openclaw-layout {
+  display: grid;
+  grid-template-columns: 648px 1080px;
+  gap: 32px;
+  height: 616px;
+}
+
+.origins-openclaw-facts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.origins-openclaw-layout .origins-pages > .origins-drawing,
+.origins-openclaw-layout .origins-pages > .origins-philosophies {
+  position: absolute;
+  inset: 0;
+}
+
+.origins .origins-history-node {
+  background: var(--color-paper);
+}
+
+.origins .origins-ownership-date {
+  position: absolute;
+  top: 174px;
+  left: 0;
+  font-size: 24px;
+  color: var(--color-muted);
+}
+
+.origins .origins-retained-label {
+  position: absolute;
+  top: 398px;
+  left: 590px;
+  width: 490px;
+  text-align: center;
+  font-size: 24px;
+  color: var(--color-accent);
+}
+
+.origins .origins-uncertainty {
+  position: absolute;
+  top: 510px;
+  left: 0;
+  width: 1080px;
+  padding-top: 18px;
+  border-top: 1px solid var(--color-line);
+  font-size: 26px;
+  color: var(--color-muted);
+}
+
+.origins .origins-current-ownership .origins-node p {
+  font-size: 24px;
+  overflow-wrap: anywhere;
+}
+
+.origins-philosophies--closing {
+  height: 616px;
+  padding: 12px 24px;
+  gap: 96px 96px;
+}
+
+.origins .origins-philosophies--closing .origins-node {
+  padding: 24px;
+}
+
+.origins .origins-philosophies--closing h3 {
+  font-size: 37px;
+}
+
+.origins .origins-philosophies--closing p {
+  font-size: 28px;
+}

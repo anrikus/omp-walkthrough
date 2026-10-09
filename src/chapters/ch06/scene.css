@@ -1,0 +1,129 @@
+.ng-scene p, .ng-scene h3 { margin: 0; }
+.ng-scene p { max-width: none; }
+.ng-scene h3 { font-family: var(--font-display); font-size: 32px; font-weight: 600; line-height: 1.18; }
+.ng-scene .ng-copy { font-size: 26px; line-height: 1.3; overflow-wrap: anywhere; }
+.ng-evidence { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.ng-scene .scene-aside { gap: 28px; }
+.ng-scene .scene-notes p { margin: 0; }
+.ng-box { border: 2px solid var(--color-control-line); padding: 24px; background: var(--color-paper); min-width: 0; box-sizing: border-box; }
+.ng-box p { font-size: 27px; line-height: 1.3; margin-top: 12px; }
+.ng-runtime { height: 100%; border: 3px solid var(--color-ink); padding: 28px; box-sizing: border-box; }
+.ng-runtime-title { margin-bottom: 24px !important; }
+.ng-plugin-rail { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.ng-plugin { height: 145px; border-left: 8px solid var(--color-accent); }
+.ng-plugin p { font-size: 24px; color: var(--color-muted); }
+.ng-registration { margin-top: 28px; border-style: dashed; }
+.ng-registration h3 { font-size: 29px; }
+.ng-registration p { font-size: 25px; }
+.ng-swap { height: 38px; position: relative; font-size: 29px; line-height: 1.15; font-weight: 600; font-family: var(--font-display); }
+.ng-adapter { position: absolute; inset: 0; white-space: nowrap; }
+.ng-adapter-new { font-size: 27px; color: var(--color-accent); }
+.ng-training { display: grid; grid-template-columns: 690px 54px 410px 54px 1fr; align-items: center; gap: 16px; min-height: 320px; }
+.ng-sandbox { border: 2px dashed var(--color-muted); padding: 22px; align-self: stretch; }
+.ng-sandbox > h3 { font-size: 29px; margin-bottom: 22px; }
+.ng-harnesses { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.ng-harnesses .ng-box { padding: 20px; min-height: 86px; }
+.ng-harnesses h3 { font-size: 28px; }
+.ng-flow { font-size: 48px; color: var(--color-accent); text-align: center; }
+.ng-normalized, .ng-rl { min-height: 178px; }
+.ng-boundary { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 18px 24px; }
+.ng-boundary h3 { font-size: 29px; white-space: nowrap; }
+.ng-boundary p { font-size: 27px; margin: 0; }
+.ng-layers { position: relative; height: 100%; min-height: 0; }
+.ng-layer { position: absolute; inset: 0; }
+.ng-layer[inert] { pointer-events: none; }
+.ng-vendor { display: flex; flex-direction: column; gap: 16px; }
+.ng-multiples { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.ng-plot { padding: 20px 24px; background: #182132; color: #f4f6fb; }
+.ng-plot h3 { font-size: 29px; }
+.ng-metric { font-size: 24px; color: #d0d9e5; margin-top: 7px !important; }
+.ng-bars { margin: 18px 0 0; padding: 0; list-style: none; }
+.ng-bar-row { display: grid; grid-template-columns: 177px minmax(0, 1fr) 82px; gap: 16px; align-items: center; min-height: 38px; font-size: 24px; }
+.ng-bar-track { height: 22px; background: #344155; }
+.ng-bar-fill { display: block; height: 100%; background: #72b8ea; transform-origin: left; }
+.ng-value { text-align: right; }
+.ng-axis { display: flex; justify-content: space-between; margin: 6px 98px 8px 193px !important; font-size: 22px; line-height: 1.1; color: #cbd5e3; }
+.ng-plot .ng-copy { font-size: 24px; line-height: 1.2; }
+.ng-plot-evidence { gap: 8px; }
+.ng-plot .scene-evidence { color: var(--color-ink); }
+.ng-builds .ng-copy { font-size: 24px; line-height: 1.22; }
+.ng-builds { display: grid; grid-template-columns: minmax(0, 1fr) max-content; align-items: center; gap: 28px; }
+.ng-independent-title { font-size: 35px !important; margin-bottom: 24px !important; }
+.ng-claw { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-bottom: 26px; }
+.ng-claw-model { padding: 24px; background: #182132; color: #f4f6fb; }
+.ng-claw-model h3 { font-size: 30px; }
+.ng-claw-model p { font-size: 24px; margin-bottom: 20px; }
+.ng-independent-row { display: grid; grid-template-columns: 94px 1fr 85px; gap: 16px; align-items: center; font-size: 25px; height: 48px; }
+.ng-bar-alt { background: #edb47a; }
+.ng-claw-model .ng-axis { margin-left: 110px !important; margin-right: 101px !important; font-size: 22px; margin-bottom: 0; }
+.ng-independent > .ng-evidence .ng-copy { font-size: 27px; }
+.ng-roles { display: flex; flex-direction: column; gap: 24px; }
+.ng-message-lane { position: relative; display: grid; grid-template-columns: 320px 390px 1fr; align-items: center; padding: 20px; border: 2px solid var(--color-control-line); gap: 32px; }
+.ng-message-lane .ng-box { min-height: 126px; }
+.ng-lane-role { color: var(--color-accent); text-align: center; font-family: var(--font-mono); font-size: 32px; }
+.ng-message-lane .ng-box p { font-size: 28px; }
+.ng-packet { position: absolute; left: 170px; top: 154px; background: var(--color-accent); color: white; padding: 2px 16px; font-size: 24px; }
+.ng-user-lane { border-style: dashed; }
+.ng-discarded { border-style: dashed; }
+.ng-reasoning-comparison { display: grid; grid-template-columns: 1040px minmax(0,1fr); gap: 40px; align-items: center; }
+.ng-reasoning-comparison .ng-copy { font-size: 32px; line-height: 1.35; }
+.ng-three { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 28px; }
+.ng-three .ng-box { padding: 28px; min-height: 202px; border-top: 7px solid var(--color-accent); }
+.ng-three h3 { font-size: 35px; }
+.ng-three p { font-size: 29px; }
+.ng-muted-box { border-top-color: var(--color-muted) !important; }
+.ng-learning, .ng-durability, .ng-protocols { display: flex; flex-direction: column; gap: 28px; }
+.ng-warning { display: flex; align-items: center; gap: 32px; padding: 22px 28px; border-left: 8px solid #90622f; }
+.ng-warning p { margin: 0; }
+.ng-learning .ng-copy, .ng-durability .ng-copy { font-size: 28px; }
+.ng-recovery-rail { font-size: 36px; border-top: 3px solid var(--color-ink); border-bottom: 3px solid var(--color-ink); padding: 22px 28px; }
+.ng-protocol-grid { display: grid; grid-template-columns: 290px 150px 570px 150px 1fr; gap: 22px; align-items: center; position: relative; min-height: 290px; }
+.ng-protocol-grid .ng-box { min-height: 220px; display: flex; flex-direction: column; justify-content: center; }
+.ng-protocol-grid h3 { font-size: 32px; }
+.ng-protocol-grid p { font-size: 26px; }
+.ng-protocol-label { font-size: 36px; color: var(--color-accent); text-align: center; }
+.ng-application { border: 4px solid var(--color-ink); }
+.ng-internal { border: 2px dashed var(--color-muted); padding: 12px; margin-top: 18px; font-size: 25px; }
+.ng-protocol-dot { position: absolute; left: 110px; bottom: 6px; width: 20px; height: 20px; background: var(--color-accent); border-radius: 50%; }
+.ng-summary { display: grid; gap: 32px; align-items: start; }
+.ng-evidence-summary { grid-template-columns: 1120px minmax(0, 1fr); }
+.ng-summary-vendor, .ng-summary-independent, .ng-summary-roles, .ng-summary-direction { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.ng-summary h3 { font-size: 30px; }
+.ng-summary-multiples { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.ng-summary-plot { display: flex; flex-direction: column; gap: 7px; padding: 14px 16px; min-width: 0; background: #182132; color: #f4f6fb; }
+.ng-summary-plot h3 { font-size: 27px; line-height: 1.18; }
+.ng-summary-plot .ng-summary-provenance { font-size: 22px; line-height: 1.15; color: #b9d8f0; }
+.ng-summary-metric { font-size: 22px; line-height: 1.15; color: #d0d9e5; }
+.ng-summary-bars { margin: 0; padding: 0; list-style: none; }
+.ng-summary-bar-row { display: grid; grid-template-columns: 141px minmax(0, 1fr) 76px; gap: 10px; align-items: center; min-height: 30px; font-size: 22px; line-height: 1.15; }
+.ng-summary-bar-row .ng-bar-track { height: 16px; }
+.ng-summary-bar-row .ng-value { font-size: 24px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.ng-summary-plot .ng-axis { margin: 0 86px 0 151px !important; font-size: 22px; line-height: 1.1; }
+.ng-summary-plot .ng-summary-condition { font-size: 22px; line-height: 1.15; color: #cbd5e3; }
+.ng-evidence-summary .scene-evidence { gap: 8px; font-size: 22px; line-height: 1.2; }
+.ng-evidence-summary .scene-evidence > .kit-grade { font-size: 22px; }
+.ng-evidence-summary .scene-evidence > .scene-evidence-button { padding: 5px 12px; font-size: 22px; line-height: 1.2; }
+.ng-summary-builds { display: grid; grid-template-columns: minmax(0, 1fr) max-content; align-items: center; border-top: 2px solid var(--color-control-line); padding-top: 12px; gap: 16px; }
+.ng-summary-builds .ng-copy { font-size: 22px; line-height: 1.2; }
+.ng-summary-independent { border-left: 4px solid #edb47a; }
+.ng-summary-independent .ng-summary-provenance { color: #edb47a; }
+.ng-summary-pairs { display: grid; gap: 6px; }
+.ng-summary-pair { display: grid; grid-template-columns: 153px minmax(0, 1fr); gap: 12px; align-items: center; }
+.ng-summary-pair h4 { margin: 0; font-size: 22px; font-weight: 500; line-height: 1.15; }
+.ng-summary-pair .ng-summary-bar-row { grid-template-columns: 80px minmax(0, 1fr) 76px; gap: 8px; min-height: 27px; }
+.ng-summary-independent .ng-axis { margin-left: 253px !important; margin-right: 84px !important; }
+.ng-summary-protocol-warning { border-top: 1px solid #edb47a; padding-top: 7px; font-size: 22px; line-height: 1.15; color: #edb47a; }
+.ng-summary-warning { border-style: dashed; padding: 20px; }
+.ng-summary-warning h3 { font-size: 27px; }
+.ng-summary-warning p { font-size: 24px; }
+.ng-reasoning-summary { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; }
+.ng-summary-roles { gap: 24px; }
+.ng-summary-roles .ng-box { padding: 24px; }
+.ng-reasoning-summary .ng-copy { font-size: 26px; line-height: 1.3; }
+.ng-directions-summary { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.ng-summary-direction { border-top: 4px solid var(--color-accent); padding-top: 18px; gap: 22px; }
+.ng-summary-direction > .ng-box { padding: 20px; min-height: 166px; }
+.ng-summary-direction .ng-box h3 { font-size: 28px; }
+.ng-summary-direction .ng-box p { font-size: 25px; }
+.ng-summary-direction .ng-copy { font-size: 24px; line-height: 1.32; }
+.ng-summary-direction > .ng-summary-warning { min-height: 0; }

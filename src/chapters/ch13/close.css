@@ -1,0 +1,91 @@
+.ch13-close .scene-visual {
+  display: grid;
+  grid-template-rows: 528px 64px;
+  gap: 24px;
+}
+
+.ch13-close__bands {
+  display: grid;
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  position: relative;
+}
+
+.ch13-close__bands::before {
+  content: '';
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  bottom: 24px;
+  width: 2px;
+  background: var(--color-control-line);
+}
+
+.ch13-close__band {
+  position: relative;
+  padding: 12px 24px 12px 88px;
+  min-width: 0;
+  border-bottom: 1px solid var(--color-control-line);
+}
+
+.ch13-close__joint {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  width: 40px;
+  height: 28px;
+  border-left: 4px solid var(--color-ink);
+  border-bottom: 4px solid var(--color-ink);
+}
+
+.ch13-close__rule {
+  position: absolute;
+  left: 64px;
+  right: 24px;
+  top: 0;
+  height: 3px;
+  transform-origin: left center;
+  background: var(--color-accent);
+}
+
+.ch13-close__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.ch13-close__content h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.2;
+  max-width: 1510px;
+  text-wrap: pretty;
+}
+
+.ch13-close__navigation {
+  align-self: center;
+  padding-left: 88px;
+  color: var(--color-muted);
+  font-size: 28px;
+  line-height: 1.4;
+}
+
+.ch13-close__navigation a {
+  color: var(--color-accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
+.ch13-close__navigation a:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 6px;
+}
+
+.ch13-close__disclaimer {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.4;
+}

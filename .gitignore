@@ -218,3 +218,15 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Web presentation and offline narration tooling
+node_modules/
+dist/
+tools/tts/node_modules/
+tools/tts/.cache/
+
+# Raw PTY recordings of the TUI captures (32 MB); PNG + .txt grids are the published reference
+reference/tui/captures/*.ansi
+
+# macOS
+.DS_Store

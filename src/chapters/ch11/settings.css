@@ -1,0 +1,322 @@
+.settings-scene p {
+  max-width: none;
+}
+
+.settings-scene .settings-copy {
+  margin: 0;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+}
+
+.settings-scene .settings-class {
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.settings-profile {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  height: 100%;
+}
+
+.settings-setting {
+  position: relative;
+  box-sizing: border-box;
+  min-width: 0;
+  padding: 14px 20px;
+  border: 1px solid var(--color-line);
+  border-radius: 14px;
+  background: var(--color-paper);
+  font-size: 24px;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.settings-setting-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  min-width: 0;
+}
+
+.settings-part--class {
+  padding: 2px 10px;
+  border-radius: 5px;
+  background: var(--color-panel);
+  color: var(--color-accent);
+  font: 600 22px/1.2 var(--font-body);
+}
+
+.settings-key-value {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 12px;
+  margin: 0;
+  max-width: 100%;
+  font: 24px/1.3 var(--font-mono);
+}
+
+.settings-part--key,
+.settings-part--value {
+  overflow-wrap: anywhere;
+}
+
+.settings-part--value {
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.settings-part--effect,
+.settings-part--context {
+  color: var(--color-muted);
+  font: 22px/1.2 var(--font-body);
+}
+
+.settings-part--caveat {
+  align-self: stretch;
+  border-top: 1px solid var(--color-line);
+  padding-top: 5px;
+  color: var(--color-muted);
+  font: 22px/1.2 var(--font-body);
+}
+
+.settings-part--statement {
+  font: 500 26px/1.2 var(--font-display);
+}
+
+.settings-profile--rigor {
+  grid-template-rows: 270px 66px 240px;
+  gap: 20px;
+}
+
+.settings-profile--rigor .settings-setting:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.settings-profile--rigor .settings-setting:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1 / 3;
+}
+
+.settings-profile--rigor .settings-setting:nth-child(3) {
+  grid-column: 1;
+  grid-row: 2 / 4;
+}
+
+.settings-profile--rigor .settings-setting:nth-child(4) {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.settings-setting-rule {
+  position: absolute;
+  inset: 0 26px auto;
+  height: 4px;
+  background: var(--color-accent);
+  transform-origin: left;
+}
+
+.settings-profile--cost {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-rows: 280px 316px;
+}
+
+.settings-profile--cost .settings-setting:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  justify-content: space-between;
+}
+
+.settings-profile--cost .settings-setting:nth-child(3) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.settings-note-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.settings-qualification {
+  margin: 0;
+  font-size: 24px;
+  flex: 1;
+}
+
+.settings-note-row > button {
+  flex: none;
+  padding: 6px 16px;
+  border: 1px solid var(--color-control-line);
+  border-radius: var(--radius-control);
+  color: var(--color-accent);
+  background: var(--color-panel);
+  font: 500 24px/1.4 var(--font-body);
+  cursor: pointer;
+}
+
+.settings-note-row > button:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 4px;
+}
+
+.settings-opener {
+  height: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 4fr);
+  gap: 54px;
+}
+
+.settings-premise {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.settings-premise > .settings-copy {
+  font-family: var(--font-display);
+  font-size: 43px;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+.settings-goals {
+  margin: auto 0 0;
+  padding: 0 0 0 24px;
+  list-style: none;
+  border-left: 3px solid var(--color-accent);
+  display: grid;
+  gap: 14px;
+}
+
+.settings-goal {
+  font-size: 32px;
+  line-height: 1.4;
+}
+
+.settings-defaults {
+  border: 1px solid var(--color-line);
+  border-radius: 14px;
+  background: var(--color-paper);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.settings-defaults > .settings-copy {
+  font: 26px/1.65 var(--font-mono);
+}
+
+.settings-compare {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin: 0;
+  width: 100%;
+  font-size: 30px;
+}
+
+.settings-compare-line {
+  flex: 1;
+  border-top: 3px solid var(--color-accent);
+}
+
+.settings-loop {
+  position: relative;
+  height: 300px;
+  flex: none;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: 34px;
+  align-items: start;
+  padding: 58px 70px 0;
+  box-sizing: border-box;
+}
+
+.settings-loop-path {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.settings-loop-track,
+.settings-loop-connector {
+  fill: none;
+  stroke: var(--color-line);
+  stroke-width: 3;
+}
+
+.settings-loop-connector {
+  stroke: var(--color-accent);
+  stroke-width: 6;
+  stroke-linecap: round;
+}
+
+.settings-loop-node {
+  position: relative;
+  min-height: 140px;
+  padding: 24px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  background: var(--color-paper);
+  border: 1px solid var(--color-line);
+  border-radius: 14px;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 29px;
+  line-height: 1.35;
+}
+
+.settings-method {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 20px 26px;
+  background: var(--color-paper);
+  border-radius: 14px;
+  font-size: 27px;
+}
+
+.settings-method > .scene-evidence {
+  flex: none;
+}
+
+.settings-benefit {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 8px 0 0;
+  padding: 12px 26px;
+  font-size: 28px;
+}
+
+.settings-benefit > .scene-evidence {
+  flex: none;
+}
+
+.settings-landing {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  width: 100%;
+}
+
+.settings-landing > .settings-copy {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 40px;
+  color: var(--color-ink);
+}

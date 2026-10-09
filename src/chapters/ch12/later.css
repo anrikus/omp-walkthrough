@@ -1,0 +1,29 @@
+.ch12 .ch12-later { display: flex; flex-direction: column; gap: 16px; }
+.ch12-later .ch12-later-claims { display: grid; gap: 12px; min-width: 0; }
+.ch12-later .ch12-claim { padding: 12px 18px; }
+.ch12-later .ch12-caveat { border-left-color: var(--color-accent); background: var(--color-panel); }
+.ch12-later .ch12-trust-boundary { stroke: var(--color-ink); stroke-width: 12; }
+.ch12-later .ch12-partial-line { stroke: var(--color-muted); stroke-width: 5; }
+.ch12-later .ch12-job-panel { fill: var(--color-panel); stroke: var(--color-control-line); stroke-width: 2; }
+.ch12-later .ch12-nested rect { fill: var(--color-paper); stroke: var(--color-accent); }
+.ch12-later .ch12-evidence-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-rows: auto auto; gap: 14px 24px; }
+.ch12-later .ch12-bounded { position: relative; background: var(--color-panel); }
+.ch12-later .ch12-audio-rule { height: 5px; width: 100%; flex: 0 0 5px; background: var(--color-accent); transform-origin: left center; }
+.ch12-later .ch12-bounded .ch12-audio-rule { position: absolute; top: 0; left: 0; }
+.ch12 .ch12-register { display: grid; grid-template-rows: 310px 282px; gap: 24px; }
+.ch12-register-upper, .ch12-register-lower { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 36px; min-height: 0; }
+.ch12-register .ch12-register-stat { box-sizing: border-box; margin: 0; padding: 16px 22px; background: var(--color-panel); color: var(--color-ink); border: 1px solid var(--color-control-line); border-radius: 12px; display: flex; flex-direction: column; gap: 10px; }
+.ch12-register .kit-stat-value { margin: 0; font: 650 54px/1 var(--font-display); color: var(--color-ink); }
+.ch12-register .kit-stat-label { margin: 0; font: 600 30px/1.2 var(--font-display); color: var(--color-ink); }
+.ch12-register .kit-stat-condition { margin: 0; font: 400 26px/1.25 var(--font-body); color: var(--color-ink); }
+.ch12-register .ch12-register-stat .scene-evidence { display: flex; flex-wrap: wrap; gap: 10px; font-size: 22px; line-height: 1.2; }
+.ch12-register .ch12-register-stat .kit-grade { font-size: 22px; }
+.ch12-register .ch12-register-stat .scene-evidence-button { font-size: 22px; line-height: 1.2; padding: 3px 12px; }
+.ch12-register .ch12-component-register { min-width: 0; }
+.ch12-register .ch12-component-register .ch12-claim { padding: 8px 16px; }
+.ch12-register .ch12-built-bar { fill: var(--color-accent); }
+.ch12-register .ch12-partial-bar { fill: var(--color-panel); stroke: var(--color-accent); stroke-width: 2; stroke-dasharray: 8 5; }
+.ch12-register .ch12-planned-bar { fill: none; stroke: var(--color-muted); stroke-width: 2; stroke-dasharray: 3 6; }
+.ch12-register .ch12-migration, .ch12-register .ch12-ownership { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.ch12-register-lower h3 { margin: 0; font: 600 29px/1.22 var(--font-display); color: var(--color-ink); }
+.ch12-register-lower .ch12-claim { flex: 1; }

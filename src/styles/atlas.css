@@ -1,0 +1,26 @@
+.atlas-demo-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.atlas-demo-seek-label {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.atlas-demo-seek {
+  flex: 1 1 12rem;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 2.75rem;
+  margin: 0;
+  accent-color: var(--color-accent);
+  cursor: pointer;
+}
+
+.atlas-demo-time {
+  font-variant-numeric: tabular-nums;
+}

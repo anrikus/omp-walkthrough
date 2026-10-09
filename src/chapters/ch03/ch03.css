@@ -1,0 +1,279 @@
+.ch03-scene .scene-visual {
+  position: relative;
+}
+
+.ch03-layer {
+  position: absolute;
+  inset: 0;
+}
+
+.ch03-main,
+.ch03-cost-main {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 1036px;
+}
+
+.ch03-cost-main {
+  width: 1160px;
+}
+
+.ch03-aside,
+.ch03-cost-aside {
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: 692px;
+}
+
+.ch03-cost-aside {
+  width: 568px;
+}
+
+.ch03-evidence-copy {
+  color: var(--color-ink);
+  font: 400 24px/1.36 var(--font-body);
+  overflow-wrap: anywhere;
+}
+
+.ch03-evidence-copy p {
+  margin: 0;
+}
+
+.ch03-evidence-copy .scene-evidence {
+  margin-block-start: 16px;
+}
+
+.ch03-evidence-stack > .ch03-evidence-copy,
+.ch03-evidence-stack > .ch03-intro-note,
+.ch03-cost-aside > .ch03-evidence-copy {
+  position: absolute;
+  inset: 0 0 auto;
+}
+
+.ch03-evidence-stack > [data-on-screen="3.1.b"] {
+  top: 280px;
+}
+
+.ch03-cost-aside > .ch03-separate-study {
+  top: 350px;
+  padding-block-start: 22px;
+  border-block-start: 3px solid var(--color-ink);
+}
+
+.ch03-intro-note {
+  padding-block-start: 70px;
+  font-size: 42px;
+  line-height: 1.25;
+}
+
+.ch03-intro-note p {
+  margin: 0 0 28px;
+}
+
+.ch03-note {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.35;
+}
+
+.ch03-note .scene-evidence {
+  flex: 0 0 auto;
+}
+
+.ch03-ablations {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, 292px);
+  gap: 24px;
+}
+
+.ch03-ablation {
+  box-sizing: border-box;
+  padding: 22px;
+  color: #eef3fa;
+  background: #162235;
+}
+
+.ch03-ablation h3 {
+  margin: 0 0 18px;
+  font-size: 28px;
+  line-height: 1.15;
+}
+
+.ch03-ablation-label,
+.ch03-ablation-axis {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+.ch03-ablation-label strong {
+  flex: 0 0 auto;
+}
+
+.ch03-ablation-track {
+  height: 22px;
+  margin: 8px 0 16px;
+  background: #35445a;
+}
+
+.ch03-ablation-fill {
+  height: 100%;
+  background: #75b9ec;
+  transform-origin: left center;
+}
+
+.ch03-ablation-track:nth-of-type(4) .ch03-ablation-fill {
+  background: #eab77b;
+}
+
+.ch03-ablation-axis {
+  color: #aab9ca;
+  margin-block-start: 8px;
+}
+
+.ch03-two-protocols {
+  display: grid;
+  grid-template-columns: repeat(2, 864px);
+  gap: 32px;
+  height: 616px;
+}
+
+.ch03-protocol {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 0;
+  min-height: 0;
+}
+
+.ch03-protocol > svg {
+  flex: 0 0 auto;
+}
+
+.ch03-positioned {
+  position: relative;
+}
+
+.ch03-position-study h3 {
+  margin: 0 0 32px;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.ch03-position-strip {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  height: 240px;
+  padding: 24px;
+  background: #162235;
+  color: #eef3fa;
+}
+
+.ch03-context-zone {
+  padding: 0 24px;
+  border-inline-start: 1px solid #75b9ec;
+  font-size: 28px;
+}
+
+.ch03-context-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  margin-block-start: 28px;
+}
+
+.ch03-context-lines span {
+  height: 5px;
+  width: 85%;
+  background: #aab9ca;
+}
+
+.ch03-context-lines span:nth-child(even) {
+  width: 65%;
+}
+
+.ch03-position-highlight {
+  position: absolute;
+  left: 64px;
+  top: 130px;
+  width: 320px;
+  padding: 18px 22px;
+  border: 3px solid #eef3fa;
+  background: #162235;
+  color: #eef3fa;
+  font-size: 28px;
+  text-align: center;
+}
+
+.ch03-position-caption {
+  margin: 24px 0;
+  font-size: 28px;
+}
+
+.ch03-position-study > .ch03-evidence-copy {
+  max-width: 1400px;
+}
+
+.ch03-cost-complete {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.ch03-cost-complete > [data-on-screen="3.3.b"],
+.ch03-cost-complete > .ch03-retained-agentless,
+.ch03-cost-complete > .ch03-separate-study {
+  position: static;
+  font-size: 22px;
+  line-height: 1.25;
+}
+
+.ch03-cost-complete > .ch03-retained-agentless {
+  order: 1;
+  padding-block-start: 12px;
+  border-block-start: 1px solid var(--color-ink);
+}
+
+.ch03-cost-complete > .ch03-separate-study {
+  order: 2;
+  padding-block-start: 12px;
+}
+
+.ch03-cost-complete .scene-evidence,
+.ch03-signal-panels .scene-evidence {
+  margin-block-start: 8px;
+}
+
+.ch03-signal-panels {
+  height: 502px;
+}
+
+.ch03-signal-panels .ch03-evidence-copy {
+  font-size: 22px;
+  line-height: 1.25;
+}
+
+.ch03-retained-position {
+  position: absolute;
+  inset: 520px 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding-block-start: 16px;
+  border-block-start: 2px solid var(--color-ink);
+  font-size: 22px;
+  line-height: 1.25;
+}
+
+.ch03-retained-position .scene-evidence {
+  flex: 0 0 auto;
+  margin-block-start: 0;
+}

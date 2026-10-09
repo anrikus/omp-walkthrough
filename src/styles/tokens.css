@@ -1,0 +1,71 @@
+:root {
+  color-scheme: light;
+  font-variant-ligatures: none;
+  font-feature-settings: 'liga' 0, 'calt' 0;
+  --font-display: 'Manrope', sans-serif;
+  --font-body: 'IBM Plex Sans', sans-serif;
+  --font-mono: 'Kit Mono', 'Noto Sans Symbols 2', monospace;
+  --color-ink: #182337;
+  --color-muted: #536176;
+  --color-paper: #eef3f8;
+  --color-panel: #ffffff;
+  --color-accent: #514eb1;
+  --color-accent-soft: #eeedff;
+  --color-line: #aab4c4;
+  --color-control-line: #77859b;
+  --color-focus: #393491;
+  --color-danger: #9a2537;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --radius-control: 0.35rem;
+  --radius-panel: 0.9rem;
+  --grade-a-ink: #14523c;
+  --grade-a-bg: #e3f3eb;
+  --grade-b-ink: #45348d;
+  --grade-b-bg: #efebfa;
+  --grade-c-ink: #215477;
+  --grade-c-bg: #e7f1fa;
+  --grade-d-ink: #774416;
+  --grade-d-bg: #fff0da;
+  --grade-e-ink: #833446;
+  --grade-e-bg: #fceaf0;
+}
+
+/* Keep code operators literal, even when chapter font shorthands reset typography. */
+*,
+*::before,
+*::after,
+*::marker,
+*::placeholder,
+*::first-letter,
+*::first-line,
+*::file-selector-button {
+  font-variant-ligatures: none !important;
+  font-feature-settings: 'liga' 0, 'calt' 0 !important;
+}
+
+.grade-badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  gap: 0.35em;
+  padding: 0.25em 0.6em;
+  border: 1px solid currentColor;
+  border-radius: 0.25em;
+  font-family: var(--font-body);
+  font-size: 0.78em;
+  font-weight: 600;
+  line-height: 1.3;
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+.grade-badge[data-grade='A'] { color: var(--grade-a-ink); background: var(--grade-a-bg); border-width: 2px; }
+.grade-badge[data-grade='B'] { color: var(--grade-b-ink); background: var(--grade-b-bg); border-style: dashed; }
+.grade-badge[data-grade='C'] { color: var(--grade-c-ink); background: var(--grade-c-bg); }
+.grade-badge[data-grade='D'] { color: var(--grade-d-ink); background: var(--grade-d-bg); border-style: double; border-width: 3px; }
+.grade-badge[data-grade='E'] { color: var(--grade-e-ink); background: var(--grade-e-bg); border-style: dotted; border-width: 2px; }
